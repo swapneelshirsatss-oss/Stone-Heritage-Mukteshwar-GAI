@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -7,13 +8,33 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-accent">Stone Heritage Mukteshwar</h3>
+            <div className="flex items-center gap-3 mb-6">
+              <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-16 w-auto bg-stone-50 rounded p-1" />
+              <div>
+                <h3 className="text-xl font-bold text-accent">Stone Heritage</h3>
+                <span className="text-[10px] tracking-[0.2em] text-stone-300 uppercase">Mukteshwar</span>
+              </div>
+            </div>
             <p className="text-stone-300 text-sm leading-relaxed mb-4">
               Authentic Kumaoni heritage homestay offering breathtaking Himalayan views. The perfect escape for couples, families, and remote workers.
             </p>
-            <p className="text-sm font-medium text-highlight">
+            <p className="text-sm font-medium text-highlight mb-6">
               Best Price Guarantee on Direct Bookings
             </p>
+            <div className="flex gap-4">
+              <a href="https://www.facebook.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" className="text-stone-300 hover:text-accent transition-colors" aria-label="Facebook">
+                <Facebook size={20} />
+              </a>
+              <a href="https://www.instagram.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" className="text-stone-300 hover:text-accent transition-colors" aria-label="Instagram">
+                <Instagram size={20} />
+              </a>
+              <a href="https://www.youtube.com/@StoneHeritageMukteshwar" target="_blank" rel="noopener noreferrer" className="text-stone-300 hover:text-accent transition-colors" aria-label="YouTube">
+                <Youtube size={20} />
+              </a>
+              <a href="https://x.com/stone_heritage" target="_blank" rel="noopener noreferrer" className="text-stone-300 hover:text-accent transition-colors" aria-label="Twitter">
+                <Twitter size={20} />
+              </a>
+            </div>
           </div>
           
           <div>

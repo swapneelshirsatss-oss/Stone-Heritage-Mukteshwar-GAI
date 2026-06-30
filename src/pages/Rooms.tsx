@@ -28,6 +28,7 @@ export function Rooms() {
                 src={room.image} 
                 alt={room.name} 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
               />
             </div>
             <div className="p-6 flex-grow flex flex-col">

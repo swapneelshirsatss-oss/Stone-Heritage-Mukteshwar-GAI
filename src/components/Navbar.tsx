@@ -47,13 +47,16 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex flex-col z-50" onClick={closeMobileMenu}>
-            <span className="text-xl md:text-2xl font-bold text-primary tracking-tight leading-none mb-1">
-              Stone Heritage
-            </span>
-            <span className="text-[10px] md:text-xs tracking-[0.2em] text-secondary uppercase">
-              Mukteshwar
-            </span>
+          <Link to="/" className="flex items-center gap-2 z-50" onClick={closeMobileMenu}>
+            <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-10 md:h-12 w-auto" />
+            <div className="flex flex-col">
+              <span className="text-xl md:text-2xl font-bold text-primary tracking-tight leading-none mb-1">
+                Stone Heritage
+              </span>
+              <span className="text-[10px] md:text-xs tracking-[0.2em] text-secondary uppercase">
+                Mukteshwar
+              </span>
+            </div>
           </Link>
           
           {/* Desktop Navigation */}

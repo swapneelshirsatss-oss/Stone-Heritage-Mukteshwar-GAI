@@ -12,6 +12,8 @@ export function Home() {
             src="/hero-bg.webp" 
             alt="Stone Heritage Mukteshwar" 
             className="absolute inset-0 w-full h-full object-cover opacity-80"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-primary"></div>
         </div>
@@ -117,6 +119,7 @@ export function Home() {
                     src={room.image} 
                     alt={room.name} 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                     <div className="p-6 w-full text-center">
@@ -186,13 +189,13 @@ export function Home() {
                 text: "This was a perfect weekend getaway from Delhi to Mukteshwar. After a long drive, the peaceful vibe, stone architecture, and warm hospitality helped us unwind completely. Watching the sunset here was unforgettable.",
                 name: "Khushi",
                 role: "Product Analyst · Tech Studio",
-                image: "/khushi.jpg"
+                image: ""
               },
               {
                 text: "Stone Heritage Mukteshwar is a great budget homestay in Mukteshwar, Uttarakhand without compromising on experience. Clean rooms, beautiful views, and excellent hospitality make it great value for money.",
                 name: "Saransh",
                 role: "Software Developer",
-                image: "/saransh.jpg"
+                image: ""
               }
             ].map((testimonial, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 flex flex-col items-center hover:shadow-md transition-all">
@@ -202,10 +205,11 @@ export function Home() {
                       src={testimonial.image} 
                       alt={testimonial.name} 
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   ) : (
-                    <div className="w-full h-full bg-stone-300 flex items-center justify-center text-stone-500 text-xs font-medium">
-                      Add Pic
+                    <div className="w-full h-full bg-stone-300 flex items-center justify-center text-stone-600 text-2xl font-bold uppercase">
+                      {testimonial.name.charAt(0)}
                     </div>
                   )}
                 </div>
@@ -307,6 +311,76 @@ export function Home() {
               loading="lazy" 
               referrerPolicy="strict-origin-when-cross-origin"
             ></iframe>
+          </div>
+        </div>
+      </section>
+
+      {/* Local Attractions Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Discover</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Experiences & Local Attractions</h2>
+            <p className="text-lg text-primary/70 max-w-3xl mx-auto">
+              Discover the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {[
+              {
+                name: "Nanda Devi Peak (Viewpoint)",
+                description: "The second highest mountain in India, visible from various vantage points in Mukteshwar, offering breathtaking panoramic views of the majestic snow-capped Himalayas.",
+                distance: "Visible from Mukteshwar town",
+                activities: "Sunrise photography, nature walks, and scenic sightseeing.",
+                tips: "Best time to view is early morning on clear days. Carry a good camera or binoculars."
+              },
+              {
+                name: "Chauli Ki Jali",
+                description: "A stunning cliff behind the Mukteshwar temple known for its overhanging rocks, deep valley views, and fascinating local legends.",
+                distance: "1.5 km from the town center",
+                activities: "Rock climbing, rappelling, ziplining, and sunset watching.",
+                tips: "Moderate walking involved. Hire certified local guides for adventure sports. Best visited in the late afternoon."
+              }
+            ].map((place, index) => (
+              <div key={index} className="bg-stone-50 p-8 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+                <h3 className="text-2xl font-bold text-primary mb-3">{place.name}</h3>
+                <p className="text-primary/80 mb-6 leading-relaxed">{place.description}</p>
+                
+                <ul className="space-y-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-0.5 text-lg">📍</span>
+                    <div>
+                      <span className="font-semibold text-primary block sm:inline">Distance: </span>
+                      <span className="text-primary/70">{place.distance}</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-0.5 text-lg">✨</span>
+                    <div>
+                      <span className="font-semibold text-primary block sm:inline">Activities: </span>
+                      <span className="text-primary/70">{place.activities}</span>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-accent mt-0.5 text-lg">💡</span>
+                    <div>
+                      <span className="font-semibold text-primary block sm:inline">Pro Tip: </span>
+                      <span className="text-primary/70">{place.tips}</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link 
+              to="/experiences" 
+              className="inline-block bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
+            >
+              See More Places to Visit
+            </Link>
           </div>
         </div>
       </section>
