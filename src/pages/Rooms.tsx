@@ -1,13 +1,13 @@
 import React from 'react';
 
 const rooms = [
-  "Brass Room",
-  "Copper Room",
-  "The Vintage Room",
-  "Stonewood Family Retreat",
-  "Stone And Story Room",
-  "Iron Room",
-  "Cedar Room"
+  { name: "Brass Room", image: "/brass-room.webp" },
+  { name: "Copper Room", image: "/copper-room.webp" },
+  { name: "The Vintage Room", image: "/vintage-room.webp" },
+  { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp" },
+  { name: "Stone And Story Room", image: "/stone-and-story-room.webp" },
+  { name: "Iron Room", image: "/iron-room.webp" },
+  { name: "Cedar Room", image: "/cedar-room.webp" }
 ];
 
 export function Rooms() {
@@ -22,17 +22,21 @@ export function Rooms() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {rooms.map((room) => (
-          <div key={room} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col">
-            <div className="h-48 bg-stone-200 flex items-center justify-center">
-              <span className="text-stone-400">Room Image Gallery</span>
+          <div key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group">
+            <div className="h-56 relative overflow-hidden bg-stone-200">
+              <img 
+                src={room.image} 
+                alt={room.name} 
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
             <div className="p-6 flex-grow flex flex-col">
-              <h2 className="text-2xl font-bold mb-2">{room}</h2>
+              <h2 className="text-2xl font-bold mb-2">{room.name}</h2>
               <p className="text-primary/70 mb-6 flex-grow">
                 Enjoy panoramic views and premium comfort. Perfect for your Mukteshwar getaway.
               </p>
               <a 
-                href="https://wa.me/919027844424" 
+                href={`https://wa.me/919027844424?text=${encodeURIComponent(`Hi, I'm interested in booking the ${room.name}.`)}`}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block text-center bg-primary hover:bg-secondary text-white font-semibold py-3 px-4 rounded-xl transition-colors"
