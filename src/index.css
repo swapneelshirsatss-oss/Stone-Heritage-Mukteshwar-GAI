@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6f4c3e;
+  --color-secondary: #a85f2e;
+  --color-tertiary: #c77d38;
+  --color-accent: #e0b65c;
+  --color-highlight: #f1c84b;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --color-primary: #6f4c3e;
+    --color-secondary: #a85f2e;
+    --color-tertiary: #c77d38;
+    --color-accent: #e0b65c;
+    --color-highlight: #f1c84b;
+  }
+
+  body {
+    @apply text-primary bg-stone-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary font-bold;
+  }
+}
