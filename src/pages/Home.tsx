@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { InteractiveGallery } from '../components/InteractiveGallery';
 
 export function Home() {
   return (
@@ -14,16 +15,17 @@ export function Home() {
             className="absolute inset-0 w-full h-full object-cover opacity-80"
             loading="eager"
             fetchPriority="high"
+            decoding="sync"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-primary"></div>
         </div>
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-stone-50 drop-shadow-lg leading-tight">
+          <h1 className="text-3xl md:text-6xl font-bold mb-6 text-stone-50 md:drop-shadow-lg leading-tight">
             Stone Heritage Mukteshwar
-            <span className="block text-2xl md:text-4xl mt-4 font-normal italic opacity-90">An Authentic Himalayan Retreat</span>
+            <span className="block text-xl md:text-4xl mt-4 font-normal italic opacity-90">An Authentic Himalayan Retreat</span>
           </h1>
-          <p className="text-lg md:text-xl mb-8 font-light text-stone-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl mb-8 font-light text-stone-100 max-w-3xl mx-auto leading-relaxed md:drop-shadow-md">
             Escape to the serene hills of Uttarakhand. Experience a perfect blend of heritage and modern comfort with our traditional stone cottages, panoramic mountain views, and exceptional Kumaoni hospitality.
           </p>
           
@@ -32,13 +34,13 @@ export function Home() {
               href="https://wa.me/919027844424" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-highlight text-primary font-bold py-4 px-8 rounded-full hover:bg-highlight/90 transition-transform hover:scale-105 active:scale-95 text-lg w-full sm:w-auto"
+              className="bg-highlight text-primary font-bold py-3 px-6 rounded-full hover:bg-highlight/90 transition-transform hover:scale-105 active:scale-95 text-base w-full sm:w-auto"
             >
               Check Availability on WhatsApp
             </a>
             <Link 
               to="/rooms" 
-              className="bg-transparent border-2 border-accent text-accent font-bold py-4 px-8 rounded-full hover:bg-accent hover:text-primary transition-all text-lg w-full sm:w-auto"
+              className="bg-transparent border-2 border-accent text-accent font-bold py-3 px-6 rounded-full hover:bg-accent hover:text-primary transition-all text-base w-full sm:w-auto"
             >
               Explore Rooms
             </Link>
@@ -113,7 +115,7 @@ export function Home() {
               { name: "Copper Room", image: "/copper-room.webp" },
               { name: "The Vintage Room", image: "/vintage-room.webp" }
             ].map((room) => (
-              <div key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-md transition-all">
+              <div key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
                 <div className="h-64 relative overflow-hidden bg-stone-200">
                   <img 
                     src={room.image} 
@@ -155,88 +157,42 @@ export function Home() {
         </div>
       </section>
 
+      {/* Gallery Section */}
+      <section className="py-20 px-4 bg-white border-t border-stone-200">
+        <div className="max-w-7xl mx-auto text-center mb-12">
+          <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">Take a Tour</span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">A Glimpse into Our World</h2>
+          <p className="text-lg text-primary/70 max-w-2xl mx-auto">
+            Discover the beauty and serenity that awaits you at Stone Heritage Mukteshwar.
+          </p>
+        </div>
+        <InteractiveGallery />
+      </section>
+
       {/* Testimonials Section */}
-      <section className="py-16 px-4 bg-stone-100">
-        <div className="max-w-7xl mx-auto text-center">
+      <section className="py-20 px-4 bg-stone-100">
+        <div className="max-w-4xl mx-auto text-center">
           <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">Guest Experiences</span>
-          <h2 className="text-3xl font-bold mb-10 text-primary">What Our Guests Say</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Loved by Our Guests</h2>
+          <p className="text-lg text-primary/70 mb-10 leading-relaxed">
+            Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.
+          </p>
           
-          <div className="flex justify-center mb-16">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 bg-white w-fit p-6 md:px-12 rounded-2xl shadow-sm border border-stone-200">
-              <div className="flex items-center gap-4">
-                <div className="text-5xl font-black text-primary tracking-tighter">4.9</div>
-                <div className="text-left">
-                  <div className="flex text-accent text-sm mb-1 gap-1">
-                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                  </div>
-                  <div className="text-sm font-medium text-primary/70">From 251+ Reviews</div>
-                </div>
-              </div>
-              <div className="hidden md:block w-px h-16 bg-stone-200"></div>
-              <div className="flex items-center gap-4">
-                <div className="text-5xl font-black text-primary tracking-tighter">10k+</div>
-                <div className="text-left">
-                  <div className="text-sm font-bold text-primary mb-1">Happy Guests</div>
-                  <div className="text-sm font-medium text-primary/70">Hosted at our property</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
-            {[
-              {
-                text: "This was a perfect weekend getaway from Delhi to Mukteshwar. After a long drive, the peaceful vibe, stone architecture, and warm hospitality helped us unwind completely. Watching the sunset here was unforgettable.",
-                name: "Khushi",
-                role: "Product Analyst · Tech Studio",
-                image: ""
-              },
-              {
-                text: "Stone Heritage Mukteshwar is a great budget homestay in Mukteshwar, Uttarakhand without compromising on experience. Clean rooms, beautiful views, and excellent hospitality make it great value for money.",
-                name: "Saransh",
-                role: "Software Developer",
-                image: ""
-              }
-            ].map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 flex flex-col items-center hover:shadow-md transition-all">
-                <div className="w-20 h-20 bg-stone-200 rounded-full overflow-hidden mb-6 border-2 border-stone-100 flex-shrink-0">
-                  {testimonial.image ? (
-                    <img 
-                      src={testimonial.image} 
-                      alt={testimonial.name} 
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  ) : (
-                    <div className="w-full h-full bg-stone-300 flex items-center justify-center text-stone-600 text-2xl font-bold uppercase">
-                      {testimonial.name.charAt(0)}
-                    </div>
-                  )}
-                </div>
-                <div className="flex text-accent mb-4 text-sm gap-1">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
-                </div>
-                <p className="text-primary/80 leading-relaxed text-center italic mb-6 text-sm">
-                  "{testimonial.text}"
-                </p>
-                <h3 className="text-base font-bold text-primary">- {testimonial.name}</h3>
-                {testimonial.role && <p className="text-xs text-primary/60 mt-1">{testimonial.role}</p>}
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center flex flex-col sm:flex-row justify-center items-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link 
-              to="/experiences" 
-              className="inline-block bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
+              to="/testimonials" 
+              className="inline-flex items-center justify-center gap-2 bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
             >
-              View All Testimonials
+              Read All Testimonials
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
             </Link>
             <a 
               href="https://www.google.com/maps/place/?cid=5074157692820223333" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-primary font-semibold py-3 px-8 rounded-full hover:bg-stone-50 border border-stone-200 transition-colors shadow-sm"
+              className="inline-flex items-center justify-center gap-2 bg-white text-primary font-semibold py-3 px-8 rounded-full hover:bg-stone-50 border border-stone-200 transition-colors shadow-sm"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" className="fill-current"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
               See our reviews on Google
@@ -319,57 +275,60 @@ export function Home() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Discover</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Experiences & Local Attractions</h2>
-            <p className="text-lg text-primary/70 max-w-3xl mx-auto">
-              Discover the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites.
+            <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Discover Mukteshwar</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Top Attractions & Places to Visit</h2>
+            <p className="text-lg text-primary/70 max-w-3xl mx-auto leading-relaxed">
+              Explore the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites, Mukteshwar offers an unforgettable experience.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
-                name: "Nanda Devi Peak (Viewpoint)",
-                description: "The second highest mountain in India, visible from various vantage points in Mukteshwar, offering breathtaking panoramic views of the majestic snow-capped Himalayas.",
-                distance: "Visible from Mukteshwar town",
-                activities: "Sunrise photography, nature walks, and scenic sightseeing.",
-                tips: "Best time to view is early morning on clear days. Carry a good camera or binoculars."
+                name: "Chauli Ki Jali",
+                description: "A stunning cliff known for overhanging rocks, deep valley views, and adventure sports. Perfect for rock climbing, rappelling, and mesmerizing sunsets.",
+                image: "https://images.unsplash.com/photo-1626071465997-7504f7a59124?q=80&w=1000&auto=format&fit=crop",
+                distance: "1.5 km away",
+                tag: "Adventure & Views"
               },
               {
-                name: "Chauli Ki Jali",
-                description: "A stunning cliff behind the Mukteshwar temple known for its overhanging rocks, deep valley views, and fascinating local legends.",
-                distance: "1.5 km from the town center",
-                activities: "Rock climbing, rappelling, ziplining, and sunset watching.",
-                tips: "Moderate walking involved. Hire certified local guides for adventure sports. Best visited in the late afternoon."
+                name: "Bhalugaad Waterfall",
+                description: "A beautiful hidden gem tucked away in dense forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
+                image: "https://images.unsplash.com/photo-1620857322964-b52994c502b4?q=80&w=1000&auto=format&fit=crop",
+                distance: "10 km away",
+                tag: "Nature & Trekking"
+              },
+              {
+                name: "Mukteshwar Dham Temple",
+                description: "The ancient, 350-year-old Shiva temple gracefully atop the highest point in the area, offering a peaceful spiritual experience.",
+                image: "https://images.unsplash.com/photo-1601058269784-0a3733ccfb13?q=80&w=1000&auto=format&fit=crop",
+                distance: "Town center",
+                tag: "Spiritual Heritage"
               }
             ].map((place, index) => (
-              <div key={index} className="bg-stone-50 p-8 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
-                <h3 className="text-2xl font-bold text-primary mb-3">{place.name}</h3>
-                <p className="text-primary/80 mb-6 leading-relaxed">{place.description}</p>
-                
-                <ul className="space-y-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-0.5 text-lg">📍</span>
-                    <div>
-                      <span className="font-semibold text-primary block sm:inline">Distance: </span>
-                      <span className="text-primary/70">{place.distance}</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-0.5 text-lg">✨</span>
-                    <div>
-                      <span className="font-semibold text-primary block sm:inline">Activities: </span>
-                      <span className="text-primary/70">{place.activities}</span>
-                    </div>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-accent mt-0.5 text-lg">💡</span>
-                    <div>
-                      <span className="font-semibold text-primary block sm:inline">Pro Tip: </span>
-                      <span className="text-primary/70">{place.tips}</span>
-                    </div>
-                  </li>
-                </ul>
+              <div key={index} className="bg-stone-50 rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col">
+                <div className="h-56 relative overflow-hidden bg-stone-200">
+                  <img 
+                    src={place.image} 
+                    alt={`${place.name} - Tourist attraction in Mukteshwar`}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-primary shadow-sm">
+                    {place.tag}
+                  </div>
+                </div>
+                <div className="p-6 flex-grow flex flex-col">
+                  <div className="flex justify-between items-start mb-3">
+                    <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">{place.name}</h3>
+                  </div>
+                  <p className="text-primary/70 mb-6 text-sm leading-relaxed flex-grow">{place.description}</p>
+                  
+                  <div className="pt-4 border-t border-stone-200 flex items-center gap-2 text-sm text-primary/80 font-medium">
+                    <span className="text-accent text-lg">📍</span>
+                    {place.distance}
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -377,9 +336,12 @@ export function Home() {
           <div className="text-center">
             <Link 
               to="/experiences" 
-              className="inline-block bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
+              className="inline-flex items-center gap-2 bg-transparent border-2 border-primary text-primary font-bold py-3 px-8 rounded-full hover:bg-primary hover:text-stone-50 transition-all text-base group"
             >
-              See More Places to Visit
+              See All Local Experiences
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
             </Link>
           </div>
         </div>

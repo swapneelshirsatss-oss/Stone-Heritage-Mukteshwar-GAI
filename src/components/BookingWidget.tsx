@@ -24,9 +24,9 @@ export function BookingWidget() {
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white/90 backdrop-blur-md border-t border-secondary/20 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] md:bottom-6 md:left-auto md:right-6 md:border md:rounded-2xl md:w-80">
-      <div className="flex flex-col items-center gap-3">
-        <div className="text-center w-full">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-2 md:p-4 bg-white/95 backdrop-blur-md border-t border-secondary/20 shadow-[0_-4px_20px_rgba(0,0,0,0.1)] md:bottom-6 md:left-auto md:right-6 md:border md:rounded-2xl md:w-80">
+      <div className="flex flex-col items-center gap-2 md:gap-3">
+        <div className="hidden md:block text-center w-full">
           <p className="text-sm font-semibold text-primary">Book Direct & Save</p>
           <p className="text-xs text-primary/70">Avoid OTA commissions for best rates</p>
         </div>

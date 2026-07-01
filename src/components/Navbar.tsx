@@ -29,6 +29,17 @@ export function Navbar() {
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Rooms', path: '/rooms' },
@@ -39,10 +50,7 @@ export function Navbar() {
   return (
     <header 
       className={cn(
-        "sticky top-0 z-40 w-full text-primary transition-all duration-300",
-        isScrolled 
-          ? "bg-stone-50/85 backdrop-blur-md shadow-sm border-b border-stone-200/50" 
-          : "bg-stone-50 shadow-sm border-b border-stone-200"
+        "sticky top-0 z-50 w-full text-primary transition-all duration-300 bg-stone-50 shadow-sm border-b border-stone-200"
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -99,37 +107,41 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
+      {/* Mobile Full-Screen Menu */}
       <div 
         className={cn(
-          "fixed inset-0 bg-stone-50 z-40 md:hidden flex flex-col pt-24 px-6 transition-transform duration-300 ease-in-out",
-          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          "fixed inset-0 bg-stone-50 z-40 transform transition-transform duration-300 ease-in-out md:hidden",
+          isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
         )}
       >
-        <nav className="flex flex-col gap-4 items-center w-full max-w-sm mx-auto">
-          {navLinks.map((link) => (
-             <Link 
-              key={link.path}
-              to={link.path} 
-              className={cn(
-                "text-xl font-medium transition-colors w-full text-center py-4 border-b border-stone-200",
-                location.pathname === link.path ? "text-accent" : "text-primary"
-              )}
+        <div className="flex flex-col h-full pt-24 px-6 pb-8">
+          <div className="flex-1 overflow-y-auto flex flex-col justify-center items-center space-y-6">
+            {navLinks.map((link) => (
+              <Link 
+                key={link.path}
+                to={link.path} 
+                className={cn(
+                  "text-2xl font-bold transition-colors text-center w-full py-2",
+                  location.pathname === link.path ? "text-accent" : "text-primary hover:text-accent"
+                )}
+                onClick={closeMobileMenu}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          
+          <div className="mt-auto w-full pt-8">
+            <a 
+              href="tel:+919027844424" 
+              className="flex items-center justify-center gap-2 text-lg font-semibold text-stone-50 bg-primary hover:bg-primary/90 w-full py-4 rounded-full transition-colors shadow-lg"
               onClick={closeMobileMenu}
             >
-              {link.name}
-            </Link>
-          ))}
-          
-          <a 
-            href="tel:+919027844424" 
-            className="mt-8 flex items-center justify-center gap-2 text-lg font-semibold text-stone-50 bg-primary hover:bg-primary/90 w-full py-4 rounded-xl transition-colors shadow-md"
-            onClick={closeMobileMenu}
-          >
-            <Phone className="w-5 h-5" />
-            <span>Call to Book</span>
-          </a>
-        </nav>
+              <Phone className="w-5 h-5" />
+              <span>Call to Book</span>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
   );

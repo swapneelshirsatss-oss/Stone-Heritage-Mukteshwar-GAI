@@ -4,7 +4,7 @@ import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-stone-100 py-12 pb-32 md:pb-12 mt-auto">
+    <footer className="hidden md:block bg-primary text-stone-100 pt-12 pb-44 md:pb-12 mt-auto overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -42,6 +42,7 @@ export function Footer() {
             <ul className="space-y-2 text-sm text-stone-300">
               <li><Link to="/rooms" className="hover:text-highlight transition-colors">Our Rooms</Link></li>
               <li><Link to="/experiences" className="hover:text-highlight transition-colors">Experiences</Link></li>
+              <li><Link to="/testimonials" className="hover:text-highlight transition-colors">Testimonials</Link></li>
               <li><Link to="/contact" className="hover:text-highlight transition-colors">Contact Us</Link></li>
             </ul>
           </div>

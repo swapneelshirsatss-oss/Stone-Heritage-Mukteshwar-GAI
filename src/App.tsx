@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { Rooms } from './pages/Rooms';
 import { Experiences } from './pages/Experiences';
 import { Contact } from './pages/Contact';
+import { Testimonials } from './pages/Testimonials';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="rooms" element={<Rooms />} />
           <Route path="experiences" element={<Experiences />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="testimonials" element={<Testimonials />} />
         </Route>
       </Routes>
     </BrowserRouter>

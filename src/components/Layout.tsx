@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 import { BookingWidget } from './BookingWidget';
+import { FloatingWhatsAppButton } from './FloatingWhatsAppButton';
 
 export function Layout() {
   return (
@@ -12,6 +13,7 @@ export function Layout() {
         <Outlet />
       </main>
       <Footer />
+      <FloatingWhatsAppButton />
       <BookingWidget />
     </div>
   );
