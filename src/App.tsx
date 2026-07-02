@@ -8,6 +8,7 @@ import { Experiences } from './pages/Experiences';
 import { Contact } from './pages/Contact';
 import { Testimonials } from './pages/Testimonials';
 import { Blog } from './pages/Blog';
+import { Gallery } from './pages/Gallery';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="stay" element={<Stay />} />
           <Route path="experiences" element={<Experiences />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
           <Route path="testimonials" element={<Testimonials />} />
         </Route>

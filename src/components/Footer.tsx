@@ -8,17 +8,17 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-16 w-auto bg-stone-50 rounded p-1" />
-              <div>
-                <h3 className="text-xl font-bold text-accent">Stone Heritage</h3>
-                <span className="text-[10px] tracking-[0.2em] text-stone-300 uppercase">Mukteshwar</span>
+            <div className="flex items-center gap-4 mb-8">
+              <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-16 w-auto bg-stone-50 rounded-sm p-1" />
+              <div className="flex flex-col justify-center">
+                <h3 className="text-xl font-serif font-semibold text-accent tracking-normal leading-none mb-1">Stone Heritage</h3>
+                <span className="text-[10px] tracking-[0.3em] text-stone-300 font-medium uppercase mt-1">Mukteshwar</span>
               </div>
             </div>
-            <p className="text-stone-300 text-sm leading-relaxed mb-4">
+            <p className="text-stone-300 text-sm font-light leading-relaxed mb-6">
               Authentic Kumaoni heritage homestay offering breathtaking Himalayan views. The perfect escape for couples, families, and remote workers.
             </p>
-            <h2 className="text-sm font-medium text-highlight mb-6">
+            <h2 className="text-xs font-sans font-medium tracking-wider uppercase text-highlight mb-6">
               Book Direct for Exclusive Rates & Perks
             </h2>
             <div className="flex gap-4">
@@ -38,10 +38,11 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-accent">Quick Links</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-stone-300">
+            <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Quick Links</h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
               <li><Link to="/stay" className="hover:text-highlight transition-colors">Stay</Link></li>
               <li><Link to="/experiences" className="hover:text-highlight transition-colors">Experiences</Link></li>
+              <li><Link to="/gallery" className="hover:text-highlight transition-colors">Gallery</Link></li>
               <li><Link to="/blog" className="hover:text-highlight transition-colors">Blog</Link></li>
               <li><Link to="/testimonials" className="hover:text-highlight transition-colors">Testimonials</Link></li>
               <li><Link to="/contact" className="hover:text-highlight transition-colors">Contact Us</Link></li>
@@ -50,8 +51,8 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-accent">Contact Information</h3>
-            <address className="not-italic text-sm text-stone-300 space-y-2">
+            <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Contact Information</h3>
+            <address className="not-italic text-sm text-stone-300 space-y-2 font-light">
               <p>Bhowali Dhanachuli Rd, South Gola Range,</p>
               <p>Mukteshwar, Uttarakhand 263138</p>
               <p className="mt-4">
@@ -65,8 +66,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-accent">Location</h3>
-            <div className="rounded-lg overflow-hidden h-48 bg-stone-800">
+            <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Location</h3>
+            <div className="rounded-sm overflow-hidden h-48 bg-stone-800 border border-stone-700/50">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
                 width="100%" 

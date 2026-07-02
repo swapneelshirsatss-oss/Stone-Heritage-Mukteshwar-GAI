@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { clsx } from 'clsx';
@@ -10,40 +10,16 @@ function cn(...inputs: (string | undefined | null | false)[]) {
 
 export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
-
-  useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'unset';
-    }
-    return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isMobileMenuOpen]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Stay', path: '/stay' },
     { name: 'Experiences', path: '/experiences' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -57,11 +33,11 @@ export function Navbar() {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-2 z-50" onClick={closeMobileMenu}>
             <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-10 md:h-12 w-auto" />
-            <div className="flex flex-col">
-              <span className="text-xl md:text-2xl font-bold text-primary tracking-tight leading-none mb-1">
+            <div className="flex flex-col justify-center">
+              <span className="text-xl md:text-2xl font-serif font-semibold text-primary tracking-normal leading-none">
                 Stone Heritage
               </span>
-              <span className="text-[10px] md:text-xs tracking-[0.2em] text-secondary uppercase">
+              <span className="text-[10px] md:text-xs tracking-[0.3em] text-accent font-medium uppercase mt-1">
                 Mukteshwar
               </span>
             </div>
@@ -118,29 +94,27 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Full-Screen Menu */}
+      {/* Mobile Menu */}
       <div 
         className={cn(
-          "fixed inset-0 bg-stone-50 z-40 transform transition-transform duration-300 ease-in-out md:hidden",
-          isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
+          "absolute top-full left-0 w-full bg-stone-50 border-b border-stone-200 shadow-md transform origin-top transition-all duration-300 ease-in-out md:hidden overflow-hidden text-primary",
+          isMobileMenuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
         )}
       >
-        <div className="flex flex-col h-full pt-24 px-6 pb-8">
-          <div className="flex-1 overflow-y-auto flex flex-col justify-center items-center space-y-6">
-            {navLinks.map((link) => (
-              <Link 
-                key={link.path}
-                to={link.path} 
-                className={cn(
-                  "text-2xl font-bold transition-colors text-center w-full py-2",
-                  location.pathname === link.path ? "text-accent" : "text-primary hover:text-accent"
-                )}
-                onClick={closeMobileMenu}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
+        <div className="flex flex-col py-2 px-4">
+          {navLinks.map((link) => (
+            <Link 
+              key={link.path}
+              to={link.path} 
+              className={cn(
+                "py-3 text-base font-medium transition-colors border-b border-stone-200/50 last:border-0",
+                location.pathname === link.path ? "text-accent" : "text-primary hover:text-accent"
+              )}
+              onClick={closeMobileMenu}
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
       </div>
     </header>
