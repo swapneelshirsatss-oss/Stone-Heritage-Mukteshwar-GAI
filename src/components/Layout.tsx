@@ -2,7 +2,6 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { Footer } from './Footer';
-import { BookingWidget } from './BookingWidget';
 import { FloatingWhatsAppButton } from './FloatingWhatsAppButton';
 
 export function Layout() {
@@ -14,7 +13,6 @@ export function Layout() {
       </main>
       <Footer />
       <FloatingWhatsAppButton />
-      <BookingWidget />
     </div>
   );
 }

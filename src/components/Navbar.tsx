@@ -97,14 +97,24 @@ export function Navbar() {
             </a>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <button 
-            className="md:hidden p-2 text-primary hover:text-accent transition-colors z-50 focus:outline-none"
-            onClick={toggleMobileMenu}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
+          {/* Mobile Right Section */}
+          <div className="flex items-center gap-2 md:hidden z-50">
+            <a 
+              href="https://booking.thestoneheritage.in/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-semibold text-stone-50 bg-primary hover:bg-primary/90 px-4 py-2 rounded-full transition-colors shadow-sm whitespace-nowrap"
+            >
+              Book Now
+            </a>
+            <button 
+              className="p-2 text-primary hover:text-accent transition-colors focus:outline-none"
+              onClick={toggleMobileMenu}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
         </div>
       </div>
 
@@ -130,18 +140,6 @@ export function Navbar() {
                 {link.name}
               </Link>
             ))}
-          </div>
-          
-          <div className="mt-auto w-full pt-8">
-            <a 
-              href="https://booking.thestoneheritage.in/" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 text-lg font-semibold text-stone-50 bg-primary hover:bg-primary/90 w-full py-4 rounded-full transition-colors shadow-lg"
-              onClick={closeMobileMenu}
-            >
-              <span>Book Now</span>
-            </a>
           </div>
         </div>
       </div>
