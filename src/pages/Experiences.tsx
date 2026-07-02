@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'motion/react';
 
 const experiences = [
   {
@@ -95,25 +96,43 @@ export function Experiences() {
         <meta name="description" content="Discover the best things to do in Mukteshwar. Enjoy rock climbing at Chauli Ki Jali, nature treks, waterfall visits, and stargazing at Stone Heritage Homestay." />
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
         <h1 className="text-4xl font-bold mb-4 text-primary">Things to do in Mukteshwar: Local Experiences</h1>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto">
           Immerse yourself in the culture, adventure, and natural beauty of the Himalayas. When you are looking for things to do in Mukteshwar, we have you covered.
         </p>
-      </div>
+      </motion.div>
 
       <div className="mb-24">
-        <div className="text-center mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
           <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">Discover</span>
           <h2 className="text-3xl font-bold mb-4 text-primary">Best Places to Visit & Things to Do in Mukteshwar</h2>
           <p className="text-lg text-primary/70 max-w-3xl mx-auto">
             Discover the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks and hidden waterfalls to ancient spiritual sites, these nearby attractions are easily accessible and promise to enrich your Mukteshwar experience.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {placesToVisit.map((place, index) => (
-             <div key={index} className="bg-white rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow overflow-hidden flex flex-col">
+             <motion.div 
+               key={index} 
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true, margin: "-50px" }}
+               transition={{ duration: 0.5, delay: index % 2 === 0 ? 0 : 0.1 }}
+               className="bg-white rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition-shadow overflow-hidden flex flex-col"
+             >
                {place.image && (
                  <div className="h-64 relative overflow-hidden bg-stone-200 shrink-0">
                    <img 
@@ -152,22 +171,35 @@ export function Experiences() {
                    </li>
                  </ul>
                </div>
-             </div>
+             </motion.div>
           ))}
         </div>
       </div>
 
-      <div className="text-center mb-12">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-12"
+      >
         <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">On-Site Activities</span>
         <h2 className="text-3xl font-bold mb-4 text-primary">More Things to do in Mukteshwar: Curated Experiences</h2>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto mt-4">
           Thoughtfully crafted to make your stay truly memorable. From guided treks to stargazing, there are plenty of unique things to do in Mukteshwar right at Stone Heritage.
         </p>
-      </div>
+      </motion.div>
 
       <div className="space-y-12 mb-24">
-        {experiences.map((exp) => (
-          <div key={exp.title} className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-stone-200 flex flex-col md:flex-row items-center gap-8 hover:shadow-md transition-all">
+        {experiences.map((exp, i) => (
+          <motion.div 
+            key={exp.title} 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-white rounded-3xl p-8 md:p-12 shadow-sm border border-stone-200 flex flex-col md:flex-row items-center gap-8 hover:shadow-md transition-all"
+          >
             <div className="w-32 h-32 md:w-48 md:h-48 shrink-0 bg-accent/10 rounded-full flex items-center justify-center text-6xl">
               {exp.icon}
             </div>
@@ -183,7 +215,7 @@ export function Experiences() {
                 Book Experience
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

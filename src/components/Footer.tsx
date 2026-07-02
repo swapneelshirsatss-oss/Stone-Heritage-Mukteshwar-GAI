@@ -39,12 +39,13 @@ export function Footer() {
           
           <div>
             <h3 className="text-lg font-semibold mb-4 text-accent">Quick Links</h3>
-            <ul className="space-y-2 text-sm text-stone-300">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-stone-300">
               <li><Link to="/stay" className="hover:text-highlight transition-colors">Stay</Link></li>
               <li><Link to="/experiences" className="hover:text-highlight transition-colors">Experiences</Link></li>
               <li><Link to="/blog" className="hover:text-highlight transition-colors">Blog</Link></li>
               <li><Link to="/testimonials" className="hover:text-highlight transition-colors">Testimonials</Link></li>
               <li><Link to="/contact" className="hover:text-highlight transition-colors">Contact Us</Link></li>
+              <li><a href="https://booking.thestoneheritage.in/" target="_blank" rel="noopener noreferrer" className="hover:text-highlight transition-colors">Book Now</a></li>
             </ul>
           </div>
           

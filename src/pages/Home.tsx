@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'motion/react';
 import { InteractiveGallery } from '../components/InteractiveGallery';
 import { TestimonialCarousel } from '../components/TestimonialCarousel';
 
@@ -26,7 +27,12 @@ export function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-primary"></div>
         </div>
         
-        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative z-10 max-w-4xl mx-auto px-4 text-center"
+        >
           <h1 className="text-3xl md:text-6xl font-bold mb-6 text-stone-50 md:drop-shadow-lg leading-tight">
             Experience the Best Homestay in Mukteshwar at Stone Heritage
             <span className="block text-xl md:text-4xl mt-4 font-normal italic opacity-90">An Authentic Himalayan Retreat</span>
@@ -51,12 +57,18 @@ export function Home() {
               Explore Stay
             </Link>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Introduction Section */}
       <section className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="max-w-7xl mx-auto text-center"
+        >
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Welcome to Your Sanctuary</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary max-w-3xl mx-auto leading-tight">
             The Best Homestay in Mukteshwar: A Pet-Friendly Retreat
@@ -65,65 +77,82 @@ export function Home() {
             Situated amidst the lush green forests and majestic peaks, Stone Heritage is widely recognized as the best homestay in Mukteshwar. Whether you are seeking a romantic getaway, a peaceful workcation, or a family retreat in the mountains, our meticulously designed property provides the perfect backdrop for unforgettable memories.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Heritage Architecture</h3>
-              <p className="text-sm text-stone-600">Authentic stone cottages blending seamlessly with the natural landscape.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Panoramic Views</h3>
-              <p className="text-sm text-stone-600">Breathtaking sunrises and uninterrupted views of the Himalayan ranges.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Authentic Kumaoni Cuisine</h3>
-              <p className="text-sm text-stone-600">Pure vegetarian homemade food prepared with fresh local ingredients.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2 leading-tight">The Perfect Himalayan Weekend Getaway from Delhi</h3>
-              <p className="text-sm text-stone-600">The ideal escape from the city to the serene and pristine Himalayas.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Premium Comfort</h3>
-              <p className="text-sm text-stone-600">Modern amenities, cozy bonfires, and high-speed WiFi for workcations.</p>
-            </div>
-            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Pet Friendly</h3>
-              <p className="text-sm text-stone-600">Bring your furry friends along for an unforgettable mountain adventure.</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+            {[
+              {
+                title: "Heritage Architecture",
+                desc: "Authentic stone cottages blending seamlessly with the natural landscape.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                )
+              },
+              {
+                title: "Panoramic Views",
+                desc: "Breathtaking sunrises and uninterrupted views of the Himalayan ranges.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Authentic Kumaoni Cuisine",
+                desc: "Pure vegetarian homemade food prepared with fresh local ingredients.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                  </svg>
+                )
+              },
+              {
+                title: "The Perfect Weekend Getaway",
+                desc: "The ideal escape from the city to the serene and pristine Himalayas.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Premium Comfort",
+                desc: "Modern amenities, cozy bonfires, and high-speed WiFi for workcations.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Pet Friendly",
+                desc: "Bring your furry friends along for an unforgettable mountain adventure.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+                  </svg>
+                )
+              }
+            ].map((feature, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow"
+              >
+                <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
+                  {feature.icon}
+                </div>
+                <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
+                <p className="text-sm text-stone-600">{feature.desc}</p>
+              </motion.div>
+            ))}
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Featured Rooms Section */}
@@ -234,48 +263,63 @@ export function Home() {
       {/* Value Proposition: Why Book Direct */}
       <section className="py-20 px-4 bg-primary text-stone-100">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
             <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Exclusive Benefits</span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Book Directly With Us?</h2>
             <p className="text-lg text-stone-300 max-w-2xl mx-auto">Connect directly with our team to secure the best rates and personalized experiences for your Himalayan getaway.</p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 rounded-2xl bg-stone-800/50 border border-stone-700 hover:border-accent/50 transition-colors">
-              <div className="text-accent mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-stone-50">Best Price Guarantee</h3>
-              <p className="text-stone-300 text-sm leading-relaxed">
-                Bypass third-party commissions and hidden fees. When you book directly via WhatsApp or phone, we guarantee the most competitive rates available.
-              </p>
-            </div>
-            
-            <div className="p-8 rounded-2xl bg-stone-800/50 border border-stone-700 hover:border-accent/50 transition-colors">
-              <div className="text-accent mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-stone-50">Priority Upgrades & Requests</h3>
-              <p className="text-stone-300 text-sm leading-relaxed">
-                Direct guests receive priority for room assignments, complimentary early check-ins (subject to availability), and tailored dietary or special event arrangements.
-              </p>
-            </div>
-            
-            <div className="p-8 rounded-2xl bg-stone-800/50 border border-stone-700 hover:border-accent/50 transition-colors">
-              <div className="text-accent mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-stone-50">Flexible Modifications</h3>
-              <p className="text-stone-300 text-sm leading-relaxed">
-                Enjoy peace of mind with our direct booking policies, offering greater flexibility for date changes and cancellations compared to strict online travel agencies.
-              </p>
-            </div>
+            {[
+              {
+                title: "Best Price Guarantee",
+                desc: "Bypass third-party commissions and hidden fees. When you book directly via WhatsApp or phone, we guarantee the most competitive rates available.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Priority Upgrades & Requests",
+                desc: "Direct guests receive priority for room assignments, complimentary early check-ins (subject to availability), and tailored dietary or special event arrangements.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                  </svg>
+                )
+              },
+              {
+                title: "Flexible Modifications",
+                desc: "Enjoy peace of mind with our direct booking policies, offering greater flexibility for date changes and cancellations compared to strict online travel agencies.",
+                icon: (
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                )
+              }
+            ].map((feature, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="p-8 rounded-2xl bg-stone-800/50 border border-stone-700 hover:border-accent/50 transition-colors"
+              >
+                <div className="text-accent mb-4">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-stone-50">{feature.title}</h3>
+                <p className="text-stone-300 text-sm leading-relaxed">{feature.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
@@ -304,13 +348,19 @@ export function Home() {
       {/* Local Attractions Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
             <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Discover Mukteshwar</span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Top Attractions & Places to Visit</h2>
             <p className="text-lg text-primary/70 max-w-3xl mx-auto leading-relaxed">
               Explore the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites, Mukteshwar offers an unforgettable experience.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
@@ -336,7 +386,14 @@ export function Home() {
                 tag: "Spiritual Heritage"
               }
             ].map((place, index) => (
-              <div key={index} className="bg-stone-50 rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col">
+              <motion.div 
+                key={index} 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-stone-50 rounded-2xl overflow-hidden shadow-sm border border-stone-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group flex flex-col"
+              >
                 <div className="h-56 relative overflow-hidden bg-stone-200">
                   <img 
                     src={place.image} 
@@ -359,7 +416,7 @@ export function Home() {
                     {place.distance}
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 

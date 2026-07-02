@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { motion } from 'motion/react';
 
 const rooms = [
   { name: "Brass Room", image: "/brass-room.webp" },
@@ -20,17 +21,29 @@ export function Stay() {
         <meta name="description" content="Looking for a stone cottage Mukteshwar? Experience our authentic heritage stay with 9 vintage rooms, modern luxury, and mountain views. Book direct for best rates." />
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
         <h1 className="text-4xl font-bold mb-4 text-primary leading-tight">Stone Cottage Mukteshwar: Authentic Heritage Stays</h1>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto mb-8">
           Discover the charm of a true heritage stone cottage Mukteshwar experience. Our boutique homestay seamlessly blends traditional Kumaoni architecture with modern luxury for an unforgettable mountain retreat.
         </p>
         <h2 className="text-3xl font-bold text-primary">Explore Our 9 Vintage Stone Rooms</h2>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        {rooms.map((room) => (
-          <div key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+        {rooms.map((room, i) => (
+          <motion.div 
+            key={room.name}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: i * 0.1 }}
+            className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+          >
             <div className="h-56 relative overflow-hidden bg-stone-200">
               <img 
                 src={room.image} 
@@ -53,11 +66,17 @@ export function Stay() {
                 Inquire & Book
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
-      <div className="bg-accent text-white rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="bg-accent text-white rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden"
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-white drop-shadow-md">Book Direct for Exclusive Benefits</h2>
@@ -73,7 +92,7 @@ export function Stay() {
             Book Direct Now
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
     </>
   );
