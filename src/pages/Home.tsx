@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { InteractiveGallery } from '../components/InteractiveGallery';
+import { TestimonialCarousel } from '../components/TestimonialCarousel';
 
 export function Home() {
   return (
     <div className="flex flex-col">
+      <Helmet>
+        <title>Best Homestay in Mukteshwar | Stone Heritage</title>
+        <meta name="description" content="Discover the best homestay in Mukteshwar for families & pets. Enjoy vintage rooms, free WiFi, veg meals & Himalayan sunsets. Book direct for best rates." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-primary text-stone-50 overflow-hidden">
         {/* Abstract pattern or image overlay could go here. Keeping it clean with CSS. */}
@@ -22,7 +28,7 @@ export function Home() {
         
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-6xl font-bold mb-6 text-stone-50 md:drop-shadow-lg leading-tight">
-            Stone Heritage Mukteshwar
+            Experience the Best Homestay in Mukteshwar at Stone Heritage
             <span className="block text-xl md:text-4xl mt-4 font-normal italic opacity-90">An Authentic Himalayan Retreat</span>
           </h1>
           <p className="text-base md:text-xl mb-8 font-light text-stone-100 max-w-3xl mx-auto leading-relaxed md:drop-shadow-md">
@@ -39,10 +45,10 @@ export function Home() {
               Check Availability on WhatsApp
             </a>
             <Link 
-              to="/rooms" 
+              to="/stay" 
               className="bg-transparent border-2 border-accent text-accent font-bold py-3 px-6 rounded-full hover:bg-accent hover:text-primary transition-all text-base w-full sm:w-auto"
             >
-              Explore Rooms
+              Explore Stay
             </Link>
           </div>
         </div>
@@ -53,13 +59,13 @@ export function Home() {
         <div className="max-w-7xl mx-auto text-center">
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Welcome to Your Sanctuary</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary max-w-3xl mx-auto leading-tight">
-            A Haven of Peace, Crafted from Stone and Wood
+            The Best Homestay in Mukteshwar: A Pet-Friendly Retreat
           </h2>
           <p className="text-lg text-primary/80 max-w-4xl mx-auto leading-relaxed mb-16">
-            Situated amidst the lush green forests and majestic peaks of Mukteshwar, Stone Heritage offers a unique boutique resort experience. Whether you are seeking a romantic getaway, a peaceful workcation, or a family retreat in the mountains, our meticulously designed property provides the perfect backdrop for unforgettable memories.
+            Situated amidst the lush green forests and majestic peaks, Stone Heritage is widely recognized as the best homestay in Mukteshwar. Whether you are seeking a romantic getaway, a peaceful workcation, or a family retreat in the mountains, our meticulously designed property provides the perfect backdrop for unforgettable memories.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,6 +83,26 @@ export function Home() {
               </div>
               <h3 className="font-bold text-lg mb-2">Panoramic Views</h3>
               <p className="text-sm text-stone-600">Breathtaking sunrises and uninterrupted views of the Himalayan ranges.</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Authentic Kumaoni Cuisine</h3>
+              <p className="text-sm text-stone-600">Pure vegetarian homemade food prepared with fresh local ingredients.</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <h3 className="font-bold text-lg mb-2 leading-tight">The Perfect Himalayan Weekend Getaway from Delhi</h3>
+              <p className="text-sm text-stone-600">The ideal escape from the city to the serene and pristine Himalayas.</p>
             </div>
             <div className="p-6 rounded-2xl bg-stone-50 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mb-4 mx-auto text-accent">
@@ -105,7 +131,7 @@ export function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Our Accommodations</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Stay in Rustic Elegance</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">Vintage Stone Cottages & Family Suites</h2>
             <p className="text-lg text-primary/70 max-w-2xl mx-auto">Experience comfort in our thoughtfully designed rooms, blending traditional stone architecture with modern amenities.</p>
           </div>
           
@@ -148,7 +174,7 @@ export function Home() {
 
           <div className="text-center">
             <Link 
-              to="/rooms" 
+              to="/stay" 
               className="inline-block bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
             >
               View All Rooms
@@ -171,14 +197,18 @@ export function Home() {
 
       {/* Testimonials Section */}
       <section className="py-20 px-4 bg-stone-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">Guest Experiences</span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Loved by Our Guests</h2>
-          <p className="text-lg text-primary/70 mb-10 leading-relaxed">
-            Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">Guest Experiences</span>
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Loved by Our Guests</h2>
+            <p className="text-lg text-primary/70 max-w-2xl mx-auto leading-relaxed">
+              Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.
+            </p>
+          </div>
           
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <TestimonialCarousel />
+          
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
             <Link 
               to="/testimonials" 
               className="inline-flex items-center justify-center gap-2 bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
@@ -287,21 +317,21 @@ export function Home() {
               {
                 name: "Chauli Ki Jali",
                 description: "A stunning cliff known for overhanging rocks, deep valley views, and adventure sports. Perfect for rock climbing, rappelling, and mesmerizing sunsets.",
-                image: "https://images.unsplash.com/photo-1626071465997-7504f7a59124?q=80&w=1000&auto=format&fit=crop",
+                image: "/chauli-ki-jali-in-mukteshwar.webp",
                 distance: "1.5 km away",
                 tag: "Adventure & Views"
               },
               {
                 name: "Bhalugaad Waterfall",
                 description: "A beautiful hidden gem tucked away in dense forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
-                image: "https://images.unsplash.com/photo-1620857322964-b52994c502b4?q=80&w=1000&auto=format&fit=crop",
+                image: "/Bhalugaad Waterfall.webp",
                 distance: "10 km away",
                 tag: "Nature & Trekking"
               },
               {
                 name: "Mukteshwar Dham Temple",
                 description: "The ancient, 350-year-old Shiva temple gracefully atop the highest point in the area, offering a peaceful spiritual experience.",
-                image: "https://images.unsplash.com/photo-1601058269784-0a3733ccfb13?q=80&w=1000&auto=format&fit=crop",
+                image: "/Mukteshwar Dham Temple.webp",
                 distance: "Town center",
                 tag: "Spiritual Heritage"
               }

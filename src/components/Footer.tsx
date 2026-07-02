@@ -18,9 +18,9 @@ export function Footer() {
             <p className="text-stone-300 text-sm leading-relaxed mb-4">
               Authentic Kumaoni heritage homestay offering breathtaking Himalayan views. The perfect escape for couples, families, and remote workers.
             </p>
-            <p className="text-sm font-medium text-highlight mb-6">
-              Best Price Guarantee on Direct Bookings
-            </p>
+            <h2 className="text-sm font-medium text-highlight mb-6">
+              Book Direct for Exclusive Rates & Perks
+            </h2>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" className="text-stone-300 hover:text-accent transition-colors" aria-label="Facebook">
                 <Facebook size={20} />
@@ -40,8 +40,9 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4 text-accent">Quick Links</h3>
             <ul className="space-y-2 text-sm text-stone-300">
-              <li><Link to="/rooms" className="hover:text-highlight transition-colors">Our Rooms</Link></li>
+              <li><Link to="/stay" className="hover:text-highlight transition-colors">Stay</Link></li>
               <li><Link to="/experiences" className="hover:text-highlight transition-colors">Experiences</Link></li>
+              <li><Link to="/blog" className="hover:text-highlight transition-colors">Blog</Link></li>
               <li><Link to="/testimonials" className="hover:text-highlight transition-colors">Testimonials</Link></li>
               <li><Link to="/contact" className="hover:text-highlight transition-colors">Contact Us</Link></li>
             </ul>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -42,7 +42,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Rooms', path: '/rooms' },
+    { name: 'Stay', path: '/stay' },
     { name: 'Experiences', path: '/experiences' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -88,10 +88,11 @@ export function Navbar() {
           
           <div className="hidden md:flex items-center gap-4">
             <a 
-              href="tel:+919027844424" 
+              href="https://booking.thestoneheritage.in/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm font-semibold text-stone-50 bg-primary hover:bg-primary/90 px-5 py-2.5 rounded-full transition-colors shadow-sm hover:shadow-md"
             >
-              <Phone className="w-4 h-4" />
               <span>Book Now</span>
             </a>
           </div>
@@ -133,12 +134,13 @@ export function Navbar() {
           
           <div className="mt-auto w-full pt-8">
             <a 
-              href="tel:+919027844424" 
+              href="https://booking.thestoneheritage.in/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 text-lg font-semibold text-stone-50 bg-primary hover:bg-primary/90 w-full py-4 rounded-full transition-colors shadow-lg"
               onClick={closeMobileMenu}
             >
-              <Phone className="w-5 h-5" />
-              <span>Call to Book</span>
+              <span>Book Now</span>
             </a>
           </div>
         </div>

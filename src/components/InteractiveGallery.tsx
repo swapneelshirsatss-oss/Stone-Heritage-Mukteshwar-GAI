@@ -2,14 +2,18 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
 
 const galleryImages = [
+  { src: '/heritage-stone-architecture-exterior.webp', alt: 'Heritage Stone Architecture Exterior' },
   { src: '/hero-bg.webp', alt: 'Exterior View of Stone Heritage' },
+  { src: '/garden-area-stone-heritage.webp', alt: 'Garden Area' },
   { src: '/vintage-room.webp', alt: 'The Vintage Room' },
   { src: '/copper-room.webp', alt: 'Copper Room Interior' },
   { src: '/brass-room.webp', alt: 'Brass Room Interior' },
+  { src: '/brass-room-mountain-view-detail.webp', alt: 'Brass Room Mountain View' },
   { src: '/cedar-room.webp', alt: 'Cedar Room' },
   { src: '/iron-room.webp', alt: 'Iron Room' },
   { src: '/stone-and-story-room.webp', alt: 'Stone & Story Room' },
   { src: '/stonewood-family-retreat.webp', alt: 'Stonewood Family Retreat' },
+  { src: '/himalayan-view-terrace-mukteshwar.webp', alt: 'Himalayan View Terrace' },
   { src: '/mountain-living-best-homestay-Mukteshwar.webp', alt: 'Mountain Views from Balcony' },
   { src: '/luxury-heritage-homestay-in-mukteshwar.webp', alt: 'Cozy Evening Ambience' },
   { src: '/Mukteshwar-homestay (6).webp', alt: 'Surrounding Pine Forests' },
@@ -47,6 +51,15 @@ export function InteractiveGallery() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [goToNext, goToPrevious, isFullscreen]);
+
+  // Autoplay
+  useEffect(() => {
+    if (isFullscreen) return;
+    const intervalId = setInterval(() => {
+      goToNext();
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [goToNext, isFullscreen]);
 
   // Lock body scroll when fullscreen
   useEffect(() => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 export function Contact() {
   const [formData, setFormData] = useState({ name: '', phone: '', dates: '', message: '' });
@@ -22,13 +23,18 @@ export function Contact() {
   };
 
   return (
-    <div className="py-16 px-4 max-w-7xl mx-auto">
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4 text-primary">Get in Touch</h1>
-        <p className="text-lg text-primary/70 max-w-2xl mx-auto">
-          Planning your trip to Mukteshwar? Contact us directly for the best rates and personalized arrangements.
-        </p>
-      </div>
+    <>
+      <Helmet>
+        <title>Weekend Getaway from Delhi to Mukteshwar | Contact</title>
+        <meta name="description" content="Plan your perfect weekend getaway from Delhi to Mukteshwar. Contact Stone Heritage for direct bookings, itinerary help, and pet-friendly room availability." />
+      </Helmet>
+      <div className="py-16 px-4 max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold mb-4 text-primary">Get in Touch</h1>
+          <p className="text-lg text-primary/70 max-w-2xl mx-auto">
+            Planning your weekend getaway from Delhi to Mukteshwar? Contact us directly for the best rates and personalized arrangements.
+          </p>
+        </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Contact Info & Map */}
@@ -66,7 +72,7 @@ export function Contact() {
 
         {/* Inquiry Form */}
         <div className="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
-          <h2 className="text-2xl font-bold mb-6">Send an Inquiry</h2>
+          <h2 className="text-2xl font-bold mb-6">Direct Bookings & Real-Time Availability</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">Full Name</label>
@@ -120,6 +126,34 @@ export function Contact() {
           </form>
         </div>
       </div>
+
+      {/* FAQ Section */}
+      <div className="mt-24 border-t border-stone-200 pt-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 text-primary">Frequently Asked Questions</h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+            <h3 className="text-xl font-bold mb-3 text-secondary">1. Delhi to Mukteshwar Route & Itinerary Assistance</h3>
+            <p className="text-primary/80">
+              The fastest driving route from Delhi is via Moradabad, Haldwani, and Bhowali, taking about 8 hours. We can help you arrange reliable taxi pickups from Kathgodam railway station and suggest the best local itineraries for your weekend getaway.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+            <h3 className="text-xl font-bold mb-3 text-secondary">2. Pet-Friendly Room Verification & Special Requests</h3>
+            <p className="text-primary/80">
+              Yes, we are a fully pet-friendly homestay! Please mention your pets in your booking inquiry so we can allocate a suitable room with easy outdoor access and prepare for any special requests.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-stone-200">
+            <h3 className="text-xl font-bold mb-3 text-secondary">3. Find Stone Heritage: South Gola Range Directions</h3>
+            <p className="text-primary/80">
+              We are situated on the Bhowali-Dhanachuli Road in the South Gola Range. Use our Google Maps pin for exact directions, and feel free to call us if you lose network connectivity in the mountains.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    </>
   );
 }
