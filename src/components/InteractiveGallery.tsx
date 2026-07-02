@@ -87,7 +87,7 @@ export function InteractiveGallery() {
           ))}
 
           {/* Controls Overlay */}
-          <div className="absolute inset-0 flex items-center justify-between p-4 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <div className="absolute inset-0 flex items-center justify-between p-4 z-20 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button
               onClick={goToPrevious}
               className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-black/30 hover:bg-black/60 text-white backdrop-blur-sm transition-all focus:outline-none focus:ring-2 focus:ring-white/50"
@@ -115,7 +115,7 @@ export function InteractiveGallery() {
         </div>
 
         {/* Thumbnail Strip */}
-        <div className="bg-stone-900 p-4 overflow-x-auto hide-scrollbar">
+        <div className="hidden md:block bg-stone-900 p-4 overflow-x-auto hide-scrollbar">
           <div className="flex gap-3 min-w-max">
             {galleryImages.map((image, index) => (
               <button
