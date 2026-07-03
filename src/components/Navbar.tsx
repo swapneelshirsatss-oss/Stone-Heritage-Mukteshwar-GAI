@@ -19,6 +19,7 @@ export function Navbar() {
     { name: 'Home', path: '/' },
     { name: 'Stay', path: '/stay' },
     { name: 'Experiences', path: '/experiences' },
+    { name: 'Volunteer', path: '/volunteer-work-exchange-mukteshwar' },
     { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
