@@ -42,7 +42,6 @@ export function Footer() {
             <ul className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
               <li><Link to="/stay" className="hover:text-highlight transition-colors">Stay</Link></li>
               <li><Link to="/experiences" className="hover:text-highlight transition-colors">Experiences</Link></li>
-              <li><Link to="/volunteer-work-exchange-mukteshwar" className="hover:text-highlight transition-colors">Volunteer</Link></li>
               <li><Link to="/gallery" className="hover:text-highlight transition-colors">Gallery</Link></li>
               <li><Link to="/blog" className="hover:text-highlight transition-colors">Blog</Link></li>
               <li><Link to="/testimonials" className="hover:text-highlight transition-colors">Testimonials</Link></li>
