@@ -12,6 +12,7 @@ import { Gallery } from './pages/Gallery';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsConditions } from './pages/TermsConditions';
 import { Volunteer } from './pages/Volunteer';
+import { Sitemap } from './pages/Sitemap';
 
 export default function App() {
   return (
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="volunteer-work-exchange-mukteshwar" element={<Volunteer />} />
           <Route path="contact" element={<Contact />} />
           <Route path="testimonials" element={<Testimonials />} />
+          <Route path="sitemap" element={<Sitemap />} />
         </Route>
       </Routes>
     </BrowserRouter>

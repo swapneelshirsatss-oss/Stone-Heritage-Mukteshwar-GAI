@@ -87,6 +87,8 @@ export function Footer() {
           <Link to="/privacy-policy" className="hover:text-highlight transition-colors">Privacy Policy</Link>
           <span className="hidden md:inline text-stone-600">|</span>
           <Link to="/terms-conditions" className="hover:text-highlight transition-colors">Terms and Conditions</Link>
+          <span className="hidden md:inline text-stone-600">|</span>
+          <Link to="/sitemap" className="hover:text-highlight transition-colors">Sitemap</Link>
         </div>
       </div>
     </footer>
