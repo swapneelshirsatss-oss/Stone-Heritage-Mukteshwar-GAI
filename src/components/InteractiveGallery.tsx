@@ -94,7 +94,6 @@ export function InteractiveGallery() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
               <div className="absolute bottom-4 left-6 md:bottom-8 md:left-8 text-white z-20 pointer-events-none">
-                <p className="text-sm md:text-base font-medium tracking-wide uppercase">{image.alt}</p>
                 <p className="text-xs text-white/70">{index + 1} / {galleryImages.length}</p>
               </div>
             </div>
@@ -186,7 +185,7 @@ export function InteractiveGallery() {
               className="max-w-full max-h-full object-contain select-none"
             />
             <div className="absolute bottom-[-40px] text-white/70 text-sm tracking-widest uppercase">
-              {galleryImages[currentIndex].alt} - {currentIndex + 1} / {galleryImages.length}
+              {currentIndex + 1} / {galleryImages.length}
             </div>
           </div>
         </div>
