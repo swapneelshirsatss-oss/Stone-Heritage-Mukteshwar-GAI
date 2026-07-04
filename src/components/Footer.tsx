@@ -7,8 +7,8 @@ export function Footer() {
   return (
     <footer className="bg-primary text-stone-100 pt-12 pb-44 md:pb-12 mt-auto overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+          <div className="lg:col-span-4">
             <div className="flex items-center gap-4 mb-8">
               <OptimizedImage src="/Logo.webp" alt="Stone Heritage Logo" className="h-16 w-auto bg-stone-50 rounded-sm p-1" loading="lazy" />
               <div className="flex flex-col justify-center">
@@ -38,9 +38,9 @@ export function Footer() {
             </div>
           </div>
           
-          <div>
+          <div className="lg:col-span-2">
             <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Quick Links</h3>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
               <li><Link to="/stay" className="hover:text-highlight transition-colors">Stay</Link></li>
               <li><Link to="/experiences" className="hover:text-highlight transition-colors">Experiences</Link></li>
               <li><Link to="/gallery" className="hover:text-highlight transition-colors">Gallery</Link></li>
@@ -51,7 +51,7 @@ export function Footer() {
             </ul>
           </div>
           
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Contact Information</h3>
             <address className="not-italic text-sm text-stone-300 space-y-2 font-light">
               <p>Bhowali Dhanachuli Rd, South Gola Range,</p>
@@ -66,7 +66,7 @@ export function Footer() {
             </address>
           </div>
 
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Location</h3>
             <div className="rounded-sm overflow-hidden h-48 bg-stone-800 border border-stone-700/50">
               <iframe 
