@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 const experiences = [
   {
@@ -37,7 +38,8 @@ const placesToVisit = [
     distance: "Visible from Mukteshwar town",
     activities: "Sunrise photography, nature walks, and scenic sightseeing.",
     tips: "Best time to view is early morning on clear days. Carry a good camera or binoculars.",
-    image: "/nanda-devi-peak-view-mukteshwar.webp"
+    image: "/nanda-devi-peak-view-mukteshwar.webp",
+    alt: "Panoramic sunrise view of the majestic Nanda Devi Peak from Mukteshwar"
   },
   {
     name: "Adventure: Rock Climbing at Chauli Ki Jali",
@@ -45,7 +47,8 @@ const placesToVisit = [
     distance: "1.5 km from the town center",
     activities: "Rock climbing, rappelling, ziplining, and sunset watching.",
     tips: "Moderate walking involved. Hire certified local guides for adventure sports. Best visited in the late afternoon.",
-    image: "/chauli-ki-jali-in-mukteshwar.webp"
+    image: "/chauli-ki-jali-in-mukteshwar.webp",
+    alt: "Tourists enjoying rock climbing and adventure sports at the scenic Chauli Ki Jali cliff in Mukteshwar"
   },
   {
     name: "Bhalu Gaad Waterfall Trek: Itinerary & Nearby Stays",
@@ -53,7 +56,8 @@ const placesToVisit = [
     distance: "Approx. 10 km from Mukteshwar",
     activities: "Short jungle trek, bird watching, and picnicking by the water.",
     tips: "Involves a 2 km moderate trek from the road head. Wear comfortable trekking shoes and carry drinking water.",
-    image: "/Bhalugaad Waterfall.webp"
+    image: "/Bhalugaad Waterfall.webp",
+    alt: "Hidden 60-foot water plunge into a pristine clear pool at Bhalu Gaad Waterfall near Mukteshwar"
   },
   {
     name: "Mukteshwar Temple",
@@ -61,7 +65,8 @@ const placesToVisit = [
     distance: "Located in the town center",
     activities: "Offering prayers, meditation, and ringing the traditional copper bells.",
     tips: "The temple is accessible via stone steps. Dress modestly and visit early morning for a peaceful spiritual experience.",
-    image: "/Mukteshwar Dham Temple.webp"
+    image: "/Mukteshwar Dham Temple.webp",
+    alt: "The ancient 350-year-old Mukteshwar Dham Temple, a spiritual Shiva temple at the highest point of town"
   },
   {
     name: "Mukteshwar Inspection Bungalow",
@@ -69,7 +74,8 @@ const placesToVisit = [
     distance: "Near the Mukteshwar Temple",
     activities: "Enjoying the architecture, Himalayan viewing, and peaceful walks.",
     tips: "Great spot for sunrise and sunset photography. Prior permission might be needed for a stay.",
-    image: "/mukteshwar-inspection.webp"
+    image: "/mukteshwar-inspection.webp",
+    alt: "Historic PWD inspection bungalow in Mukteshwar offering stunning views of the Nanda Devi peak"
   },
   {
     name: "Kainchi Dham Ashram",
@@ -77,7 +83,8 @@ const placesToVisit = [
     distance: "Approx. 40 km from Mukteshwar",
     activities: "Spiritual reflection, meditation, and seeking blessings.",
     tips: "Plan a half-day trip. Dress modestly and visit during early morning hours to avoid heavy traffic and crowds.",
-    image: "/Kainchi_dham_mukteshwar.webp"
+    image: "/Kainchi_dham_mukteshwar.webp",
+    alt: "The peaceful Kainchi Dham Ashram of Neem Karoli Baba set amidst lush green hills"
   },
   {
     name: "Starscapes Observatory Mukteshwar",
@@ -85,7 +92,8 @@ const placesToVisit = [
     distance: "A short drive from the town center",
     activities: "Stargazing, astrophotography, and guided astronomy tours.",
     tips: "Book in advance as slots are limited. Best visited on clear, moonless nights. Dress warmly.",
-    image: "/sky-obesration-in- Mukteshwar.webp"
+    image: "/sky-obesration-in- Mukteshwar.webp",
+    alt: "Professional telescopes set up for stargazing and astrophotography at the Starscapes Observatory in Mukteshwar"
   },
   {
     name: "Brahmeswara Temple",
@@ -101,7 +109,7 @@ export function Experiences() {
     <>
       <Helmet>
         <title>Things to do in Mukteshwar | Stone Heritage Experiences</title>
-        <meta name="description" content="Discover the best things to do in Mukteshwar. Enjoy rock climbing at Chauli Ki Jali, nature treks, waterfall visits, and stargazing at Stone Heritage Homestay." />
+        <meta name="description" content={`Discover the top ${experiences.length} things to do in Mukteshwar. Enjoy rock climbing at Chauli Ki Jali, nature treks, waterfall visits, and stargazing at Stone Heritage Homestay.`} />
       </Helmet>
       <div className="py-24 px-4 max-w-7xl mx-auto">
         <motion.div 
@@ -145,9 +153,9 @@ export function Experiences() {
              >
                {place.image && (
                  <div className="h-72 relative overflow-hidden bg-stone-200 shrink-0">
-                   <img 
+                   <OptimizedImage 
                      src={place.image} 
-                     alt={`${place.name} - Mukteshwar`}
+                     alt={place.alt || `${place.name} - Mukteshwar`}
                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                      loading="lazy"
                    />

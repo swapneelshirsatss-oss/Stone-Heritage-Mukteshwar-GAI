@@ -1,16 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 const rooms = [
-  { name: "Brass Room", image: "/brass-room.webp" },
-  { name: "Copper Room", image: "/copper-room.webp" },
-  { name: "The Vintage Room", image: "/vintage-room.webp" },
-  { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp" },
-  { name: "Stone and Story Suite", image: "/stone-and-story-room.webp" },
-  { name: "Iron Room", image: "/iron-room.webp" },
-  { name: "Cedar Room", image: "/cedar-room.webp" },
-  { name: "Himalayan Workation", image: "/himalayan-view-terrace-mukteshwar.webp" }
+  { name: "Brass Room", image: "/brass-room.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
+  { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room interior, perfect for families visiting Stone Heritage homestay" },
+  { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room showing classic heritage architecture and cozy bedding" },
+  { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king beds for multi-generational stays" },
+  { name: "Stone and Story Suite", image: "/stone-and-story-room.webp", alt: "Stone and Story Suite offering premium comfort and a relaxing atmosphere in Mukteshwar" },
+  { name: "Iron Room", image: "/iron-room.webp", alt: "Cozy Iron Room setup, ideal for couples staying at Stone Heritage" },
+  { name: "Cedar Room", image: "/cedar-room.webp", alt: "Cedar Room interior with beautiful wooden paneling and natural light" },
+  { name: "Himalayan Workation", image: "/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace space perfect for a Himalayan workation at Stone Heritage" }
 ];
 
 export function Stay() {
@@ -18,7 +19,7 @@ export function Stay() {
     <>
       <Helmet>
         <title>Stone Cottage Mukteshwar | Authentic Heritage Stays</title>
-        <meta name="description" content="Looking for a stone cottage Mukteshwar? Experience our authentic heritage stay with 9 vintage rooms, modern luxury, and mountain views. Book direct for best rates." />
+        <meta name="description" content={`Looking for a stone cottage Mukteshwar? Experience our authentic heritage stay with ${rooms.length} vintage rooms, modern luxury, and mountain views. Book direct for best rates.`} />
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto">
         <motion.div 
@@ -45,9 +46,9 @@ export function Stay() {
             className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
           >
             <div className="h-56 relative overflow-hidden bg-stone-200">
-              <img 
+              <OptimizedImage 
                 src={room.image} 
-                alt={room.name} 
+                alt={room.alt} 
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />

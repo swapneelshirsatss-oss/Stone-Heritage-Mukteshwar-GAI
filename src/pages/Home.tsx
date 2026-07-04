@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { InteractiveGallery } from '../components/InteractiveGallery';
 import { TestimonialCarousel } from '../components/TestimonialCarousel';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 export function Home() {
   return (
@@ -58,6 +59,11 @@ export function Home() {
         "https://maps.google.com/maps?cid=5074157692820223333",
         "https://www.google.com/maps/place/?q=place_id:ChIJl-SiNX29oDkRZXXdnokHa0Y"
       ],
+      "image": [
+        "https://thestoneheritage.in/heritage-stone-architecture-exterior.webp",
+        "https://thestoneheritage.in/garden-area-stone-heritage.webp",
+        "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp"
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
@@ -65,15 +71,59 @@ export function Home() {
         "bestRating": "5",
         "worstRating": "1"
       },
+      "priceRange": "$$",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "High-Speed WiFi for Workations",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Pet-Friendly Accommodation",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Pure Vegetarian Home-Cooked Food",
+          "value": true
+        }
+      ],
       "containsPlace": [
         {
-          "@type": ["HotelRoom", "Suite"],
+          "@type": "HotelRoom",
+          "name": "Brass Room",
+          "description": "Quadroom King Bed setup with alternative floor mattress and private washroom."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Copper Room",
+          "description": "Spacious family setup configured with 1 King Bed and 1 Single Bed."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "The Vintage Room",
+          "description": "Charming heritage architecture featuring 1 ultra-comfortable King Bed."
+        },
+        {
+          "@type": ["HotelRoom", "Suite", "House"],
           "name": "Stonewood Family Retreat",
           "description": "Premium group or multi-generational stay equipped with 2 large King Beds. Functions as a standalone cottage experience."
         },
         {
           "@type": "HotelRoom",
-          "name": "The Vintage Room"
+          "name": "Stone And Story room",
+          "description": "Accommodation featuring 1 King Bed."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Iron Room",
+          "description": "Accommodation featuring 1 King Bed."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Cedar Room",
+          "description": "Premium accommodation."
         }
       ],
       "potentialAction": {
@@ -92,6 +142,15 @@ export function Home() {
           "name": "Direct Booking via Native Engine"
         }
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://thestoneheritage.in/#website",
+      "url": "https://thestoneheritage.in/",
+      "name": "Stone Heritage Mukteshwar",
+      "publisher": {
+        "@id": "https://thestoneheritage.in/#organization"
+      }
     }
   ]
 }`}
@@ -101,9 +160,9 @@ export function Home() {
       <section className="relative min-h-[80vh] flex items-center justify-center bg-primary text-stone-50 overflow-hidden">
         {/* Abstract pattern or image overlay could go here. Keeping it clean with CSS. */}
         <div className="absolute inset-0 z-0 bg-stone-900">
-          <img 
+          <OptimizedImage 
             src="/hero-bg.webp" 
-            alt="Stone Heritage Mukteshwar" 
+            alt="Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar" 
             className="absolute inset-0 w-full h-full object-cover opacity-60"
             loading="eager"
             fetchPriority="high"
@@ -271,15 +330,15 @@ export function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
-              { name: "Brass Room", image: "/brass-room.webp" },
-              { name: "Copper Room", image: "/copper-room.webp" },
-              { name: "The Vintage Room", image: "/vintage-room.webp" }
+              { name: "Brass Room", image: "/brass-room.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
+              { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
+              { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room at Stone Heritage showing cozy wooden interiors and premium bedding" }
             ].map((room) => (
               <div key={room.name} className="bg-white overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-lg transition-all duration-500">
                 <div className="h-72 relative overflow-hidden bg-stone-200">
-                  <img 
+                  <OptimizedImage 
                     src={room.image} 
-                    alt={room.name} 
+                    alt={room.alt} 
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     loading="lazy"
                   />
@@ -463,6 +522,7 @@ export function Home() {
                 name: "Chauli Ki Jali",
                 description: "A stunning cliff known for overhanging rocks, deep valley views, and adventure sports. Perfect for rock climbing, rappelling, and mesmerizing sunsets.",
                 image: "/chauli-ki-jali-in-mukteshwar.webp",
+                alt: "View of the deep valley from Chauli Ki Jali cliff, a popular tourist attraction for sunsets in Mukteshwar",
                 distance: "1.5 km away",
                 tag: "Adventure & Views"
               },
@@ -470,6 +530,7 @@ export function Home() {
                 name: "Bhalugaad Waterfall",
                 description: "A beautiful hidden gem tucked away in dense forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
                 image: "/Bhalugaad Waterfall.webp",
+                alt: "Pristine clear pool and 60-foot plunge at Bhalugaad Waterfall, a hidden natural gem in Mukteshwar",
                 distance: "10 km away",
                 tag: "Nature & Trekking"
               },
@@ -477,6 +538,7 @@ export function Home() {
                 name: "Mukteshwar Dham Temple",
                 description: "The ancient, 350-year-old Shiva temple gracefully atop the highest point in the area, offering a peaceful spiritual experience.",
                 image: "/Mukteshwar Dham Temple.webp",
+                alt: "The ancient 350-year-old Shiva temple, Mukteshwar Dham Temple, located at the highest point in town",
                 distance: "Town center",
                 tag: "Spiritual Heritage"
               }
@@ -490,9 +552,9 @@ export function Home() {
                 className="bg-stone-50 overflow-hidden shadow-sm border border-stone-200 hover:shadow-lg transition-all duration-500 group flex flex-col"
               >
                 <div className="h-64 relative overflow-hidden bg-stone-200">
-                  <img 
+                  <OptimizedImage 
                     src={place.image} 
-                    alt={`${place.name} - Tourist attraction in Mukteshwar`}
+                    alt={place.alt} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
                     loading="lazy"
                   />

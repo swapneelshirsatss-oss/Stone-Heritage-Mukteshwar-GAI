@@ -1,23 +1,24 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Maximize2, X } from 'lucide-react';
+import { OptimizedImage } from './OptimizedImage';
 
-const galleryImages = [
-  { src: '/heritage-stone-architecture-exterior.webp', alt: 'Heritage Stone Architecture Exterior' },
-  { src: '/hero-bg.webp', alt: 'Exterior View of Stone Heritage' },
-  { src: '/garden-area-stone-heritage.webp', alt: 'Garden Area' },
-  { src: '/vintage-room.webp', alt: 'The Vintage Room' },
-  { src: '/copper-room.webp', alt: 'Copper Room Interior' },
-  { src: '/brass-room.webp', alt: 'Brass Room Interior' },
-  { src: '/brass-room-mountain-view-detail.webp', alt: 'Brass Room Mountain View' },
-  { src: '/cedar-room.webp', alt: 'Cedar Room' },
-  { src: '/iron-room.webp', alt: 'Iron Room' },
-  { src: '/stone-and-story-room.webp', alt: 'Stone & Story Room' },
-  { src: '/stonewood-family-retreat.webp', alt: 'Stonewood Family Retreat' },
-  { src: '/himalayan-view-terrace-mukteshwar.webp', alt: 'Himalayan View Terrace' },
-  { src: '/mountain-living-best-homestay-Mukteshwar.webp', alt: 'Mountain Views from Balcony' },
-  { src: '/luxury-heritage-homestay-in-mukteshwar.webp', alt: 'Cozy Evening Ambience' },
-  { src: '/Mukteshwar-homestay (6).webp', alt: 'Surrounding Pine Forests' },
-  { src: '/luxury-homestay-UttarakhandMukteshwar-homestay.webp', alt: 'Morning Tea with a View' }
+export const galleryImages = [
+  { src: '/heritage-stone-architecture-exterior.webp', alt: 'Exterior view of Stone Heritage Mukteshwar homestay featuring traditional Kumaoni stone architecture' },
+  { src: '/hero-bg.webp', alt: 'Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar' },
+  { src: '/garden-area-stone-heritage.webp', alt: 'Lush green garden area and outdoor seating at Stone Heritage Mukteshwar' },
+  { src: '/vintage-room.webp', alt: 'The Vintage Room interior with classic wooden furniture and cozy bedding at Stone Heritage Mukteshwar' },
+  { src: '/copper-room.webp', alt: 'Spacious Copper Room interior featuring a comfortable king bed and traditional decor in Mukteshwar' },
+  { src: '/brass-room.webp', alt: 'Brass Room interior showing a luxurious bed setup at Stone Heritage homestay' },
+  { src: '/brass-room-mountain-view-detail.webp', alt: 'Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar' },
+  { src: '/cedar-room.webp', alt: 'Cozy Cedar Room interior with wooden paneling and modern amenities at Stone Heritage' },
+  { src: '/iron-room.webp', alt: 'Comfortable Iron Room setup perfect for couples staying at Stone Heritage Mukteshwar' },
+  { src: '/stone-and-story-room.webp', alt: 'Stone and Story Room featuring heritage architecture and a relaxing ambiance' },
+  { src: '/stonewood-family-retreat.webp', alt: 'Stonewood Family Retreat room with two king beds, ideal for family workations in Mukteshwar' },
+  { src: '/himalayan-view-terrace-mukteshwar.webp', alt: 'Outdoor terrace at Stone Heritage offering stunning sunset views over the Himalayas' },
+  { src: '/mountain-living-best-homestay-Mukteshwar.webp', alt: 'Relaxing balcony setting with majestic mountain views at the best homestay in Mukteshwar' },
+  { src: '/luxury-heritage-homestay-in-mukteshwar.webp', alt: 'Cozy evening ambiance and lighting at the luxury Stone Heritage homestay property' },
+  { src: '/Mukteshwar-homestay (6).webp', alt: 'Scenic pine forests surrounding the peaceful Stone Heritage homestay in Mukteshwar' },
+  { src: '/luxury-homestay-UttarakhandMukteshwar-homestay.webp', alt: 'Enjoying morning tea with a scenic valley view at Stone Heritage Mukteshwar' }
 ];
 
 export function InteractiveGallery() {
@@ -85,7 +86,7 @@ export function InteractiveGallery() {
                 index === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
               }`}
             >
-              <img
+              <OptimizedImage
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover"
@@ -141,9 +142,9 @@ export function InteractiveGallery() {
                 }`}
                 aria-label={`Go to image ${index + 1}`}
               >
-                <img
+                <OptimizedImage
                   src={image.src}
-                  alt={`Thumbnail ${index + 1}`}
+                  alt={`Thumbnail of ${image.alt}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -179,7 +180,7 @@ export function InteractiveGallery() {
           </button>
 
           <div className="relative w-full max-w-7xl px-4 md:px-20 h-[80vh] flex items-center justify-center">
-            <img
+            <OptimizedImage
               src={galleryImages[currentIndex].src}
               alt={galleryImages[currentIndex].alt}
               className="max-w-full max-h-full object-contain select-none"

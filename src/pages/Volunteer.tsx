@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 export function Volunteer() {
   const skills = [
@@ -33,16 +34,18 @@ export function Volunteer() {
     <div className="pt-20 bg-stone-50 min-h-screen">
       <Helmet>
         <title>Uttarakhand Volunteer Programs & Homestay Work Exchange | Stone Heritage</title>
-        <meta name="description" content="Volunteer in Uttarakhand Program & Community Impact in Mukteshwar. Join our mission through work exchange, eco-farming, and teaching." />
+        <meta name="description" content={`Volunteer in Uttarakhand Program & Community Impact in Mukteshwar. Join our mission through work exchange across ${skills.length} core skill areas.`} />
       </Helmet>
       
       {/* Hero Section */}
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-stone-900">
-          <img 
+          <OptimizedImage 
             src="/copper-room.webp" 
             alt="Himalayan Mountains" 
             className="w-full h-full object-cover opacity-40 mix-blend-overlay"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-stone-900/50 via-stone-900/30 to-stone-50"></div>
         </div>

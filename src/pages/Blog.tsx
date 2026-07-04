@@ -2,6 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ArrowRight } from 'lucide-react';
+import { ShareButtons } from '../components/ShareButtons';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 const blogPosts = [
   {
@@ -51,7 +53,7 @@ export function Blog() {
     <>
       <Helmet>
         <title>Stone Heritage Blog | Discover Mukteshwar & Travel Guides</title>
-        <meta name="description" content="Read the Stone Heritage blog for travel tips, local insights, and guides on the best things to do during your stay at our stone cottage in Mukteshwar." />
+        <meta name="description" content={`Read our ${blogPosts.length} latest articles and travel guides for travel tips, local insights, and guides on the best things to do during your stay at our stone cottage in Mukteshwar.`} />
       </Helmet>
       
       <div className="py-16 px-4 max-w-7xl mx-auto">
@@ -67,10 +69,11 @@ export function Blog() {
           {blogPosts.map((post) => (
             <article key={post.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md duration-300">
               <div className="aspect-[16/9] overflow-hidden relative">
-                <img 
+                <OptimizedImage 
                   src={post.image} 
                   alt={post.title} 
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-primary rounded-full">
                   {post.category}
@@ -96,11 +99,14 @@ export function Blog() {
                   {post.excerpt}
                 </p>
                 
-                <div className="flex items-center justify-between mt-auto pt-6 border-t border-stone-100">
-                  <span className="text-sm font-medium text-primary/50">{post.readTime}</span>
-                  <button className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
-                    Read Article <ArrowRight className="w-4 h-4" />
-                  </button>
+                <div className="flex flex-col gap-4 mt-auto pt-6 border-t border-stone-100">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium text-primary/50">{post.readTime}</span>
+                    <button className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
+                      Read Article <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </div>
+                  <ShareButtons url={`${window.location.href}#post-${post.id}`} title={post.title} />
                 </div>
               </div>
             </article>

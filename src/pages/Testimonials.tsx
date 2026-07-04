@@ -1,9 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { testimonials } from '../data/testimonials';
+import { OptimizedImage } from '../components/OptimizedImage';
 
 export function Testimonials() {
   return (
-    <div className="py-16 px-4 max-w-7xl mx-auto bg-stone-50/50 min-h-screen">
+    <>
+      <Helmet>
+        <title>Guest Reviews & Testimonials | Stone Heritage Mukteshwar</title>
+        <meta name="description" content={`Read ${testimonials.length}+ genuine guest reviews about their stay at Stone Heritage Mukteshwar. Discover why we have a 4.9 star rating from our happy guests.`} />
+      </Helmet>
+      <div className="py-16 px-4 max-w-7xl mx-auto bg-stone-50/50 min-h-screen">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary tracking-tight">Guest Experiences</h1>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto leading-relaxed">
@@ -38,9 +45,9 @@ export function Testimonials() {
           <div key={index} className="bg-white p-8 rounded-2xl shadow-sm border border-stone-200 flex flex-col items-center hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
             <div className="w-24 h-24 bg-stone-200 rounded-full overflow-hidden mb-6 border-4 border-stone-50 shadow-sm flex-shrink-0">
               {testimonial.image ? (
-                <img 
+                <OptimizedImage 
                   src={testimonial.image} 
-                  alt={testimonial.name} 
+                  alt={`Portrait of guest ${testimonial.name}`} 
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -64,5 +71,6 @@ export function Testimonials() {
         ))}
       </div>
     </div>
+    </>
   );
 }

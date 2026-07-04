@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { OptimizedImage } from './OptimizedImage';
 
 function cn(...inputs: (string | undefined | null | false)[]) {
   return twMerge(clsx(inputs));
@@ -33,7 +34,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center gap-2 z-50" onClick={closeMobileMenu}>
-            <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-10 md:h-12 w-auto" />
+            <OptimizedImage src="/Logo.webp" alt="Stone Heritage Logo" className="h-10 md:h-12 w-auto" loading="eager" fetchPriority="high" />
             <div className="flex flex-col justify-center">
               <span className="text-xl md:text-2xl font-serif font-semibold text-primary tracking-normal leading-none">
                 Stone Heritage

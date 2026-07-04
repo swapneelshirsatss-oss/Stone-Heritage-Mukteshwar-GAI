@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1c1917" />
+    <link rel="manifest" href="/manifest.json" />
     <title>Stone Heritage Mukteshwar | Direct Booking Hotels Mukteshwar</title>
     <meta name="description" content="Experience authentic Kumaoni heritage homestay at Stone Heritage Mukteshwar. Best homestay for couples, workcation stays with WiFi, and pet-friendly. Book direct for best rates." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="image" href="/hero-bg.webp" />
     <script type="application/ld+json">
       {
@@ -107,6 +111,17 @@
     <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').then(registration => {
+            console.log('SW registered: ', registration);
+          }).catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+        });
+      }
+    </script>
   </body>
 </html>
 

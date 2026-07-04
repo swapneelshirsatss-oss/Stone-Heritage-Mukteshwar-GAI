@@ -1,0 +1,23 @@
+{
+  "name": "Stone Heritage Mukteshwar",
+  "short_name": "Stone Heritage",
+  "description": "Experience authentic Kumaoni heritage homestay at Stone Heritage Mukteshwar. Best homestay for couples, workcation stays, and pet-friendly.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#1c1917",
+  "icons": [
+    {
+      "src": "/Logo.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Logo.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { testimonials } from '../data/testimonials';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { OptimizedImage } from './OptimizedImage';
 
 export function TestimonialCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,9 +33,9 @@ export function TestimonialCarousel() {
           {/* Image */}
           <div className="flex-shrink-0 w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-stone-50 shadow-md bg-stone-200">
             {currentTestimonial.image ? (
-              <img
+              <OptimizedImage
                 src={currentTestimonial.image}
-                alt={currentTestimonial.name}
+                alt={`Portrait of guest ${currentTestimonial.name}`}
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
+import { OptimizedImage } from './OptimizedImage';
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-4 mb-8">
-              <img src="/Logo.webp" alt="Stone Heritage Logo" className="h-16 w-auto bg-stone-50 rounded-sm p-1" />
+              <OptimizedImage src="/Logo.webp" alt="Stone Heritage Logo" className="h-16 w-auto bg-stone-50 rounded-sm p-1" loading="lazy" />
               <div className="flex flex-col justify-center">
                 <h3 className="text-xl font-serif font-semibold text-accent tracking-normal leading-none mb-1">Stone Heritage</h3>
                 <span className="text-[10px] tracking-[0.3em] text-stone-300 font-medium uppercase mt-1">Mukteshwar</span>
