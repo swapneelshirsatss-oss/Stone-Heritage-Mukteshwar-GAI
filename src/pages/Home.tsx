@@ -11,6 +11,91 @@ export function Home() {
       <Helmet>
         <title>Best Homestay in Mukteshwar | Stone Heritage</title>
         <meta name="description" content="Discover the best homestay in Mukteshwar for families & pets. Enjoy vintage rooms, free WiFi, veg meals & Himalayan sunsets. Book direct for best rates." />
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "BedAndBreakfast",
+        "Hotel",
+        "LodgingBusiness"
+      ],
+      "@id": "https://thestoneheritage.in/#localbusiness",
+      "additionalType": [
+        "https://en.wikipedia.org/wiki/Homestay",
+        "https://en.wikipedia.org/wiki/Villa",
+        "https://en.wikipedia.org/wiki/Cottage"
+      ],
+      "name": "Stone Heritage Mukteshwar",
+      "description": "Recognized as the best homestay in Mukteshwar, this authentic Kumaoni heritage property and boutique stone cottage offers luxury family-friendly and pet-friendly workation stays with panoramic Himalayan mountain views.",
+      "url": "https://thestoneheritage.in/",
+      "telephone": "+919027844424",
+      "email": "thestoneheritage@gmail.com",
+      "sameAs": [
+        "https://www.facebook.com/thestoneheritage/",
+        "https://www.instagram.com/thestoneheritage/",
+        "https://www.youtube.com/@StoneHeritageMukteshwar",
+        "https://x.com/stone_heritage",
+        "https://in.pinterest.com/thestoneheritage/",
+        "https://www.linkedin.com/company/stone-heritage-mukteshwar/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bhowali Dhanachuli Rd, South Gola Range",
+        "addressLocality": "Mukteshwar",
+        "addressRegion": "Uttarakhand",
+        "postalCode": "263138",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.4346873,
+        "longitude": 79.6447246
+      },
+      "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
+      "maps": [
+        "https://maps.google.com/maps?cid=5074157692820223333",
+        "https://www.google.com/maps/place/?q=place_id:ChIJl-SiNX29oDkRZXXdnokHa0Y"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "241",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "containsPlace": [
+        {
+          "@type": ["HotelRoom", "Suite"],
+          "name": "Stonewood Family Retreat",
+          "description": "Premium group or multi-generational stay equipped with 2 large King Beds. Functions as a standalone cottage experience."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "The Vintage Room"
+        }
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://booking.thestoneheritage.in/",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "LodgingReservation",
+          "name": "Direct Booking via Native Engine"
+        }
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-primary text-stone-50 overflow-hidden">
