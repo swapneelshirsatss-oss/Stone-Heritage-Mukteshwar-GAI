@@ -331,7 +331,7 @@ export function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
-              { name: "Brass Room", image: "/brass-room.webmp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
+              { name: "Brass Room", image: "/brass-room.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
               { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
               { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room at Stone Heritage showing cozy wooden interiors and premium bedding" }
             ].map((room) => (
