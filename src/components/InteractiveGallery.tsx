@@ -89,14 +89,9 @@ export function InteractiveGallery() {
               <OptimizedImage
                 src={image.src}
                 alt={image.alt}
-                title=""
                 className="w-full h-full object-cover"
                 loading={index === 0 ? "eager" : "lazy"}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
-              <div className="absolute bottom-4 left-6 md:bottom-8 md:left-8 text-white z-20 pointer-events-none">
-                <p className="text-xs text-white/70">{index + 1} / {galleryImages.length}</p>
-              </div>
             </div>
           ))}
 
@@ -141,12 +136,10 @@ export function InteractiveGallery() {
                     : 'opacity-50 hover:opacity-100 hover:-translate-y-1 hover:shadow-sm'
                 }`}
                 aria-label={`Go to image ${index + 1}`}
-                title=""
               >
                 <OptimizedImage
                   src={image.src}
                   alt={`Thumbnail of ${image.alt}`}
-                  title=""
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -185,12 +178,8 @@ export function InteractiveGallery() {
             <OptimizedImage
               src={galleryImages[currentIndex].src}
               alt={galleryImages[currentIndex].alt}
-              title=""
               className="max-w-full max-h-full object-contain select-none"
             />
-            <div className="absolute bottom-[-40px] text-white/70 text-sm tracking-widest uppercase">
-              {currentIndex + 1} / {galleryImages.length}
-            </div>
           </div>
         </div>
       )}
