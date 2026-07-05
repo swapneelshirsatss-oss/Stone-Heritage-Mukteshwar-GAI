@@ -12,6 +12,7 @@ export function Home() {
       <Helmet>
         <title>Best Homestay in Mukteshwar | Stone Heritage</title>
         <meta name="description" content="Discover the best homestay in Mukteshwar for families & pets. Enjoy vintage rooms, free WiFi, veg meals & Himalayan sunsets. Book direct for best rates." />
+        <link rel="canonical" href="https://thestoneheritage.in/" />
         <script type="application/ld+json">
           {`{
   "@context": "https://schema.org",

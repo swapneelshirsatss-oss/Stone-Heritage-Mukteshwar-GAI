@@ -35,6 +35,7 @@ export function Volunteer() {
       <Helmet>
         <title>Uttarakhand Volunteer Programs & Homestay Work Exchange | Stone Heritage</title>
         <meta name="description" content={`Volunteer in Uttarakhand Program & Community Impact in Mukteshwar. Join our mission through work exchange across ${skills.length} core skill areas.`} />
+        <link rel="canonical" href="https://thestoneheritage.in/volunteer-work-exchange-mukteshwar" />
       </Helmet>
       
       {/* Hero Section */}

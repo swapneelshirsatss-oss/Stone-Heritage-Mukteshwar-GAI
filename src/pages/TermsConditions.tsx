@@ -7,6 +7,7 @@ export function TermsConditions() {
       <Helmet>
         <title>Terms and Conditions | Stone Heritage Mukteshwar</title>
         <meta name="description" content="Terms and Conditions for Stone Heritage Mukteshwar." />
+        <link rel="canonical" href="https://thestoneheritage.in/terms-conditions" />
       </Helmet>
       
       <div className="py-24 px-4 max-w-4xl mx-auto bg-white shadow-sm border border-stone-200 p-8 md:p-12 my-8">

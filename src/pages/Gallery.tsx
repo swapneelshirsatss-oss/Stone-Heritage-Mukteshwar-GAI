@@ -10,6 +10,7 @@ export function Gallery() {
       <Helmet>
         <title>Gallery | Stone Heritage Mukteshwar</title>
         <meta name="description" content={`Take a visual tour of Stone Heritage Mukteshwar through our ${galleryImages.length} photos. View our vintage stone cottages, breathtaking Himalayan vistas, and lush gardens.`} />
+        <link rel="canonical" href="https://thestoneheritage.in/gallery" />
       </Helmet>
       
       <div className="py-24 px-4 max-w-7xl mx-auto">

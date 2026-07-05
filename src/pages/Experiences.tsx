@@ -110,6 +110,7 @@ export function Experiences() {
       <Helmet>
         <title>Things to do in Mukteshwar | Stone Heritage Experiences</title>
         <meta name="description" content={`Discover the top ${experiences.length} things to do in Mukteshwar. Enjoy rock climbing at Chauli Ki Jali, nature treks, waterfall visits, and stargazing at Stone Heritage Homestay.`} />
+        <link rel="canonical" href="https://thestoneheritage.in/experiences" />
       </Helmet>
       <div className="py-24 px-4 max-w-7xl mx-auto">
         <motion.div 
