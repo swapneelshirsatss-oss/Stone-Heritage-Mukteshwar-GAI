@@ -530,7 +530,7 @@ export function Home() {
               {
                 name: "Bhalugaad Waterfall",
                 description: "A beautiful hidden gem tucked away in dense forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
-                image: "/Bhalugaad Waterfall.webp",
+                image: "/Bhalugaad-Waterfall-Mukteshwar.webp",
                 alt: "Pristine clear pool and 60-foot plunge at Bhalugaad Waterfall, a hidden natural gem in Mukteshwar",
                 distance: "10 km away",
                 tag: "Nature & Trekking"

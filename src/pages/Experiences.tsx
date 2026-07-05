@@ -56,7 +56,7 @@ const placesToVisit = [
     distance: "Approx. 10 km from Mukteshwar",
     activities: "Short jungle trek, bird watching, and picnicking by the water.",
     tips: "Involves a 2 km moderate trek from the road head. Wear comfortable trekking shoes and carry drinking water.",
-    image: "/Bhalugaad Waterfall.webp",
+    image: "/Bhalugaad-Waterfall-Mukteshwar.webp",
     alt: "Hidden 60-foot water plunge into a pristine clear pool at Bhalu Gaad Waterfall near Mukteshwar"
   },
   {

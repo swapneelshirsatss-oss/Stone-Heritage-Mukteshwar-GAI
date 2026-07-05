@@ -20,7 +20,7 @@ export const galleryImages = [
   { src: '/vintage-homestay-in-mukteshwar.webp', alt: 'Vintage homestay exterior in Mukteshwar' },
   { src: '/modern-ensuite-bathroom-luxury.webp', alt: 'Modern luxury ensuite bathroom' },
   { src: '/stonewood-family-retreat-group-stay.webp', alt: 'Stonewood family retreat group stay room' },
-  { src: '/Bhalugaad-Waterfall.webp', alt: 'Bhalugaad Waterfall near Mukteshwar' },
+  { src: '/Bhalugaad-Waterfall-Mukteshwar.webp', alt: 'Bhalugaad Waterfall near Mukteshwar' },
   { src: '/Kainchi_dham_mukteshwar.webp', alt: 'Kainchi Dham Temple near Mukteshwar' },
   { src: '/chauli-ki-jali-in-mukteshwar.webp', alt: 'Chauli Ki Jali cliff in Mukteshwar' },
   { src: '/nanda-devi-peak-view-mukteshwar.webp', alt: 'Nanda Devi Peak View from Mukteshwar' },
