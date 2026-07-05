@@ -1,7 +1,8 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { InteractiveGallery, galleryImages } from '../components/InteractiveGallery';
+import { galleryImages } from '../components/InteractiveGallery';
+import { OptimizedImage } from '../components/OptimizedImage';
 import { ShareButtons } from '../components/ShareButtons';
 
 export function Gallery() {
@@ -33,8 +34,21 @@ export function Gallery() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         >
-          <InteractiveGallery />
+          {galleryImages.map((image, index) => (
+            <div 
+              key={index}
+              className="relative aspect-square rounded-xl overflow-hidden bg-stone-100 shadow-sm transition-shadow duration-300 hover:shadow-md group"
+            >
+              <OptimizedImage
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading={index < 8 ? "eager" : "lazy"}
+              />
+            </div>
+          ))}
         </motion.div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { OptimizedImage } from '../components/OptimizedImage';
 
 const rooms = [
-  { name: "Brass Room", image: "/brass-room.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
+  { name: "Brass Room", image: "/brass-room-mountain-view-detail.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
   { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room interior, perfect for families visiting Stone Heritage homestay" },
   { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room showing classic heritage architecture and cozy bedding" },
   { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king beds for multi-generational stays" },
