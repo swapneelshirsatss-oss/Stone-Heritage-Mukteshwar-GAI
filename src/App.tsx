@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 import { Home } from './pages/Home';
@@ -33,6 +33,7 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="testimonials" element={<Testimonials />} />
             <Route path="sitemap" element={<Sitemap />} />
+            <Route path="*" element={<Navigate replace to="/" />} />
           </Route>
         </Routes>
       </Suspense>

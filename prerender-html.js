@@ -21,10 +21,7 @@ if (fs.existsSync(indexHtmlPath)) {
   const indexContent = fs.readFileSync(indexHtmlPath, 'utf8');
 
   routes.forEach(route => {
-    // Create direct .html file (e.g. experiences.html)
     fs.writeFileSync(path.join(distPath, `${route}.html`), indexContent);
-    
-    // Also create folder with index.html (e.g. experiences/index.html)
     const routeDir = path.join(distPath, route);
     if (!fs.existsSync(routeDir)) {
       fs.mkdirSync(routeDir, { recursive: true });
@@ -32,7 +29,10 @@ if (fs.existsSync(indexHtmlPath)) {
     fs.writeFileSync(path.join(routeDir, 'index.html'), indexContent);
   });
   
-  console.log('Successfully generated HTML files for all routes to prevent 404s.');
+  // Create 404.html for GitHub Pages support
+  fs.writeFileSync(path.join(distPath, '404.html'), indexContent);
+  
+  console.log('Successfully generated HTML files and 404.html for all routes.');
 } else {
   console.error('dist/index.html not found. Make sure to run this after build.');
 }
