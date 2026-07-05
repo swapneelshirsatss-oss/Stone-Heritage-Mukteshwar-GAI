@@ -162,7 +162,7 @@ export function Home() {
         {/* Abstract pattern or image overlay could go here. Keeping it clean with CSS. */}
         <div className="absolute inset-0 z-0 bg-stone-900">
           <OptimizedImage 
-            src="/hero-bg.webp" 
+            src="/best-family-homestay-in-mukteshwar.webp" 
             alt="Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar" 
             className="absolute inset-0 w-full h-full object-cover opacity-60"
             loading="eager"
@@ -331,7 +331,7 @@ export function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
-              { name: "Brass Room", image: "/brass-room-mountain-view-detail.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
+              { name: "Brass Room", image: "/brass-room.webmp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
               { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
               { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room at Stone Heritage showing cozy wooden interiors and premium bedding" }
             ].map((room) => (

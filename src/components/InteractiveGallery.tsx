@@ -2,11 +2,11 @@ import React from 'react';
 import { OptimizedImage } from './OptimizedImage';
 
 export const galleryImages = [
-  { src: '/hero-bg.webp', alt: 'Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar' },
+  { src: '/best-family-homestay-in-mukteshwar.webp', alt: 'Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar' },
   { src: '/garden-area-stone-heritage.webp', alt: 'Lush green garden area and outdoor seating at Stone Heritage Mukteshwar' },
   { src: '/vintage-room.webp', alt: 'The Vintage Room interior with classic wooden furniture and cozy bedding at Stone Heritage Mukteshwar' },
   { src: '/copper-room.webp', alt: 'Spacious Copper Room interior featuring a comfortable king bed and traditional decor in Mukteshwar' },
-  { src: '/brass-room-mountain-view-detail.webp', alt: 'Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar' },
+  { src: '/brass-room.webmp', alt: 'Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar' },
   { src: '/cedar-room.webp', alt: 'Cozy Cedar Room interior with wooden paneling and modern amenities at Stone Heritage' },
   { src: '/iron-room.webp', alt: 'Comfortable Iron Room setup perfect for couples staying at Stone Heritage Mukteshwar' },
   { src: '/stone-and-story-room.webp', alt: 'Stone and Story Room featuring heritage architecture and a relaxing ambiance' },
