@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
-import { InteractiveGallery } from '../components/InteractiveGallery';
+import { GalleryCarousel } from '../components/GalleryCarousel';
 import { TestimonialCarousel } from '../components/TestimonialCarousel';
 import { OptimizedImage } from '../components/OptimizedImage';
 
@@ -331,7 +331,7 @@ export function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
-              { name: "Brass Room", image: "/brass-room.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
+              { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
               { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
               { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room at Stone Heritage showing cozy wooden interiors and premium bedding" }
             ].map((room) => (
@@ -386,8 +386,8 @@ export function Home() {
           <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light mb-12">
             Discover the beauty and serenity that awaits you at Stone Heritage Mukteshwar.
           </p>
-          <div className="mb-12">
-            <InteractiveGallery />
+          <div className="mb-12 relative px-4 md:px-8">
+            <GalleryCarousel />
           </div>
           <Link 
             to="/gallery" 
@@ -538,7 +538,7 @@ export function Home() {
               {
                 name: "Mukteshwar Dham Temple",
                 description: "The ancient, 350-year-old Shiva temple gracefully atop the highest point in the area, offering a peaceful spiritual experience.",
-                image: "/Mukteshwar Dham Temple.webp",
+                image: "/Kainchi_dham_mukteshwar.webp",
                 alt: "The ancient 350-year-old Shiva temple, Mukteshwar Dham Temple, located at the highest point in town",
                 distance: "Town center",
                 tag: "Spiritual Heritage"

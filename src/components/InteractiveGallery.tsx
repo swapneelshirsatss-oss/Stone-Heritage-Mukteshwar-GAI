@@ -6,7 +6,7 @@ export const galleryImages = [
   { src: '/garden-area-stone-heritage.webp', alt: 'Lush green garden area and outdoor seating at Stone Heritage Mukteshwar' },
   { src: '/vintage-room.webp', alt: 'The Vintage Room interior with classic wooden furniture and cozy bedding at Stone Heritage Mukteshwar' },
   { src: '/copper-room.webp', alt: 'Spacious Copper Room interior featuring a comfortable king bed and traditional decor in Mukteshwar' },
-  { src: '/brass-room.webp', alt: 'Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar' },
+  { src: '/brass-room-homestay-in-mukteshwar.webp', alt: 'Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar' },
   { src: '/cedar-room.webp', alt: 'Cozy Cedar Room interior with wooden paneling and modern amenities at Stone Heritage' },
   { src: '/iron-room.webp', alt: 'Comfortable Iron Room setup perfect for couples staying at Stone Heritage Mukteshwar' },
   { src: '/stonewood-family-retreat-1.webp', alt: 'Stone and Story Room featuring heritage architecture and a relaxing ambiance' },
@@ -22,10 +22,9 @@ export const galleryImages = [
   { src: '/stonewood-family-retreat-group-stay.webp', alt: 'Stonewood family retreat group stay room' },
   { src: '/Bhalugaad-Waterfall.webp', alt: 'Bhalugaad Waterfall near Mukteshwar' },
   { src: '/Kainchi_dham_mukteshwar.webp', alt: 'Kainchi Dham Temple near Mukteshwar' },
-  { src: '/Mukteshwar-Dham-Temple.webp', alt: 'Mukteshwar Dham Temple' },
   { src: '/chauli-ki-jali-in-mukteshwar.webp', alt: 'Chauli Ki Jali cliff in Mukteshwar' },
   { src: '/nanda-devi-peak-view-mukteshwar.webp', alt: 'Nanda Devi Peak View from Mukteshwar' },
-  { src: '/sky-obesration-in-Mukteshwar.webp', alt: 'Stargazing and sky observation in Mukteshwar' }
+  { src: '/sky-obesration-in- Mukteshwar.webp', alt: 'Stargazing and sky observation in Mukteshwar' }
 ];
 
 export function InteractiveGallery() {
