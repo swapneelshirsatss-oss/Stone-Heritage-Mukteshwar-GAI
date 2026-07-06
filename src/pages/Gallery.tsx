@@ -27,7 +27,7 @@ export function Gallery() {
           <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed mb-8">
             Discover the beauty and serenity that awaits you at Stone Heritage Mukteshwar.
           </p>
-          <ShareButtons url={window.location.href} title="Stone Heritage Gallery - A Glimpse into Our World" className="justify-center" />
+          <ShareButtons url={typeof window !== 'undefined' ? window.location.href : 'https://thestoneheritage.in/gallery'} title="Stone Heritage Gallery - A Glimpse into Our World" className="justify-center" />
         </motion.div>
 
         <motion.div

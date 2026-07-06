@@ -107,7 +107,7 @@ export function Blog() {
                       Read Article <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
-                  <ShareButtons url={`${window.location.href}#post-${post.id}`} title={post.title} />
+                  <ShareButtons url={`${typeof window !== 'undefined' ? window.location.href : 'https://thestoneheritage.in/blog'}#post-${post.id}`} title={post.title} />
                 </div>
               </div>
             </article>
