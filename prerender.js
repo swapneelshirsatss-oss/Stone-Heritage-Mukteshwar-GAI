@@ -6,6 +6,7 @@ const routes = [
   '/stay',
   '/experiences',
   '/blog',
+  '/blog/delhi-to-mukteshwar-3-day-road-trip-guide',
   '/gallery',
   '/privacy-policy',
   '/terms-conditions',

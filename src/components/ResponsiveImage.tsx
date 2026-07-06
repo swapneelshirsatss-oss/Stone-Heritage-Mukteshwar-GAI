@@ -21,12 +21,18 @@ export function ResponsiveImage({
   ...props 
 }: ResponsiveImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  
+  // Use VITE_CDN_URL from environment if available and the src is a relative path
+  const cdnBase = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_CDN_URL 
+    ? import.meta.env.VITE_CDN_URL 
+    : '';
+  const finalSrc = src.startsWith('/') && cdnBase ? `${cdnBase}${src}` : src;
 
   // Generate srcset if widths are provided, otherwise undefined
   const srcSet = widths && widths.length > 0 
     ? widths.map(w => {
-        const separator = src.includes('?') ? '&' : '?';
-        return `${src}${separator}w=${w} ${w}w`;
+        const separator = finalSrc.includes('?') ? '&' : '?';
+        return `${finalSrc}${separator}w=${w} ${w}w`;
       }).join(', ')
     : undefined;
 
@@ -35,7 +41,7 @@ export function ResponsiveImage({
 
   return (
     <img
-      src={src}
+      src={finalSrc}
       srcSet={srcSet}
       sizes={sizes}
       alt={alt}
