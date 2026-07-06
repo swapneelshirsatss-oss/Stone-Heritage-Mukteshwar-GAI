@@ -28,6 +28,38 @@ export function Contact() {
         <title>Weekend Getaway from Delhi to Mukteshwar | Contact</title>
         <meta name="description" content="Plan your perfect weekend getaway from Delhi to Mukteshwar. Contact Stone Heritage for direct bookings, itinerary help, and pet-friendly room availability." />
         <link rel="canonical" href="https://thestoneheritage.in/contact" />
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Delhi to Mukteshwar Route & Itinerary Assistance",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fastest driving route from Delhi is via Moradabad, Haldwani, and Bhowali, taking about 8 hours. We can help you arrange reliable taxi pickups from Kathgodam railway station and suggest the best local itineraries for your weekend getaway."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Pet-Friendly Room Verification & Special Requests",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we are a fully pet-friendly homestay! Please mention your pets in your booking inquiry so we can allocate a suitable room with easy outdoor access and prepare for any special requests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Find Stone Heritage: South Gola Range Directions",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We are situated on the Bhowali-Dhanachuli Road in the South Gola Range. Use our Google Maps pin for exact directions, and feel free to call us if you lose network connectivity in the mountains."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">

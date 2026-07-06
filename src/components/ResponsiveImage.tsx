@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 
-type OptimizedImageProps = React.ComponentProps<'img'> & {
+type ResponsiveImageProps = React.ComponentProps<'img'> & {
   src: string;
   alt: string;
+  aspectRatio?: string;
   widths?: number[];
   sizes?: string;
-}
+};
 
-export function OptimizedImage({ 
+export function ResponsiveImage({ 
   src, 
   alt, 
+  aspectRatio,
   widths = [640, 768, 1024, 1280, 1536],
   sizes = '100vw',
   className, 
   loading = 'lazy',
   decoding = 'async',
+  style,
   ...props 
-}: OptimizedImageProps) {
+}: ResponsiveImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Generate srcset if widths are provided, otherwise undefined
@@ -27,6 +30,9 @@ export function OptimizedImage({
       }).join(', ')
     : undefined;
 
+  const aspectStyle = aspectRatio ? { aspectRatio, objectFit: 'cover' as const, width: '100%' } : {};
+  const combinedStyle = { ...aspectStyle, ...style };
+
   return (
     <img
       src={src}
@@ -35,6 +41,7 @@ export function OptimizedImage({
       alt={alt}
       loading={loading}
       decoding={decoding}
+      style={combinedStyle}
       className={`${className || ''} ${isLoaded ? '' : 'bg-stone-200 animate-pulse text-transparent'}`}
       onLoad={(e) => {
         setIsLoaded(true);

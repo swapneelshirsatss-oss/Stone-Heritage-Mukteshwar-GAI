@@ -178,6 +178,84 @@ export function Home() {
       "url": "https://thestoneheritage.in/",
       "name": "Stone Heritage Mukteshwar",
       "publisher": { "@id": "https://thestoneheritage.in/#localbusiness" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thestoneheritage.in/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the contact number for Stone Heritage Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can reach us directly for bookings and inquiries at +919027844424 or email us at thestoneheritage@gmail.com. We are happy to help you plan your Mukteshwar weekend tours and itinerary!"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Stone Heritage the best homestay in Mukteshwar for families?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a premium heritage property and earthen home in Mukteshwar, we offer spacious, family-friendly rooms like the Stonewood Family Retreat. We serve pure vegetarian home-cooked food, provide high-speed WiFi for workations, and are a fully pet-friendly accommodation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find Stone Heritage Mukteshwar photos and reviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can view authentic photos of our boutique stone cottage and panoramic Himalayan views in our website's Gallery section. We are proud to be one of the best rated places to stay in Kumaon, with a 4.9/5 aggregate rating across Google and other review platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the best activities and weekend tours in Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There are plenty of activities near our property! Popular options include visiting the Mukteshwar Dham Temple, taking a nature walk through the pine forests, bird watching, and enjoying the breathtaking Himalayan sunsets directly from our terrace."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are you a hotel, resort, or a homestay in Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are an authentic Kumaoni heritage homestay. While offering the luxury and comfort you'd expect from the best hotels or resorts in Mukteshwar, we provide a much more personalized, peaceful 'stone house' experience that large commercial properties cannot match."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is the best place to stay in Mukteshwar, Uttarakhand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you are looking for an authentic, peaceful retreat, Stone Heritage is often reviewed as the best place to stay in Mukteshwar. We are conveniently located on the Bhowali-Dhanachuli Road, offering easy access to nearby attractions while remaining a serene nature retreat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Stone Heritage Mukteshwar offer a Himalayan mountain view?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! If you're looking for a Mukteshwar homestay with a mountain view, our property offers panoramic Himalayan views. You can enjoy the breathtaking snow-capped peaks directly from your stone room or our homestay balcony."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it a budget stay or a luxury homestay in Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer a blend of both! The Stone Heritage is a premium yet affordable stone cottage in Mukteshwar. Whether you are looking for a luxury homestay experience or a peaceful, budget stay, we provide excellent value. Check our website for the latest Stone Heritage Mukteshwar prices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there glass houses or earthen homes available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We specialize in authentic Kumaoni heritage stone houses rather than a modern glass house. Our property is built as a traditional Himalayan stone hamlet, giving you an authentic 'maati living' or earthen home feel, but with large windows to enjoy the Himalayan views."
+          }
+        }
+      ]
     }
   ]
 }`}
@@ -636,6 +714,57 @@ export function Home() {
             <a href="https://www.goibibo.com/hotels/address-of-stone-heritage-mukteshwar-hotel-in-mukteshwar-4624059796128013456/" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform flex items-center">
                <span className="text-2xl md:text-3xl font-extrabold tracking-tight text-orange-500 lowercase">go<span className="text-blue-600">ibibo</span></span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Common Queries</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Frequently Asked Questions</h2>
+            <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
+            <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Find answers to the most common questions about our heritage property in Mukteshwar.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">What is the contact number for Stone Heritage Mukteshwar?</h3>
+              <p className="text-primary/80">You can reach us directly for bookings and inquiries at <a href="tel:+919027844424" className="text-accent underline font-medium">+91 9027844424</a> or email us at thestoneheritage@gmail.com. We are happy to help you plan your Mukteshwar weekend tours and itinerary!</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">What makes Stone Heritage the best homestay in Mukteshwar for families?</h3>
+              <p className="text-primary/80">As a premium heritage property and earthen home in Mukteshwar, we offer spacious, family-friendly rooms like the Stonewood Family Retreat. We serve pure vegetarian home-cooked food, provide high-speed WiFi for workations, and are a fully pet-friendly accommodation.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">Where can I find Stone Heritage Mukteshwar photos and reviews?</h3>
+              <p className="text-primary/80">You can view authentic photos of our boutique stone cottage and panoramic Himalayan views in our website's <a href="/gallery" className="text-accent underline font-medium">Gallery section</a>. We are proud to be one of the best rated places to stay in Kumaon, with a 4.9/5 aggregate rating across Google and other review platforms.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">What are the best activities and weekend tours in Mukteshwar?</h3>
+              <p className="text-primary/80">There are plenty of activities near our property! Popular options include visiting the Mukteshwar Dham Temple, taking a nature walk through the pine forests, bird watching, and enjoying the breathtaking Himalayan sunsets directly from our terrace.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">Are you a hotel, resort, or a homestay in Mukteshwar?</h3>
+              <p className="text-primary/80">We are an authentic Kumaoni heritage homestay. While offering the luxury and comfort you'd expect from the best hotels or resorts in Mukteshwar, we provide a much more personalized, peaceful &quot;stone house&quot; experience that large commercial properties cannot match.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">Where is the best place to stay in Mukteshwar, Uttarakhand?</h3>
+              <p className="text-primary/80">If you are looking for an authentic, peaceful retreat, Stone Heritage is often reviewed as the best place to stay in Mukteshwar. We are conveniently located on the Bhowali-Dhanachuli Road, offering easy access to nearby attractions while remaining a serene nature retreat.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">Does Stone Heritage Mukteshwar offer a Himalayan mountain view?</h3>
+              <p className="text-primary/80">Yes! If you&apos;re looking for a Mukteshwar homestay with a mountain view, our property offers panoramic Himalayan views. You can enjoy the breathtaking snow-capped peaks directly from your stone room or our homestay balcony.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">Is it a budget stay or a luxury homestay in Mukteshwar?</h3>
+              <p className="text-primary/80">We offer a blend of both! The Stone Heritage is a premium yet affordable stone cottage in Mukteshwar. Whether you are looking for a luxury homestay experience or a peaceful, budget stay, we provide excellent value. Check our website for the latest Stone Heritage Mukteshwar prices.</p>
+            </div>
+            <div className="bg-stone-50 p-8 border border-stone-200">
+              <h3 className="text-xl font-bold mb-3 text-secondary">Are there glass houses or earthen homes available?</h3>
+              <p className="text-primary/80">We specialize in authentic Kumaoni heritage stone houses rather than a modern glass house. Our property is built as a traditional Himalayan stone hamlet, giving you an authentic &apos;maati living&apos; or earthen home feel, but with large windows to enjoy the Himalayan views.</p>
+            </div>
           </div>
         </div>
       </section>
