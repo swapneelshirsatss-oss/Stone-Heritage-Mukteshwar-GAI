@@ -1,5 +1,11 @@
 export const testimonials = [
   {
+    text: "We had a wonderful stay at the hotel. Harsh was a great host, very warm and especially good with kids, which made our stay even more comfortable. The food was delicious, and the room had all the necessary facilities for a cold location, making it cozy and convenient. Parking was easily available, and having a general store and a good restaurant nearby was very helpful. There was also a small trek right next to the property where you could enjoy beautiful sundown views, and the sunrise right from the lawn area was absolutely stunning. Overall, it was a very pleasant and hassle-free stay!",
+    name: "Manish Joshi",
+    role: "Business Owner",
+    image: ""
+  },
+  {
     text: "This was a perfect weekend getaway from Delhi to Mukteshwar. After a long drive, the peaceful vibe, stone architecture, and warm hospitality helped us unwind completely. Watching the sunset here was unforgettable.",
     name: "Khushi",
     role: "Product Analyst",
@@ -18,15 +24,16 @@ export const testimonials = [
     image: ""
   },
   {
-    text: "The food was simply amazing! Home-cooked meals that tasted just like my mother's cooking. The views of the Nanda Devi range right from the window of our room were breathtaking. Highly recommend for families.",
-    name: "Rahul",
+    text: "We had a wonderful stay at the hotel. Harsh was a great host, very warm and especially good with kids, which made our stay even more comfortable. The food was delicious, and the room had all the necessary facilities for a cold location, making it cozy and convenient. Parking was easily available, and having a general store and a good restaurant nearby was very helpful.
+There was also a small trek right next to the property where you could enjoy beautiful sundown views, and the sunrise right from the lawn area was absolutely stunning. Overall, it was a very pleasant and hassle-free stay!",
+    name: "Manish Joshi",
     role: "Business Owner",
     image: ""
   },
   {
-    text: "Beautiful property that respects the local architecture. As someone who appreciates heritage buildings, staying in these stone cottages was an experience in itself. Will definitely visit again.",
-    name: "Neha",
-    role: "Photographer",
+    text: "Hands down the best homestay in mukteshwar for a peaceful family vacation. This stunning stone cottage in mukteshwar offers an unobstructed, breathtaking Mukteshwar homestay with Himalayan view right from the balcony. It served as the perfect weekend getaway from Delhi to Mukteshwar to escape the crowds. The hospitality was exceptional, and the home-cooked food made the stay even better. Will definitely visit again with friends & Family!" thanks to Akash and Harsh for making Holiday 100% Successful!",
+    name: "Swapneel",
+    role: "Entrupruner",
     image: ""
   },
   {

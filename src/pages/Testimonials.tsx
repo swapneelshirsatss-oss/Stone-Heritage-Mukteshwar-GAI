@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { testimonials } from '../data/testimonials';
 import { OptimizedImage } from '../components/OptimizedImage';
+import { FaqAccordion } from '../components/FaqAccordion';
 
 export function Testimonials() {
   return (
@@ -70,6 +71,13 @@ export function Testimonials() {
             </div>
           </div>
         ))}
+      </div>
+      <div className="mt-24 border-t border-stone-200 pt-16 pb-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 text-primary">Frequently Asked Questions</h2>
+          <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Find answers to the most common questions about our heritage property in Mukteshwar.</p>
+        </div>
+        <FaqAccordion />
       </div>
     </div>
     </>

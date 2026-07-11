@@ -31,6 +31,20 @@ export function ResponsiveImage({
   // Generate srcset if widths are provided, otherwise undefined
   const srcSet = widths && widths.length > 0 
     ? widths.map(w => {
+        // For static hosting/Hostinger CDN, use the pre-generated suffixed images
+        // e.g. /vintage-room.webp -> /vintage-room-640.webp
+        const isRelative = src.startsWith('/');
+        if (isRelative) {
+          const extIndex = src.lastIndexOf('.');
+          if (extIndex !== -1) {
+            const base = src.substring(0, extIndex);
+            const ext = src.substring(extIndex);
+            const responsiveUrl = `${cdnBase}${base}-${w}.webp`;
+            return `${responsiveUrl} ${w}w`;
+          }
+        }
+        
+        // Fallback for external URLs or if we want to use query params
         const separator = finalSrc.includes('?') ? '&' : '?';
         return `${finalSrc}${separator}w=${w} ${w}w`;
       }).join(', ')
