@@ -23,12 +23,6 @@ export function Sitemap() {
       ]
     },
     {
-      category: "Blog Posts",
-      links: [
-        { name: "Escaping Delhi: The Perfect 3-Day Road Trip Guide to Mukteshwar", path: "/blog/delhi-to-mukteshwar-3-day-road-trip-guide" }
-      ]
-    },
-    {
       category: "Legal & Policies",
       links: [
         { name: "Privacy Policy", path: "/privacy-policy" },

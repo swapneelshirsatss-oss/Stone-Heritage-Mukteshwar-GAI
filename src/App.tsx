@@ -13,7 +13,6 @@ import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsConditions } from './pages/TermsConditions';
 import { Volunteer } from './pages/Volunteer';
 import { Sitemap } from './pages/Sitemap';
-import { DelhiMukteshwarRoadTrip } from './pages/blog/DelhiMukteshwarRoadTrip';
 
 export default function App() {
   return (
@@ -25,7 +24,6 @@ export default function App() {
           <Route path="stay" element={<Stay />} />
           <Route path="experiences" element={<Experiences />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="blog/delhi-to-mukteshwar-3-day-road-trip-guide" element={<DelhiMukteshwarRoadTrip />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-conditions" element={<TermsConditions />} />

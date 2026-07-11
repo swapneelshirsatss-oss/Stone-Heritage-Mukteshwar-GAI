@@ -17,7 +17,7 @@ export function OptimizedImage({
   decoding = 'async',
   ...props 
 }: OptimizedImageProps) {
-  const [isLoaded, setIsLoaded] = useState(loading === 'eager');
+  const [isLoaded, setIsLoaded] = useState(false);
 
   // Generate srcset if widths are provided, otherwise undefined
   const srcSet = widths && widths.length > 0 

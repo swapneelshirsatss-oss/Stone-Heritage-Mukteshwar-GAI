@@ -7,17 +7,6 @@ import { OptimizedImage } from '../components/OptimizedImage';
 
 const blogPosts = [
   {
-    id: 5,
-    slug: 'delhi-to-mukteshwar-3-day-road-trip-guide',
-    title: 'Escaping Delhi: The Perfect 3-Day Road Trip Guide to Mukteshwar',
-    excerpt: 'Planning a weekend getaway? Discover the ultimate 3-day road trip guide from Delhi to Mukteshwar. Experience the quiet side of the mountains in a beautiful Vintage style Homestay.',
-    date: 'July 6, 2026',
-    author: 'Swapneel',
-    category: 'Road Trip',
-    image: '/best-family-homestay-in-mukteshwar.webp',
-    readTime: '6 min read'
-  },
-  {
     id: 1,
     title: 'Top 5 Things to Do in Mukteshwar This Winter',
     excerpt: 'Discover the magic of winter in Mukteshwar. From snow-capped Himalayan views to cozy bonfires and hot Kumaoni delicacies, here is how to make the most of your winter getaway at Stone Heritage.',
@@ -103,17 +92,9 @@ export function Blog() {
                   </div>
                 </div>
                 
-                {post.slug ? (
-                  <Link to={`/blog/${post.slug}`}>
-                    <h2 className="text-2xl font-bold text-primary mb-3 leading-tight hover:text-accent transition-colors cursor-pointer">
-                      {post.title}
-                    </h2>
-                  </Link>
-                ) : (
-                  <h2 className="text-2xl font-bold text-primary mb-3 leading-tight hover:text-accent transition-colors cursor-pointer">
-                    {post.title}
-                  </h2>
-                )}
+                <h2 className="text-2xl font-bold text-primary mb-3 leading-tight hover:text-accent transition-colors cursor-pointer">
+                  {post.title}
+                </h2>
                 
                 <p className="text-primary/70 mb-6 flex-grow">
                   {post.excerpt}
@@ -122,17 +103,11 @@ export function Blog() {
                 <div className="flex flex-col gap-4 mt-auto pt-6 border-t border-stone-100">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-primary/50">{post.readTime}</span>
-                    {post.slug ? (
-                      <Link to={`/blog/${post.slug}`} className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
-                        Read Article <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    ) : (
-                      <button className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
-                        Read Article <ArrowRight className="w-4 h-4" />
-                      </button>
-                    )}
+                    <button className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
+                      Read Article <ArrowRight className="w-4 h-4" />
+                    </button>
                   </div>
-                  <ShareButtons url={post.slug ? `https://thestoneheritage.in/blog/${post.slug}` : `${typeof window !== 'undefined' ? window.location.href : 'https://thestoneheritage.in/blog'}#post-${post.id}`} title={post.title} />
+                  <ShareButtons url={`${typeof window !== 'undefined' ? window.location.href : 'https://thestoneheritage.in/blog'}#post-${post.id}`} title={post.title} />
                 </div>
               </div>
             </article>
