@@ -39,6 +39,7 @@ export function DelhiMukteshwarRoadTrip() {
         <title>Delhi to Mukteshwar 3-Day Road Trip Guide | Stone Heritage</title>
         <meta name="description" content="Discover the ultimate 3-day road trip guide from Delhi to Mukteshwar. Experience the quiet side of the mountains in our beautiful Vintage style Homestay." />
         <link rel="canonical" href="https://thestoneheritage.in/blog/delhi-to-mukteshwar-3-day-road-trip-guide" />
+        <link rel="preload" as="image" href="/best-family-homestay-in-mukteshwar.webp" fetchPriority="high" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -76,6 +77,8 @@ export function DelhiMukteshwarRoadTrip() {
               alt="Himalayan mountain view from Stone Heritage Mukteshwar homestay"
               className="w-full h-full object-cover"
               loading="eager"
+              fetchPriority="high"
+              decoding="sync"
             />
           </div>
 
