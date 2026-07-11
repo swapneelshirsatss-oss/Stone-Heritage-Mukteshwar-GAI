@@ -7,7 +7,7 @@ type FaqItemProps = {
   answer: React.ReactNode;
   isOpen: boolean;
   onClick: () => void;
-
+  key?: React.Key;
 };
 
 function FaqItem({ question, answer, isOpen, onClick }: FaqItemProps) {
