@@ -1,9 +1,17 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /index.html [L]
+RewriteEngine On
+RewriteBase /
+
+# Force trailing slash on all extensionless directory paths to protect crawl budget
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ https://thestoneheritage.in/$1/ [R=301,L]
+
+# Resolve extensionless trailing slash requests directly to physical sub-directories
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^(.*)/$ $1/index.html [L]
+
+# Enforce a true hard 404 response status for non-existent entities
+# This destroys the soft 404 homepage loop and forces Semrush validation to clear
+ErrorDocument 404 /404.html
 </IfModule>

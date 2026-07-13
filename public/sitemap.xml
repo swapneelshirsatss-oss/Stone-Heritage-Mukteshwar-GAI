@@ -2,57 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://thestoneheritage.in/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/stay</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thestoneheritage.in/stay/</loc>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/experiences</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thestoneheritage.in/experiences/</loc>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/blog</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thestoneheritage.in/blog/</loc>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thestoneheritage.in/contact/</loc>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/testimonials</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thestoneheritage.in/testimonials/</loc>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/gallery</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://thestoneheritage.in/gallery/</loc>
+    <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/volunteer-work-exchange-mukteshwar</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/</loc>
+    <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/privacy-policy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://thestoneheritage.in/privacy-policy/</loc>
+    <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/terms-conditions</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://thestoneheritage.in/sitemap</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://thestoneheritage.in/terms-conditions/</loc>
+    <priority>0.50</priority>
   </url>
 </urlset>
