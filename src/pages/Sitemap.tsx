@@ -36,7 +36,7 @@ export function Sitemap() {
       <Helmet>
         <title>Sitemap | Stone Heritage Mukteshwar</title>
         <meta name="description" content="Sitemap for Stone Heritage Mukteshwar. Find all the pages on our website including stay, experiences, gallery, and contact information." />
-        <link rel="canonical" href="https://thestoneheritage.in/sitemap" />
+        <link rel="canonical" href="https://thestoneheritage.in/sitemap/" />
       </Helmet>
       
       <div className="py-24 px-4 max-w-4xl mx-auto bg-white shadow-sm border border-stone-200 p-8 md:p-12 my-8">

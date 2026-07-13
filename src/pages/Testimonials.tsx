@@ -9,7 +9,7 @@ export function Testimonials() {
       <Helmet>
         <title>Guest Reviews & Testimonials | Stone Heritage Mukteshwar</title>
         <meta name="description" content={`Read ${testimonials.length}+ genuine guest reviews about their stay at Stone Heritage Mukteshwar. Discover why we have a 4.9 star rating from our happy guests.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/testimonials" />
+        <link rel="canonical" href="https://thestoneheritage.in/testimonials/" />
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto bg-stone-50/50 min-h-screen">
       <div className="text-center mb-12">

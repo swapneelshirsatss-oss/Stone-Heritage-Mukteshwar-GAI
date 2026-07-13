@@ -20,7 +20,7 @@ export function Stay() {
       <Helmet>
         <title>Stone Cottage Mukteshwar | Authentic Heritage Stays</title>
         <meta name="description" content={`Looking for a stone cottage Mukteshwar? Experience our authentic heritage stay with ${rooms.length} vintage rooms, modern luxury, and mountain views. Book direct for best rates.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/stay" />
+        <link rel="canonical" href="https://thestoneheritage.in/stay/" />
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto">
         <motion.div 

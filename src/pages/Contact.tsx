@@ -27,7 +27,7 @@ export function Contact() {
       <Helmet>
         <title>Weekend Getaway from Delhi to Mukteshwar | Contact</title>
         <meta name="description" content="Plan your perfect weekend getaway from Delhi to Mukteshwar. Contact Stone Heritage for direct bookings, itinerary help, and pet-friendly room availability." />
-        <link rel="canonical" href="https://thestoneheritage.in/contact" />
+        <link rel="canonical" href="https://thestoneheritage.in/contact/" />
       </Helmet>
       <div className="py-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">

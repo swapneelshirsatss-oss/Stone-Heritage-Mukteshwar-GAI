@@ -7,7 +7,7 @@ export function PrivacyPolicy() {
       <Helmet>
         <title>Privacy Policy | Stone Heritage Mukteshwar</title>
         <meta name="description" content="Privacy Policy for Stone Heritage Mukteshwar." />
-        <link rel="canonical" href="https://thestoneheritage.in/privacy-policy" />
+        <link rel="canonical" href="https://thestoneheritage.in/privacy-policy/" />
       </Helmet>
       
       <div className="py-24 px-4 max-w-4xl mx-auto bg-white shadow-sm border border-stone-200 p-8 md:p-12 my-8">

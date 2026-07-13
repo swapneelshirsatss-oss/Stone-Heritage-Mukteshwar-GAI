@@ -54,7 +54,7 @@ export function Blog() {
       <Helmet>
         <title>Stone Heritage Blog | Discover Mukteshwar & Travel Guides</title>
         <meta name="description" content={`Read our ${blogPosts.length} latest articles and travel guides for travel tips, local insights, and guides on the best things to do during your stay at our stone cottage in Mukteshwar.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/blog" />
+        <link rel="canonical" href="https://thestoneheritage.in/blog/" />
       </Helmet>
       
       <div className="py-16 px-4 max-w-7xl mx-auto">
