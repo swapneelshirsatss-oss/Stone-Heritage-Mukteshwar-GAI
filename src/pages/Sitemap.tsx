@@ -8,25 +8,25 @@ export function Sitemap() {
       category: "Main Pages",
       links: [
         { name: "Home", path: "/" },
-        { name: "Stay & Accommodations", path: "/stay" },
-        { name: "Experiences", path: "/experiences" },
-        { name: "Gallery", path: "/gallery" },
-        { name: "Testimonials", path: "/testimonials" },
-        { name: "Blog", path: "/blog" },
-        { name: "Contact Us", path: "/contact" }
+        { name: "Stay & Accommodations", path: "/stay/" },
+        { name: "Experiences", path: "/experiences/" },
+        { name: "Gallery", path: "/gallery/" },
+        { name: "Testimonials", path: "/testimonials/" },
+        { name: "Blog", path: "/blog/" },
+        { name: "Contact Us", path: "/contact/" }
       ]
     },
     {
       category: "Special Programs",
       links: [
-        { name: "Uttarakhand Volunteer Programs & Homestay Work", path: "/volunteer-work-exchange-mukteshwar" }
+        { name: "Uttarakhand Volunteer Programs & Homestay Work", path: "/volunteer-work-exchange-mukteshwar/" }
       ]
     },
     {
       category: "Legal & Policies",
       links: [
-        { name: "Privacy Policy", path: "/privacy-policy" },
-        { name: "Terms and Conditions", path: "/terms-conditions" }
+        { name: "Privacy Policy", path: "/privacy-policy/" },
+        { name: "Terms and Conditions", path: "/terms-conditions/" }
       ]
     }
   ];

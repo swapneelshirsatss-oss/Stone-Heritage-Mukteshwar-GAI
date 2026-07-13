@@ -18,11 +18,11 @@ export function Navbar() {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Stay', path: '/stay' },
-    { name: 'Experiences', path: '/experiences' },
-    { name: 'Volunteer', path: '/volunteer-work-exchange-mukteshwar' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Stay', path: '/stay/' },
+    { name: 'Experiences', path: '/experiences/' },
+    { name: 'Volunteer', path: '/volunteer-work-exchange-mukteshwar/' },
+    { name: 'Gallery', path: '/gallery/' },
+    { name: 'Contact', path: '/contact/' },
   ];
 
   return (

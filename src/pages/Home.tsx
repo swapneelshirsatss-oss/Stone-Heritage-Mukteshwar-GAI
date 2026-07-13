@@ -223,7 +223,7 @@ export function Home() {
               Book via WhatsApp
             </a>
             <Link 
-              to="/stay" 
+              to="/stay/" 
               className="bg-transparent border border-stone-200/50 text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-8 rounded-none hover:bg-white/10 hover:border-white transition-all duration-300 text-xs sm:text-sm w-full sm:w-auto flex items-center justify-center backdrop-blur-sm"
             >
               Explore Rooms
@@ -394,7 +394,7 @@ export function Home() {
 
           <div className="text-center">
             <Link 
-              to="/stay" 
+              to="/stay/" 
               className="inline-block bg-primary text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-10 hover:bg-primary/90 transition-colors shadow-sm"
             >
               View All Rooms
@@ -416,7 +416,7 @@ export function Home() {
             <GalleryCarousel />
           </div>
           <Link 
-            to="/gallery" 
+            to="/gallery/" 
             className="inline-block bg-primary text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-10 hover:bg-primary/90 transition-colors shadow-sm"
           >
             View Full Gallery
@@ -440,7 +440,7 @@ export function Home() {
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
             <Link 
-              to="/testimonials" 
+              to="/testimonials/" 
               className="inline-flex items-center justify-center gap-2 bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
             >
               Read All Testimonials
@@ -607,7 +607,7 @@ export function Home() {
 
           <div className="text-center">
             <Link 
-              to="/experiences" 
+              to="/experiences/" 
               className="inline-flex items-center gap-3 bg-transparent border border-primary text-primary font-sans font-medium uppercase tracking-widest py-3.5 px-8 hover:bg-primary hover:text-stone-50 transition-colors text-xs sm:text-sm group"
             >
               See All Local Experiences
