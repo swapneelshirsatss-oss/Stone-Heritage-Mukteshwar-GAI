@@ -1,7 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
 import { motion } from 'motion/react';
-import { OptimizedImage } from '../components/OptimizedImage';
+import { OptimizedImage } from '../../components/OptimizedImage';
 
 const experiences = [
   {
@@ -107,11 +107,7 @@ const placesToVisit = [
 export function Experiences() {
   return (
     <>
-      <Helmet>
-        <title>Things to do in Mukteshwar | Stone Heritage Experiences</title>
-        <meta name="description" content={`Discover the top ${experiences.length} things to do in Mukteshwar. Enjoy rock climbing at Chauli Ki Jali, nature treks, waterfall visits, and stargazing at Stone Heritage Homestay.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/experiences/" />
-      </Helmet>
+      
       <div className="py-24 px-4 max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

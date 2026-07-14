@@ -1,14 +1,10 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
 
 export function PrivacyPolicy() {
   return (
     <div className="pt-20 bg-stone-50 min-h-screen">
-      <Helmet>
-        <title>Privacy Policy | Stone Heritage Mukteshwar</title>
-        <meta name="description" content="Privacy Policy for Stone Heritage Mukteshwar." />
-        <link rel="canonical" href="https://thestoneheritage.in/privacy-policy/" />
-      </Helmet>
+      
       
       <div className="py-24 px-4 max-w-4xl mx-auto bg-white shadow-sm border border-stone-200 p-8 md:p-12 my-8">
         <h1 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight text-center">Privacy Policy</h1>

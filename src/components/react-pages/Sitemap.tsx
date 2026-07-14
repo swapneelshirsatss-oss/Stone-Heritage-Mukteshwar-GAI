@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+
+
 
 export function Sitemap() {
   const pages = [
@@ -33,11 +33,7 @@ export function Sitemap() {
 
   return (
     <div className="pt-20 bg-stone-50 min-h-screen">
-      <Helmet>
-        <title>Sitemap | Stone Heritage Mukteshwar</title>
-        <meta name="description" content="Sitemap for Stone Heritage Mukteshwar. Find all the pages on our website including stay, experiences, gallery, and contact information." />
-        <link rel="canonical" href="https://thestoneheritage.in/sitemap/" />
-      </Helmet>
+      
       
       <div className="py-24 px-4 max-w-4xl mx-auto bg-white shadow-sm border border-stone-200 p-8 md:p-12 my-8">
         <h1 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight text-center">Sitemap</h1>
@@ -52,9 +48,9 @@ export function Sitemap() {
               <ul className="list-disc pl-5 space-y-3">
                 {section.links.map((link, linkIdx) => (
                   <li key={linkIdx}>
-                    <Link to={link.path} className="hover:text-accent transition-colors">
+                    <a to={link.path} className="hover:text-accent transition-colors">
                       {link.name}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>

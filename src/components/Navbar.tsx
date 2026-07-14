@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+
 import { Menu, X } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -9,9 +9,9 @@ function cn(...inputs: (string | undefined | null | false)[]) {
   return twMerge(clsx(inputs));
 }
 
-export function Navbar() {
+export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
@@ -33,7 +33,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <Link to="/" className="flex items-center gap-2 z-50" onClick={closeMobileMenu}>
+          <a href="/" className="flex items-center gap-2 z-50" onClick={closeMobileMenu}>
             <OptimizedImage src="/Logo.webp" alt="Stone Heritage Logo" className="h-10 md:h-12 w-auto" loading="eager" fetchPriority="high" />
             <div className="flex flex-col justify-center">
               <span className="text-xl md:text-2xl font-serif font-semibold text-primary tracking-normal leading-none">
@@ -43,24 +43,24 @@ export function Navbar() {
                 Mukteshwar
               </span>
             </div>
-          </Link>
+          </a>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8 items-center">
             {navLinks.map((link) => (
-              <Link 
+              <a 
                 key={link.path}
                 to={link.path} 
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-accent relative py-2",
-                  location.pathname === link.path ? "text-accent" : "text-primary/70"
+                  currentPath === link.path ? "text-accent" : "text-primary/70"
                 )}
               >
                 {link.name}
-                {location.pathname === link.path && (
+                {currentPath === link.path && (
                   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent rounded-full" />
                 )}
-              </Link>
+              </a>
             ))}
           </nav>
           
@@ -105,17 +105,17 @@ export function Navbar() {
       >
         <div className="flex flex-col py-2 px-4">
           {navLinks.map((link) => (
-            <Link 
+            <a 
               key={link.path}
               to={link.path} 
               className={cn(
                 "py-3 text-base font-medium transition-colors border-b border-stone-200/50 last:border-0",
-                location.pathname === link.path ? "text-accent" : "text-primary hover:text-accent"
+                currentPath === link.path ? "text-accent" : "text-primary hover:text-accent"
               )}
               onClick={closeMobileMenu}
             >
               {link.name}
-            </Link>
+            </a>
           ))}
         </div>
       </div>

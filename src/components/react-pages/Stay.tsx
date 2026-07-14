@@ -1,7 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+
 import { motion } from 'motion/react';
-import { OptimizedImage } from '../components/OptimizedImage';
+import { OptimizedImage } from '../../components/OptimizedImage';
 
 const rooms = [
   { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
@@ -17,11 +17,7 @@ const rooms = [
 export function Stay() {
   return (
     <>
-      <Helmet>
-        <title>Stone Cottage Mukteshwar | Authentic Heritage Stays</title>
-        <meta name="description" content={`Looking for a stone cottage Mukteshwar? Experience our authentic heritage stay with ${rooms.length} vintage rooms, modern luxury, and mountain views. Book direct for best rates.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/stay/" />
-      </Helmet>
+      
       <div className="py-16 px-4 max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

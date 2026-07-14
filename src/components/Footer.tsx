@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 import { OptimizedImage } from './OptimizedImage';
 
@@ -41,12 +41,12 @@ export function Footer() {
           <div className="lg:col-span-2">
             <h3 className="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Quick Links</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
-              <li><Link to="/stay/" className="hover:text-highlight transition-colors">Stay</Link></li>
-              <li><Link to="/experiences/" className="hover:text-highlight transition-colors">Experiences</Link></li>
-              <li><Link to="/gallery/" className="hover:text-highlight transition-colors">Gallery</Link></li>
-              <li><Link to="/blog/" className="hover:text-highlight transition-colors">Blog</Link></li>
-              <li><Link to="/testimonials/" className="hover:text-highlight transition-colors">Testimonials</Link></li>
-              <li><Link to="/contact/" className="hover:text-highlight transition-colors">Contact Us</Link></li>
+              <li><a href="/stay/" className="hover:text-highlight transition-colors">Stay</a></li>
+              <li><a href="/experiences/" className="hover:text-highlight transition-colors">Experiences</a></li>
+              <li><a href="/gallery/" className="hover:text-highlight transition-colors">Gallery</a></li>
+              <li><a href="/blog/" className="hover:text-highlight transition-colors">Blog</a></li>
+              <li><a href="/testimonials/" className="hover:text-highlight transition-colors">Testimonials</a></li>
+              <li><a href="/contact/" className="hover:text-highlight transition-colors">Contact Us</a></li>
               <li><a href="https://booking.thestoneheritage.in/" target="_blank" rel="noopener noreferrer" className="hover:text-highlight transition-colors">Book Now</a></li>
             </ul>
           </div>
@@ -85,11 +85,11 @@ export function Footer() {
         <div className="border-t border-stone-700 mt-12 pt-8 text-center text-xs text-stone-400 flex flex-col md:flex-row items-center justify-center gap-4">
           <p>&copy; {new Date().getFullYear()} Stone Heritage Mukteshwar. All rights reserved.</p>
           <span className="hidden md:inline text-stone-600">|</span>
-          <Link to="/privacy-policy/" className="hover:text-highlight transition-colors">Privacy Policy</Link>
+          <a href="/privacy-policy/" className="hover:text-highlight transition-colors">Privacy Policy</a>
           <span className="hidden md:inline text-stone-600">|</span>
-          <Link to="/terms-conditions/" className="hover:text-highlight transition-colors">Terms and Conditions</Link>
+          <a href="/terms-conditions/" className="hover:text-highlight transition-colors">Terms and Conditions</a>
           <span className="hidden md:inline text-stone-600">|</span>
-          <Link to="/sitemap/" className="hover:text-highlight transition-colors">Sitemap</Link>
+          <a href="/sitemap/" className="hover:text-highlight transition-colors">Sitemap</a>
         </div>
       </div>
     </footer>

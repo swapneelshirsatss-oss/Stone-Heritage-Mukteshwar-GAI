@@ -1,188 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+
+
 import { motion } from 'motion/react';
-import { GalleryCarousel } from '../components/GalleryCarousel';
-import { TestimonialCarousel } from '../components/TestimonialCarousel';
-import { OptimizedImage } from '../components/OptimizedImage';
+import { GalleryCarousel } from '../../components/GalleryCarousel';
+import { TestimonialCarousel } from '../../components/TestimonialCarousel';
+import { OptimizedImage } from '../../components/OptimizedImage';
 
 export function Home() {
   return (
     <div className="flex flex-col">
-      <Helmet>
-        <title>Best Homestay in Mukteshwar | Stone Heritage</title>
-        <meta name="description" content="Discover the best homestay in Mukteshwar for families & pets. Enjoy vintage rooms, free WiFi, veg meals & Himalayan sunsets. Book direct for best rates." />
-        <link rel="canonical" href="https://thestoneheritage.in/" />
-        <script type="application/ld+json">
-          {`{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": [
-        "Hotel",
-        "BedAndBreakfast"
-      ],
-      "@id": "https://thestoneheritage.in/#localbusiness",
-      "name": "Stone Heritage Mukteshwar",
-      "alternateName": "Stone Heritage Homestay",
-      "url": "https://thestoneheritage.in/",
-      "telephone": "+919027844424",
-      "email": "thestoneheritage@gmail.com",
-      "description": "Recognized as the best homestay in Mukteshwar, this authentic Kumaoni heritage property and boutique stone cottage offers luxury family-friendly and pet-friendly workation stays with panoramic Himalayan mountain views. Book direct for the best rates.",
-      "additionalType": [
-        "https://en.wikipedia.org/wiki/Homestay",
-        "https://en.wikipedia.org/wiki/Villa"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Bhowali Dhanachuli Rd, South Gola Range",
-        "addressLocality": "Mukteshwar",
-        "addressRegion": "Uttarakhand",
-        "postalCode": "263138",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 29.4346202,
-        "longitude": 79.6446521
-      },
-      "hasMap": [
-        "https://maps.google.com/maps?cid=5074157692820223333",
-        "https://www.google.com/maps/place/?q=place_id:ChIJl-SiNX29oDkRZXXdnokHa0Y"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/thestoneheritage/",
-        "https://www.instagram.com/thestoneheritage/",
-        "https://www.youtube.com/@StoneHeritageMukteshwar",
-        "https://x.com/stone_heritage",
-        "https://www.linkedin.com/company/stone-heritage-mukteshwar/",
-        "https://g.page/r/CWV13Z6JB2tGEBM/review",
-        "https://www.google.com/travel/hotels/entity/ChkQ6sSVrPGm1N1cGg0vZy8xMW1sX3c3dDVwEAI"
-      ],
-      "image": [
-        "https://thestoneheritage.in/mountain-living-best-homestay-Mukteshwar.webp"
-      ],
-      "checkinTime": "14:00:00",
-      "checkoutTime": "11:00:00",
-      "petsAllowed": true,
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "241", 
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Lotte"
-          },
-          "reviewBody": "Traveling with family felt very comfortable here. Pawan and Naveen were always helpful, and the calm atmosphere made it perfect for a relaxed family stay. Definitely one of the best family homestays in Mukteshwar."
-        },
-        {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5"
-          },
-          "author": {
-            "@type": "Person",
-            "name": "Gagan"
-          },
-          "reviewBody": "Stone Heritage Mukteshwar is an ideal choice if you're looking for a family-friendly, pet friendly, budget homestay in Mukteshwar. With good WIFI for workation, tasty vegetarian food, and beautiful sunsets, it offers a complete hill-stay experience."
-        }
-      ],
-      "priceRange": "INR 1500 - 12000",
-      "amenityFeature": [
-        { "@type": "LocationFeatureSpecification", "name": "High-Speed WiFi for Workations", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Pet-Friendly Accommodation", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Pure Vegetarian Home-Cooked Food", "value": true }
-      ],
-      "containsPlace": [
-        {
-          "@type": "HotelRoom",
-          "name": "Brass Room",
-          "description": "Quadroom King Bed setup with alternative floor mattress and private washroom.",
-          "image": "https://thestoneheritage.in/brass-room-homestay-in-mukteshwar.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 1, "type": "King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Copper Room",
-          "description": "Spacious family setup configured with 1 King Bed and 1 Single Bed.",
-          "image": "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 2, "type": "1 King Bed, 1 Single Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "The Vintage Room",
-          "description": "Charming heritage architecture featuring 1 ultra-comfortable King Bed.",
-          "image": "https://thestoneheritage.in/vintage-room.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 1, "type": "King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Stonewood Family Retreat",
-          "description": "Premium group or multi-generational stay equipped with 2 large King Beds. Functions as a standalone cottage experience.",
-          "image": "https://thestoneheritage.in/stonewood-family-retreat.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 2, "type": "King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Stone And Story room",
-          "description": "Accommodation featuring 1 King Bed.",
-          "image": "https://thestoneheritage.in/balcony-stone-heritage-mukteshwar.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 1, "type": "King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Iron Room",
-          "description": "Accommodation featuring 1 King Bed.",
-          "image": "https://thestoneheritage.in/mountain-living-best-homestay-Mukteshwar.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 1, "type": "King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Cedar Room",
-          "description": "Premium accommodation.",
-          "image": "https://thestoneheritage.in/cedar-room.webp",
-          "bed": { "@type": "BedDetails", "numberOfBeds": 1, "type": "King Bed" }
-        }
-      ],
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://booking.thestoneheritage.in/",
-          "inLanguage": "en-US",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/MobileWebPlatform"
-          ]
-        },
-        "result": {
-          "@type": "LodgingReservation",
-          "name": "Direct Booking via Native Engine"
-        }
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://thestoneheritage.in/#website",
-      "url": "https://thestoneheritage.in/",
-      "name": "Stone Heritage Mukteshwar",
-      "publisher": { "@id": "https://thestoneheritage.in/#localbusiness" }
-    }
-  ]
-}`}
-        </script>
-      </Helmet>
+      
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-primary text-stone-50 overflow-hidden">
         {/* Abstract pattern or image overlay could go here. Keeping it clean with CSS. */}
@@ -222,12 +49,12 @@ export function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" className="fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               Book via WhatsApp
             </a>
-            <Link 
-              to="/stay/" 
+            <a 
+              href="/stay/" 
               className="bg-transparent border border-stone-200/50 text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-8 rounded-none hover:bg-white/10 hover:border-white transition-all duration-300 text-xs sm:text-sm w-full sm:w-auto flex items-center justify-center backdrop-blur-sm"
             >
               Explore Rooms
-            </Link>
+            </a>
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-sm text-stone-200 font-medium">
@@ -393,12 +220,12 @@ export function Home() {
           </div>
 
           <div className="text-center">
-            <Link 
-              to="/stay/" 
+            <a 
+              href="/stay/" 
               className="inline-block bg-primary text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-10 hover:bg-primary/90 transition-colors shadow-sm"
             >
               View All Rooms
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -415,12 +242,12 @@ export function Home() {
           <div className="mb-12 relative px-4 md:px-8">
             <GalleryCarousel />
           </div>
-          <Link 
-            to="/gallery/" 
+          <a 
+            href="/gallery/" 
             className="inline-block bg-primary text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-10 hover:bg-primary/90 transition-colors shadow-sm"
           >
             View Full Gallery
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -439,15 +266,15 @@ export function Home() {
           <TestimonialCarousel />
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
-            <Link 
-              to="/testimonials/" 
+            <a 
+              href="/testimonials/" 
               className="inline-flex items-center justify-center gap-2 bg-primary text-stone-50 font-semibold py-3 px-8 rounded-full hover:bg-primary/90 transition-colors shadow-sm"
             >
               Read All Testimonials
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
             <a 
               href="https://www.google.com/maps/place/?cid=5074157692820223333" 
               target="_blank"
@@ -606,15 +433,15 @@ export function Home() {
           </div>
 
           <div className="text-center">
-            <Link 
-              to="/experiences/" 
+            <a 
+              href="/experiences/" 
               className="inline-flex items-center gap-3 bg-transparent border border-primary text-primary font-sans font-medium uppercase tracking-widest py-3.5 px-8 hover:bg-primary hover:text-stone-50 transition-colors text-xs sm:text-sm group"
             >
               See All Local Experiences
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -1,16 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { testimonials } from '../data/testimonials';
-import { OptimizedImage } from '../components/OptimizedImage';
+
+import { testimonials } from '../../data/testimonials';
+import { OptimizedImage } from '../../components/OptimizedImage';
 
 export function Testimonials() {
   return (
     <>
-      <Helmet>
-        <title>Guest Reviews & Testimonials | Stone Heritage Mukteshwar</title>
-        <meta name="description" content={`Read ${testimonials.length}+ genuine guest reviews about their stay at Stone Heritage Mukteshwar. Discover why we have a 4.9 star rating from our happy guests.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/testimonials/" />
-      </Helmet>
+      
       <div className="py-16 px-4 max-w-7xl mx-auto bg-stone-50/50 min-h-screen">
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary tracking-tight">Guest Experiences</h1>

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
+
+
 import { Calendar, User, ArrowRight } from 'lucide-react';
-import { ShareButtons } from '../components/ShareButtons';
-import { OptimizedImage } from '../components/OptimizedImage';
+import { ShareButtons } from '../../components/ShareButtons';
+import { OptimizedImage } from '../../components/OptimizedImage';
 
 const blogPosts = [
   {
@@ -51,11 +51,7 @@ const blogPosts = [
 export function Blog() {
   return (
     <>
-      <Helmet>
-        <title>Stone Heritage Blog | Discover Mukteshwar & Travel Guides</title>
-        <meta name="description" content={`Read our ${blogPosts.length} latest articles and travel guides for travel tips, local insights, and guides on the best things to do during your stay at our stone cottage in Mukteshwar.`} />
-        <link rel="canonical" href="https://thestoneheritage.in/blog/" />
-      </Helmet>
+      
       
       <div className="py-16 px-4 max-w-7xl mx-auto">
         <div className="text-center mb-16">

@@ -1,38 +1,17 @@
-import express from "express";
-import path from "path";
-import { createServer as createViteServer } from "vite";
-import prerender from "prerender-node";
+import express from 'express';
+import path from 'path';
 
-async function startServer() {
-  const app = express();
-  const PORT = 3000;
+const app = express();
+const PORT = 3000;
 
-  // Serve pre-rendered HTML to crawlers
-  app.use(prerender.set('prerenderToken', process.env.PRERENDER_TOKEN || ''));
+const distPath = path.join(process.cwd(), 'dist');
+app.use(express.static(distPath, { extensions: ['html'] }));
 
-  // API routes FIRST
-  app.get("/api/health", (req, res) => {
-    res.json({ status: "ok" });
-  });
+// Handle 404
+app.use((req, res) => {
+  res.status(404).sendFile(path.join(distPath, '404.html'));
+});
 
-  // Vite middleware for development
-  if (process.env.NODE_ENV !== "production") {
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: "spa",
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
-  }
-
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-}
-
-startServer();
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
