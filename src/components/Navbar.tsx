@@ -50,7 +50,7 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
             {navLinks.map((link) => (
               <a 
                 key={link.path}
-                href={link.path} 
+                to={link.path} 
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-accent relative py-2",
                   currentPath === link.path ? "text-accent" : "text-primary/70"
@@ -107,7 +107,7 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
           {navLinks.map((link) => (
             <a 
               key={link.path}
-              href={link.path} 
+              to={link.path} 
               className={cn(
                 "py-3 text-base font-medium transition-colors border-b border-stone-200/50 last:border-0",
                 currentPath === link.path ? "text-accent" : "text-primary hover:text-accent"

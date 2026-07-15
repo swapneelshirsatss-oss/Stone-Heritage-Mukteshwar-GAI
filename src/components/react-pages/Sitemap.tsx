@@ -48,7 +48,7 @@ export function Sitemap() {
               <ul className="list-disc pl-5 space-y-3">
                 {section.links.map((link, linkIdx) => (
                   <li key={linkIdx}>
-                    <a href={link.path} className="hover:text-accent transition-colors">
+                    <a to={link.path} className="hover:text-accent transition-colors">
                       {link.name}
                     </a>
                   </li>

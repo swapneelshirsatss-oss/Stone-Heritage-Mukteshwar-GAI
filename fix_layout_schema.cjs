@@ -1,4 +1,5 @@
----
+const fs = require('fs');
+const content = `---
 import '../index.css';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
@@ -168,4 +169,5 @@ const structuredData = {
     </main>
     <Footer client:visible />
   </body>
-</html>
+</html>`;
+fs.writeFileSync('src/layouts/Layout.astro', content);

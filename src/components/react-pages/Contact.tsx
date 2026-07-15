@@ -18,7 +18,7 @@ export function Contact() {
     }
 
     // Format for WhatsApp fallback
-    const text = encodeURIComponent(`Name: ${formData.name}\nPhone: ${formData.phone}\nDates: ${formData.dates}\nMessage: ${formData.message}`);
+    const text = `Name: ${formData.name}%0APhone: ${formData.phone}%0ADates: ${formData.dates}%0AMessage: ${formData.message}`;
     window.open(`https://wa.me/919027844424?text=${text}`, '_blank');
   };
 
