@@ -122,7 +122,50 @@ export function Experiences() {
         </p>
       </motion.div>
 
-      <div className="mb-32">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-center mb-16"
+      >
+        <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">On-Site Activities</span>
+        <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">More Things to do in Mukteshwar: Curated Experiences</h2>
+        <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
+        <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed">
+          Thoughtfully crafted to make your stay truly memorable. From guided treks to stargazing, there are plenty of unique things to do in Mukteshwar right at Stone Heritage.
+        </p>
+      </motion.div>
+
+      <div className="space-y-12 mb-24">
+        {experiences.map((exp, i) => (
+          <motion.div 
+            key={exp.title} 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-white p-10 md:p-14 shadow-sm border border-stone-200 flex flex-col md:flex-row items-center gap-10 hover:shadow-lg transition-all duration-500"
+          >
+            <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 bg-transparent border border-accent/20 rounded-full flex items-center justify-center text-5xl">
+              {exp.icon}
+            </div>
+            <div className="flex-grow text-center md:text-left">
+              <h2 className="text-2xl md:text-4xl font-serif font-medium mb-4 text-primary">{exp.title}</h2>
+              <p className="text-lg text-primary/80 mb-8 font-light leading-relaxed">{exp.description}</p>
+              <a 
+                href={`https://wa.me/919027844424?text=${encodeURIComponent(`I'm interested in the ${exp.title} experience.`)}`}
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-block bg-primary hover:bg-primary/90 text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-8 transition-colors shadow-sm text-xs"
+              >
+                Book Experience
+              </a>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    <div className="mb-32">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -191,50 +234,7 @@ export function Experiences() {
         </div>
       </div>
 
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-16"
-      >
-        <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">On-Site Activities</span>
-        <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">More Things to do in Mukteshwar: Curated Experiences</h2>
-        <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
-        <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed">
-          Thoughtfully crafted to make your stay truly memorable. From guided treks to stargazing, there are plenty of unique things to do in Mukteshwar right at Stone Heritage.
-        </p>
-      </motion.div>
-
-      <div className="space-y-12 mb-24">
-        {experiences.map((exp, i) => (
-          <motion.div 
-            key={exp.title} 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="bg-white p-10 md:p-14 shadow-sm border border-stone-200 flex flex-col md:flex-row items-center gap-10 hover:shadow-lg transition-all duration-500"
-          >
-            <div className="w-32 h-32 md:w-40 md:h-40 shrink-0 bg-transparent border border-accent/20 rounded-full flex items-center justify-center text-5xl">
-              {exp.icon}
-            </div>
-            <div className="flex-grow text-center md:text-left">
-              <h2 className="text-2xl md:text-4xl font-serif font-medium mb-4 text-primary">{exp.title}</h2>
-              <p className="text-lg text-primary/80 mb-8 font-light leading-relaxed">{exp.description}</p>
-              <a 
-                href={`https://wa.me/919027844424?text=${encodeURIComponent(`I'm interested in the ${exp.title} experience.`)}`}
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-block bg-primary hover:bg-primary/90 text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-8 transition-colors shadow-sm text-xs"
-              >
-                Book Experience
-              </a>
-            </div>
-          </motion.div>
-        ))}
       </div>
-    </div>
     </>
   );
 }
