@@ -1,8 +1,27 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 import { Blog } from "../../components/react-pages/Blog";
+
+const allPosts = await getCollection('blog');
+
+// Format posts for the React component
+const formattedPosts = allPosts.map(post => ({
+  id: post.slug,
+  slug: post.slug,
+  title: post.data.title,
+  excerpt: post.data.excerpt,
+  date: post.data.date,
+  author: post.data.author,
+  category: post.data.category,
+  image: post.data.image,
+  readTime: post.data.readTime,
+}));
+
+// Sort by date (basic sort, assuming date format parsing works or simply by id)
+formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
 <Layout title="Blog | Stone Heritage Mukteshwar" description="Read the Stone Heritage blog for travel tips, local Mukteshwar guides, and insights into the Kumaoni lifestyle and Himalayan heritage.">
-  <Blog client:load />
+  <Blog posts={formattedPosts} client:load />
 </Layout>

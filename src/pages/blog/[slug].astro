@@ -1,0 +1,46 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from "../../layouts/Layout.astro";
+import { OptimizedImage } from "../../components/OptimizedImage";
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={`${post.data.title} | Stone Heritage`} description={post.data.excerpt}>
+  <article className="max-w-4xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+    <div className="mb-8 text-center">
+      <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">{post.data.category}</span>
+      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">{post.data.title}</h1>
+      <div className="flex justify-center items-center gap-6 text-primary/60 text-sm">
+        <span>{post.data.date}</span>
+        <span>•</span>
+        <span>{post.data.author}</span>
+        <span>•</span>
+        <span>{post.data.readTime}</span>
+      </div>
+    </div>
+    
+    <div className="aspect-[21/9] overflow-hidden rounded-2xl mb-12">
+      <OptimizedImage src={post.data.image} alt={post.data.title} className="w-full h-full object-cover" />
+    </div>
+
+    <div className="prose prose-stone prose-lg max-w-none prose-img:rounded-xl">
+      <Content />
+    </div>
+    
+    <div className="mt-16 pt-8 border-t border-stone-200">
+      <a href="/blog/" className="text-accent hover:text-accent/80 transition-colors font-medium">
+        &larr; Back to all articles
+      </a>
+    </div>
+  </article>
+</Layout>

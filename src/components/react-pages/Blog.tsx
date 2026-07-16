@@ -5,50 +5,19 @@ import { Calendar, User, ArrowRight } from 'lucide-react';
 import { ShareButtons } from '../../components/ShareButtons';
 import { OptimizedImage } from '../../components/OptimizedImage';
 
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Top 5 Things to Do in Mukteshwar This Winter',
-    excerpt: 'Discover the magic of winter in Mukteshwar. From snow-capped Himalayan views to cozy bonfires and hot Kumaoni delicacies, here is how to make the most of your winter getaway at Stone Heritage.',
-    date: 'October 15, 2023',
-    author: 'Harsh & Priyanka',
-    category: 'Travel Guide',
-    image: 'https://images.unsplash.com/photo-1543372993-9c87d4669cb8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    readTime: '4 min read'
-  },
-  {
-    id: 2,
-    title: 'Why Stone Heritage is the Best Pet-Friendly Homestay in Mukteshwar',
-    excerpt: 'Traveling with pets can be tricky, but not when you visit the South Gola Range. Learn why our wide open spaces, pet-friendly rooms, and welcoming environment make us the ideal choice for your furry friends.',
-    date: 'November 2, 2023',
-    author: 'Stone Heritage Team',
-    category: 'Accommodation',
-    image: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    readTime: '3 min read'
-  },
-  {
-    id: 3,
-    title: 'The Ultimate Delhi to Mukteshwar Road Trip Itinerary',
-    excerpt: 'Planning a weekend getaway from Delhi to Mukteshwar? We have mapped out the best driving routes, scenic pit stops, and travel tips to ensure a smooth and memorable 8-hour journey to the mountains.',
-    date: 'November 18, 2023',
-    author: 'Harsh & Priyanka',
-    category: 'Road Trip',
-    image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    readTime: '5 min read'
-  },
-  {
-    id: 4,
-    title: 'A Guide to Himalayan Bird Watching at South Gola Range',
-    excerpt: 'Mukteshwar is a paradise for bird watchers. Explore the diverse avian life you can spot right from your balcony or during a short nature walk around our vintage stone cottage.',
-    date: 'December 5, 2023',
-    author: 'Stone Heritage Team',
-    category: 'Nature',
-    image: 'https://images.unsplash.com/photo-1552728089-57168ab18da2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-    readTime: '4 min read'
-  }
-];
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  category: string;
+  image: string;
+  readTime: string;
+  slug: string;
+}
 
-export function Blog() {
+export function Blog({ posts }: { posts: BlogPost[] }) {
   return (
     <>
       
@@ -63,9 +32,9 @@ export function Blog() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-          {blogPosts.map((post) => (
+          {posts.map((post) => (
             <article key={post.id} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md duration-300">
-              <div className="aspect-[16/9] overflow-hidden relative">
+              <a href={`/blog/${post.slug}/`} className="aspect-[16/9] overflow-hidden relative block">
                 <OptimizedImage 
                   src={post.image} 
                   alt={post.title} 
@@ -75,7 +44,7 @@ export function Blog() {
                 <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-semibold text-primary rounded-full">
                   {post.category}
                 </div>
-              </div>
+              </a>
               <div className="p-8 flex flex-col flex-grow">
                 <div className="flex items-center gap-4 text-sm text-primary/60 mb-4">
                   <div className="flex items-center gap-1.5">
@@ -88,9 +57,9 @@ export function Blog() {
                   </div>
                 </div>
                 
-                <h2 className="text-2xl font-bold text-primary mb-3 leading-tight hover:text-accent transition-colors cursor-pointer">
+                <a href={`/blog/${post.slug}/`}><h2 className="text-2xl font-bold text-primary mb-3 leading-tight hover:text-accent transition-colors cursor-pointer">
                   {post.title}
-                </h2>
+                </h2></a>
                 
                 <p className="text-primary/70 mb-6 flex-grow">
                   {post.excerpt}
@@ -99,11 +68,11 @@ export function Blog() {
                 <div className="flex flex-col gap-4 mt-auto pt-6 border-t border-stone-100">
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-medium text-primary/50">{post.readTime}</span>
-                    <button className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
+                    <a href={`/blog/${post.slug}/`} className="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
                       Read Article <ArrowRight className="w-4 h-4" />
-                    </button>
+                    </a>
                   </div>
-                  <ShareButtons url={`${typeof window !== 'undefined' ? window.location.href : 'https://thestoneheritage.in/blog'}#post-${post.id}`} title={post.title} />
+                  <ShareButtons url={`https://thestoneheritage.in/blog/${post.slug}`} title={post.title} />
                 </div>
               </div>
             </article>
