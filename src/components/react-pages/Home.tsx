@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import { motion } from 'motion/react';
 import { GalleryCarousel } from '../../components/GalleryCarousel';
 import { TestimonialCarousel } from '../../components/TestimonialCarousel';
@@ -11,7 +10,6 @@ import { FaqAccordion } from '../../components/FaqAccordion';
 export function Home() {
   return (
     <div className="flex flex-col">
-      
       {/* Hero Section */}
       <section className="relative min-h-[80vh] flex items-center justify-center bg-primary text-stone-50 overflow-hidden">
         {/* Abstract pattern or image overlay could go here. Keeping it clean with CSS. */}
@@ -34,7 +32,7 @@ export function Home() {
           className="relative z-10 max-w-4xl mx-auto px-4 text-center"
         >
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-stone-50 md:drop-shadow-lg leading-tight tracking-tight">
-            The Best Homestay in Mukteshwar
+            Luxury Homestay in Mukteshwar — Stone Heritage
             <span className="block text-2xl md:text-4xl mt-4 font-normal italic text-stone-200">An Authentic Himalayan Retreat</span>
           </h1>
           <p className="text-lg md:text-xl mb-10 font-light text-stone-100 max-w-2xl mx-auto leading-relaxed md:drop-shadow-md">
@@ -89,7 +87,7 @@ export function Home() {
         >
           <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Welcome to Your Sanctuary</span>
           <h2 className="text-3xl md:text-5xl font-serif font-medium mb-8 text-primary max-w-4xl mx-auto leading-tight">
-            A Vintage Stone Homestay in Mukteshwar: Reimagined in Stone & Vintage Charm
+            Welcome to Stone Heritage — A Heritage Homestay in Mukteshwar
           </h2>
           <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-8"></div>
           <p className="text-lg text-primary/80 max-w-3xl mx-auto leading-relaxed mb-20 font-light">
@@ -179,16 +177,17 @@ export function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Our Accommodations</span>
-            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Vintage Stone Cottages & Family Suites</h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Our Stone Cottage Rooms</h2>
             <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
             <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Experience comfort in our thoughtfully designed rooms, blending traditional stone architecture with modern amenities.</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {[
-              { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
               { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
-              { name: "The Vintage Room", image: "/vintage-room.webp", alt: "The Vintage Room at Stone Heritage showing cozy wooden interiors and premium bedding" }
+              { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
+              { name: "Stone and Story Suite", image: "/stonewood-family-retreat.webp", alt: "Stone and Story Suite offering premium comfort in Mukteshwar" },
+              { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat for multi-generational stays" }
             ].map((room) => (
               <div key={room.name} className="bg-white overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-lg transition-all duration-500">
                 <div className="h-72 relative overflow-hidden bg-stone-200">
@@ -257,8 +256,8 @@ export function Home() {
       <section className="py-24 px-4 bg-stone-100">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Guest Experiences</span>
-            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Loved by Our Guests</h2>
+            <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Testimonials</span>
+            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Guest Experiences at Stone Heritage</h2>
             <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
             <p className="text-lg text-primary/70 max-w-2xl mx-auto leading-relaxed">
               Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.
@@ -305,16 +304,16 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Exclusive Benefits</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Book Directly With Us?</h2>
-            <p className="text-lg text-stone-300 max-w-2xl mx-auto">Connect directly with our team to secure the best rates and personalized experiences for your Himalayan getaway.</p>
+            <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Perfect Getaway</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Families & Couples Near Delhi NCR Choose Us</h2>
+            <p className="text-lg text-stone-300 max-w-2xl mx-auto">Discover the perfect escape from the city, tailored for your comfort and peace of mind.</p>
           </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "Best Price Guarantee",
-                desc: "Bypass third-party commissions and hidden fees. When you book directly via WhatsApp or phone, we guarantee the most competitive rates available.",
+                title: "Panoramic Himalayan Sunset Views",
+                desc: "Witness breathtaking sunsets over the majestic Himalayan ranges directly from your cottage.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -322,8 +321,8 @@ export function Home() {
                 )
               },
               {
-                title: "Priority Upgrades & Requests",
-                desc: "Direct guests receive priority for room assignments, complimentary early check-ins (subject to availability), and tailored dietary or special event arrangements.",
+                title: "Personalized Hospitality",
+                desc: "Experience warm Kumaoni hospitality with dedicated service tailored to your needs.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -331,8 +330,8 @@ export function Home() {
                 )
               },
               {
-                title: "Flexible Modifications",
-                desc: "Enjoy peace of mind with our direct booking policies, offering greater flexibility for date changes and cancellations compared to strict online travel agencies.",
+                title: "Easy Access from Delhi NCR",
+                desc: "A scenic and comfortable drive from Delhi NCR, making it the perfect weekend getaway.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -359,6 +358,20 @@ export function Home() {
         </div>
       </section>
 
+      {/* Direct Booking CTA */}
+      <section className="py-16 px-4 bg-stone-50 text-center border-t border-stone-200">
+        <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6 text-primary">Book Your Mukteshwar Homestay Direct</h2>
+        <p className="text-lg text-primary/70 mb-8 max-w-2xl mx-auto">Get the best rates, complimentary upgrades, and personalized service when you bypass OTAs and book directly with us.</p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://booking.thestoneheritage.in/" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-stone-50 font-sans font-medium uppercase tracking-widest py-3.5 px-8 hover:bg-primary/90 transition-colors shadow-sm w-full sm:w-auto">
+            Book Online Now
+          </a>
+          <a href="https://wa.me/919027844424" target="_blank" rel="noopener noreferrer" className="inline-block bg-highlight text-primary font-sans font-medium uppercase tracking-widest py-3.5 px-8 hover:bg-white transition-colors border border-highlight shadow-sm w-full sm:w-auto">
+            Book via WhatsApp
+          </a>
+        </div>
+      </section>
+
       {/* Local Attractions Section */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -370,7 +383,7 @@ export function Home() {
             className="text-center mb-16"
           >
             <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Discover Mukteshwar</span>
-            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Top Attractions & Places to Visit</h2>
+            <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Things to Do Near Stone Heritage, Mukteshwar</h2>
             <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
             <p className="text-lg text-primary/70 max-w-3xl mx-auto font-light leading-relaxed">
               Explore the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites, Mukteshwar offers an unforgettable experience.
@@ -380,7 +393,7 @@ export function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {[
               {
-                name: "Chauli Ki Jali",
+                name: "Rock Climbing at Chauli Ki Jali",
                 description: "A stunning cliff known for overhanging rocks, deep valley views, and adventure sports. Perfect for rock climbing, rappelling, and mesmerizing sunsets.",
                 image: "/chauli-ki-jali-in-mukteshwar.webp",
                 alt: "View of the deep valley from Chauli Ki Jali cliff, a popular tourist attraction for sunsets in Mukteshwar",
@@ -388,20 +401,20 @@ export function Home() {
                 tag: "Adventure & Views"
               },
               {
-                name: "Bhalugaad Waterfall",
-                description: "A beautiful hidden gem tucked away in dense forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
+                name: "Nature Trails & Village Walks",
+                description: "Embark on guided or self-guided nature trails through lush forests, discovering the rich biodiversity and charming local villages of Mukteshwar.",
                 image: "/Bhalugaad-Waterfall-Mukteshwar.webp",
-                alt: "Pristine clear pool and 60-foot plunge at Bhalugaad Waterfall, a hidden natural gem in Mukteshwar",
-                distance: "10 km away",
+                alt: "Scenic nature trails and village walks around Stone Heritage in Mukteshwar",
+                distance: "Around the property",
                 tag: "Nature & Trekking"
               },
               {
-                name: "Mukteshwar Dham Temple",
-                description: "The ancient, 350-year-old Shiva temple gracefully atop the highest point in the area, offering a peaceful spiritual experience.",
-                image: "/Kainchi_dham_mukteshwar.webp",
-                alt: "The ancient 350-year-old Shiva temple, Mukteshwar Dham Temple, located at the highest point in town",
-                distance: "Town center",
-                tag: "Spiritual Heritage"
+                name: "Bonfire, BBQ & Stargazing Nights",
+                description: "Gather around a cozy bonfire for a delightful BBQ experience under the clear, star-studded Himalayan night sky.",
+                image: "/himalayan-view-terrace-mukteshwar.webp",
+                alt: "Stargazing and bonfire nights at Stone Heritage Mukteshwar",
+                distance: "At the property",
+                tag: "Leisure"
               }
             ].map((place, index) => (
               <motion.div 

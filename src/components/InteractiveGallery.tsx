@@ -9,7 +9,6 @@ export const galleryImages = [
   { src: '/brass-room-homestay-in-mukteshwar.webp', alt: 'Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar' },
   { src: '/cedar-room.webp', alt: 'Cozy Cedar Room interior with wooden paneling and modern amenities at Stone Heritage' },
   { src: '/iron-room.webp', alt: 'Comfortable Iron Room setup perfect for couples staying at Stone Heritage Mukteshwar' },
-  { src: '/stonewood-family-retreat-1.webp', alt: 'Stone and Story Room featuring heritage architecture and a relaxing ambiance' },
   { src: '/stonewood-family-retreat.webp', alt: 'Stonewood Family Retreat room with two king beds, ideal for family workations in Mukteshwar' },
   { src: '/himalayan-view-terrace-mukteshwar.webp', alt: 'Outdoor terrace at Stone Heritage offering stunning sunset views over the Himalayas' },
   { src: '/mountain-living-best-homestay-Mukteshwar.webp', alt: 'Relaxing balcony setting with majestic mountain views at the best homestay in Mukteshwar' },
