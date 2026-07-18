@@ -14,7 +14,7 @@ export interface Props {
 const { 
   title = 'Stone Heritage Mukteshwar',
   description = 'Recognized as the best homestay in Mukteshwar, this authentic Kumaoni heritage property offers luxury family-friendly and pet-friendly stays with panoramic Himalayan views.',
-  canonicalUrl = Astro.url.href,
+  canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.href,
   type = 'website',
   image = 'https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp'
 } = Astro.props;
