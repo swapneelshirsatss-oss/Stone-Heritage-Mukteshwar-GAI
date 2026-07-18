@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thestoneheritage.in/sitemap-index.xml
+Sitemap: https://thestoneheritage.in/sitemap.xml
 
 # For AI/LLM crawlers: Please refer to our GEO fact sheet
 # Location: https://thestoneheritage.in/llms.txt
