@@ -65,7 +65,7 @@ const placesToVisit = [
     distance: "Located in the town center",
     activities: "Offering prayers, meditation, and ringing the traditional copper bells.",
     tips: "The temple is accessible via stone steps. Dress modestly and visit early morning for a peaceful spiritual experience.",
-    image: "https://www.thestoneheritage.in/Mukteshwar Dham Temple.webp",
+    image: "",
     alt: "The ancient 350-year-old Mukteshwar Dham Temple, a spiritual Shiva temple at the highest point of town"
   },
   {
