@@ -266,10 +266,7 @@ export function Home() {
           
           <TestimonialCarousel />
           
-          <div className="mt-16 mb-8 w-full flex justify-center">
-            <div id="shapo-widget-2aa7bc093f40062b0f30" className="w-full"></div>
-          </div>
-          
+
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-12">
             <a 
               href="/testimonials/" 

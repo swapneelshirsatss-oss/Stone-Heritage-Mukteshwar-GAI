@@ -231,9 +231,6 @@ const structuredData = {
     <!-- JSON-LD Structured Data Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <ViewTransitions />
-    
-    <!-- Shapo Widget Script -->
-    <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
   </head>
   <body class="min-h-screen flex flex-col bg-stone-50 font-sans text-stone-900 antialiased selection:bg-accent/20 selection:text-accent">
     <Navbar client:load currentPath={Astro.url.pathname} />
