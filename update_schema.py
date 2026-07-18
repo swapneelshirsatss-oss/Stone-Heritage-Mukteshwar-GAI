@@ -123,7 +123,7 @@ new_hotel = {
   }
 }
 
-files_to_update = ['src/layouts/Layout.astro', 'src/layouts/BaseLayout.astro']
+files_to_update = ['src/layouts/Layout.astro']
 
 for file_path in files_to_update:
     with open(file_path, 'r', encoding='utf-8') as f:

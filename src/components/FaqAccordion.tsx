@@ -26,10 +26,12 @@ const faqs = [
 ];
 
 export const FaqAccordion = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndices, setOpenIndices] = useState<number[]>([]);
 
   const toggleOpen = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenIndices(prev => 
+      prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
+    );
   };
 
   return (
@@ -45,7 +47,9 @@ export const FaqAccordion = () => {
         </div>
         
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
+          {faqs.map((faq, index) => {
+            const isOpen = openIndices.includes(index);
+            return (
             <div key={index} className="border border-stone-200 bg-stone-50 overflow-hidden hover:border-stone-300 transition-colors">
               <button 
                 onClick={() => toggleOpen(index)}
@@ -53,12 +57,12 @@ export const FaqAccordion = () => {
               >
                 <span className="font-serif font-medium text-lg text-primary pr-8">{faq.question}</span>
                 <ChevronDown 
-                  className={`w-5 h-5 text-accent transition-transform duration-300 flex-shrink-0 ${openIndex === index ? 'rotate-180' : ''}`} 
+                  className={`w-5 h-5 text-accent transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-180' : ''}`} 
                 />
               </button>
               
               <AnimatePresence initial={false}>
-                {openIndex === index && (
+                {isOpen && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
@@ -72,7 +76,8 @@ export const FaqAccordion = () => {
                 )}
               </AnimatePresence>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

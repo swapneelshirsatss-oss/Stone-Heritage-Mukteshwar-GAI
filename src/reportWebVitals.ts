@@ -1,9 +1,13 @@
 import { onCLS, onFCP, onLCP, onTTFB, onINP, Metric } from 'web-vitals';
 
+declare global {
+  interface Window {
+    dataLayer?: Array<Record<string, any>>;
+  }
+}
+
 function sendToDataLayer({ name, delta, id }: Metric) {
-  // @ts-ignore
   window.dataLayer = window.dataLayer || [];
-  // @ts-ignore
   window.dataLayer.push({
     event: 'web-vitals',
     event_category: 'Web Vitals',

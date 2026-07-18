@@ -18,6 +18,7 @@ export function OptimizedImage({
   ...props 
 }: OptimizedImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   // Generate srcset if widths are provided, otherwise undefined
   const srcSet = widths && widths.length > 0 
@@ -35,10 +36,14 @@ export function OptimizedImage({
       alt={alt}
       loading={loading}
       decoding={decoding}
-      className={`${className || ''} ${isLoaded ? '' : 'bg-stone-200 animate-pulse text-transparent'}`}
+      className={`${className || ''} ${isError ? 'bg-red-100' : isLoaded ? '' : 'bg-stone-200 animate-pulse text-transparent'}`}
       onLoad={(e) => {
         setIsLoaded(true);
         if (props.onLoad) props.onLoad(e);
+      }}
+      onError={(e) => {
+        setIsError(true);
+        if (props.onError) props.onError(e);
       }}
       {...props}
     />

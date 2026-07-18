@@ -12,13 +12,6 @@
 }
 
 @layer base {
-  :root {
-    --color-primary: #602E08;
-    --color-secondary: #5c4d43;
-    --color-tertiary: #9a8b81;
-    --color-accent: #b36b39;
-    --color-highlight: #faf6f3;
-  }
 
   body {
     @apply text-primary bg-stone-50;
