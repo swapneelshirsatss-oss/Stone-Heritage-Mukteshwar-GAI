@@ -15,25 +15,25 @@ export const testimonials = [
     text: "We chose this place for a short weekend trip from Delhi, mainly because it's pet-friendly. It turned out to be a great decision. Peaceful location, friendly staff, and lots of open space.",
     name: "Priyanka",
     role: "Architect",
-    image: "/default-avatar.webp"
+    image: ""
   },
   {
     text: "The food was simply amazing! Home-cooked meals that tasted just like my mother's cooking. The views of the Nanda Devi range right from the window of our room were breathtaking. Highly recommend for families.",
     name: "Rahul",
     role: "Business Owner",
-    image: "/default-avatar.webp"
+    image: ""
   },
   {
     text: "Beautiful property that respects the local architecture. As someone who appreciates heritage buildings, staying in these stone cottages was an experience in itself. Will definitely visit again.",
     name: "Neha",
     role: "Photographer",
-    image: "/default-avatar.webp"
+    image: ""
   },
   {
     text: "Perfect workcation spot! The wifi was surprisingly good for the mountains, and the serene environment helped me focus better. The staff ensured my coffee mug was never empty.",
     name: "Vikram",
     role: "Freelance Designer",
-    image: "/default-avatar.webp"
+    image: ""
   },
   {
     text: "We chose this place for a short weekend trip from Delhi, mainly because it’s pet-friendly. It turned out to be a great decision. Peaceful location, friendly staff, and lots of open space for our pet.",
