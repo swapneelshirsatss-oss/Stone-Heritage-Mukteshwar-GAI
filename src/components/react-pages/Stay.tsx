@@ -91,7 +91,6 @@ export function Stay() {
               </tbody>
             </table>
           </div>
-        </section>
 
         <section className="bg-accent text-white rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>

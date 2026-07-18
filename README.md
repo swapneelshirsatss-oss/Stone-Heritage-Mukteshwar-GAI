@@ -18,3 +18,15 @@ View your app in AI Studio: https://ai.studio/apps/d153deab-424e-4794-8c9e-937db
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Deploy to Hostinger with GitHub Actions
+
+This repository includes a GitHub Actions workflow that builds the Astro site and uploads the generated files to Hostinger over FTP.
+
+Before enabling it, add these repository secrets in GitHub:
+
+- `FTP_SERVER`
+- `FTP_USERNAME`
+- `FTP_PASSWORD`
+
+Push to the `main` or `master` branch (or run the workflow manually) to trigger the deployment.
