@@ -23,7 +23,9 @@ export const galleryImages = [
   { src: '/Kainchi_dham_mukteshwar.webp', alt: 'Kainchi Dham Temple near Mukteshwar' },
   { src: '/chauli-ki-jali-in-mukteshwar.webp', alt: 'Chauli Ki Jali cliff in Mukteshwar' },
   { src: '/nanda-devi-peak-view-mukteshwar.webp', alt: 'Nanda Devi Peak View from Mukteshwar' },
-  { src: '/sky-obesration-in- Mukteshwar.webp', alt: 'Stargazing and sky observation in Mukteshwar' }
+  { src: '/sky-obesration-in- Mukteshwar.webp', alt: 'Stargazing and sky observation in Mukteshwar' },
+  { src: '/homestay-in-mukteshwar.webp', alt: 'A serene view of our homestay in Mukteshwar' },
+  { src: '/thing-to-do-in-mukteshwar.webp', alt: 'Exploring activities and things to do in Mukteshwar' }
 ];
 
 export function InteractiveGallery() {

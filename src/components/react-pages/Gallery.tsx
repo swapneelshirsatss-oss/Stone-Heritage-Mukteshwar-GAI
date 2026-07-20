@@ -3,8 +3,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { galleryImages } from '../../components/InteractiveGallery';
 import { OptimizedImage } from '../../components/OptimizedImage';
-import { ShareButtons } from '../../components/ShareButtons';
-
+import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 export function Gallery() {
   return (
     <div className="pt-20">
@@ -23,7 +22,45 @@ export function Gallery() {
           <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed mb-8">
             Discover the beauty and serenity that awaits you at Stone Heritage Mukteshwar.
           </p>
-          <ShareButtons url={typeof window !== 'undefined' ? window.location.href : 'https://thestoneheritage.in/gallery'} title="Stone Heritage Gallery - A Glimpse into Our World" className="justify-center" />
+          <div className="flex items-center justify-center gap-2">
+            <span className="text-sm font-medium text-stone-500 mr-2">Follow Us:</span>
+            <a
+              href="https://www.facebook.com/thestoneheritage/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 transition-colors"
+              aria-label="Follow on Facebook"
+            >
+              <Facebook className="w-4 h-4" />
+            </a>
+            <a
+              href="https://www.instagram.com/thestoneheritage/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 transition-colors"
+              aria-label="Follow on Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              href="https://www.youtube.com/@StoneHeritageMukteshwar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 transition-colors"
+              aria-label="Follow on YouTube"
+            >
+              <Youtube className="w-4 h-4" />
+            </a>
+            <a
+              href="https://x.com/stone_heritage"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 transition-colors"
+              aria-label="Follow on Twitter"
+            >
+              <Twitter className="w-4 h-4" />
+            </a>
+          </div>
         </motion.div>
 
         <motion.div

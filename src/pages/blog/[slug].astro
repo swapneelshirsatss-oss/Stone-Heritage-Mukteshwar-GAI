@@ -16,10 +16,14 @@ const { Content } = await render(post);
 
 const blogSchema = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": `https://thestoneheritage.in/blog/${post.slug}`
+  },
   "headline": post.data.title,
   "description": post.data.excerpt,
-  "image": post.data.image,
+  "image": post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`,
   "author": {
     "@type": "Person",
     "name": post.data.author
@@ -30,7 +34,7 @@ const blogSchema = {
     "name": "Stone Heritage Mukteshwar",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://thestoneheritage.in/favicon.ico"
+      "url": "https://thestoneheritage.in/Logo.webp"
     }
   }
 };

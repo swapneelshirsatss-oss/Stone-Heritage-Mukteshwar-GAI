@@ -29,6 +29,7 @@ const structuredData = {
       "additionalType": "https://en.wikipedia.org/wiki/Homestay",
       "@id": "https://thestoneheritage.in/#hotel",
       "name": "Stone Heritage Mukteshwar",
+      "logo": "https://thestoneheritage.in/Logo.webp",
       "description": "Discover Stone Heritage Mukteshwar, widely recognized as the best homestay in Mukteshwar, Uttarakhand. Perfectly positioned on the Bhowali-Dhanachuli Road, this authentic traditional stone cottage blends rustic architecture with modern premium amenities. Experience a boutique Mukteshwar homestay with Himalayan view balconies, pristine forest trails, stargazing, and wholesome home-cooked vegetarian food. Whether you are planning a weekend getaway from Delhi to Mukteshwar, searching for pet-friendly homestay options, or locking in workation stays.",
       "url": "https://thestoneheritage.in/",
       "telephone": "+919027844424",
@@ -49,9 +50,9 @@ const structuredData = {
         "longitude": "79.6446521"
       },
       "image": [
-        "https://thestoneheritage.in/assets/exterior-stone-cottage.jpg",
-        "https://thestoneheritage.in/assets/kumaoni-cooking-workshop.jpg",
-        "https://thestoneheritage.in/assets/himalayan-stargazing-view.jpg"
+        "https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp",
+        "https://thestoneheritage.in/best-family-homestay-in-mukteshwar.webp",
+        "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp"
       ],
       "sameAs": [
         "https://www.facebook.com/thestoneheritage/",
@@ -95,37 +96,44 @@ const structuredData = {
         {
           "@type": "HotelRoom",
           "name": "Brass Room",
-          "description": "3 Quadroom with King Bali Floor Mattress and Private Washroom."
+          "description": "3 Quadroom with King Bali Floor Mattress and Private Washroom.",
+          "image": "https://thestoneheritage.in/brass-room-homestay-in-mukteshwar.webp"
         },
         {
           "@type": "HotelRoom",
           "name": "Copper Room",
-          "description": "Premium room featuring 1 King Bed and 1 Single Bed."
+          "description": "Premium room featuring 1 King Bed and 1 Single Bed.",
+          "image": "https://thestoneheritage.in/copper-room.webp"
         },
         {
           "@type": "HotelRoom",
           "name": "The Vintage Room",
-          "description": "Classic accommodation featuring 1 King Bed."
+          "description": "Classic accommodation featuring 1 King Bed.",
+          "image": "https://thestoneheritage.in/vintage-room.webp"
         },
         {
           "@type": "HotelRoom",
           "name": "Stonewood Family Retreat",
-          "description": "Luxury family suite configuration featuring 2 King Beds."
+          "description": "Luxury family suite configuration featuring 2 King Beds.",
+          "image": "https://thestoneheritage.in/stonewood-family-retreat.webp"
         },
         {
           "@type": "HotelRoom",
           "name": "Stone And Story Room",
-          "description": "Boutique heritage room featuring 1 King Bed."
+          "description": "Boutique heritage room featuring 1 King Bed.",
+          "image": "https://thestoneheritage.in/stonewood-family-retreat-group-stay.webp"
         },
         {
           "@type": "HotelRoom",
           "name": "Iron Room",
-          "description": "Rustic designed accommodation featuring 1 King Bed."
+          "description": "Rustic designed accommodation featuring 1 King Bed.",
+          "image": "https://thestoneheritage.in/iron-room.webp"
         },
         {
           "@type": "HotelRoom",
           "name": "Cedar Room",
-          "description": "Economy category compact room option."
+          "description": "Economy category compact room option.",
+          "image": "https://thestoneheritage.in/cedar-room.webp"
         }
       ],
       "potentialAction": {
@@ -196,6 +204,22 @@ const structuredData = {
             "@type": "Answer",
             "text": "Yes, we are a fully pet-friendly accommodation. We warmly welcome your furry family members, and our spacious garden areas and standalone stone cottages provide the perfect, safe environment for pets to enjoy the mountain air."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is the best homestay in Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stone Heritage Mukteshwar is widely regarded as the best homestay in Mukteshwar. It offers a premium boutique experience with authentic Kumaoni stone architecture, breathtaking Himalayan views, pet-friendly accommodations, and exceptional home-cooked meals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which is the top homestay in Uttarakhand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stone Heritage Mukteshwar stands out as a top homestay in Uttarakhand. With its unique traditional stone cottages, personalized hospitality, panoramic Nanda Devi views, and serene atmosphere away from commercial crowds, it provides an unparalleled luxury mountain retreat."
+          }
         }
       ]
     }
@@ -207,7 +231,7 @@ const structuredData = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/webp" href="/Logo.webp" />
     <meta name="generator" content={Astro.generator} />
     
     <!-- Core SEO & Meta Tags -->

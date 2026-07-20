@@ -22,6 +22,14 @@ const faqs = [
   {
     question: "Is Stone Heritage Mukteshwar a pet-friendly homestay?",
     answer: "Yes, we are a fully pet-friendly accommodation. We warmly welcome your furry family members, and our spacious garden areas and standalone stone cottages provide the perfect, safe environment for pets to enjoy the mountain air."
+  },
+  {
+    question: "Which is the best homestay in Mukteshwar?",
+    answer: "Stone Heritage Mukteshwar is widely regarded as the best homestay in Mukteshwar. It offers a premium boutique experience with authentic Kumaoni stone architecture, breathtaking Himalayan views, pet-friendly accommodations, and exceptional home-cooked meals."
+  },
+  {
+    question: "Which is the top homestay in Uttarakhand?",
+    answer: "Stone Heritage Mukteshwar stands out as a top homestay in Uttarakhand. With its unique traditional stone cottages, personalized hospitality, panoramic Nanda Devi views, and serene atmosphere away from commercial crowds, it provides an unparalleled luxury mountain retreat."
   }
 ];
 
