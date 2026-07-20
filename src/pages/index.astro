@@ -1,7 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Home } from "../components/react-pages/Home";
+import { FloatingWhatsAppButton } from "../components/FloatingWhatsAppButton";
 ---
 <Layout title="Luxury Homestay in Mukteshwar | Stone Heritage Mukteshwar" description="Escape city stress at our luxury heritage homestay in Mukteshwar. Perfect for families and couples seeking panoramic Himalayan sunsets, serene nature, and personalized hospitality near Delhi NCR.">
   <Home client:load />
+  <FloatingWhatsAppButton client:load />
 </Layout>

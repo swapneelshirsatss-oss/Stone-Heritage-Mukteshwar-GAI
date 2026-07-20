@@ -70,7 +70,7 @@ export function Home() {
               <div className="flex gap-0.5 text-[#FBBC05] text-base drop-shadow-sm">
                 <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
               </div>
-              <span className="font-bold text-white group-hover:text-stone-100 transition-colors">4.9/5</span>
+              <span className="font-bold text-white group-hover:text-stone-100 transition-colors">4.9/5 (245 Google reviews)</span>
             </a>
           </div>
         </motion.div>
@@ -186,7 +186,7 @@ export function Home() {
             {[
               { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
               { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
-              { name: "Stone and Story Suite", image: "/stonewood-family-retreat.webp", alt: "Stone and Story Suite offering premium comfort in Mukteshwar" },
+              { name: "Stone and Story Suite", image: "/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort in Mukteshwar" },
               { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat for multi-generational stays" }
             ].map((room) => (
               <div key={room.name} className="bg-white overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-lg transition-all duration-500">
@@ -260,7 +260,7 @@ export function Home() {
             <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Guest Experiences at Stone Heritage</h2>
             <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
             <p className="text-lg text-primary/70 max-w-2xl mx-auto leading-relaxed">
-              Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.
+              Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars across 245 Google reviews. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.
             </p>
           </div>
           
