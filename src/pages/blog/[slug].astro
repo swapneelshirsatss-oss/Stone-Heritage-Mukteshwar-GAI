@@ -41,11 +41,11 @@ const blogSchema = {
 ---
 
 <Layout title={`${post.data.title} | Stone Heritage`} description={post.data.excerpt} schema={blogSchema}>
-  <article className="max-w-4xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
-    <div className="mb-8 text-center">
-      <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-4 block">{post.data.category}</span>
-      <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary">{post.data.title}</h1>
-      <div className="flex justify-center items-center gap-6 text-primary/60 text-sm">
+  <article class="max-w-4xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+    <div class="mb-8 text-center">
+      <span class="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">{post.data.category}</span>
+      <h1 class="text-4xl md:text-6xl font-serif font-medium mb-6 text-primary tracking-tight">{post.data.title}</h1>
+      <div class="flex justify-center items-center gap-6 text-primary/60 text-sm">
         <span>{post.data.date}</span>
         <span>•</span>
         <span>{post.data.author}</span>
@@ -54,16 +54,16 @@ const blogSchema = {
       </div>
     </div>
     
-    <div className="aspect-[21/9] overflow-hidden rounded-2xl mb-12">
+    <div class="aspect-[21/9] overflow-hidden rounded-2xl mb-12 shadow-md">
       <OptimizedImage src={post.data.image} alt={post.data.title} className="w-full h-full object-cover" />
     </div>
 
-    <div className="prose prose-stone prose-lg max-w-none prose-img:rounded-xl">
+    <div class="prose prose-stone prose-lg max-w-none mx-auto prose-headings:font-serif prose-headings:font-medium prose-h2:text-3xl prose-h2:text-primary prose-a:text-accent prose-p:text-primary/80 prose-p:font-light prose-li:text-primary/80 prose-img:rounded-xl">
       <Content />
     </div>
     
-    <div className="mt-16 pt-8 border-t border-stone-200">
-      <a href="/blog/" className="text-accent hover:text-accent/80 transition-colors font-medium">
+    <div class="mt-16 pt-8 border-t border-stone-200">
+      <a href="/blog/" class="text-accent hover:text-accent/80 transition-colors font-medium">
         &larr; Back to all articles
       </a>
     </div>
