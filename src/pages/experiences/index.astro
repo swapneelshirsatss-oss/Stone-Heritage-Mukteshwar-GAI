@@ -1,7 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { Experiences } from "../../components/react-pages/Experiences";
+import { OnSiteActivities } from "../../components/experiences/OnSiteActivities";
+import { PlacesToVisit } from "../../components/experiences/PlacesToVisit";
 ---
 <Layout title="Top Things to Do in Mukteshwar | Local Experiences" description="Discover top things to do in Mukteshwar: rock climbing at Chauli Ki Jali, nature trails, village walks & bonfire BBQ nights at Stone Heritage Homestay.">
-  <Experiences client:load />
+  <div class="py-24 px-4 max-w-7xl mx-auto">
+    <OnSiteActivities client:load />
+    <PlacesToVisit client:visible />
+  </div>
 </Layout>

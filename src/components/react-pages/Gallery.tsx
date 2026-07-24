@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { motion } from 'motion/react';
-import { galleryImages } from '../../components/InteractiveGallery';
+import { galleryImages } from '../../data/galleryImages';
 import { OptimizedImage } from '../../components/OptimizedImage';
 import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
 export function Gallery() {

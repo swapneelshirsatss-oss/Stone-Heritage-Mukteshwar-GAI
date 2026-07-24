@@ -1,6 +1,3 @@
-import React from 'react';
-import { OptimizedImage } from './OptimizedImage';
-
 export const galleryImages = [
   { src: '/best-family-homestay-in-mukteshwar.webp', alt: 'Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar' },
   { src: '/garden-area-stone-heritage.webp', alt: 'Lush green garden area and outdoor seating at Stone Heritage Mukteshwar' },
@@ -27,23 +24,3 @@ export const galleryImages = [
   { src: '/homestay-in-mukteshwar.webp', alt: 'A serene view of our homestay in Mukteshwar' },
   { src: '/thing-to-do-in-mukteshwar.webp', alt: 'Exploring activities and things to do in Mukteshwar' }
 ];
-
-export function InteractiveGallery() {
-  return (
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {galleryImages.map((image, index) => (
-        <div
-          key={index}
-          className="relative aspect-square rounded-xl overflow-hidden bg-stone-100 shadow-sm transition-shadow duration-300 hover:shadow-md group"
-        >
-          <OptimizedImage
-            src={image.src}
-            alt={image.alt}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-            loading={index < 8 ? "eager" : "lazy"}
-          />
-        </div>
-      ))}
-    </div>
-  );
-}

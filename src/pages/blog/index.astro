@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
-import { Blog } from "../../components/react-pages/Blog";
+import Blog from "../../components/react-pages/Blog.astro";
 
 const allPosts = await getCollection('blog');
 
@@ -23,5 +23,5 @@ formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getT
 ---
 
 <Layout title="Blog | Stone Heritage Mukteshwar" description="Read the Stone Heritage blog for travel tips, local Mukteshwar guides, and insights into the Kumaoni lifestyle and Himalayan heritage.">
-  <Blog posts={formattedPosts} client:load />
+  <Blog posts={formattedPosts} />
 </Layout>

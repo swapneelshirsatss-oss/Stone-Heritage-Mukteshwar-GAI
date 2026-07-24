@@ -1,9 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Home } from "../components/react-pages/Home";
-import { FloatingWhatsAppButton } from "../components/FloatingWhatsAppButton";
+import FloatingWhatsAppButton from "../components/FloatingWhatsAppButton.astro";
+
+import { HeroSection } from "../components/home/HeroSection";
+import { IntroSection } from "../components/home/IntroSection";
+import { FeaturedRoomsSection } from "../components/home/FeaturedRoomsSection";
+import { HomeGallerySection } from "../components/home/HomeGallerySection";
+import { TestimonialsSection } from "../components/home/TestimonialsSection";
+import { ValuePropSection } from "../components/home/ValuePropSection";
+import { BookingCtaSection } from "../components/home/BookingCtaSection";
+import { LocalAttractionsSection } from "../components/home/LocalAttractionsSection";
+import { PartnersSection } from "../components/home/PartnersSection";
+import { FaqAccordion } from "../components/FaqAccordion";
+import { LocationSection } from "../components/home/LocationSection";
 ---
 <Layout title="Luxury Homestay in Mukteshwar | Stone Heritage Mukteshwar" description="Escape city stress at our luxury heritage homestay in Mukteshwar. Perfect for families and couples seeking panoramic Himalayan sunsets, serene nature, and personalized hospitality near Delhi NCR.">
-  <Home client:load />
-  <FloatingWhatsAppButton client:load />
+  <div class="flex flex-col">
+    <HeroSection client:load />
+    <IntroSection client:visible />
+    <FeaturedRoomsSection client:visible />
+    <HomeGallerySection client:visible />
+    <TestimonialsSection client:visible />
+    <ValuePropSection client:visible />
+    <BookingCtaSection client:visible />
+    <LocalAttractionsSection client:visible />
+    <PartnersSection client:visible />
+    <FaqAccordion client:visible />
+    <LocationSection client:visible />
+  </div>
+  <FloatingWhatsAppButton />
 </Layout>

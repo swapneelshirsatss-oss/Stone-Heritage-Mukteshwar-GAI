@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { OptimizedImage } from './OptimizedImage';
-import { galleryImages } from './InteractiveGallery';
+import { galleryImages } from '../data/galleryImages';
 
 export function GalleryCarousel() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);

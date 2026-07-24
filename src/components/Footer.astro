@@ -1,0 +1,94 @@
+---
+import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
+import { Image } from 'astro:assets';
+
+const currentYear = new Date().getFullYear();
+---
+<footer class="bg-primary text-stone-100 pt-12 pb-44 md:pb-12 mt-auto overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
+      <div class="lg:col-span-4">
+        <div class="flex items-center gap-4 mb-8">
+          <Image src="/Logo.webp" alt="Stone Heritage Logo" class="h-16 w-auto bg-stone-50 rounded-sm p-1" width={200} height={200} loading="lazy" />
+          <div class="flex flex-col justify-center">
+            <h3 class="text-xl font-serif font-semibold text-accent tracking-normal leading-none mb-1">Stone Heritage</h3>
+            <span class="text-[10px] tracking-[0.3em] text-stone-300 font-medium uppercase mt-1">Mukteshwar</span>
+          </div>
+        </div>
+        <p class="text-stone-300 text-sm font-light leading-relaxed mb-6">
+          Authentic Kumaoni heritage homestay offering breathtaking Himalayan views. The perfect escape for couples, families, and remote workers.
+        </p>
+        <h2 class="text-xs font-sans font-medium tracking-wider uppercase text-highlight mb-6">
+          Book Direct for Exclusive Rates & Perks
+        </h2>
+        <div class="flex gap-4">
+          <a href="https://www.facebook.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="Facebook">
+            <Facebook size={20} />
+          </a>
+          <a href="https://www.instagram.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="Instagram">
+            <Instagram size={20} />
+          </a>
+          <a href="https://www.youtube.com/@StoneHeritageMukteshwar" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="YouTube">
+            <Youtube size={20} />
+          </a>
+          <a href="https://x.com/stone_heritage" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="Twitter">
+            <Twitter size={20} />
+          </a>
+        </div>
+      </div>
+      
+      <div class="lg:col-span-2">
+        <h3 class="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Quick Links</h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
+          <li><a href="/stay/" class="hover:text-highlight transition-colors">Stay</a></li>
+          <li><a href="/experiences/" class="hover:text-highlight transition-colors">Experiences</a></li>
+          <li><a href="/gallery/" class="hover:text-highlight transition-colors">Gallery</a></li>
+          <li><a href="/blog/" class="hover:text-highlight transition-colors">Blog</a></li>
+          <li><a href="/testimonials/" class="hover:text-highlight transition-colors">Testimonials</a></li>
+          <li><a href="/contact/" class="hover:text-highlight transition-colors">Contact Us</a></li>
+          <li><a href="https://booking.thestoneheritage.in/" target="_blank" rel="noopener noreferrer" class="hover:text-highlight transition-colors">Book Now</a></li>
+        </ul>
+      </div>
+      
+      <div class="lg:col-span-3">
+        <h3 class="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Contact Information</h3>
+        <address class="not-italic text-sm text-stone-300 space-y-2 font-light">
+          <p>Bhowali Dhanachuli Rd, South Gola Range,</p>
+          <p>Mukteshwar, Uttarakhand 263138</p>
+          <p class="mt-4">
+            <a href="tel:+919027844424" class="hover:text-highlight transition-colors">+91 9027844424</a> <br/>
+            <a href="tel:+917900200563" class="hover:text-highlight transition-colors">+91 7900200563</a>
+          </p>
+          <p>
+            <a href="mailto:thestoneheritage@gmail.com" class="hover:text-highlight transition-colors">thestoneheritage@gmail.com</a>
+          </p>
+        </address>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h3 class="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Location</h3>
+        <div class="rounded-sm overflow-hidden h-48 bg-stone-800 border border-stone-700/50">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border: 0;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    
+    <div class="border-t border-stone-700 mt-12 pt-8 text-center text-xs text-stone-400 flex flex-col md:flex-row items-center justify-center gap-4">
+      <p>&copy; {currentYear} Stone Heritage Mukteshwar. All rights reserved.</p>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <a href="/privacy-policy/" class="hover:text-highlight transition-colors">Privacy Policy</a>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <a href="/terms-conditions/" class="hover:text-highlight transition-colors">Terms and Conditions</a>
+      <span class="hidden md:inline text-stone-600">|</span>
+      <a href="/sitemap/" class="hover:text-highlight transition-colors">Sitemap</a>
+    </div>
+  </div>
+</footer>

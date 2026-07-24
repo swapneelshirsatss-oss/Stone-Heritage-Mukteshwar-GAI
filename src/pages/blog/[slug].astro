@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
-import { OptimizedImage } from "../../components/OptimizedImage";
+import { Image } from 'astro:assets';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -55,7 +55,7 @@ const blogSchema = {
     </div>
     
     <div class="aspect-[21/9] overflow-hidden rounded-2xl mb-12 shadow-md">
-      <OptimizedImage src={post.data.image} alt={post.data.title} className="w-full h-full object-cover" />
+      <Image src={post.data.image} alt={post.data.title} class="w-full h-full object-cover" width={1200} height={675} />
     </div>
 
     <div class="prose prose-stone prose-lg max-w-none mx-auto prose-headings:font-serif prose-headings:font-medium prose-h2:text-3xl prose-h2:text-primary prose-a:text-accent prose-p:text-primary/80 prose-p:font-light prose-li:text-primary/80 prose-img:rounded-xl">
