@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import { Mountain, Home, Compass, PhoneCall, Search } from 'lucide-react';
+
+const canonicalUrl = "https://thestoneheritage.in/404/";
+const pageTitle = "404 - Page Not Found | Stone Heritage Mukteshwar";
+const pageDescription = "The page you are looking for does not exist. Explore our homestay rooms, experiences, or contact Stone Heritage Mukteshwar.";
+---
+
+<Layout title={pageTitle} description={pageDescription} canonicalUrl={canonicalUrl}>
+  <Breadcrumb currentTitle="404 Page Not Found" />
+  <main class="py-20 px-4 max-w-4xl mx-auto text-center">
+    <div class="inline-flex items-center justify-center w-20 h-20 bg-primary/10 text-primary rounded-full mb-6">
+      <Mountain class="w-10 h-10" />
+    </div>
+
+    <h1 class="text-5xl md:text-6xl font-serif font-bold text-primary mb-4 tracking-tight">404</h1>
+    <h2 class="text-2xl md:text-3xl font-medium text-stone-800 mb-6">Page Lost in the Mountains</h2>
+    
+    <p class="text-lg text-stone-600 max-w-xl mx-auto font-light leading-relaxed mb-10">
+      The page you were looking for might have been moved or doesn't exist. Let us guide you back to exploring our homestay in Mukteshwar.
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
+      <a href="/" class="p-5 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col items-center gap-2 group">
+        <Home class="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+        <span class="font-semibold text-primary text-sm">Home</span>
+      </a>
+      <a href="/stay/" class="p-5 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col items-center gap-2 group">
+        <Compass class="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+        <span class="font-semibold text-primary text-sm">Stay & Rooms</span>
+      </a>
+      <a href="/experiences/" class="p-5 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col items-center gap-2 group">
+        <Mountain class="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+        <span class="font-semibold text-primary text-sm">Experiences</span>
+      </a>
+      <a href="/contact/" class="p-5 bg-white border border-stone-200 rounded-xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col items-center gap-2 group">
+        <PhoneCall class="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
+        <span class="font-semibold text-primary text-sm">Contact Us</span>
+      </a>
+    </div>
+
+    <div class="max-w-md mx-auto">
+      <a 
+        href="https://wa.me/919027844424?text=Hi%20Stone%20Heritage%20team,%20I%20need%20help%20finding%20information%20on%20your%20website." 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="inline-block bg-primary hover:bg-secondary text-white font-semibold py-3 px-8 rounded-full transition-colors shadow-sm"
+      >
+        Need Instant Assistance? Chat on WhatsApp
+      </a>
+    </div>
+  </main>
+</Layout>
