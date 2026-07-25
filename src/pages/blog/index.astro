@@ -3,9 +3,14 @@ import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 import Blog from "../../components/react-pages/Blog.astro";
 
+const canonicalUrl = "https://thestoneheritage.in/blog/";
+const pageTitle = "Mukteshwar Travel Blog & Guides | Stone Heritage Mukteshwar";
+const pageDescription = "Read the Stone Heritage Mukteshwar travel blog for local sight-seeing guides, road trip itineraries from Delhi NCR, bird watching & Kumaoni culture tips.";
+const pageKeywords = "mukteshwar travel blog, mukteshwar travel guides, delhi to mukteshwar road trip, things to do in mukteshwar blog, kumaoni heritage blog";
+
 const allPosts = await getCollection('blog');
 
-// Format posts for the React component
+// Format posts for the component
 const formattedPosts = allPosts.map(post => ({
   id: post.slug,
   slug: post.slug,
@@ -18,10 +23,15 @@ const formattedPosts = allPosts.map(post => ({
   readTime: post.data.readTime,
 }));
 
-// Sort by date (basic sort, assuming date format parsing works or simply by id)
+// Sort by date descending
 formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 
-<Layout title="Blog | Stone Heritage Mukteshwar" description="Read the Stone Heritage blog for travel tips, local Mukteshwar guides, and insights into the Kumaoni lifestyle and Himalayan heritage.">
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  keywords={pageKeywords}
+  canonicalUrl={canonicalUrl}
+>
   <Blog posts={formattedPosts} />
 </Layout>
