@@ -114,9 +114,9 @@ export function Contact() {
   return (
     <div className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4 text-primary">Contact Us — Homestay in Mukteshwar, Uttarakhand</h1>
-        <p className="text-lg text-primary/70 max-w-2xl mx-auto">
-          Planning your weekend getaway from Delhi to Mukteshwar? Contact us directly for the best rates and personalized arrangements.
+        <h1 className="text-4xl font-bold mb-4 text-primary">Contact Us — Homestay at Mukteshwar, Uttarakhand</h1>
+        <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed">
+          Contact Stone Heritage, a top-rated homestay at Mukteshwar, Uttarakhand. Reach out directly via WhatsApp, phone, or email for priority room allocation and best available direct rates.
         </p>
       </div>
 
