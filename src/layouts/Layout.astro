@@ -11,6 +11,7 @@ export interface Props {
   canonicalUrl?: string;
   type?: string;
   image?: string;
+  noindex?: boolean;
   schema?: Record<string, any>;
 }
 const { 
@@ -20,6 +21,7 @@ const {
   canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.href,
   type = 'website',
   image = 'https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp',
+  noindex = false,
   schema
 } = Astro.props;
 
@@ -328,6 +330,7 @@ const speakableSchema = {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="llms" href="/llms.txt" />
     
