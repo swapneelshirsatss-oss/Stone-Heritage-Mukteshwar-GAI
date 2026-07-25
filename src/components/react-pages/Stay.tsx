@@ -4,14 +4,15 @@ import { OptimizedImage } from '../../components/OptimizedImage';
 import { Wifi, UtensilsCrossed, Mountain, Castle, Dog } from 'lucide-react';
 
 const rooms = [
-  { name: "Brass Room", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Family", view: "Mountain View", amenities: "En-suite Bathroom, Wi-Fi", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
-  { name: "Copper Room", capacity: "2-4 Guests", bedType: "King Bed + Single", idealFor: "Family", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/copper-room.webp", alt: "Spacious Copper Room interior, perfect for families visiting Stone Heritage homestay" },
-  { name: "The Vintage Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Family", view: "Valley View", amenities: "Heritage Architecture, Wi-Fi", image: "/vintage-room.webp", alt: "The Vintage Room showing classic heritage architecture and cozy bedding" },
-  { name: "Stonewood Family Retreat", capacity: "4-6 Guests", bedType: "2 King Beds", idealFor: "Family", view: "Panoramic View", amenities: "Private Balcony, Wi-Fi", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king beds for multi-generational stays" },
-  { name: "Stone and Story Suite", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Family", view: "Mountain View", amenities: "Premium Setup, Wi-Fi", image: "/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort and a relaxing atmosphere in Mukteshwar" },
-  { name: "Iron Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Family", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/iron-room.webp", alt: "Cozy Iron Room setup, ideal for couples staying at Stone Heritage" },
-  { name: "Cedar Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Solo Travellers / Single Traveller", view: "Forest View", amenities: "Wooden Paneling, Wi-Fi", image: "/cedar-room.webp", alt: "Cedar Room interior with beautiful wooden paneling and natural light" },
-  { name: "Himalayan Workation", capacity: "1-2 Guests", bedType: "Workstation Setup", idealFor: "Solo Travellers / Single Traveller", view: "Himalayan View", amenities: "High-Speed Wi-Fi, Desk", image: "/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace space perfect for a Himalayan workation at Stone Heritage" }
+  { name: "Brass Room", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples & Small Families", view: "Mountain View", amenities: "En-suite Bathroom, Wi-Fi", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
+  { name: "Copper Room", capacity: "2-4 Guests", bedType: "King Bed + Single", idealFor: "Families", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/copper-room.webp", alt: "Spacious Copper Room interior, perfect for families visiting Stone Heritage homestay" },
+  { name: "The Vintage Room", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples", view: "Valley View", amenities: "Heritage Architecture, Wi-Fi", image: "/vintage-room.webp", alt: "The Vintage Room showing classic heritage architecture and cozy bedding" },
+  { name: "Stonewood Family Retreat", capacity: "4-6 Guests", bedType: "2 King Beds", idealFor: "Families & Multi-Generational Groups", view: "Panoramic View", amenities: "Private Balcony, Wi-Fi", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king beds for multi-generational stays" },
+  { name: "Stone and Story Suite", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples", view: "Mountain View", amenities: "Premium Setup, Wi-Fi", image: "/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort and a relaxing atmosphere in Mukteshwar" },
+  { name: "Iron Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Couples", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/iron-room.webp", alt: "Cozy Iron Room setup, ideal for couples staying at Stone Heritage" },
+  { name: "Cedar Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Solo Travellers", view: "Forest View", amenities: "Wooden Paneling, Wi-Fi", image: "/cedar-room.webp", alt: "Cedar Room interior with beautiful wooden paneling and natural light" },
+  { name: "Himalayan Workation", capacity: "1-2 Guests", bedType: "Workstation Setup", idealFor: "Remote Workers & Solo Travellers", view: "Himalayan View", amenities: "High-Speed Wi-Fi, Desk", image: "/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace space perfect for a Himalayan workation at Stone Heritage" },
+  { name: "Sunset Heritage Cottage", capacity: "2-4 Guests", bedType: "King Bed", idealFor: "Families & Couples", view: "Sunset & Mountain View", amenities: "Private Terrace, Wi-Fi", image: "/homestay-in-mukteshwar.webp", alt: "Sunset Heritage Cottage featuring private terrace and panoramic mountain views" }
 ];
 
 export function Stay() {
@@ -27,7 +28,7 @@ export function Stay() {
             <p className="text-lg text-primary/70 max-w-2xl mx-auto mb-8">
               Discover the charm of a true heritage stone cottage Mukteshwar experience. Our boutique homestay seamlessly blends traditional Kumaoni architecture with modern luxury for an unforgettable mountain retreat. Located in beautiful Mukteshwar, Uttarakhand.
             </p>
-            <h2 className="text-3xl font-bold text-primary">Our Stone Cottage Rooms — Copper, Brass & Stone and Story Suite</h2>
+            <h2 className="text-3xl font-bold text-primary">Our 8 Stone Cottage Rooms in Mukteshwar</h2>
           </motion.div>
         </header>
 

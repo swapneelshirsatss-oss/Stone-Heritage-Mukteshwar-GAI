@@ -10,6 +10,11 @@ export default defineConfig({
   integrations: [react(), partytown({ config: { forward: ['dataLayer.push'] } })],
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      rollupOptions: {
+        external: ['/pagefind/pagefind.js']
+      }
+    },
     ssr: {
       external: ['react']
     }

@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { OurStoryContent } from "../../components/our-story/OurStoryContent";
+
+const canonicalUrl = "https://thestoneheritage.in/our-story/";
+const pageTitle = "Homestay & Resort in Mukteshwar | Stone Heritage Rooms";
+const pageDescription = "Book homestay rooms in Mukteshwar at Stone Heritage — resort-style stone cottages with panoramic Himalayan views. Choose from 9 unique rooms & suites.";
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "@id": "https://thestoneheritage.in/our-story/#webpage",
+      "url": canonicalUrl,
+      "name": pageTitle,
+      "description": pageDescription,
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://thestoneheritage.in/#website",
+        "name": "Stone Heritage Mukteshwar",
+        "url": "https://thestoneheritage.in/"
+      },
+      "about": {
+        "@type": ["Hotel", "LodgingBusiness", "BedAndBreakfast"],
+        "@id": "https://thestoneheritage.in/#hotel",
+        "name": "Stone Heritage Mukteshwar",
+        "url": "https://thestoneheritage.in/",
+        "telephone": "+919027844424",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bhowali Dhanachuli Rd, South Gola Range",
+          "addressLocality": "Mukteshwar",
+          "addressRegion": "Uttarakhand",
+          "postalCode": "263138",
+          "addressCountry": "IN"
+        }
+      }
+    }
+  ]
+};
+---
+
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  schema={schemaData}
+>
+  <OurStoryContent client:load />
+</Layout>

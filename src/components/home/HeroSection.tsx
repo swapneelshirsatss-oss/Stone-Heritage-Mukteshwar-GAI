@@ -24,7 +24,7 @@ export function HeroSection() {
         className="relative z-10 max-w-4xl mx-auto px-4 text-center"
       >
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-stone-50 md:drop-shadow-lg leading-tight tracking-tight">
-          Luxury Homestay in Mukteshwar — Stone Heritage
+          Homestay in Mukteshwar for Families — Stone Heritage
           <span className="block text-2xl md:text-4xl mt-4 font-normal italic text-stone-200">An Authentic Himalayan Retreat</span>
         </h1>
         <p className="text-lg md:text-xl mb-10 font-light text-stone-100 max-w-2xl mx-auto leading-relaxed md:drop-shadow-md">

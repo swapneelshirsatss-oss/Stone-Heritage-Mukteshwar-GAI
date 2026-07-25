@@ -1,8 +1,64 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Volunteer } from "../../components/react-pages/Volunteer";
+
+const canonicalUrl = "https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/";
+const pageTitle = "Volunteer Work Exchange | Stone Heritage Mukteshwar";
+const pageDescription = "Join our content creator & volunteer work exchange in Mukteshwar. Exchange photography, videography, blogging & design skills for a stay in Uttarakhand.";
+
+const faqSchemaData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the content creator work exchange program?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Program durations typically range from 1 to 4 weeks depending on the project scope and creator agreement. Contact us with your proposal for custom duration requests."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of content do I need to create in exchange for a stay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Deliverables usually include high-resolution photography, short-form video reels, blog articles, or branding design assets covering our homestay, surrounding trails, and local Kumaoni hospitality."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a large following to apply as a content creator?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — quality of portfolio and creative craftsmanship matter most. We welcome skilled creators regardless of social media follower count."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the work exchange open to solo creators or teams (e.g., a videographer + editor duo)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Both solo creators and small creator duos (such as a videographer and editor team) are welcome to apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What equipment or support does Stone Heritage provide for content creation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage provides full property access, high-speed Wi-Fi, local guided tours/retrievals to nearby spots like Chauli Ki Jali & Bhalu Gaad, comfortable room accommodation, and wholesome home-cooked vegetarian meals."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title="Volunteer Work Exchange | Stone Heritage Mukteshwar" description="Join our volunteer work exchange program in Mukteshwar. Immerse yourself in the Himalayan lifestyle, learn local Kumaoni culture, and contribute to our heritage homestay.">
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  schema={faqSchemaData}
+>
   <Volunteer client:load />
 </Layout>

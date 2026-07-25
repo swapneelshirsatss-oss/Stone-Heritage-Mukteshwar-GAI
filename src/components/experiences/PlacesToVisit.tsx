@@ -63,8 +63,8 @@ const placesToVisit = [
     distance: "A short drive from the town center",
     activities: "Stargazing, astrophotography, and guided astronomy tours.",
     tips: "Book in advance as slots are limited. Best visited on clear, moonless nights. Dress warmly.",
-    image: "/sky-obesration-in- Mukteshwar.webp",
-    alt: "Professional telescopes set up for stargazing and astrophotography at the Starscapes Observatory in Mukteshwar"
+    image: "/sky-observation-in-mukteshwar.webp",
+    alt: "Professional telescopes set up for stargazing and night sky observation at Starscapes Observatory in Mukteshwar"
   },
   {
     name: "Brahmeswara Temple",

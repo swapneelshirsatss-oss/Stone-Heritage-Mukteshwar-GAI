@@ -1,8 +1,184 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Contact } from "../../components/react-pages/Contact";
+
+const canonicalUrl = "https://thestoneheritage.in/contact/";
+const pageTitle = "Contact Us | Homestay in Mukteshwar, Uttarakhand";
+const pageDescription = "Contact Stone Heritage, a top-rated homestay in Mukteshwar, Uttarakhand. Book directly for the best rates, directions & personalized stay arrangements.";
+
+const faqSchemaData = {
+  "@context": "https://schema.org",
+  "@type": "QAPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Which is the best homestay in Mukteshwar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage is widely recognized as one of the best homestays in Mukteshwar, rated 4.9/5 across 245 Google reviews. It offers authentic Kumaoni heritage architecture, panoramic Himalayan views, and personalized hospitality for families, couples, and remote workers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes Stone Heritage the best homestay in Mukteshwar for families?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage offers 8 distinct rooms, including the Stonewood Family Retreat (2 King Beds, ideal for 4-6 guests), making it easy to accommodate families and multi-generational groups. The property also offers on-site bonfires, BBQ nights, and nature trails suited to all ages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Stone Heritage a luxury or budget homestay in Mukteshwar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage is a boutique heritage homestay offering a mid-to-premium experience — combining authentic stone cottage architecture with modern comforts like en-suite bathrooms, high-speed Wi-Fi, and personalized service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in a stay at Stone Heritage homestay in Mukteshwar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A stay includes accommodation in heritage stone cottage rooms, Wi-Fi, and access to on-site experiences such as bonfires, BBQ nights, and stargazing. Breakfast is not included in the room rate but is available on request for an additional charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Stone Heritage a good homestay in Mukteshwar for families with kids?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — the Stonewood Family Retreat and Copper Room (King Bed + Single) are well-suited for families with children, and the property's nature trails, bonfire nights, and open outdoor spaces offer plenty for kids to enjoy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Stone Heritage have family rooms or suites for groups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Stonewood Family Retreat sleeps 4-6 guests with 2 King Beds and a private balcony, and the Copper Room accommodates up to 4 guests — both designed for families and small groups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Stone Heritage accommodate a large family or multi-generational trip?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. With 8 individual rooms across the property, families can book multiple rooms together — combining the Stonewood Family Retreat with additional rooms like Brass, Copper, or Iron for larger multi-generational groups."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Stone Heritage suitable for a family reunion in Mukteshwar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The property's mix of room types, communal outdoor spaces, and experiences like group bonfires and BBQ nights make it well suited for family reunions and group getaways."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Stone Heritage homestay from Delhi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage is approximately an 8-hour drive from Delhi via Moradabad, Haldwani, and Bhowali, making it a popular weekend getaway destination for Delhi NCR travelers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best route from Delhi NCR to Stone Heritage in Mukteshwar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The fastest route from Delhi is via Moradabad, Haldwani, and Bhowali. Stone Heritage can also help arrange taxi pickups from Kathgodam railway station for travelers arriving by train."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How far is Stone Heritage from Nainital?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage is approximately a 2-hour drive from Nainital, making it an easy addition to a Kumaon hills itinerary."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Stone Heritage close to Mukteshwar Temple and Chauli Ki Jali?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Chauli Ki Jali is approximately 1.5 km from the property, and Mukteshwar Temple is located in the town center, a short drive away — both easily accessible during your stay."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I book Stone Heritage homestay in Mukteshwar directly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can book directly via WhatsApp at +91 9027844424, by calling +91 9027844424 or +91 7900200563, by emailing thestoneheritage@gmail.com, or through the booking form on this page for the best available rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the price range for rooms at Stone Heritage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Room rates at Stone Heritage range from approximately ₹1,500 to ₹15,000 per night, depending on the room type and season. Contact us directly for the best current rates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Stone Heritage offer better rates for direct bookings than OTAs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Booking directly with Stone Heritage — via WhatsApp, phone, or email — offers the best available rates, along with complimentary upgrades (subject to availability) and priority room allocation, compared to booking through third-party OTA platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cancellation policy at Stone Heritage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancellations made at least 24 hours before check-in time are eligible for a 100% refund, with no cancellation charges."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Stone Heritage a pet-friendly homestay in Mukteshwar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Stone Heritage is a fully pet-friendly homestay. Mention your pets in your booking inquiry so a suitable room with easy outdoor access can be allocated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Stone Heritage offer bonfire, BBQ, or stargazing experiences?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Guests can enjoy curated bonfire and BBQ nights along with guided stargazing sessions under clear Himalayan skies, right from the property's terrace."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Stone Heritage a good homestay in Mukteshwar for a workation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Himalayan Workation room offers a dedicated workstation setup with high-speed Wi-Fi, well suited to remote work stays. Workation packages require a minimum stay of 7 days — contact us directly for pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What food is served at Stone Heritage — is it vegetarian or Kumaoni cuisine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stone Heritage serves pure vegetarian, home-cooked meals prepared with fresh local ingredients, rooted in authentic Kumaoni cuisine."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title="Contact Us | Stone Heritage Mukteshwar" description="Get in touch with Stone Heritage Mukteshwar for direct bookings, inquiries, and directions to the best homestay near Nanda Devi. Call or email us today.">
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  schema={faqSchemaData}
+>
   <Contact client:load />
 </Layout>

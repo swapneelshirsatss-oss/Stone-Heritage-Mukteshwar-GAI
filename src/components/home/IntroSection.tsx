@@ -13,7 +13,7 @@ export function IntroSection() {
       >
         <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Welcome to Your Sanctuary</span>
         <h2 className="text-3xl md:text-5xl font-serif font-medium mb-8 text-primary max-w-4xl mx-auto leading-tight">
-          Welcome to Stone Heritage — A Heritage Homestay in Mukteshwar
+          Welcome to Stone Heritage — Your Family-Friendly Homestay in Mukteshwar
         </h2>
         <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-8"></div>
         <p className="text-lg text-primary/80 max-w-3xl mx-auto leading-relaxed mb-20 font-light">

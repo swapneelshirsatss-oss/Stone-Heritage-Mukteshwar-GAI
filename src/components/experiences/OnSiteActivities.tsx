@@ -15,15 +15,16 @@ const experiences = [
   {
     title: "Guided Treks & Nature Retreats",
     description: "Embark on curated nature retreats and guided trekking experiences through scenic trails, designed for both beginners and seasoned adventurers. Personally hosted and guided by Harsh & Priyanka.",
+    hostLink: { text: "Learn more about hosts Harsh & Priyanka on Our Story", url: "/our-story/#hosts" },
     icon: "🏕️"
   },
   {
-    title: "Curated Experiences: Bonfires, BBQ & Stargazing",
+    title: "Bonfires, BBQ & Stargazing",
     description: "Experience clear-sky stargazing and curated outdoor bonfires & barbeque at Stone Heritage Mukteshwar. Book direct for complimentary winter camping access and hot Kumaoni snacks.",
     icon: "🔥"
   },
   {
-    title: "Special Yoga Sessions For Group",
+    title: "Special Yoga Sessions for Groups",
     description: "Rejuvenate your mind and body with our guided group yoga sessions amidst the serene mountain environment.",
     icon: "🧘‍♀️"
   }
@@ -39,7 +40,7 @@ export function OnSiteActivities() {
         className="text-center mb-24"
       >
         <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">On-Site Activities</span>
-        <h1 className="text-4xl md:text-6xl font-serif font-medium mb-6 text-primary tracking-tight">Curated Experiences</h1>
+        <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Curated Experiences at Stone Heritage</h2>
         <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed">
           Thoughtfully crafted to make your stay truly memorable. From guided treks to stargazing, there are plenty of unique things to do in Mukteshwar right at Stone Heritage.
@@ -60,8 +61,15 @@ export function OnSiteActivities() {
               {exp.icon}
             </div>
             <div className="flex-grow text-center md:text-left">
-              <h2 className="text-2xl md:text-4xl font-serif font-medium mb-4 text-primary">{exp.title}</h2>
-              <p className="text-lg text-primary/80 mb-8 font-light leading-relaxed">{exp.description}</p>
+              <h3 className="text-2xl md:text-4xl font-serif font-medium mb-4 text-primary">{exp.title}</h3>
+              <p className="text-lg text-primary/80 mb-4 font-light leading-relaxed">{exp.description}</p>
+              {exp.hostLink && (
+                <div className="mb-6">
+                  <a href={exp.hostLink.url} className="text-xs text-accent hover:underline font-medium inline-flex items-center gap-1">
+                    {exp.hostLink.text} &rarr;
+                  </a>
+                </div>
+              )}
               <a 
                 href={`https://wa.me/919027844424?text=${encodeURIComponent(`I'm interested in the ${exp.title} experience.`)}`}
                 target="_blank" 

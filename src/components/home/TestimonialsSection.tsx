@@ -7,7 +7,7 @@ export function TestimonialsSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Testimonials</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Guest Experiences at Stone Heritage</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Guest Experiences at Our Mukteshwar Family Homestay</h2>
           <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
           <p className="text-lg text-primary/70 max-w-2xl mx-auto leading-relaxed">
             Discover why guests rate their stay at Stone Heritage Mukteshwar 4.9/5 stars across 245 Google reviews. Read stories of peaceful getaways, warm hospitality, and unforgettable Himalayan views.

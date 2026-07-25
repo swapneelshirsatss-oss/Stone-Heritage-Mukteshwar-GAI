@@ -7,17 +7,17 @@ export function FeaturedRoomsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Our Accommodations</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Our Stone Cottage Rooms</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Rooms & Cottages at Our Homestay in Mukteshwar</h2>
           <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
-          <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Experience comfort in our thoughtfully designed rooms, blending traditional stone architecture with modern amenities.</p>
+          <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Explore 9 thoughtfully configured stone cottage rooms at our homestay in Mukteshwar — ideal for couples, families, and group getaways.</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {[
-            { name: "Copper Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
-            { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" },
+            { name: "Stonewood Family Retreat", tag: "Built for Multi-Generational Stays", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat for multi-generational stays" },
+            { name: "Copper Room & Brass Room", image: "/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
             { name: "Stone and Story Suite", image: "/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort in Mukteshwar" },
-            { name: "Stonewood Family Retreat", image: "/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat for multi-generational stays" }
+            { name: "Brass Room", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Luxurious Brass Room interior featuring a king-size bed and traditional Kumaoni architecture at Stone Heritage" }
           ].map((room) => (
             <div key={room.name} className="bg-white overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-lg transition-all duration-500">
               <div className="h-72 relative overflow-hidden bg-stone-200">
@@ -41,7 +41,7 @@ export function FeaturedRoomsSection() {
                 </div>
               </div>
               <div className="p-8 text-center">
-                <h3 className="text-2xl font-serif font-medium mb-3 text-primary">{room.name}</h3>
+                <h3 className="text-2xl font-serif font-medium mb-3 text-primary">{room.name}{room.tag ? ` — ${room.tag}` : ''}</h3>
                 <p className="text-primary/70 text-sm font-light leading-relaxed">
                   Enjoy panoramic views and premium comfort. Perfect for your Mukteshwar getaway.
                 </p>

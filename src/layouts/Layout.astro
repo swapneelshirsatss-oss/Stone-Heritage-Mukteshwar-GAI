@@ -7,14 +7,16 @@ import Footer from '../components/Footer.astro';
 export interface Props {
   title?: string;
   description?: string;
+  keywords?: string;
   canonicalUrl?: string;
   type?: string;
   image?: string;
   schema?: Record<string, any>;
 }
 const { 
-  title = 'Stone Heritage Mukteshwar',
-  description = 'Recognized as the best homestay in Mukteshwar, this authentic Kumaoni heritage property offers luxury family-friendly and pet-friendly stays with panoramic Himalayan views.',
+  title = 'Best Homestay in Mukteshwar for Families | Stone Heritage',
+  description = 'Stone Heritage is a top-rated homestay in Mukteshwar for families, couples & pet owners — authentic Kumaoni heritage stays with panoramic Himalayan views.',
+  keywords = 'homestay in mukteshwar, best homestay in mukteshwar, homestay in mukteshwar for families, stone cottage in mukteshwar, pet friendly homestay in mukteshwar, kumaoni heritage stay, homestay near delhi ncr, workation in mukteshwar',
   canonicalUrl = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.href,
   type = 'website',
   image = 'https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp',
@@ -25,17 +27,28 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Hotel", "LodgingBusiness", "BedAndBreakfast"],
-      "additionalType": "https://en.wikipedia.org/wiki/Homestay",
-      "@id": "https://thestoneheritage.in/#hotel",
+      "@type": ["BedAndBreakfast", "Hotel", "LodgingBusiness"],
+      "@id": "https://thestoneheritage.in/#localbusiness",
+      "additionalType": [
+        "https://en.wikipedia.org/wiki/Homestay",
+        "https://en.wikipedia.org/wiki/Villa",
+        "https://en.wikipedia.org/wiki/Cottage"
+      ],
       "name": "Stone Heritage Mukteshwar",
-      "logo": "https://thestoneheritage.in/Logo.webp",
-      "description": "Discover Stone Heritage Mukteshwar, widely recognized as the best homestay in Mukteshwar, Uttarakhand. Perfectly positioned on the Bhowali-Dhanachuli Road, this authentic traditional stone cottage blends rustic architecture with modern premium amenities. Experience a boutique Mukteshwar homestay with Himalayan view balconies, pristine forest trails, stargazing, and wholesome home-cooked vegetarian food. Whether you are planning a weekend getaway from Delhi to Mukteshwar, searching for pet-friendly homestay options, or locking in workation stays.",
+      "description": "Stone Heritage is a top-rated homestay in Mukteshwar for families and couples, near Nainital & Delhi NCR. Authentic Kumaoni heritage stays with panoramic Himalayan views.",
       "url": "https://thestoneheritage.in/",
       "telephone": "+919027844424",
       "email": "thestoneheritage@gmail.com",
-      "checkinTime": "14:00",
-      "checkoutTime": "11:00",
+      "petsAllowed": true,
+      "numberOfRooms": 9,
+      "sameAs": [
+        "https://www.facebook.com/thestoneheritage/",
+        "https://www.instagram.com/thestoneheritage/",
+        "https://www.youtube.com/@StoneHeritageMukteshwar",
+        "https://x.com/stone_heritage",
+        "https://in.pinterest.com/thestoneheritage/",
+        "https://www.linkedin.com/company/stone-heritage-mukteshwar/"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Bhowali Dhanachuli Rd, South Gola Range",
@@ -46,32 +59,20 @@ const structuredData = {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "29.4346202",
-        "longitude": "79.6446521"
+        "latitude": 29.4346873,
+        "longitude": 79.6447246
       },
-      "image": [
-        "https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp",
-        "https://thestoneheritage.in/best-family-homestay-in-mukteshwar.webp",
-        "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp"
-      ],
-      "sameAs": [
-        "https://www.facebook.com/thestoneheritage/",
-        "https://www.instagram.com/thestoneheritage/",
-        "https://www.youtube.com/@StoneHeritageMukteshwar",
-        "https://x.com/stone_heritage",
-        "https://in.pinterest.com/thestoneheritage/",
-        "https://www.linkedin.com/company/stone-heritage-mukteshwar/"
-      ],
       "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
-      "maps": [
-        "https://maps.google.com/maps?cid=5074157692820223333",
-        "https://www.google.com/maps/place/?q=place_id:ChIJl-SiNX29oDkRZXXdnokHa0Y"
+      "image": [
+        "https://thestoneheritage.in/assets/exterior-stone-cottage.jpg",
+        "https://thestoneheritage.in/assets/kumaoni-cooking-workshop.jpg",
+        "https://thestoneheritage.in/assets/himalayan-stargazing-view.jpg"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "245",
-        "bestRating": "5",
+        "reviewCount": "250",
+        "bestRating": "240",
         "worstRating": "1"
       },
       "priceRange": "$$",
@@ -96,44 +97,47 @@ const structuredData = {
         {
           "@type": "HotelRoom",
           "name": "Brass Room",
-          "description": "3 Quadroom with King Bali Floor Mattress and Private Washroom.",
-          "image": "https://thestoneheritage.in/brass-room-homestay-in-mukteshwar.webp"
+          "description": "King Bed setup with alternative floor mattress and private washroom."
         },
         {
           "@type": "HotelRoom",
           "name": "Copper Room",
-          "description": "Premium room featuring 1 King Bed and 1 Single Bed.",
-          "image": "https://thestoneheritage.in/copper-room.webp"
+          "description": "Spacious family setup configured with 1 King Bed and 1 Single Bed."
         },
         {
           "@type": "HotelRoom",
           "name": "The Vintage Room",
-          "description": "Classic accommodation featuring 1 King Bed.",
-          "image": "https://thestoneheritage.in/vintage-room.webp"
+          "description": "Charming heritage architecture featuring 1 ultra-comfortable King Bed."
         },
         {
-          "@type": "HotelRoom",
+          "@type": ["HotelRoom", "Suite", "House"],
           "name": "Stonewood Family Retreat",
-          "description": "Luxury family suite configuration featuring 2 King Beds.",
-          "image": "https://thestoneheritage.in/stonewood-family-retreat.webp"
+          "description": "Premium group or multi-generational stay equipped with 2 large King Beds. Functions as a standalone cottage experience."
         },
         {
           "@type": "HotelRoom",
-          "name": "Stone And Story Room",
-          "description": "Boutique heritage room featuring 1 King Bed.",
-          "image": "https://thestoneheritage.in/stone-and-story-suite-homestay.webp"
+          "name": "Stone and Story Suite",
+          "description": "Premium accommodation featuring 1 King Bed."
         },
         {
           "@type": "HotelRoom",
           "name": "Iron Room",
-          "description": "Rustic designed accommodation featuring 1 King Bed.",
-          "image": "https://thestoneheritage.in/iron-room.webp"
+          "description": "Accommodation featuring 1 King Bed."
         },
         {
           "@type": "HotelRoom",
           "name": "Cedar Room",
-          "description": "Economy category compact room option.",
-          "image": "https://thestoneheritage.in/cedar-room.webp"
+          "description": "Accommodation with wooden paneling, featuring 1 King Bed."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Himalayan Workation",
+          "description": "Dedicated workstation setup with high-speed Wi-Fi for remote work stays."
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Sunset Heritage Cottage",
+          "description": "Scenic stone cottage featuring private terrace balcony and 1 King Bed."
         }
       ],
       "potentialAction": {
@@ -159,7 +163,15 @@ const structuredData = {
       "url": "https://thestoneheritage.in/",
       "name": "Stone Heritage Mukteshwar",
       "publisher": {
-        "@id": "https://thestoneheritage.in/#hotel"
+        "@id": "https://thestoneheritage.in/#localbusiness"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://thestoneheritage.in/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
       }
     },
     {
@@ -251,6 +263,7 @@ const structuredData = {
     <!-- Core SEO & Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
     <link rel="canonical" href={canonicalUrl} />
     <link rel="llms" href="/llms.txt" />
     

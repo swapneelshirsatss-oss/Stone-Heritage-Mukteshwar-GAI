@@ -6,9 +6,9 @@ export function LocationSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Location</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Find Us Here</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary">Location & How to Reach Our Homestay in Mukteshwar</h2>
           <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
-          <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Located in the serene hills of Mukteshwar, offering breathtaking views and authentic hospitality.</p>
+          <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">Located along Bhowali-Dhanachuli Road in Mukteshwar, our homestay offers easy road connectivity from Delhi NCR and Kathgodam.</p>
         </div>
         <div className="overflow-hidden h-[400px] md:h-[500px] shadow-sm border border-stone-200">
           <iframe 

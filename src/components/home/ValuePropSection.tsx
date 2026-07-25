@@ -13,8 +13,8 @@ export function ValuePropSection() {
           className="text-center mb-16"
         >
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Perfect Getaway</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Families & Couples Near Delhi NCR Choose Us</h2>
-          <p className="text-lg text-stone-300 max-w-2xl mx-auto">Discover the perfect escape from the city, tailored for your comfort and peace of mind.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Families Choose Our Homestay in Mukteshwar</h2>
+          <p className="text-lg text-stone-300 max-w-2xl mx-auto">Discover a top-rated homestay experience near Delhi NCR, offering authentic Kumaoni heritage architecture and Himalayan views.</p>
         </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -29,7 +29,7 @@ export function ValuePropSection() {
               )
             },
             {
-              title: "Personalized Hospitality",
+              title: "Personalized Kumaoni Hospitality",
               desc: "Experience warm Kumaoni hospitality with dedicated service tailored to your needs.",
               icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,7 +38,7 @@ export function ValuePropSection() {
               )
             },
             {
-              title: "Easy Access from Delhi NCR",
+              title: "Easy Weekend Drive from Delhi NCR",
               desc: "A scenic and comfortable drive from Delhi NCR, making it the perfect weekend getaway.",
               icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">

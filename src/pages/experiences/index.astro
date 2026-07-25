@@ -2,8 +2,110 @@
 import Layout from "../../layouts/Layout.astro";
 import { OnSiteActivities } from "../../components/experiences/OnSiteActivities";
 import { PlacesToVisit } from "../../components/experiences/PlacesToVisit";
+
+const canonicalUrl = "https://thestoneheritage.in/experiences/";
+const pageTitle = "Top Things to Do in Mukteshwar — Curated Experiences";
+const pageDescription = "Discover the best things to do in Mukteshwar — rock climbing, waterfall treks, temple visits & stargazing, plus curated experiences at Stone Heritage.";
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Best Places to Visit & Things to Do in Mukteshwar",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Nanda Devi Peak Viewpoint",
+        "description": "The second highest mountain in India, visible from various vantage points in Mukteshwar, offering panoramic views of the snow-capped Himalayas.",
+        "touristType": ["Photographers", "Nature Lovers"],
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Chauli Ki Jali",
+        "description": "A cliff behind Mukteshwar Temple known for overhanging rocks, deep valley views, rock climbing, rappelling, ziplining and sunset watching.",
+        "touristType": ["Adventure Travelers", "Photographers"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Bhalu Gaad Waterfall",
+        "description": "A hidden 60-foot waterfall in dense forest, reached via a short jungle trek, ideal for bird watching and picnicking.",
+        "touristType": ["Trekkers", "Nature Lovers"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Mukteshwar Temple",
+        "description": "A 350-year-old Shiva temple situated atop the highest point in the area, from which the town derives its name.",
+        "touristType": ["Pilgrims", "History Enthusiasts"],
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Mukteshwar Inspection Bungalow",
+        "description": "A historic PWD inspection bungalow offering architectural charm and sweeping views of the Nanda Devi peak.",
+        "touristType": ["History Enthusiasts", "Photographers"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Kainchi Dham Ashram",
+        "description": "The spiritual ashram of Neem Karoli Baba, set amidst lush green hills and known for deep peace and spiritual significance.",
+        "touristType": ["Pilgrims", "Spiritual Travelers"],
+        "isAccessibleForFree": true
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Starscapes Observatory Mukteshwar",
+        "description": "An astronomical observatory offering guided stargazing, astrophotography, and views of planets and galaxies through professional telescopes.",
+        "touristType": ["Astronomy Enthusiasts", "Families"]
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "TouristAttraction",
+        "name": "Brahmeswara Temple",
+        "description": "A historic temple known for its spiritual ambiance, peaceful surroundings, and quiet, uncrowded atmosphere.",
+        "touristType": ["Pilgrims", "History Enthusiasts"],
+        "isAccessibleForFree": true
+      }
+    }
+  ]
+};
 ---
-<Layout title="Top Things to Do in Mukteshwar | Local Experiences" description="Discover top things to do in Mukteshwar: rock climbing at Chauli Ki Jali, nature trails, village walks & bonfire BBQ nights at Stone Heritage Homestay.">
+
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  schema={schemaData}
+>
   <div class="py-24 px-4 max-w-7xl mx-auto">
     <OnSiteActivities client:load />
     <PlacesToVisit client:visible />

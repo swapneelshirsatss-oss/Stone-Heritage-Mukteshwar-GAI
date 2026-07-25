@@ -1,0 +1,44 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { SearchPageContent } from "../../components/search/SearchPageContent";
+
+const canonicalUrl = "https://thestoneheritage.in/search/";
+const pageTitle = "Search — Stone Heritage Mukteshwar";
+const pageDescription = "Search rooms, local experiences, attractions, blog articles, and guest policies for Stone Heritage Homestay in Mukteshwar.";
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SearchResultsPage",
+      "@id": "https://thestoneheritage.in/search/#webpage",
+      "url": canonicalUrl,
+      "name": pageTitle,
+      "description": pageDescription,
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://thestoneheritage.in/#website",
+        "name": "Stone Heritage Mukteshwar",
+        "url": "https://thestoneheritage.in/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://thestoneheritage.in/search/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    }
+  ]
+};
+---
+
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  schema={schemaData}
+>
+  <SearchPageContent client:load />
+</Layout>

@@ -1,8 +1,32 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { Gallery } from "../../components/react-pages/Gallery";
+import { galleryImages } from "../../data/galleryImages";
+
+const canonicalUrl = "https://thestoneheritage.in/gallery/";
+const pageTitle = "Homestay in Mukteshwar Photos | Stone Heritage Gallery";
+const pageDescription = "Browse real photos of our homestay in Mukteshwar — heritage stone cottages, cozy rooms & Himalayan views at Stone Heritage. See the property before you book.";
+
+const imageGallerySchema = {
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Stone Heritage Mukteshwar Photo Gallery",
+  "description": "Authentic on-site photos of heritage stone cottages, room interiors, Himalayan mountain views, and local Kumaoni experiences.",
+  "url": canonicalUrl,
+  "image": galleryImages.map(img => ({
+    "@type": "ImageObject",
+    "contentUrl": `https://thestoneheritage.in${img.src}`,
+    "name": img.categoryLabel,
+    "caption": img.alt
+  }))
+};
 ---
 
-<Layout title="Gallery | Stone Heritage Mukteshwar" description="Browse our gallery to see the beauty of Stone Heritage Mukteshwar. View our authentic stone architecture, cozy rooms, and breathtaking Himalayan scenery.">
+<Layout 
+  title={pageTitle} 
+  description={pageDescription}
+  canonicalUrl={canonicalUrl}
+  schema={imageGallerySchema}
+>
   <Gallery client:load />
 </Layout>
