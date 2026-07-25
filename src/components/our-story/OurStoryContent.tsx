@@ -35,7 +35,7 @@ export function OurStoryContent() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium mb-6 text-stone-50 leading-tight tracking-tight max-w-4xl mx-auto"
           >
-            Homestay Rooms in Mukteshwar — Resort-Style Stone Cottages
+            Our Story — Authentic Homestay & Heritage Cottages in Mukteshwar
           </motion.h1>
 
           <motion.p 
@@ -44,7 +44,7 @@ export function OurStoryContent() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg md:text-xl text-stone-200 max-w-3xl mx-auto font-light leading-relaxed mb-8"
           >
-            Welcome to Stone Heritage Mukteshwar. Discover our history, meet our hosts, and learn why families, couples, and travelers choose our authentic mountain sanctuary.
+            Welcome to Stone Heritage Mukteshwar. Discover our history, meet our hosts Akash, Harsh & Priyanka, and learn why families, couples, and travelers choose our authentic mountain sanctuary.
           </motion.p>
         </div>
       </section>

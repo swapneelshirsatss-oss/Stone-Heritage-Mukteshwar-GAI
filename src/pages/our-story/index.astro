@@ -3,8 +3,9 @@ import Layout from "../../layouts/Layout.astro";
 import { OurStoryContent } from "../../components/our-story/OurStoryContent";
 
 const canonicalUrl = "https://thestoneheritage.in/our-story/";
-const pageTitle = "Homestay & Resort in Mukteshwar | Stone Heritage Rooms";
-const pageDescription = "Book homestay rooms in Mukteshwar at Stone Heritage — resort-style stone cottages with panoramic Himalayan views. Choose from 9 unique rooms & suites.";
+const pageTitle = "Our Story — Authentic Kumaoni Homestay in Mukteshwar";
+const pageDescription = "Discover the story of Stone Heritage Mukteshwar. Meet hosts Akash, Harsh & Priyanka, explore our stone cottage architecture & authentic Kumaoni hospitality.";
+const pageKeywords = "our story stone heritage, homestay in mukteshwar, resort in mukteshwar, kumaoni stone cottages, hosts in mukteshwar, heritage stay mukteshwar";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -44,6 +45,7 @@ const schemaData = {
 <Layout 
   title={pageTitle} 
   description={pageDescription}
+  keywords={pageKeywords}
   canonicalUrl={canonicalUrl}
   schema={schemaData}
 >
