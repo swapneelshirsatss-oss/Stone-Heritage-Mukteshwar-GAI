@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import { OurStoryContent } from "../../components/our-story/OurStoryContent";
 
 const canonicalUrl = "https://thestoneheritage.in/our-story/";
@@ -49,5 +50,6 @@ const schemaData = {
   canonicalUrl={canonicalUrl}
   schema={schemaData}
 >
+  <Breadcrumb />
   <OurStoryContent client:load />
 </Layout>

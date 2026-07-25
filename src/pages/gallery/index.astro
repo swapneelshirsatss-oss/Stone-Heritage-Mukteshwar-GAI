@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import { Gallery } from "../../components/react-pages/Gallery";
 import { galleryImages } from "../../data/galleryImages";
 
@@ -28,5 +29,6 @@ const imageGallerySchema = {
   canonicalUrl={canonicalUrl}
   schema={imageGallerySchema}
 >
+  <Breadcrumb />
   <Gallery client:load />
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import Blog from "../../components/react-pages/Blog.astro";
 
 const canonicalUrl = "https://thestoneheritage.in/blog/";
@@ -33,5 +34,6 @@ formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getT
   keywords={pageKeywords}
   canonicalUrl={canonicalUrl}
 >
+  <Breadcrumb />
   <Blog posts={formattedPosts} />
 </Layout>

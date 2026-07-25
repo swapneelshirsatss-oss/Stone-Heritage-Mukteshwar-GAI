@@ -237,6 +237,50 @@ const structuredData = {
     }
   ]
 };
+const pathSegments = Astro.url.pathname.replace(/\/$/, '').split('/').filter(Boolean);
+const labelMap: Record<string, string> = {
+  stay: "Stay",
+  experiences: "Experiences",
+  "our-story": "Our Story",
+  contact: "Contact",
+  gallery: "Gallery",
+  blog: "Blog",
+  "volunteer-work-exchange-mukteshwar": "Volunteer & Work Exchange",
+  testimonials: "Testimonials",
+  "privacy-policy": "Privacy Policy",
+  "terms-conditions": "Terms & Conditions",
+  sitemap: "Sitemap",
+  search: "Search"
+};
+
+const breadcrumbElements = [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Home",
+    "item": "https://thestoneheritage.in/"
+  }
+];
+
+let curUrl = "https://thestoneheritage.in";
+pathSegments.forEach((segment, idx) => {
+  curUrl += `/${segment}/`;
+  const name = labelMap[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  breadcrumbElements.push({
+    "@type": "ListItem",
+    "position": idx + 2,
+    "name": name,
+    "item": curUrl
+  });
+});
+
+const breadcrumbSchema = {
+  "@type": "BreadcrumbList",
+  "@id": `https://thestoneheritage.in${Astro.url.pathname}#breadcrumb`,
+  "itemListElement": breadcrumbElements
+};
+
+(structuredData["@graph"] as any[]).push(breadcrumbSchema);
 ---
 <!DOCTYPE html>
 <html lang="en">

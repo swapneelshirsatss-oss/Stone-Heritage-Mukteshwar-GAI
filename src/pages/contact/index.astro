@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import { Contact } from "../../components/react-pages/Contact";
 
 const canonicalUrl = "https://thestoneheritage.in/contact/";
@@ -182,5 +183,6 @@ const faqSchemaData = {
   canonicalUrl={canonicalUrl}
   schema={faqSchemaData}
 >
+  <Breadcrumb />
   <Contact client:load />
 </Layout>

@@ -1,0 +1,78 @@
+---
+import { ChevronRight, Home } from 'lucide-react';
+
+export interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+export interface Props {
+  items?: BreadcrumbItem[];
+  currentTitle?: string;
+}
+
+const { items = [], currentTitle } = Astro.props;
+
+// Auto-derive breadcrumbs from URL if not provided explicitly
+const path = Astro.url.pathname.replace(/\/$/, '');
+const segments = path.split('/').filter(Boolean);
+
+const labelMap: Record<string, string> = {
+  stay: "Stay",
+  experiences: "Experiences",
+  "our-story": "Our Story",
+  contact: "Contact",
+  gallery: "Gallery",
+  blog: "Blog",
+  "volunteer-work-exchange-mukteshwar": "Volunteer & Work Exchange",
+  testimonials: "Testimonials",
+  "privacy-policy": "Privacy Policy",
+  "terms-conditions": "Terms & Conditions",
+  sitemap: "Sitemap",
+  search: "Search"
+};
+
+let breadcrumbs: BreadcrumbItem[] = [
+  { name: "Home", url: "https://thestoneheritage.in/" }
+];
+
+if (items && items.length > 0) {
+  breadcrumbs = [{ name: "Home", url: "https://thestoneheritage.in/" }, ...items];
+} else if (segments.length > 0) {
+  let currentPath = "https://thestoneheritage.in";
+  segments.forEach((segment, idx) => {
+    currentPath += `/${segment}/`;
+    const isLast = idx === segments.length - 1;
+    const name = isLast && currentTitle ? currentTitle : (labelMap[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()));
+    breadcrumbs.push({ name, url: currentPath });
+  });
+}
+---
+
+{breadcrumbs.length > 1 && (
+  <nav aria-label="Breadcrumb" class="py-4 px-4 max-w-7xl mx-auto text-sm text-stone-600">
+    <ol class="flex items-center flex-wrap gap-2 list-none p-0 m-0" itemscope itemtype="https://schema.org/BreadcrumbList">
+      {breadcrumbs.map((item, index) => {
+        const isLast = index === breadcrumbs.length - 1;
+        return (
+          <li class="flex items-center gap-2" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <meta itemprop="position" content={String(index + 1)} />
+            {index === 0 ? (
+              <a href={item.url} itemprop="item" class="flex items-center gap-1 hover:text-primary transition-colors text-stone-500">
+                <Home class="w-3.5 h-3.5" />
+                <span itemprop="name">{item.name}</span>
+              </a>
+            ) : isLast ? (
+              <span itemprop="name" class="font-medium text-primary line-clamp-1">{item.name}</span>
+            ) : (
+              <a href={item.url} itemprop="item" class="hover:text-primary transition-colors text-stone-600">
+                <span itemprop="name">{item.name}</span>
+              </a>
+            )}
+            {!isLast && <ChevronRight class="w-3.5 h-3.5 text-stone-400 shrink-0" />}
+          </li>
+        );
+      })}
+    </ol>
+  </nav>
+)}
