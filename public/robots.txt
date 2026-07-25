@@ -4,5 +4,6 @@ Allow: /
 Sitemap: https://thestoneheritage.in/sitemap.xml
 Sitemap: https://thestoneheritage.in/sitemap-blog.xml
 
-# For AI/LLM crawlers: Please refer to our GEO fact sheet
-# Location: https://thestoneheritage.in/llms.txt
+# LLM & AI Search Bot Documentation (GEO & AEO)
+# Primary Summary: https://thestoneheritage.in/llms.txt
+# Extended Context: https://thestoneheritage.in/llms-full.txt
