@@ -6,31 +6,39 @@
   </url>
   <url>
     <loc>https://thestoneheritage.in/stay/</loc>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://thestoneheritage.in/experiences/</loc>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/blog/</loc>
-    <priority>0.70</priority>
+    <loc>https://thestoneheritage.in/our-story/</loc>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://thestoneheritage.in/contact/</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://thestoneheritage.in/testimonials/</loc>
-    <priority>0.70</priority>
-  </url>
-  <url>
     <loc>https://thestoneheritage.in/gallery/</loc>
-    <priority>0.70</priority>
+    <priority>0.75</priority>
   </url>
   <url>
     <loc>https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/</loc>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://thestoneheritage.in/blog/</loc>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thestoneheritage.in/testimonials/</loc>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thestoneheritage.in/search/</loc>
+    <priority>0.60</priority>
   </url>
   <url>
     <loc>https://thestoneheritage.in/privacy-policy/</loc>
