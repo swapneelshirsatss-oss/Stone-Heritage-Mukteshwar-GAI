@@ -24,11 +24,11 @@ export function Stay() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-4xl font-bold mb-4 text-primary leading-tight">Stone Cottages in Mukteshwar for Families</h1>
-            <p className="text-lg text-primary/70 max-w-2xl mx-auto mb-8">
-              Discover the charm of a true heritage stone cottage Mukteshwar experience. Our boutique homestay seamlessly blends traditional Kumaoni architecture with modern luxury for an unforgettable mountain retreat. Located in beautiful Mukteshwar, Uttarakhand.
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary leading-tight">Stone Cottage in Mukteshwar — Heritage Rooms & Suites</h1>
+            <p className="text-lg text-primary/70 max-w-3xl mx-auto mb-8 font-light leading-relaxed">
+              Discover the charm of staying at an authentic stone cottage in Mukteshwar. Our boutique homestay seamlessly blends traditional Kumaoni stone architecture with modern luxury, en-suite bathrooms, high-speed Wi-Fi, and panoramic Himalayan views.
             </p>
-            <h2 className="text-3xl font-bold text-primary">Our 8 Stone Cottage Rooms in Mukteshwar</h2>
+            <h2 className="text-3xl font-bold text-primary">Our 9 Stone Cottage Rooms in Mukteshwar</h2>
           </motion.div>
         </header>
 
