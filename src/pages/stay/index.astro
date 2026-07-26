@@ -2,12 +2,14 @@
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import { Stay } from "../../components/react-pages/Stay";
+const canonicalUrl = "https://thestoneheritage.in/stay/";
 ---
 
 <Layout 
   title="Stone Cottages in Mukteshwar | Vintage Family Rooms" 
   description="Stay at Stone Heritage Mukteshwar's vintage stone cottages. Pick from Copper, Brass & Stone and Story Suite or the Stonewood Family Retreat. Book direct today."
   keywords="stone cottage in mukteshwar, best stone cottage in mukteshwar, luxury stone cottage mukteshwar, vintage family rooms mukteshwar, homestay rooms in mukteshwar"
+  canonicalUrl={canonicalUrl}
 >
   <Breadcrumb />
   <Stay client:load />
