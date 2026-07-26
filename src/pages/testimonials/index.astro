@@ -3,9 +3,11 @@ import Layout from "../../layouts/Layout.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 import Testimonials from "../../components/react-pages/Testimonials.astro";
 
+import { testimonials } from "../../data/testimonials";
+
 const canonicalUrl = "https://thestoneheritage.in/testimonials/";
 const pageTitle = "Guest Reviews & Testimonials | Stone Heritage Mukteshwar";
-const pageDescription = "Read what our guests say about their stay at Stone Heritage Mukteshwar. With a 4.9-star rating, discover why we are the top-rated family homestay in the region.";
+const pageDescription = "Read authentic guest reviews about their stay at Stone Heritage Mukteshwar. With a 4.9-star rating based on 245+ Google reviews, discover why we are top-rated.";
 const pageKeywords = "stone heritage mukteshwar reviews, guest testimonials mukteshwar, best homestay reviews mukteshwar";
 
 const reviewSchema = {
@@ -17,24 +19,16 @@ const reviewSchema = {
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "250",
+    "reviewCount": "245",
     "bestRating": "5",
     "worstRating": "1"
   },
-  "review": [
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Saransh Gupta" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "Stone Heritage Mukteshwar is a slice of heaven. The panoramic Himalayan views from our room window were breathtaking."
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Rashmi Sharma" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-      "reviewBody": "The home-cooked Kumaoni meals prepared by Akash and team were unbelievable. Unmatched hospitality!"
-    }
-  ]
+  "review": testimonials.slice(0, 10).map(t => ({
+    "@type": "Review",
+    "author": { "@type": "Person", "name": t.name },
+    "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+    "reviewBody": t.text
+  }))
 };
 ---
 
