@@ -13,31 +13,32 @@ const schemaData = {
   "@graph": [
     {
       "@type": "AboutPage",
-      "@id": "https://thestoneheritage.in/our-story/#webpage",
+      "@id": "https://thestoneheritage.in/our-story/#aboutpage",
       "url": canonicalUrl,
-      "name": pageTitle,
-      "description": pageDescription,
+      "name": "Our Story — Authentic Homestay & Heritage Cottages in Mukteshwar",
+      "description": "Discover the story of Stone Heritage Mukteshwar. Meet host Akash, explore our stone cottage architecture & authentic Kumaoni hospitality.",
       "isPartOf": {
-        "@type": "WebSite",
-        "@id": "https://thestoneheritage.in/#website",
-        "name": "Stone Heritage Mukteshwar",
-        "url": "https://thestoneheritage.in/"
+        "@id": "https://thestoneheritage.in/#website"
       },
-      "about": {
-        "@type": ["Hotel", "LodgingBusiness", "BedAndBreakfast"],
-        "@id": "https://thestoneheritage.in/#hotel",
-        "name": "Stone Heritage Mukteshwar",
-        "url": "https://thestoneheritage.in/",
-        "telephone": "+919027844424",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Bhowali Dhanachuli Rd, South Gola Range",
-          "addressLocality": "Mukteshwar",
-          "addressRegion": "Uttarakhand",
-          "postalCode": "263138",
-          "addressCountry": "IN"
-        }
+      "mainEntity": {
+        "@type": "LodgingBusiness",
+        "@id": "https://thestoneheritage.in/#localbusiness",
+        "name": "Stone Heritage Mukteshwar"
       }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://thestoneheritage.in/our-story/#akash",
+      "name": "Akash",
+      "jobTitle": "Founder & Host",
+      "url": canonicalUrl,
+      "worksFor": {
+        "@type": "LodgingBusiness",
+        "@id": "https://thestoneheritage.in/#localbusiness",
+        "name": "Stone Heritage Mukteshwar"
+      },
+      "description": "Founder of Stone Heritage, dedicated to preserving Kumaon's architectural heritage and authentic Himalayan hospitality.",
+      "image": "https://thestoneheritage.in/akash.webp"
     }
   ]
 };
