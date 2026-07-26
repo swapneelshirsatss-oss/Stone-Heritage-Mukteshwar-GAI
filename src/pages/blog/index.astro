@@ -26,6 +26,66 @@ const formattedPosts = allPosts.map(post => ({
 
 // Sort by date descending
 formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://thestoneheritage.in/blog/#blog",
+      "url": canonicalUrl,
+      "name": "Discover Mukteshwar — Stone Heritage Blog",
+      "description": "Travel stories, local insights, and expert guides to help you make the most of your stay at Stone Heritage Mukteshwar.",
+      "isPartOf": { "@id": "https://thestoneheritage.in/#website" },
+      "publisher": {
+        "@type": "LodgingBusiness",
+        "@id": "https://thestoneheritage.in/#localbusiness",
+        "name": "Stone Heritage Mukteshwar"
+      },
+      "blogPost": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Finding the Perfect Homestay in Mukteshwar: Welcome to Our Mountain Home",
+          "url": "https://thestoneheritage.in/blog/homestay-in-mukteshwar/",
+          "datePublished": "2024-08-15",
+          "author": { "@type": "Person", "name": "Harsh & Priyanka" },
+          "description": "Tired of generic hotels? Come discover why staying in an authentic Kumaoni stone cottage feels less like a vacation, and more like coming home."
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "A Guide to Himalayan Bird Watching at South Gola Range",
+          "url": "https://thestoneheritage.in/blog/himalayan-bird-watching/",
+          "datePublished": "2023-12-05",
+          "author": { "@type": "Organization", "name": "Stone Heritage Team" },
+          "description": "Mukteshwar is a paradise for bird watchers. Explore the diverse avian life you can spot right from your balcony or during a short nature walk around our vintage stone cottage."
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "The Ultimate Delhi to Mukteshwar Road Trip Itinerary",
+          "url": "https://thestoneheritage.in/blog/delhi-to-mukteshwar-road-trip/",
+          "datePublished": "2023-11-18",
+          "author": { "@type": "Person", "name": "Harsh & Priyanka" },
+          "description": "Planning a weekend getaway from Delhi to Mukteshwar? We have mapped out the best driving routes, scenic pit stops, and travel tips to ensure a smooth and memorable 8-hour journey to the mountains."
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Why Stone Heritage is the Best Pet-Friendly Homestay in Mukteshwar",
+          "url": "https://thestoneheritage.in/blog/pet-friendly-homestay/",
+          "datePublished": "2023-11-02",
+          "author": { "@type": "Organization", "name": "Stone Heritage Team" },
+          "description": "Traveling with pets can be tricky, but not when you visit the South Gola Range. Learn why our wide open spaces, pet-friendly rooms, and welcoming environment make us the ideal choice for your furry friends."
+        },
+        {
+          "@type": "BlogPosting",
+          "headline": "Top 5 Things to Do in Mukteshwar This Winter",
+          "url": "https://thestoneheritage.in/blog/top-5-things-to-do-in-mukteshwar/",
+          "datePublished": "2023-10-15",
+          "author": { "@type": "Person", "name": "Harsh & Priyanka" },
+          "description": "Discover the magic of winter in Mukteshwar. From snow-capped Himalayan views to cozy bonfires and hot Kumaoni delicacies, here is how to make the most of your winter getaway at Stone Heritage."
+        }
+      ]
+    }
+  ]
+};
 ---
 
 <Layout 
@@ -33,6 +93,7 @@ formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getT
   description={pageDescription}
   keywords={pageKeywords}
   canonicalUrl={canonicalUrl}
+  schema={schemaData}
 >
   <Breadcrumb />
   <Blog posts={formattedPosts} />
