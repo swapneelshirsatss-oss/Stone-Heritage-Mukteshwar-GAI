@@ -44,6 +44,9 @@ const structuredData = {
       "email": "thestoneheritage@gmail.com",
       "petsAllowed": true,
       "numberOfRooms": 9,
+      "founder": {
+        "@id": "https://thestoneheritage.in/our-story/#akash"
+      },
       "sameAs": [
         "https://www.facebook.com/thestoneheritage/",
         "https://www.instagram.com/thestoneheritage/",
@@ -75,11 +78,11 @@ const structuredData = {
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
-        "reviewCount": "250",
+        "reviewCount": "245",
         "bestRating": "5",
         "worstRating": "1"
       },
-      "priceRange": "$$",
+      "priceRange": "₹1,500 - ₹15,000",
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
@@ -194,7 +197,7 @@ const structuredData = {
           "name": "What are the guest reviews and ratings for Stone Heritage Mukteshwar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We proudly maintain a 4.9-star rating based on over 245 authentic guest reviews on our Google Business Profile. Families and travelers consistently praise our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food."
+            "text": "We proudly maintain a 4.9-star rating based on 245 authentic guest reviews on our Google Business Profile. Families and travelers consistently praise our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food."
           }
         },
         {
@@ -238,6 +241,22 @@ const structuredData = {
           }
         }
       ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://thestoneheritage.in/#webpage",
+      "url": "https://thestoneheritage.in/",
+      "name": "Homestay in Mukteshwar for Families | Stone Heritage",
+      "isPartOf": {
+        "@id": "https://thestoneheritage.in/#website"
+      },
+      "about": {
+        "@id": "https://thestoneheritage.in/#localbusiness"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", "p"]
+      }
     }
   ]
 };
