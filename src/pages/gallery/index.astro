@@ -8,18 +8,127 @@ const canonicalUrl = "https://thestoneheritage.in/gallery/";
 const pageTitle = "Homestay in Mukteshwar Photos | Stone Heritage Gallery";
 const pageDescription = "Browse real photos of our homestay in Mukteshwar — heritage stone cottages, cozy rooms & Himalayan views at Stone Heritage. See the property before you book.";
 
-const imageGallerySchema = {
+const schemaData = {
   "@context": "https://schema.org",
-  "@type": "ImageGallery",
-  "name": "Stone Heritage Mukteshwar Photo Gallery",
-  "description": "Authentic on-site photos of heritage stone cottages, room interiors, Himalayan mountain views, and local Kumaoni experiences.",
-  "url": canonicalUrl,
-  "image": galleryImages.map(img => ({
-    "@type": "ImageObject",
-    "contentUrl": `https://thestoneheritage.in${img.src}`,
-    "name": img.categoryLabel,
-    "caption": img.alt
-  }))
+  "@graph": [
+    {
+      "@type": "ImageGallery",
+      "@id": "https://thestoneheritage.in/gallery/#imagegallery",
+      "url": canonicalUrl,
+      "name": pageTitle,
+      "description": pageDescription,
+      "isPartOf": {
+        "@id": "https://thestoneheritage.in/#website"
+      },
+      "about": {
+        "@type": "LodgingBusiness",
+        "@id": "https://thestoneheritage.in/#localbusiness",
+        "name": "Stone Heritage Mukteshwar"
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/best-family-homestay-in-mukteshwar.webp",
+          "caption": "Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/garden-area-stone-heritage.webp",
+          "caption": "Lush green garden area and outdoor seating at Stone Heritage Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/vintage-room.webp",
+          "caption": "The Vintage Room interior with classic wooden furniture and cozy bedding at Stone Heritage Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/copper-room.webp",
+          "caption": "Spacious Copper Room interior featuring a comfortable king bed and traditional decor in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/brass-room-homestay-in-mukteshwar.webp",
+          "caption": "Beautiful mountain view from the window of the Brass Room at Stone Heritage Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/cedar-room.webp",
+          "caption": "Cozy Cedar Room interior with wooden paneling and modern amenities at Stone Heritage"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/iron-room.webp",
+          "caption": "Comfortable Iron Room setup perfect for couples staying at Stone Heritage Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/stonewood-family-retreat.webp",
+          "caption": "Stonewood Family Retreat room with two king beds, ideal for family workations in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp",
+          "caption": "Outdoor terrace at Stone Heritage offering stunning sunset views over the Himalayas"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/mountain-living-best-homestay-Mukteshwar.webp",
+          "caption": "Relaxing balcony setting with majestic mountain views at the best homestay in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp",
+          "caption": "Cozy evening ambiance and lighting at the luxury Stone Heritage homestay property"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/luxury-homestay-UttarakhandMukteshwar-homestay.webp",
+          "caption": "Enjoying morning tea with a scenic valley view at Stone Heritage Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/vintage-homestay-in-mukteshwar.webp",
+          "caption": "Vintage homestay exterior in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/stonewood-family-retreat-group-stay.webp",
+          "caption": "Stonewood family retreat group stay room"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/Bhalugaad-Waterfall-Mukteshwar.webp",
+          "caption": "Bhalugaad Waterfall near Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/Kainchi_dham_mukteshwar.webp",
+          "caption": "Kainchi Dham Temple near Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/chauli-ki-jali-in-mukteshwar.webp",
+          "caption": "Chauli Ki Jali cliff in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/nanda-devi-peak-view-mukteshwar.webp",
+          "caption": "Nanda Devi Peak View from Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/homestay-in-mukteshwar.webp",
+          "caption": "A serene view of our homestay in Mukteshwar"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://thestoneheritage.in/thing-to-do-in-mukteshwar.webp",
+          "caption": "Exploring activities and things to do in Mukteshwar"
+        }
+      ]
+    }
+  ]
 };
 ---
 
@@ -27,7 +136,7 @@ const imageGallerySchema = {
   title={pageTitle} 
   description={pageDescription}
   canonicalUrl={canonicalUrl}
-  schema={imageGallerySchema}
+  schema={schemaData}
 >
   <Breadcrumb />
   <Gallery client:load />
