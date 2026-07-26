@@ -12,7 +12,7 @@ const rooms = [
   { name: "Iron Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Couples", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/iron-room.webp", alt: "Cozy Iron Room setup, ideal for couples staying at Stone Heritage" },
   { name: "Cedar Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Solo Travellers", view: "Forest View", amenities: "Wooden Paneling, Wi-Fi", image: "/cedar-room.webp", alt: "Cedar Room interior with beautiful wooden paneling and natural light" },
   { name: "Himalayan Workation", capacity: "1-2 Guests", bedType: "Workstation Setup", idealFor: "Remote Workers & Solo Travellers", view: "Himalayan View", amenities: "High-Speed Wi-Fi, Desk", image: "/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace space perfect for a Himalayan workation at Stone Heritage" },
-  { name: "Sunset Heritage Cottage", capacity: "2-4 Guests", bedType: "King Bed", idealFor: "Families & Couples", view: "Sunset & Mountain View", amenities: "Private Terrace, Wi-Fi", image: "/homestay-in-mukteshwar.webp", alt: "Sunset Heritage Cottage featuring private terrace and panoramic mountain views" }
+  { name: "Stone Cottage Room Heritage Cottage", capacity: "2-4 Guests", bedType: "King Bed", idealFor: "Families & Couples", view: "Sunset & Mountain View", amenities: "Private Terrace, Wi-Fi", image: "/homestay-in-mukteshwar.webp", alt: "Stone Cottage Room Heritage Cottage featuring private terrace and panoramic mountain views" }
 ];
 
 export function Stay() {
