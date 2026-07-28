@@ -60,28 +60,48 @@ Stone Heritage is built around every one of these, across 9 distinct rooms rathe
 
 ![Best Homestay in Mukteshwar for Families - Stone Heritage Family Suite and Heritage Mountain Cottage Rooms](/Best-Homestay-in-Mukteshwar-for-Families.webp)
 
-### Stonewood Family Retreat — Best for Large & Multi-Generational Families
+### Room Comparison & Rate Chart (₹3,000 – ₹5,000 / night)
+
+| Room Name | Capacity | Bed Type | View | Nightly Rate (Starting) | Ideal For |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Stonewood Family Retreat** | 4-6 Guests | 2 King Beds | Panoramic View | **₹4,500 – ₹5,000** | Large Families & Multi-Generational Groups |
+| **Stone and Story Suite** | 2-3 Guests | King Bed | Mountain View | **₹4,000 – ₹4,500** | Couples Wanting Premium Setup |
+| **Copper Room** | 2-4 Guests | King Bed + Single Bed | Garden View | **₹3,800 – ₹4,200** | Small Families with Kids |
+| **Stone Cottage Room** | 2-4 Guests | King Bed + Private Terrace | Sunset & Mountain View | **₹3,800 – ₹4,200** | Scenic Private Escape |
+| **Brass Room** | 2-3 Guests | King Bed | Mountain View | **₹3,500 – ₹4,000** | Couples & Families with 1 Child |
+| **The Vintage Room** | 2-3 Guests | King Bed | Valley View | **₹3,500 – ₹3,800** | Couples & Heritage Lovers |
+| **Iron Room** | 2 Guests | King Bed | Garden View | **₹3,000 – ₹3,500** | Couples & Solo Travelers |
+| **Cedar Room** | 2 Guests | King Bed | Forest View | **₹3,000 – ₹3,500** | Solo Travelers & Small Groups |
+| **Himalayan Workation** | 1-2 Guests | Workstation Setup | Himalayan View | **₹3,000 – ₹3,500** | Remote Workers & Workations |
+
+*Tariffs range from ₹3,000 to ₹5,000 per night depending on season, dates, and guest occupancy. Booking directly via phone/WhatsApp guarantees the lowest available rates without third-party commission fees.*
+
+---
+
+### Detailed Overview of Each Room
+
+#### Stonewood Family Retreat — Best for Large & Multi-Generational Families
 Our most spacious option, with 2 King Beds and room for 4-6 guests. Functions almost like a standalone cottage, with a private balcony and panoramic views — ideal for grandparents, parents, and kids staying together under one roof.
 
-### Copper Room — Best for Small Families
+#### Copper Room — Best for Small Families
 A King Bed plus a Single Bed makes this a natural fit for families with one child, offering a garden view and full en-suite comfort for up to 4 guests.
 
-### Brass Room — Best for Couples with an Older Child
+#### Brass Room — Best for Couples with an Older Child
 A King Bed setup with a mountain view and the option of an alternative floor mattress, suited to couples traveling with one older child or teenager.
 
-### The Vintage Room — Best for Couples
+#### The Vintage Room — Best for Couples
 Heritage architecture and a valley view make this an intimate, charming choice for couples looking for a quieter stay.
 
-### Stone and Story Suite — Best for Couples Wanting a Premium Setup
+#### Stone and Story Suite — Best for Couples Wanting a Premium Setup
 A King Bed suite with mountain views and a more premium interior finish, for couples who want a little extra.
 
-### Iron Room & Cedar Room — Best for Solo Travelers or Small Groups
+#### Iron Room & Cedar Room — Best for Solo Travelers or Small Groups
 Both offer a King Bed and their own character — Iron with a garden view, Cedar with forest views and wooden paneling — well suited to solo travelers or as an additional room for a larger family group booking multiple rooms together.
 
-### Himalayan Workation — Best for the Parent Who Still Needs to Work
+#### Himalayan Workation — Best for the Parent Who Still Needs to Work
 A dedicated workstation with high-speed Wi-Fi and a Himalayan view, so one parent can get a few hours of work done while the rest of the family explores.
 
-### Stone Cottage Room — Best for a Scenic, Private Escape
+#### Stone Cottage Room — Best for a Scenic, Private Escape
 Featuring a private terrace balcony and a King Bed, ideal for couples or a small family wanting their own quiet outdoor space.
 
 ---
@@ -91,21 +111,21 @@ Featuring a private terrace balcony and a King Bed, ideal for couples or a small
 ### Choose Stonewood Family Retreat if:
 - You're traveling with grandparents, parents, and kids together
 - You want a standalone-cottage feel with a private balcony
-- You need the most spacious layout on the property
+- You need the most spacious layout on the property (₹4,500 – ₹5,000)
 
 ### Choose Copper or Brass Room if:
 - You're a small family with one or two children
 - You want a genuine mountain or garden view from your room
-- You want full en-suite comfort without needing extra space
+- You want full en-suite comfort without needing extra space (₹3,500 – ₹4,200)
 
 ### Choose Vintage, Stone and Story, or Stone Cottage Room if:
 - You're a couple looking for a quieter, more intimate stay
 - You want heritage character over maximum space
-- A private terrace or valley view matters to you
+- A private terrace or valley view matters to you (₹3,500 – ₹4,500)
 
-### Choose Himalayan Workation if:
-- Your trip mixes family time with remote work
-- You need dependable Wi-Fi without sacrificing the mountain setting
+### Choose Himalayan Workation, Iron or Cedar Room if:
+- Your trip mixes family time with remote work or solo travel
+- You need dependable Wi-Fi and cozy mountain comfort at the best starting rate (₹3,000 – ₹3,500)
 
 ---
 
