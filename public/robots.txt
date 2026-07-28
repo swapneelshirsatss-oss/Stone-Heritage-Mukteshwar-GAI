@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
 
+# Master Sitemap Index
 Sitemap: https://thestoneheritage.in/sitemap.xml
+Sitemap: https://thestoneheritage.in/sitemap-pages.xml
 Sitemap: https://thestoneheritage.in/sitemap-blog.xml
 
 # LLM & AI Search Bot Documentation (GEO & AEO)

@@ -1,55 +1,147 @@
 ---
-const pages = [
+import { getCollection } from 'astro:content';
+
+const blogPosts = await getCollection('blog');
+
+const sections = [
   {
-    category: "Main Pages",
+    category: "Core Accommodations & Stays",
+    description: "Explore our Kumaoni heritage rooms, cottages, and direct booking options.",
+    icon: "🏠",
     links: [
-      { name: "Home", path: "/" },
-      { name: "Stay & Accommodations", path: "/stay/" },
-      { name: "Experiences", path: "/experiences/" },
-      { name: "Our Story", path: "/our-story/" },
-      { name: "Gallery", path: "/gallery/" },
-      { name: "Testimonials", path: "/testimonials/" },
-      { name: "Blog", path: "/blog/" },
-      { name: "Search", path: "/search/" },
-      { name: "Contact Us", path: "/contact/" }
+      { name: "Home Page", path: "/", desc: "Welcome to Stone Heritage Mukteshwar" },
+      { name: "Stay & Rooms Overview", path: "/stay/", desc: "Brass Room, Copper Room, Vintage Room, Stonewood Retreat, Cedar Room" },
+      { name: "Direct Booking Engine", path: "https://booking.thestoneheritage.in/", desc: "Guaranteed best rates & direct priority allocation", external: true }
     ]
   },
   {
-    category: "Special Programs",
+    category: "Experiences & Himalayan Living",
+    description: "Immerse in local mountain culture, stargazing, and nature walks.",
+    icon: "🏔️",
     links: [
-      { name: "Uttarakhand Volunteer Programs & Homestay Work", path: "/volunteer-work-exchange-mukteshwar/" }
+      { name: "Curated Experiences", path: "/experiences/", desc: "Local sightseeing, Chauli Ki Jali, Bhalu Gaad waterfall, and nature trails" }
     ]
   },
   {
-    category: "Legal & Policies",
+    category: "Our Story & Community",
+    description: "Learn about our heritage roots, philosophy, and volunteer programs.",
+    icon: "🌲",
     links: [
-      { name: "Privacy Policy", path: "/privacy-policy/" },
-      { name: "Terms and Conditions", path: "/terms-conditions/" }
+      { name: "Our Story & Heritage", path: "/our-story/", desc: "Our journey, architecture, and sustainable mountain hospitality" },
+      { name: "Volunteer & Work Exchange", path: "/volunteer-work-exchange-mukteshwar/", desc: "Uttarakhand volunteer opportunities & homestay work exchange" }
+    ]
+  },
+  {
+    category: "Media & Guest Impressions",
+    description: "Browse photo galleries, authentic guest reviews, and high-res visuals.",
+    icon: "📸",
+    links: [
+      { name: "Visual Gallery", path: "/gallery/", desc: "High-resolution photos of rooms, garden views, and Himalayan panoramas" },
+      { name: "Guest Testimonials", path: "/testimonials/", desc: "Verified 4.9-star guest reviews and family experiences" }
+    ]
+  },
+  {
+    category: "Travel Guides & Journal",
+    description: "Expert Mukteshwar travel advice, road trip itineraries, and nature guides.",
+    icon: "📰",
+    links: [
+      { name: "Travel Blog Hub", path: "/blog/", desc: "All articles and Mukteshwar travel itineraries" },
+      ...blogPosts.map(post => ({
+        name: post.data.title,
+        path: `/blog/${post.slug}/`,
+        desc: post.data.description || "Read travel guide article"
+      }))
+    ]
+  },
+  {
+    category: "Site Tools & Legal Information",
+    description: "Search tools, contact options, and legal privacy terms.",
+    icon: "⚖️",
+    links: [
+      { name: "Site Search", path: "/search/", desc: "Search articles, rooms, and site content" },
+      { name: "Contact & Directions", path: "/contact/", desc: "Direct phone, email, map directions, and inquiry form" },
+      { name: "Privacy Policy", path: "/privacy-policy/", desc: "Data protection and privacy guidelines" },
+      { name: "Terms and Conditions", path: "/terms-conditions/", desc: "Booking policies, check-in rules, and stay terms" }
     ]
   }
 ];
 ---
-<div class="pt-20 bg-stone-50 min-h-screen">
-  <div class="py-24 px-4 max-w-4xl mx-auto bg-white shadow-sm border border-stone-200 p-8 md:p-12 my-8">
-    <h1 class="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight text-center">Sitemap</h1>
-    <div class="w-16 h-[1px] bg-accent/50 mx-auto mb-12"></div>
-    
-    <div class="text-primary/80 font-light leading-relaxed space-y-12">
-      {pages.map((section) => (
-        <section>
-          <h2 class="text-2xl font-serif font-medium text-primary mb-4 pb-2 border-b border-stone-200">
-            {section.category}
-          </h2>
-          <ul class="list-disc pl-5 space-y-3">
-            {section.links.map((link) => (
-              <li>
-                <a href={link.path} class="hover:text-accent transition-colors">
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
+
+<div class="pt-24 pb-20 bg-stone-50 min-h-screen">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Page Header */}
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-xs font-semibold tracking-widest text-accent uppercase bg-stone-200/60 px-3 py-1 rounded-full inline-block mb-3">
+        Website Architecture & Sitemap
+      </span>
+      <h1 class="text-3xl md:text-5xl font-serif font-semibold text-primary tracking-tight mb-4">
+        Sitemap Directory
+      </h1>
+      <p class="text-stone-600 font-light text-base md:text-lg leading-relaxed">
+        A structured index of all pages, room options, experiences, and travel guides on the Stone Heritage website.
+      </p>
+
+      {/* Machine XML Sitemaps Section */}
+      <div class="mt-8 p-4 bg-white rounded-xl border border-stone-200 shadow-sm flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-stone-700">
+        <span class="text-stone-500 font-semibold uppercase tracking-wider">Search Engine XML Sitemaps:</span>
+        <a href="/sitemap.xml" target="_blank" class="text-accent hover:underline flex items-center gap-1 font-mono">
+          📄 Master Index (/sitemap.xml)
+        </a>
+        <span class="text-stone-300">•</span>
+        <a href="/sitemap-pages.xml" target="_blank" class="text-accent hover:underline flex items-center gap-1 font-mono">
+          📄 Pages Sitemap (/sitemap-pages.xml)
+        </a>
+        <span class="text-stone-300">•</span>
+        <a href="/sitemap-blog.xml" target="_blank" class="text-accent hover:underline flex items-center gap-1 font-mono">
+          📄 Blog Sitemap (/sitemap-blog.xml)
+        </a>
+      </div>
+    </div>
+
+    {/* Structured Architecture Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {sections.map((section) => (
+        <div class="bg-white rounded-2xl border border-stone-200/80 p-6 md:p-8 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-3">
+              <span class="text-2xl">{section.icon}</span>
+              <h2 class="text-xl md:text-2xl font-serif font-semibold text-primary">
+                {section.category}
+              </h2>
+            </div>
+            <p class="text-stone-500 text-xs font-light mb-6 leading-relaxed">
+              {section.description}
+            </p>
+            <ul class="space-y-4">
+              {section.links.map((link) => (
+                <li class="group">
+                  <a 
+                    href={link.path} 
+                    target={link.external ? "_blank" : "_self"}
+                    rel={link.external ? "noopener noreferrer" : undefined}
+                    class="block p-3 rounded-lg hover:bg-stone-50 transition-colors border border-transparent hover:border-stone-200/60"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span class="text-sm font-medium text-primary group-hover:text-accent transition-colors">
+                        {link.name}
+                      </span>
+                      {link.external ? (
+                        <span class="text-xs text-stone-400">↗</span>
+                      ) : (
+                        <span class="text-xs text-stone-400 opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                      )}
+                    </div>
+                    {link.desc && (
+                      <span class="block text-xs text-stone-500 font-light mt-0.5 line-clamp-1">
+                        {link.desc}
+                      </span>
+                    )}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       ))}
     </div>
   </div>

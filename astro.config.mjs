@@ -6,6 +6,7 @@ import partytown from '@astrojs/partytown';
 
 export default defineConfig({
   site: 'https://thestoneheritage.in',
+  trailingSlash: 'always',
   output: 'static',
   integrations: [react(), partytown({ config: { forward: ['dataLayer.push'] } })],
   vite: {

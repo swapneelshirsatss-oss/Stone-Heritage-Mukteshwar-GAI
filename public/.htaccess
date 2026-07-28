@@ -2,16 +2,24 @@
 RewriteEngine On
 RewriteBase /
 
-# Force trailing slash on all extensionless directory paths to protect crawl budget
+# 1. Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# 2. Force non-WWW (thestoneheritage.in)
+RewriteCond %{HTTP_HOST} ^www\.thestoneheritage\.in$ [NC]
+RewriteRule ^(.*)$ https://thestoneheritage.in/$1 [R=301,L]
+
+# 3. Force trailing slash on all extensionless directory paths
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteCond %{REQUEST_URI} !\.xml$ [NC]
 RewriteRule ^(.*)$ https://thestoneheritage.in/$1/ [R=301,L]
 
-# Resolve extensionless trailing slash requests directly to physical sub-directories
+# 4. Resolve extensionless trailing slash requests directly to physical sub-directories
 RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
 RewriteRule ^(.*)/$ $1/index.html [L]
 
-# Enforce a true hard 404 response status for non-existent entities
-# This destroys the soft 404 homepage loop and forces Semrush validation to clear
+# 5. Enforce true hard 404 response status for non-existent entities
 ErrorDocument 404 /404.html
 </IfModule>
