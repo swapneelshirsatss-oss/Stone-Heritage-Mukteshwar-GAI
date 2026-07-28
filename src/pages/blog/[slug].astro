@@ -15,36 +15,119 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
+const isTopThingsToDo = post.slug === 'top-5-things-to-do-in-mukteshwar';
+
 const blogSchema = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": `https://thestoneheritage.in/blog/${post.slug}/`
-  },
-  "headline": post.data.title,
-  "description": post.data.excerpt,
-  "image": post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`,
-  "author": {
-    "@type": "Person",
-    "name": post.data.author,
-    "url": "https://thestoneheritage.in/our-story/#hosts",
-    "jobTitle": "Local Host & Mountain Guide",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Stone Heritage Mukteshwar",
-      "url": "https://thestoneheritage.in/"
-    }
-  },
-  "datePublished": new Date(post.data.date).toISOString(),
-  "publisher": {
-    "@type": "Organization",
-    "name": "Stone Heritage Mukteshwar",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://thestoneheritage.in/Logo.webp"
-    }
-  }
+  "@graph": [
+    {
+      "@type": ["BlogPosting", "TravelArticle"],
+      "@id": `https://thestoneheritage.in/blog/${post.slug}/#article`,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://thestoneheritage.in/blog/${post.slug}/`
+      },
+      "headline": post.data.title,
+      "description": post.data.excerpt,
+      "image": [
+        post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`
+      ],
+      "inLanguage": "en-IN",
+      "isAccessibleForFree": true,
+      "datePublished": new Date(post.data.date).toISOString(),
+      "dateModified": new Date("2026-07-28").toISOString(),
+      "author": {
+        "@type": "Person",
+        "@id": "https://thestoneheritage.in/our-story/#akash",
+        "name": post.data.author,
+        "url": "https://thestoneheritage.in/our-story/#hosts",
+        "image": "https://thestoneheritage.in/akash.webp",
+        "jobTitle": "Founder & Local Mountain Host",
+        "description": "Founder and local host at Stone Heritage Mukteshwar, seasoned Himalayan traveler, and local mountain guide.",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Stone Heritage Mukteshwar",
+          "url": "https://thestoneheritage.in/"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://thestoneheritage.in/#organization",
+        "name": "Stone Heritage Mukteshwar",
+        "url": "https://thestoneheritage.in/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thestoneheritage.in/Logo.webp",
+          "width": 500,
+          "height": 500
+        }
+      },
+      "about": [
+        {
+          "@type": "TouristDestination",
+          "name": "Mukteshwar",
+          "description": "A quiet hill station in Uttarakhand known for panoramic Himalayan views, Chauli Ki Jali, Mukteshwar Dham Temple, and stargazing.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mukteshwar",
+            "addressRegion": "Uttarakhand",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 29.4722,
+            "longitude": 79.6472
+          }
+        }
+      ]
+    },
+    ...(isTopThingsToDo ? [{
+      "@type": "FAQPage",
+      "@id": `https://thestoneheritage.in/blog/${post.slug}/#faq`,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How many days are sufficient for a trip to Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 3-day, 2-night stay is ideal to visit key attractions like Chauli Ki Jali, Mukteshwar Temple, Bhalu Gaad Waterfall, and experience a relaxed evening of stargazing and Kumaoni food without feeling rushed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How far is Stone Heritage Homestay from Chauli Ki Jali and Mukteshwar Temple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Stone Heritage is located directly in Mukteshwar, just 1.5 to 2 km away from both Mukteshwar Dham Temple and Chauli Ki Jali cliff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Bhalu Gaad trek safe for families and children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the 2 km trail is easy-to-moderate and suitable for families and kids. We recommend wearing proper shoes with good grip as rocks near the stream can be slippery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we see snow in Mukteshwar during winter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mukteshwar receives occasional snowfall during peak winter months, usually between late December and late January. Even without snow, winter offers the sharpest, clearest views of snow-clad Himalayan peaks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the nearest railway station and airport to Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The nearest railway station is Kathgodam (KGM), located about 62 km away (approx. 2 to 2.5 hours by taxi). The nearest airport is Pantnagar (PGH), about 95 km away."
+          }
+        }
+      ]
+    }] : [])
+  ]
 };
 ---
 
