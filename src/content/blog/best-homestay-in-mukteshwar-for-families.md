@@ -60,7 +60,7 @@ Stone Heritage is built around every one of these, across 9 distinct rooms rathe
 
 ![Best Homestay in Mukteshwar for Families - Stone Heritage Family Suite and Heritage Mountain Cottage Rooms](/Best-Homestay-in-Mukteshwar-for-Families.webp)
 
-### Room Comparison & Rate Chart (₹3,000 – ₹5,000 / night)
+### Room Comparison & Rate Chart (₹1,500 – ₹5,000 / night)
 
 | Room Name | Capacity | Bed Type | View | Nightly Rate (Starting) | Ideal For |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -71,10 +71,10 @@ Stone Heritage is built around every one of these, across 9 distinct rooms rathe
 | **Brass Room** | 2-3 Guests | King Bed | Mountain View | **₹3,500 – ₹4,000** | Couples & Families with 1 Child |
 | **The Vintage Room** | 2-3 Guests | King Bed | Valley View | **₹3,500 – ₹3,800** | Couples & Heritage Lovers |
 | **Iron Room** | 2 Guests | King Bed | Garden View | **₹3,000 – ₹3,500** | Couples & Solo Travelers |
-| **Cedar Room** | 2 Guests | King Bed | Forest View | **₹3,000 – ₹3,500** | Solo Travelers & Small Groups |
-| **Himalayan Workation** | 1-2 Guests | Workstation Setup | Himalayan View | **₹3,000 – ₹3,500** | Remote Workers & Workations |
+| **Cedar Room** | 2 Guests | King Bed | Forest View | **₹2,000** | Solo Travelers & Small Groups |
+| **Himalayan Workation** | 1-2 Guests | Workstation Setup | Himalayan View | **₹1,500** | Remote Workers & Budget Workations |
 
-*Tariffs range from ₹3,000 to ₹5,000 per night depending on season, dates, and guest occupancy. Booking directly via phone/WhatsApp guarantees the lowest available rates without third-party commission fees.*
+*Tariffs range from ₹1,500 to ₹5,000 per night depending on room selection, season, dates, and guest occupancy. Booking directly via phone/WhatsApp guarantees the lowest available rates without third-party commission fees.*
 
 ---
 
@@ -96,10 +96,10 @@ Heritage architecture and a valley view make this an intimate, charming choice f
 A King Bed suite with mountain views and a more premium interior finish, for couples who want a little extra.
 
 #### Iron Room & Cedar Room — Best for Solo Travelers or Small Groups
-Both offer a King Bed and their own character — Iron with a garden view, Cedar with forest views and wooden paneling — well suited to solo travelers or as an additional room for a larger family group booking multiple rooms together.
+Both offer a King Bed and their own character — Iron with a garden view, Cedar with forest views and wooden paneling (starting at just ₹2,000/night) — well suited to solo travelers or as an additional room for a larger family group booking multiple rooms together.
 
 #### Himalayan Workation — Best for the Parent Who Still Needs to Work
-A dedicated workstation with high-speed Wi-Fi and a Himalayan view, so one parent can get a few hours of work done while the rest of the family explores.
+A dedicated workstation with high-speed Wi-Fi and a Himalayan view starting at just ₹1,500/night, so one parent can get a few hours of work done while the rest of the family explores.
 
 #### Stone Cottage Room — Best for a Scenic, Private Escape
 Featuring a private terrace balcony and a King Bed, ideal for couples or a small family wanting their own quiet outdoor space.
@@ -123,9 +123,9 @@ Featuring a private terrace balcony and a King Bed, ideal for couples or a small
 - You want heritage character over maximum space
 - A private terrace or valley view matters to you (₹3,500 – ₹4,500)
 
-### Choose Himalayan Workation, Iron or Cedar Room if:
-- Your trip mixes family time with remote work or solo travel
-- You need dependable Wi-Fi and cozy mountain comfort at the best starting rate (₹3,000 – ₹3,500)
+### Choose Himalayan Workation, Cedar or Iron Room if:
+- Your trip mixes family time with remote work or budget travel
+- You need dependable Wi-Fi and mountain comfort starting from just ₹1,500 (Workation) to ₹2,000 (Cedar)
 
 ---
 
