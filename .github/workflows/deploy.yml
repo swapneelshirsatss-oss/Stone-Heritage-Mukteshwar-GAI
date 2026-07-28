@@ -27,10 +27,17 @@ jobs:
       - name: Build Astro Project
         run: npm run build
 
+      - name: Sanitize FTP Server URL
+        id: clean_ftp
+        run: |
+          RAW_SERVER="${{ secrets.FTP_SERVER }}"
+          CLEAN_SERVER=$(echo "$RAW_SERVER" | sed -e 's|^[a-z]*://||' -e 's|/*$||')
+          echo "server=$CLEAN_SERVER" >> $GITHUB_OUTPUT
+
       - name: Sync files to Hostinger
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ${{ steps.clean_ftp.outputs.server }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftp
