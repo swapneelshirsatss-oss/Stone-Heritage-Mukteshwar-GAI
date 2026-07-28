@@ -34,20 +34,13 @@ jobs:
           CLEAN_SERVER=$(echo "$RAW_SERVER" | sed -e 's|^[a-z]*://||' -e 's|/*$||')
           echo "server=$CLEAN_SERVER" >> $GITHUB_OUTPUT
 
-      - name: Sync files to Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Sync files to Hostinger via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ${{ steps.clean_ftp.outputs.server }}
+          host: ${{ steps.clean_ftp.outputs.server }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
           port: 65002
-          local-dir: ./dist/
-          server-dir: /public_html/
-          state-name: .ftp-deploy-sync-state.json
-          security: loose
-          exclude: |
-            **/.DS_Store
-            **/node_modules/**
-            **/.git/**
-            **/.github/**
+          local_path: './dist/*'
+          remote_path: '/public_html/'
+          sftp_only: true
