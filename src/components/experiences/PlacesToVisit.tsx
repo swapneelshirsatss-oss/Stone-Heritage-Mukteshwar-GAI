@@ -91,6 +91,19 @@ export function PlacesToVisit() {
         <p className="text-lg text-primary/70 max-w-3xl mx-auto font-light leading-relaxed">
           Discover the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks and hidden waterfalls to ancient spiritual sites, these nearby attractions are easily accessible and promise to enrich your Mukteshwar experience.
         </p>
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-6 text-xs sm:text-sm font-medium">
+          <a href="/blog/top-5-things-to-do-in-mukteshwar/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">
+            Top 5 Things to Do Guide →
+          </a>
+          <span className="text-stone-300 hidden sm:inline">•</span>
+          <a href="/blog/himalayan-bird-watching/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">
+            Himalayan Bird Watching Guide →
+          </a>
+          <span className="text-stone-300 hidden sm:inline">•</span>
+          <a href="/stay/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">
+            View Stone Cottage Rooms →
+          </a>
+        </div>
       </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

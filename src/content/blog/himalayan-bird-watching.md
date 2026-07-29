@@ -10,7 +10,7 @@ readTime: '5 min read'
 
 Nestled deep within the pristine forests of the South Gola Range, Mukteshwar is a hidden paradise for bird watchers. Away from the commercial noise of major hill stations, the dense canopy of oak, pine, and rhododendron trees creates a sanctuary for some of the most vibrant avian life in the Himalayas.
 
-Whether you are a seasoned ornithologist armed with a telephoto lens, or a casual nature lover enjoying a cup of coffee on your balcony, birding here is an immersive, daily experience.
+Whether you are a seasoned ornithologist armed with a telephoto lens, or a casual nature lover enjoying a cup of coffee on your balcony at our [stone cottage homestay in Mukteshwar](/stay/), birding here is an immersive, daily experience.
 
 ## Bird Species You Can Spot in Mukteshwar
 
@@ -22,7 +22,7 @@ Here are a few local favorites you should keep your binoculars ready for:
 - **Verditer Flycatcher:** A stunning, vibrant blue bird that is often seen darting out from tree branches to catch insects mid-air.
 - **Himalayan Bulbul:** Easily identifiable by its bright yellow vent and prominent crest, these social birds are frequent visitors to our fruit trees.
 - **Himalayan Griffon:** If you cast your eyes upward toward the clear blue sky, you might spot these majestic vultures soaring effortlessly on thermal currents above the Nanda Devi peaks.
-- **Woodpeckers & Magpies:** The rhythmic tapping of the Rufous-bellied Woodpecker and the striking long tails of the Yellow-billed Blue Magpie are common sights around our stone cottages.
+- **Woodpeckers & Magpies:** The rhythmic tapping of the Rufous-bellied Woodpecker and the striking long tails of the Yellow-billed Blue Magpie are common sights around our [heritage stone cottages](/stay/) and grassy lawns (which are also loved by dogs staying at our [pet-friendly homestay](/blog/pet-friendly-homestay/)).
 
 ## The Best Times for Bird Watching
 
@@ -36,6 +36,6 @@ While Mukteshwar offers fantastic birding year-round, the months between **Octob
 
 ## Enhancing Your Birding Experience
 
-To make the most of your nature walks around Stone Heritage, we recommend wearing dull, earth-toned clothing that blends into the forest. Move slowly, speak in hushed tones, and rely on your ears just as much as your eyes—often, you will hear a bird long before you see it.
+To make the most of your nature walks around Stone Heritage and nearby trails like Bhalu Gaad Waterfall (see our full guide to the [top 5 things to do in Mukteshwar](/blog/top-5-things-to-do-in-mukteshwar/)), we recommend wearing dull, earth-toned clothing that blends into the forest. Move slowly, speak in hushed tones, and rely on your ears just as much as your eyes—often, you will hear a bird long before you see it.
 
-There is a profound sense of peace that comes from disconnecting from the digital world and tuning into the natural rhythms of the forest. Bring your binoculars, a good field guide, and a sense of wonder. The birds of Mukteshwar are waiting for you.
+There is a profound sense of peace that comes from disconnecting from the digital world and tuning into the natural rhythms of the forest. Bring your binoculars, a good field guide, and a sense of wonder. If you are planning a trip with family, explore our guide to the [best homestay in Mukteshwar for families](/blog/best-homestay-in-mukteshwar-for-families/)!

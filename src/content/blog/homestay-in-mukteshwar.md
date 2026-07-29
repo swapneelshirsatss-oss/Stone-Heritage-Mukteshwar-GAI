@@ -16,7 +16,7 @@ Here at Stone Heritage, we don't run a hotel. We run a home, and we'd love to te
 
 ## Waking Up in a Real Stone Cottage
 
-When we put together our rooms—like the *Copper Room*, the *Brass Room*, and our *Stonewood Family Retreat*—we wanted to stay true to our roots. Our cottages are built with thick native stone and local wood, just like the traditional homes in these valleys have been built for centuries. 
+When we put together our rooms—like the *Copper Room*, the *Brass Room*, and our *Stonewood Family Retreat* (see our comprehensive guide to the [best homestay in Mukteshwar for families](/blog/best-homestay-in-mukteshwar-for-families/))—we wanted to stay true to our roots. Our cottages are built with thick native stone and local wood, just like the traditional homes in these valleys have been built for centuries. 
 
 It isn't just about looking rustic and charming (though they absolutely do!). Those thick stone walls do something wonderful: they keep you incredibly warm and cozy when the winter snow falls, and wonderfully cool during the summer afternoons.
 
@@ -34,14 +34,14 @@ We take so much pride in serving fresh, pure vegetarian meals made from organic,
 
 ## Bring Your Furry Family Members!
 
-We know how heartbreaking it is to plan a family vacation and realize you have to leave your dog behind because of strict hotel policies. We're pet lovers ourselves, so making Stone Heritage a **pet-friendly homestay** was a no-brainer for us. 
+We know how heartbreaking it is to plan a family vacation and realize you have to leave your dog behind because of strict hotel policies. We're pet lovers ourselves, so making Stone Heritage a **[pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay/)** was a no-brainer for us. 
 
 We have plenty of open garden space where your dogs can run, roll in the grass, and enjoy the crisp mountain air safely. They deserve a holiday just as much as you do!
 
 ## Come Be Our Guest
 
-When you stay in a commercial resort, you're a room number. When you stay with us, you're our guest. Whether you need help planning a quiet hike to the Bhalu Gaad waterfall, want to know the best time to visit Chauli Ki Jali, or just want to sit by the evening bonfire and swap stories, we're here for you.
+When you stay in a commercial resort, you're a room number. When you stay with us, you're our guest. Whether you need help planning a quiet hike to the Bhalu Gaad waterfall, want to know the best time to visit Chauli Ki Jali (explore our guide to the [top 5 things to do in Mukteshwar](/blog/top-5-things-to-do-in-mukteshwar/)), or just want to sit by the evening bonfire and swap stories, we're here for you.
 
 If you're looking for a homestay in Mukteshwar that offers peace, luxury, and a whole lot of heart, we'd love to host you.
 
-Ready to pack your bags? [Take a look at our rooms](/stay/) and come find your peaceful getaway in the hills!
+Ready to pack your bags? Learn about [our authentic heritage story](/our-story/), [explore our 9 stone cottage rooms](/stay/), and come find your peaceful getaway in the hills!

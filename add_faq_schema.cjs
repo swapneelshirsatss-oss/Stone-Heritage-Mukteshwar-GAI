@@ -39,7 +39,7 @@ const replacement = `    {
           "name": "What are the guest reviews and ratings for Stone Heritage Mukteshwar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We proudly maintain a 4.9-star rating based on over 245 authentic guest reviews on our Google Business Profile. Families and travelers consistently praise our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food."
+            "text": "We proudly maintain a 4.9-star rating based on over 250+ authentic guest reviews on our Google Business Profile. Families and travelers consistently praise our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food."
           }
         },
         {

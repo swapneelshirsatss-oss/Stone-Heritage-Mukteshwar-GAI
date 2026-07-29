@@ -17,19 +17,19 @@ At Stone Heritage Mukteshwar, we believe family vacations aren't complete withou
 One of the biggest challenges of hotel stays with pets is the lack of open space. Our property is uniquely positioned on the edge of the South Gola Range forest.
 
 - **Expansive Private Gardens:** We have wide, open lawn spaces where your dog can run safely, roll in the grass, and soak up the winter sun.
-- **Safe Architecture:** Our standalone Kumaoni stone cottages provide thick, sound-insulating walls. This means if your pet gets a little vocal, you don't have to worry about disturbing neighbors through thin hotel walls.
+- **Safe Architecture:** Our standalone Kumaoni stone cottages (check our [spacious family room options](/stay/)) provide thick, sound-insulating walls. This means if your pet gets a little vocal, you don't have to worry about disturbing neighbors through thin hotel walls.
 - **Forest Trails:** Step right outside the property and you are instantly on safe, quiet nature trails, perfect for long morning walks with your dog.
 
 ## Tips for Traveling with Pets to the Mountains
 
 If this is your pet's first time visiting an altitude of 7,500 feet, here are a few tips to ensure they stay comfortable:
 
-1. **Take Frequent Pit Stops:** The winding roads from Kathgodam to Mukteshwar can cause motion sickness in dogs. Roll the windows down slightly for fresh air and take breaks every hour.
+1. **Take Frequent Pit Stops:** The winding roads from Kathgodam to Mukteshwar can cause motion sickness in dogs. Roll the windows down slightly for fresh air and take breaks every hour—check our detailed [Delhi to Mukteshwar road trip guide](/blog/delhi-to-mukteshwar-road-trip/) for the best scenic pit stops.
 2. **Pack Warm Bedding:** While our rooms are cozy, mountain nights get chilly. Bring your pet's favorite blanket so they have a familiar, warm spot to sleep.
 3. **Hydration is Key:** The high-altitude air is incredibly dry. Ensure your pet always has access to fresh drinking water.
 
 ## A Guilt-Free Vacation
 
-When you stay with us, there's no need to leave your dog locked in a room while you eat. Our outdoor dining areas and [Experiences](/experiences/) are designed to be enjoyed together. 
+When you stay with us, there's no need to leave your dog locked in a room while you eat. Our outdoor dining areas and local [Experiences](/experiences/) (like nature walks and waterfall treks—see our guide to the [top 5 things to do in Mukteshwar](/blog/top-5-things-to-do-in-mukteshwar/)) are designed to be enjoyed together. 
 
-Pack the leash, grab the treats, and head up to the mountains. Your pet's next great adventure awaits at Stone Heritage!
+Pack the leash, grab the treats, and head up to the mountains. Read our guide to the [best homestay in Mukteshwar for families](/blog/best-homestay-in-mukteshwar-for-families/) and book your pet's next great adventure at Stone Heritage!

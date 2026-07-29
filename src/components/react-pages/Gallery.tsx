@@ -51,7 +51,7 @@ export function Gallery() {
           {/* E-E-A-T Trust Bar */}
           <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-white px-6 py-3 rounded-2xl border border-stone-200 shadow-sm text-xs font-medium text-primary/80 mb-8">
             <div className="flex items-center gap-1.5 text-amber-500 font-semibold">
-              <Star className="w-4 h-4 fill-amber-400 text-amber-500" /> 4.9★ Rated (245+ Google Reviews)
+              <Star className="w-4 h-4 fill-amber-400 text-amber-500" /> 4.9★ Rated (250+ Google Reviews)
             </div>
             <div className="w-1 h-1 rounded-full bg-stone-300 hidden sm:block"></div>
             <div className="flex items-center gap-1.5 text-accent">

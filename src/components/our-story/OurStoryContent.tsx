@@ -35,7 +35,7 @@ export function OurStoryContent() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium mb-6 text-stone-50 leading-tight tracking-tight max-w-4xl mx-auto"
           >
-            Our Story — Authentic Homestay & Heritage Cottages in Mukteshwar
+            Our Story — Luxury Cottage Homestay & Boutique Resort in Mukteshwar
           </motion.h1>
 
           <motion.p 
@@ -44,7 +44,7 @@ export function OurStoryContent() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg md:text-xl text-stone-200 max-w-3xl mx-auto font-light leading-relaxed mb-8"
           >
-            Welcome to Stone Heritage Mukteshwar. Discover our history, meet our hosts Akash, Harsh & Priyanka, and learn why families, couples, and travelers choose our authentic mountain sanctuary.
+            Welcome to Stone Heritage Mukteshwar. Whether you are looking for an authentic luxury cottage homestay, a boutique hotel experience, or a peaceful mountain resort in Mukteshwar, discover our history and meet our hosts Akash, Harsh & Priyanka.
           </motion.p>
         </div>
       </section>
@@ -62,13 +62,13 @@ export function OurStoryContent() {
             >
               <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-3 block">Authentic Kumaoni Experience</span>
               <h2 className="text-3xl md:text-4xl font-serif font-medium text-primary mb-6 leading-tight">
-                Who We Are — A Homestay & Resort Built on Kumaoni Heritage
+                Who We Are — A Luxury Cottage Homestay & Boutique Resort in Mukteshwar
               </h2>
               <div className="w-16 h-[1px] bg-accent/50 mb-8"></div>
               
               <div className="space-y-4 text-primary/80 font-light leading-relaxed text-base md:text-lg">
                 <p>
-                  Stone Heritage is a boutique homestay and resort property situated along the scenic Bhowali-Dhanachuli Road in Mukteshwar, Uttarakhand. Designed as a sanctuary away from urban noise, our property pairs the warmth and personal care of a traditional homestay with the privacy, comfort, and premium amenities of a mountain resort.
+                  Stone Heritage is a luxury cottage homestay and boutique resort hotel property situated along the scenic Bhowali-Dhanachuli Road in Mukteshwar, Uttarakhand. Designed as a mountain sanctuary away from urban noise, our property pairs the warmth, personalized care, and home-cooked meals of a traditional cottage homestay with the privacy, luxury stone cottages, and modern amenities of a boutique resort hotel in Mukteshwar.
                 </p>
                 <p>
                   Built with hand-chiseled local stone, wooden rafters, and wide Himalayan-view balconies, Stone Heritage celebrates the rich architectural legacy of the Kumaon region while offering 9 thoughtfully configured rooms and suites.
@@ -248,11 +248,11 @@ export function OurStoryContent() {
           <div className="text-center mb-16">
             <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-3 block">Unique Value Proposition</span>
             <h2 className="text-3xl md:text-5xl font-serif font-medium text-primary mb-6">
-              What Makes Us Different from a Typical Hotel or Resort
+              What Makes Us Different from a Commercial Hotel or Resort in Mukteshwar
             </h2>
             <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
             <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light">
-              We bridge the gap between homestays and resorts — offering the personal warmth of a home with the professional amenities of a boutique resort.
+              We bridge the gap between an authentic cottage homestay and a luxury boutique resort hotel — offering the personal warmth of a mountain home with the professional amenities of a boutique resort in Mukteshwar.
             </p>
           </div>
 
@@ -381,7 +381,7 @@ export function OurStoryContent() {
                   ))}
                 </div>
                 <h3 className="text-2xl font-serif font-medium text-white mb-2">
-                  4.9★ Rating Across 245 Google Reviews
+                  4.9★ Rating Across 250+ Google Reviews
                 </h3>
                 <p className="text-stone-300 text-sm font-light leading-relaxed">
                   Consistently rated as one of the best homestays in Mukteshwar on Google Business Profile by families, couples, and road-trippers from Delhi NCR.

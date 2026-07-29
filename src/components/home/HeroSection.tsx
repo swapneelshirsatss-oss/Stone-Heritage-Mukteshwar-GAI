@@ -62,7 +62,7 @@ export function HeroSection() {
           <div className="flex gap-0.5 text-[#FBBC05] text-base drop-shadow-sm">
             <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
           </div>
-          <span className="font-bold text-white group-hover:text-stone-100 transition-colors">4.9/5 (245 Google reviews)</span>
+          <span className="font-bold text-white group-hover:text-stone-100 transition-colors">4.9/5 (250+ Google reviews)</span>
         </a>
       </div>
     </motion.div>

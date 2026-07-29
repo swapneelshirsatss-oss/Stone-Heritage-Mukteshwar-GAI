@@ -10,7 +10,7 @@ readTime: '6 min read'
 
 There is nothing quite like the transition from the bustling streets of the capital to the serene, pine-scented air of the Kumaon hills. A road trip from Delhi to Mukteshwar is widely considered one of the most scenic weekend getaways in North India. 
 
-Covering a distance of approximately 350 kilometers, the drive takes about 8 to 9 hours depending on traffic. Whether you are a seasoned mountain driver or planning your first Himalayan road trip, this guide covers everything you need to know for a seamless journey to Stone Heritage Mukteshwar.
+Covering a distance of approximately 350 kilometers, the drive takes about 8 to 9 hours depending on traffic. Whether you are a seasoned mountain driver or planning your first Himalayan road trip, this guide covers everything you need to know for a seamless journey to [Stone Heritage Mukteshwar](/stay/), an authentic [family homestay in Mukteshwar](/blog/best-homestay-in-mukteshwar-for-families/).
 
 ## Choosing the Best Route to Mukteshwar
 
@@ -19,7 +19,7 @@ There are generally two popular routes to reach Mukteshwar from Delhi. Both rout
 ### Route 1: The Standard Fast Route (Via Bhimtal)
 **Delhi → Moradabad → Haldwani → Kathgodam → Bhimtal → Bhowali → Mukteshwar**
 
-This is the most common and fastest route. The four-lane highway up to Haldwani makes for smooth cruising. Once you cross Kathgodam, the mountain ascent begins. Driving alongside the Bhimtal lake offers a beautiful midpoint view before you push toward Bhowali and finally to the quiet forests of Mukteshwar.
+This is the most common and fastest route. The four-lane highway up to Haldwani makes for smooth cruising. Once you cross Kathgodam, the mountain ascent begins. Driving alongside the Bhimtal lake offers a beautiful midpoint view before you push toward Bhowali and finally to the quiet forests of Mukteshwar, where endless adventures await (see our guide to the [top 5 things to do in Mukteshwar](/blog/top-5-things-to-do-in-mukteshwar/)).
 
 ### Route 2: The Scenic Forest Route (Via Kaladhungi)
 **Delhi → Moradabad → Bazpur → Kaladhungi → Nainital → Bhowali → Mukteshwar**
@@ -41,9 +41,10 @@ Mountain driving is deeply rewarding but requires respect for the road. Keep the
 1. **Start Early:** The golden rule of Himalayan road trips is to beat the Delhi traffic. We highly recommend starting by 4:00 AM or 5:00 AM.
 2. **Daylight Driving:** Always aim to reach your destination before sunset. The final stretch to Mukteshwar features winding, unlit forest roads that are much easier to navigate in daylight.
 3. **Use Engine Braking:** When driving downhill on your return trip, avoid riding your brakes to prevent overheating. Shift to a lower gear and let the engine control your speed.
+4. **Traveling with Pets:** If you are bringing your dog along, take frequent water breaks to avoid motion sickness on mountain turns. Read our guide to staying at a [pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay/).
 
 ## Arrive at Your Himalayan Sanctuary
 
-After a long drive, there is no better feeling than pulling into [Stone Heritage Mukteshwar](/stay/). Unload your bags, step out onto your private balcony, and watch the sunset over the Nanda Devi range with a hot cup of local tea in hand. 
+After a long drive, there is no better feeling than pulling into [Stone Heritage Mukteshwar](/stay/). Unload your bags, step out onto your private balcony, and watch the sunset over the Nanda Devi range with a hot cup of local tea in hand. Learn more about our hosts and [our authentic heritage story](/our-story/). 
 
 Safe travels, and we look forward to hosting your next mountain adventure!
