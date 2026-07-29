@@ -25,6 +25,13 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
     { name: 'Contact', path: '/contact/' },
   ];
 
+  const isLinkActive = (linkPath: string) => {
+    const cleanCurrent = (currentPath || '/').replace(/\/$/, '') || '/';
+    const cleanLink = (linkPath || '/').replace(/\/$/, '') || '/';
+    if (cleanLink === '/') return cleanCurrent === '/';
+    return cleanCurrent === cleanLink || cleanCurrent.startsWith(`${cleanLink}/`);
+  };
+
   return (
     <header 
       className={cn(
@@ -47,21 +54,24 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8 items-center">
-            {navLinks.map((link) => (
-              <a 
-                key={link.path}
-                href={link.path} 
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-accent relative py-2",
-                  currentPath === link.path ? "text-accent" : "text-primary/70"
-                )}
-              >
-                {link.name}
-                {currentPath === link.path && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent rounded-full" />
-                )}
-              </a>
-            ))}
+            {navLinks.map((link) => {
+              const active = isLinkActive(link.path);
+              return (
+                <a 
+                  key={link.path}
+                  href={link.path} 
+                  className={cn(
+                    "text-sm font-medium transition-colors hover:text-accent relative py-2",
+                    active ? "text-accent" : "text-primary/70"
+                  )}
+                >
+                  {link.name}
+                  {active && (
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-accent rounded-full" />
+                  )}
+                </a>
+              );
+            })}
           </nav>
           
           <div className="hidden md:flex items-center gap-4">
@@ -104,19 +114,22 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
         )}
       >
         <div className="flex flex-col py-2 px-4">
-          {navLinks.map((link) => (
-            <a 
-              key={link.path}
-              href={link.path} 
-              className={cn(
-                "py-3 text-base font-medium transition-colors border-b border-stone-200/50 last:border-0",
-                currentPath === link.path ? "text-accent" : "text-primary hover:text-accent"
-              )}
-              onClick={closeMobileMenu}
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const active = isLinkActive(link.path);
+            return (
+              <a 
+                key={link.path}
+                href={link.path} 
+                className={cn(
+                  "py-3 text-base font-medium transition-colors border-b border-stone-200/50 last:border-0",
+                  active ? "text-accent" : "text-primary hover:text-accent"
+                )}
+                onClick={closeMobileMenu}
+              >
+                {link.name}
+              </a>
+            );
+          })}
         </div>
       </div>
     </header>
