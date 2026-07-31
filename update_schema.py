@@ -36,7 +36,8 @@ new_hotel = {
     "https://www.youtube.com/@StoneHeritageMukteshwar",
     "https://x.com/stone_heritage",
     "https://in.pinterest.com/thestoneheritage/",
-    "https://www.linkedin.com/company/stone-heritage-mukteshwar/"
+    "https://www.linkedin.com/company/stone-heritage-mukteshwar/",
+    "https://www.google.co.in/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE"
   ],
   "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
   "maps": [
