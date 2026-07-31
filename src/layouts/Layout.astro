@@ -358,12 +358,18 @@ const speakableSchema = {
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
     
-    <!-- Preload Critical Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <!-- Non-Render-Blocking Google Fonts (font-display: swap) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" />
+    </noscript>
     
-    <!-- Preload LCP Image for Homepage -->
+    <!-- Responsive High-Priority Preload for Homepage Hero Image -->
     {Astro.url.pathname === '/' && (
-      <link rel="preload" as="image" href="/best-family-homestay-in-mukteshwar.webp" />
+      <>
+        <link rel="preload" as="image" href="/best-family-homestay-in-mukteshwar-mobile.webp" media="(max-width: 767px)" type="image/webp" fetchpriority="high" />
+        <link rel="preload" as="image" href="/best-family-homestay-in-mukteshwar.webp" media="(min-width: 768px)" type="image/webp" fetchpriority="high" />
+      </>
     )}
     
     <!-- Core SEO & Meta Tags -->

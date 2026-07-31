@@ -14,7 +14,7 @@ After years of living in and traversing the Kumaon Himalayas, I’ve learned tha
 
 Mukteshwar, sitting high at an altitude of **2,286 meters (7,500 feet)** in Uttarakhand's Nainital district, is one of the few hill stations that has preserved its unhurried, soulful charm. Unlike busier tourist hubs, Mukteshwar offers space to breathe, walk quietly through oak and cedar forests, and gaze at unpolluted starry night skies.
 
-If you are planning a journey to this quiet mountain haven and staying at a restful heritage stay like [Stone Heritage Homestay](/blog/homestay-in-mukteshwar), here is my tested, first-hand guide to the top 5 experiences in Mukteshwar.
+If you are planning a journey to this quiet mountain haven and staying at a restful heritage stay like [Stone Heritage Homestay](/blog/homestay-in-mukteshwar/), here is my tested, first-hand guide to the top 5 experiences in Mukteshwar.
 
 ---
 
@@ -62,7 +62,7 @@ If you wish to explore astronomy deeper with professional instruments, Mukteshwa
 
 Unlike commercial commercialized waterfalls that feature concrete staircases and loud food stalls, the trek to **Bhalu Gaad** (which translates to "Bear's Stream" in local Kumaoni dialect) retains its raw, natural beauty.
 
-Located about 7 km from the main town center, the 2-kilometer walking trail winds through dense pine, oak, and rhododendron forests, crossing wooden footbridges and babbling mountain streams. Along the walk, keep your eyes open for colorful Himalayan birds—Mukteshwar is home to over 150 species including the Verditer Flycatcher, Blue Whistling Thrush, and Himalayan Monal (explore our full guide to [Himalayan bird watching in Mukteshwar](/blog/himalayan-bird-watching)).
+Located about 7 km from the main town center, the 2-kilometer walking trail winds through dense pine, oak, and rhododendron forests, crossing wooden footbridges and babbling mountain streams. Along the walk, keep your eyes open for colorful Himalayan birds—Mukteshwar is home to over 150 species including the Verditer Flycatcher, Blue Whistling Thrush, and Himalayan Monal (explore our full guide to [Himalayan bird watching in Mukteshwar](/blog/himalayan-bird-watching/)).
 
 At the end of the trail, the waterfall drops into a serene, crystal-clear emerald pool framed by granite boulders.
 
@@ -95,7 +95,7 @@ In our fast-paced lives, we often forget how to simply slow down without feeling
 
 My ideal morning here begins early: holding a warm cup of ginger-tulsi Pahadi chai, stepping onto the balcony of our stone cottage, and watching the first golden sunlight touch the snow peaks of Nanda Devi. You can spend your afternoon reading a favorite book, journaling, listening to the wind through pine needles, or taking an unhurried walk through nearby fruit orchards (apples, plums, and peaches bloom across the valley in spring).
 
-If you are driving up from the NCR region—perhaps following our scenic route guide for a [Delhi to Mukteshwar road trip](/blog/delhi-to-mukteshwar-road-trip)—plan for at least 3 to 4 nights to truly unwind and absorb the mountain rhythm.
+If you are driving up from the NCR region—perhaps following our scenic route guide for a [Delhi to Mukteshwar road trip](/blog/delhi-to-mukteshwar-road-trip/)—plan for at least 3 to 4 nights to truly unwind and absorb the mountain rhythm.
 
 ---
 

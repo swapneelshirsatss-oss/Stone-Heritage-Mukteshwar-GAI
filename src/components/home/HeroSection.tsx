@@ -6,14 +6,20 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center bg-primary text-stone-50 overflow-hidden">
       <div className="absolute inset-0 z-0 bg-stone-900">
-        <OptimizedImage 
-          src="/best-family-homestay-in-mukteshwar.webp" 
-          alt="Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar" 
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
-          loading="eager"
-          fetchPriority="high"
-          decoding="sync"
-        />
+        <picture className="absolute inset-0 w-full h-full">
+          <source media="(max-width: 767px)" srcSet="/best-family-homestay-in-mukteshwar-mobile.webp" type="image/webp" />
+          <source media="(min-width: 768px)" srcSet="/best-family-homestay-in-mukteshwar.webp" type="image/webp" />
+          <img 
+            src="/best-family-homestay-in-mukteshwar.webp" 
+            alt="Panoramic view of the Himalayan mountains from Stone Heritage homestay in Mukteshwar" 
+            className="w-full h-full object-cover opacity-60"
+            loading="eager"
+            fetchPriority="high"
+            decoding="sync"
+            width="1536"
+            height="1024"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-primary/90"></div>
       </div>
       

@@ -6,6 +6,6 @@ Sitemap: https://thestoneheritage.in/sitemap.xml
 Sitemap: https://thestoneheritage.in/sitemap-pages.xml
 Sitemap: https://thestoneheritage.in/sitemap-blog.xml
 
-# LLM & AI Search Bot Documentation (GEO & AEO)
+# LLM & AI Search Bot Documentation (GEO & AEO - 9 Stone Cottage Rooms)
 # Primary Summary: https://thestoneheritage.in/llms.txt
 # Extended Context: https://thestoneheritage.in/llms-full.txt
