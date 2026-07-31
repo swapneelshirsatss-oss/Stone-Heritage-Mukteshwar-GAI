@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { OptimizedImage } from '../../components/OptimizedImage';
-import { Wifi, UtensilsCrossed, Mountain, Castle, Dog } from 'lucide-react';
+import { Wifi, UtensilsCrossed, Mountain, Castle, Dog, Camera, Sparkles } from 'lucide-react';
 
 const rooms = [
   { name: "Brass Room", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples & Small Families", view: "Mountain View", amenities: "En-suite Bathroom, Wi-Fi", image: "/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
@@ -24,6 +24,10 @@ export function Stay() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 text-xs sm:text-sm font-semibold mb-4 shadow-sm">
+              <Camera className="w-4 h-4 text-amber-700" />
+              <span>Aesthetic Place to Stay • Recommended for Instagrammers & Content Creators</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary leading-tight">Stone Cottage Homestay in Mukteshwar for Families</h1>
             <p className="text-lg text-primary/70 max-w-3xl mx-auto mb-6 font-light leading-relaxed">
               Discover the charm of staying at an authentic stone cottage in Mukteshwar. Our boutique homestay seamlessly blends traditional Kumaoni stone architecture with modern luxury, en-suite bathrooms, high-speed Wi-Fi, and panoramic Himalayan views.
@@ -104,6 +108,92 @@ export function Stay() {
               </tbody>
             </table>
           </div>
+
+        <section className="my-16 bg-stone-50 border border-stone-200 rounded-3xl p-8 md:p-12 shadow-sm">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+              Amenities at Our Mukteshwar Stone Cottages
+            </h2>
+            <p className="text-primary/70 text-lg leading-relaxed font-light">
+              Experience classic mountain living with handcrafted stone structures, pristine nature views, and modern guest conveniences.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <Castle className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Vintage Architecture, Modern Comfort</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                Authentic Kumaoni stone and wood craftsmanship combined with contemporary en-suite bathrooms, plush bedding, and high-speed Wi-Fi.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <Mountain className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Mountain Views & Location</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                Uninterrupted views of snow-capped Himalayan peaks and lush valleys, conveniently situated along the peaceful Bhowali-Dhanachuli Road.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-700 flex items-center justify-center mb-4">
+                <Camera className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Aesthetic & Social Media Friendly</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                An aesthetic place to stay in Mukteshwar, highly recommended by travelers, Instagrammers, and content creators for Golden Hour photography and reel-worthy mountain spots.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <UtensilsCrossed className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Home-Cooked Kumaoni Meals</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                Delicious, freshly prepared organic home-style vegetarian dining tailored for families, couples, and long-stay guests.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <Wifi className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">High-Speed Workation Wi-Fi</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                Reliable high-speed internet across rooms and outdoor terraces, ideal for remote work, video calls, and digital nomads.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <Dog className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Pet-Friendly Environment</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                Open green garden spaces and pet-welcoming accommodations so your furry companions can travel and relax with you.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm flex flex-col items-start hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 fill-none stroke-current" viewBox="0 0 24 24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                  <path d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Bonfire & Outdoor Lawns</h3>
+              <p className="text-primary/70 text-sm leading-relaxed">
+                Cozy evening bonfires under starry mountain skies, lush private lawns, and serene tea sitting spots.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section className="bg-accent text-white rounded-3xl p-8 md:p-12 text-center max-w-4xl mx-auto shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
