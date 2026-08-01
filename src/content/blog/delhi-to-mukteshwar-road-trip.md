@@ -12,7 +12,7 @@ readTime: '8 min read'
 
 There is nothing quite like the transition from the bustling, congested streets of Delhi NCR to the crisp, pine-scented air of the Kumaon Himalayas. The road trip from **Delhi to Mukteshwar** is widely celebrated as one of the most scenic, rewarding weekend road trips in North India.
 
-Covering a distance of approximately **340 to 360 kilometers**, the drive takes about **7.5 to 8.5 hours** depending on your starting point in Delhi-NCR (Noida, Gurgaon, or South Delhi) and your choice of pit stops. 
+Covering a distance of approximately **320 to 340 kilometers**, the drive takes about **7.5 to 8 hours** depending on your starting point in Delhi-NCR (Noida, Gurgaon, or South Delhi) and your choice of pit stops. 
 
 Whether you are an experienced mountain driver or planning your very first Himalayan drive, this comprehensive guide created by local Mukteshwar hosts covers everything you need to know for a smooth, safe, and memorable journey to [Stone Heritage Mukteshwar](/stay/), an authentic [family homestay in Mukteshwar](/blog/best-homestay-in-mukteshwar-for-families/).
 
@@ -30,8 +30,8 @@ There are two primary driving routes to reach Mukteshwar from Delhi NCR. Both ro
 
 | Feature | Route 1: Via Bhimtal (Recommended Fast Route) | Route 2: Via Kaladhungi (Scenic Forest Route) |
 | :--- | :--- | :--- |
-| **Total Distance** | ~345 km | ~360 km |
-| **Driving Time** | 7.5 – 8.5 Hours | 8.5 – 9.5 Hours |
+| **Total Distance** | ~320–340 km | ~350 km |
+| **Driving Time** | 7.5 – 8 Hours | 8.5 – 9 Hours |
 | **Major Towns Covered** | Delhi → Gajraula → Moradabad → Rampur → Haldwani → Kathgodam → Bhimtal → Bhowali → Mukteshwar | Delhi → Gajraula → Moradabad → Bazpur → Kaladhungi → Nainital → Bhowali → Mukteshwar |
 | **Road Conditions** | Smooth 4-lane highway till Kathgodam; well-paved 2-lane hill roads | Good highways; narrow forest & mountain passes via Kaladhungi |
 | **Scenery** | Lake views at Bhimtal & pine forests near Bhowali | Dense Corbett forest canopy & Nainital valley views |
@@ -110,7 +110,7 @@ If traveling with your dog, mountain curves can cause motion sickness. Roll down
 ## Frequently Asked Questions (FAQs)
 
 ### 1. How long does it take to drive from Delhi to Mukteshwar?
-The drive takes **7.5 to 8.5 hours** (covering ~345 km) via NH9 and Bhimtal under normal traffic conditions. Starting early in the morning (by 5:00 AM) minimizes highway delays.
+The drive takes **7.5 to 8 hours** (covering ~320 to 340 km) via NH9 and Bhimtal under normal traffic conditions. Starting early in the morning (by 5:00 AM) minimizes highway delays.
 
 ### 2. Can small hatchback cars (like Swift, i10, Alto) easily reach Mukteshwar?
 Yes! The entire road from Delhi to Mukteshwar via Haldwani and Bhimtal is fully paved asphalt. Any well-maintained hatchback, sedan, or SUV can easily handle the drive.

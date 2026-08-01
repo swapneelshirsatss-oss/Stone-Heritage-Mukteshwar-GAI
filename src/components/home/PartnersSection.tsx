@@ -6,6 +6,9 @@ export function PartnersSection() {
       <div className="max-w-5xl mx-auto text-center">
         <span className="text-stone-500 font-sans font-medium tracking-[0.2em] uppercase text-xs mb-8 block">We Are Listed On</span>
         <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 transition-all duration-500">
+          <a href="https://www.google.com/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform flex items-center gap-1">
+             <span className="text-2xl md:text-3xl font-bold tracking-tight text-slate-700">Google <span className="text-blue-500 font-normal">Travel</span></span>
+          </a>
           <a href="https://www.makemytrip.com/hotels/stone_heritage_mukteshwar-details-mukteshwar.html" target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-transform flex items-center">
              <span className="text-2xl md:text-3xl font-extrabold tracking-tight text-slate-800">Make<span className="text-red-600">My</span>Trip</span>
           </a>

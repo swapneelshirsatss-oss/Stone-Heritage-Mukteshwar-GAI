@@ -37,7 +37,7 @@ const contactFaqs = [
   },
   {
     q: "9. How far is Stone Heritage homestay from Delhi?",
-    a: "Stone Heritage is approximately an 8-hour drive from Delhi via Moradabad, Haldwani, and Bhowali, making it a popular weekend getaway destination for Delhi NCR travelers."
+    a: "Stone Heritage is approximately a 7.5 to 8-hour drive (~320–340 km) from Delhi via Moradabad, Haldwani, and Bhowali, making it a popular weekend getaway destination for Delhi NCR travelers."
   },
   {
     q: "10. What is the best route from Delhi NCR to Stone Heritage in Mukteshwar?",
@@ -141,16 +141,29 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden h-[400px] bg-stone-200 border border-stone-200 shadow-sm">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen={true} 
-              loading="lazy" 
-              referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+          <div>
+            <div className="rounded-2xl overflow-hidden h-[360px] bg-stone-200 border border-stone-200 shadow-sm">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
+                title="Google Maps Location of Stone Heritage Mukteshwar"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="strict-origin-when-cross-origin"
+              ></iframe>
+            </div>
+            <div className="mt-3 text-left">
+              <a 
+                href="https://www.google.com/maps/place/?cid=5074157692820223333" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm text-secondary hover:text-primary font-medium transition-colors underline underline-offset-4"
+              >
+                Open Location Pin on Google Maps →
+              </a>
+            </div>
           </div>
         </div>
 
