@@ -52,7 +52,7 @@ export function TestimonialCarousel() {
               "{currentTestimonial.text}"
             </p>
             <div>
-              <h4 className="font-bold text-primary text-lg">{currentTestimonial.name}</h4>
+              <h3 className="font-bold text-primary text-lg">{currentTestimonial.name}</h3>
               {currentTestimonial.role && (
                 <p className="text-accent text-sm font-medium">{currentTestimonial.role}</p>
               )}

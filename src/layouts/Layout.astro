@@ -57,15 +57,23 @@ const structuredData = {
         "https://en.wikipedia.org/wiki/Cottage"
       ],
       "name": "Stone Heritage Mukteshwar",
-      "description": "Stone Heritage is a top-rated homestay in Mukteshwar for families and couples, near Nainital & Delhi NCR. Authentic Kumaoni heritage stays with panoramic Himalayan views.",
+      "description": "Stone Heritage Mukteshwar is a boutique heritage homestay offering handcrafted stone cottages, 180° panoramic Himalayan peak views, pet-friendly gardens, and fresh home-cooked Kumaoni vegetarian dining.",
       "url": "https://thestoneheritage.in/",
       "logo": "https://thestoneheritage.in/Logo.webp",
       "telephone": "+919027844424",
       "email": "thestoneheritage@gmail.com",
       "petsAllowed": true,
       "numberOfRooms": 9,
+      "priceRange": "₹1,500 - ₹15,000",
       "founder": {
-        "@id": "https://thestoneheritage.in/our-story/#akash"
+        "@type": "Person",
+        "@id": "https://thestoneheritage.in/our-story/#akash",
+        "name": "Akash",
+        "knowsAbout": [
+          "Mukteshwar Tourism",
+          "Kumaoni Heritage Architecture",
+          "Himalayan Hospitality"
+        ]
       },
       "sameAs": [
         "https://www.facebook.com/thestoneheritage/",
@@ -74,7 +82,8 @@ const structuredData = {
         "https://x.com/stone_heritage",
         "https://in.pinterest.com/thestoneheritage/",
         "https://www.linkedin.com/company/stone-heritage-mukteshwar/",
-        "https://www.google.co.in/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE"
+        "https://maps.google.com/maps?cid=5074157692820223333",
+        "https://www.tripadvisor.in/Hotel_Review-g1162527-d33498951-Reviews-Stone_Heritage_Mukteshwar-Mukteshwar_Nainital_District_Uttarakhand.html"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -86,15 +95,14 @@ const structuredData = {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 29.4346873,
-        "longitude": 79.6447246
+        "latitude": 29.4346202,
+        "longitude": 79.6446521
       },
       "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
       "image": [
         "https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp",
-        "https://thestoneheritage.in/thing-to-do-in-mukteshwar.webp",
-        "https://thestoneheritage.in/sky-observation-in-mukteshwar.webp",
-        "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp"
+        "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp",
+        "https://thestoneheritage.in/garden-area-stone-heritage.webp"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -103,11 +111,10 @@ const structuredData = {
         "bestRating": "5",
         "worstRating": "1"
       },
-      "priceRange": "₹1,500 - ₹15,000",
       "amenityFeature": [
         {
           "@type": "LocationFeatureSpecification",
-          "name": "High-Speed WiFi for Workations",
+          "name": "High-Speed Fiber WiFi for Workcations",
           "value": true
         },
         {
@@ -117,55 +124,82 @@ const structuredData = {
         },
         {
           "@type": "LocationFeatureSpecification",
-          "name": "Pure Vegetarian Home-Cooked Food",
+          "name": "Pure Vegetarian Home-Cooked Kumaoni Meals",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Panoramic 180° Himalayan Peak View Balconies",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Outdoor Bonfire & Stargazing Lawn",
           "value": true
         }
       ],
       "containsPlace": [
         {
-          "@type": "HotelRoom",
-          "name": "Brass Room",
-          "description": "King Bed setup with alternative floor mattress and private washroom."
+          "@type": ["HotelRoom", "Suite"],
+          "name": "Stonewood Family Retreat",
+          "description": "Premium group or family retreat with 2 King Beds, private living lounge, and mountain view balcony.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "2 King Beds" }
         },
         {
           "@type": "HotelRoom",
           "name": "Copper Room",
-          "description": "Spacious family setup configured with 1 King Bed and 1 Single Bed."
+          "description": "Spacious family room with 1 King Bed and 1 Single Bed with valley view balcony.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed, 1 Single Bed" }
         },
         {
           "@type": "HotelRoom",
-          "name": "The Vintage Room",
-          "description": "Charming heritage architecture featuring 1 ultra-comfortable King Bed."
-        },
-        {
-          "@type": ["HotelRoom", "Suite", "House"],
-          "name": "Stonewood Family Retreat",
-          "description": "Premium group or multi-generational stay equipped with 2 large King Beds. Functions as a standalone cottage experience."
+          "name": "Brass Room",
+          "description": "Charming suite featuring 1 King Bed with quad-bed floor mattress options.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
         },
         {
           "@type": "HotelRoom",
-          "name": "Stone and Story Suite",
-          "description": "Premium accommodation featuring 1 King Bed."
+          "name": "Vintage Stone Room",
+          "description": "Authentic stone masonry cottage room featuring 1 King Bed.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Stone and Story Room",
+          "description": "Cedar wood interiors cottage featuring 1 King Bed.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Iron Room",
-          "description": "Accommodation featuring 1 King Bed."
+          "description": "Deluxe room with mountain valley windows and 1 King Bed.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Cedar Room",
-          "description": "Accommodation with wooden paneling, featuring 1 King Bed."
+          "description": "Cozy deluxe room with wooden paneling and 1 Queen Bed.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 Queen Bed" }
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Sunset Heritage Cottage",
+          "description": "Standalone cottage featuring private sunset terrace balcony and 1 King Bed.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Himalayan Workation",
-          "description": "Dedicated workstation setup with high-speed Wi-Fi for remote work stays."
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Stone Cottage Room",
-          "description": "Scenic stone cottage featuring private terrace balcony and 1 King Bed."
+          "description": "Dedicated workstation setup with high-speed fiber Wi-Fi and mountain views.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
         }
       ],
       "potentialAction": {
@@ -181,7 +215,7 @@ const structuredData = {
         },
         "result": {
           "@type": "LodgingReservation",
-          "name": "Direct Booking via Native Engine"
+          "name": "Direct Booking via Official Engine"
         }
       }
     },
@@ -190,75 +224,55 @@ const structuredData = {
       "@id": "https://thestoneheritage.in/#website",
       "url": "https://thestoneheritage.in/",
       "name": "Stone Heritage Mukteshwar",
-      "publisher": {
-        "@id": "https://thestoneheritage.in/#localbusiness"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://thestoneheritage.in/search/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "publisher": { "@id": "https://thestoneheritage.in/#localbusiness" }
     },
     {
       "@type": "FAQPage",
+      "@id": "https://thestoneheritage.in/#faq",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How can I contact Stone Heritage Mukteshwar for direct bookings?",
+          "name": "What makes Stone Heritage the best homestay in Mukteshwar for families?",
+          "answerCount": 1,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You can reach our front desk directly by calling +91-9027844424 or +91-7900200563. We highly recommend booking directly with us via phone or our official website to secure priority room allocation and the best available rates."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the guest reviews and ratings for Stone Heritage Mukteshwar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "We proudly maintain a 4.9-star rating based on 250+ authentic guest reviews on our Google Business Profile. Families and travelers consistently praise our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What makes Stone Heritage the best homestay in Mukteshwar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Stone Heritage is recognized as a premium boutique homestay due to our authentic Kumaoni stone architecture, peaceful location near Bhatelia, unobstructed Nanda Devi mountain views, and highly personalized hospitality. We provide a luxury family retreat away from commercial crowds."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How far is the homestay from the main Mukteshwar Temple?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our property is located near Bhatelia, which is a highly scenic 15-minute drive from the main Mukteshwar Dham Temple and Chauli Ki Jali. This location allows you to enjoy a secluded forest environment while remaining close to major local attractions."
+            "text": "Stone Heritage Mukteshwar offers authentic stone cottages, spacious family suites like the Stonewood Family Retreat, child-safe enclosed gardens, 180° Himalayan peak views, and fresh home-cooked Kumaoni vegetarian meals.",
+            "datePublished": "2026-08-05",
+            "upvoteCount": 15,
+            "author": {
+              "@type": "Organization",
+              "name": "Stone Heritage Mukteshwar"
+            }
           }
         },
         {
           "@type": "Question",
           "name": "Is Stone Heritage Mukteshwar a pet-friendly homestay?",
+          "answerCount": 1,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we are a fully pet-friendly accommodation. We warmly welcome your furry family members, and our spacious garden areas and standalone stone cottages provide the perfect, safe environment for pets to enjoy the mountain air."
+            "text": "Yes, Stone Heritage Mukteshwar is fully pet-friendly. Pets can enjoy wide open lawn areas, garden grounds, and forest walking trails near Bhowali-Dhanachuli Road.",
+            "datePublished": "2026-08-05",
+            "upvoteCount": 12,
+            "author": {
+              "@type": "Organization",
+              "name": "Stone Heritage Mukteshwar"
+            }
           }
         },
         {
           "@type": "Question",
-          "name": "Which is the best homestay in Mukteshwar?",
+          "name": "How can I book directly with Stone Heritage Mukteshwar to save on rates?",
+          "answerCount": 1,
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar is widely regarded as the best homestay in Mukteshwar. It offers a premium boutique experience with authentic Kumaoni stone architecture, breathtaking Himalayan views, pet-friendly accommodations, and exceptional home-cooked meals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which is the top homestay in Uttarakhand?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar stands out as a top homestay in Uttarakhand. With its unique traditional stone cottages, personalized hospitality, panoramic Nanda Devi views, and serene atmosphere away from commercial crowds, it provides an unparalleled luxury mountain retreat."
+            "text": "You can book directly by calling or messaging +91-9027844424 or through official booking engine at booking.thestoneheritage.in to save up to 20% compared to OTA platforms.",
+            "datePublished": "2026-08-05",
+            "upvoteCount": 18,
+            "author": {
+              "@type": "Organization",
+              "name": "Stone Heritage Mukteshwar"
+            }
           }
         }
       ]

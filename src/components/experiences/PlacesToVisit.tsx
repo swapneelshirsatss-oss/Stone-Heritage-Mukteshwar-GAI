@@ -4,26 +4,17 @@ import { OptimizedImage } from '../OptimizedImage';
 
 const placesToVisit = [
   {
-    name: "Nanda Devi Peak Viewpoint: Unmatched Himalayan Vistas from Stone Heritage",
-    description: "The second highest mountain in India, visible from various vantage points in Mukteshwar, offering breathtaking panoramic views of the majestic snow-capped Himalayas.",
-    distance: "Visible from Mukteshwar town",
-    activities: "Sunrise photography, nature walks, and scenic sightseeing.",
-    tips: "Best time to view is early morning on clear days. Carry a good camera or binoculars.",
-    image: "/nanda-devi-peak-view-mukteshwar.webp",
-    alt: "Panoramic sunrise view of the majestic Nanda Devi Peak from Mukteshwar"
-  },
-  {
-    name: "Adventure: Rock Climbing at Chauli Ki Jali",
-    description: "A stunning cliff behind the Mukteshwar temple known for its overhanging rocks, deep valley views, and fascinating local legends.",
-    distance: "1.5 km from the town center",
+    name: "Rock Climbing & Rappelling at Chauli Ki Jali",
+    description: "A stunning cliff behind the Mukteshwar temple known for its overhanging rocks, deep valley views, rock climbing, rappelling, ziplining, and mesmerizing sunsets.",
+    distance: "1.5 km from property",
     activities: "Rock climbing, rappelling, ziplining, and sunset watching.",
     tips: "Moderate walking involved. Hire certified local guides for adventure sports. Best visited in the late afternoon.",
     image: "/chauli-ki-jali-in-mukteshwar.webp",
     alt: "Tourists enjoying rock climbing and adventure sports at the scenic Chauli Ki Jali cliff in Mukteshwar"
   },
   {
-    name: "Bhalu Gaad Waterfall Trek: Itinerary & Nearby Stays",
-    description: "A beautiful hidden gem tucked away in dense forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
+    name: "Bhalu Gaad Waterfall Jungle Trek",
+    description: "A beautiful hidden gem tucked away in dense pine & oak forests, featuring a continuous 60-foot water plunge into a pristine clear pool.",
     distance: "Approx. 10 km from Mukteshwar",
     activities: "Short jungle trek, bird watching, and picnicking by the water.",
     tips: "Involves a 2 km moderate trek from the road head. Wear comfortable trekking shoes and carry drinking water.",
@@ -31,31 +22,22 @@ const placesToVisit = [
     alt: "Hidden 60-foot water plunge into a pristine clear pool at Bhalu Gaad Waterfall near Mukteshwar"
   },
   {
-    name: "Mukteshwar Temple",
-    description: "The ancient, 350-year-old Shiva temple from which the town derives its name, situated gracefully atop the highest point in the area.",
-    distance: "Located in the town center",
-    activities: "Offering prayers, meditation, and ringing the traditional copper bells.",
-    tips: "The temple is accessible via stone steps. Dress modestly and visit early morning for a peaceful spiritual experience.",
-    image: "",
-    alt: "The ancient 350-year-old Mukteshwar Dham Temple, a spiritual Shiva temple at the highest point of town"
-  },
-  {
-    name: "Mukteshwar Inspection Bungalow",
-    description: "A historic PWD inspection bungalow offering architectural charm and sweeping views of the majestic Nanda Devi peak.",
-    distance: "Near the Mukteshwar Temple",
-    activities: "Enjoying the architecture, Himalayan viewing, and peaceful walks.",
-    tips: "Great spot for sunrise and sunset photography. Prior permission might be needed for a stay.",
-    image: "/mukteshwar-inspection.webp",
-    alt: "Historic PWD inspection bungalow in Mukteshwar offering stunning views of the Nanda Devi peak"
-  },
-  {
-    name: "Kainchi Dham Ashram",
-    description: "The famous spiritual ashram of Neem Karoli Baba, set beautifully amidst lush green hills. It is a place of deep peace and spiritual significance attracting visitors globally.",
-    distance: "Approx. 40 km from Mukteshwar",
+    name: "Pilgrimage to Mukteshwar Dham Temple & Kainchi Dham",
+    description: "Visit the ancient 350-year-old Lord Shiva temple atop Mukteshwar hill peak and the renowned Neem Karoli Baba Ashram at Kainchi Dham for deep spiritual peace.",
+    distance: "Short drive from property / 40 km to Kainchi Dham",
     activities: "Spiritual reflection, meditation, and seeking blessings.",
-    tips: "Plan a half-day trip. Dress modestly and visit during early morning hours to avoid heavy traffic and crowds.",
+    tips: "Visit early morning for peaceful darshan.",
     image: "/Kainchi_dham_mukteshwar.webp",
-    alt: "The peaceful Kainchi Dham Ashram of Neem Karoli Baba set amidst lush green hills"
+    alt: "Spiritual pilgrimage destinations Mukteshwar Dham and Kainchi Dham Ashram"
+  },
+  {
+    name: "Nanda Devi Peak Viewpoint",
+    description: "The second highest mountain in India, visible from various vantage points in Mukteshwar, offering breathtaking panoramic views of the majestic snow-capped Himalayas.",
+    distance: "Visible from Mukteshwar town",
+    activities: "Sunrise photography, nature walks, and scenic sightseeing.",
+    tips: "Best time to view is early morning on clear days. Carry a good camera or binoculars.",
+    image: "/nanda-devi-peak-view-mukteshwar.webp",
+    alt: "Panoramic sunrise view of the majestic Nanda Devi Peak from Mukteshwar"
   },
   {
     name: "Starscapes Observatory Mukteshwar",
@@ -65,13 +47,6 @@ const placesToVisit = [
     tips: "Book in advance as slots are limited. Best visited on clear, moonless nights. Dress warmly.",
     image: "/sky-observation-in-mukteshwar.webp",
     alt: "Professional telescopes set up for stargazing and night sky observation at Starscapes Observatory in Mukteshwar"
-  },
-  {
-    name: "Brahmeswara Temple",
-    description: "An important historic temple dating back to ancient times, known for its spiritual ambiance and peaceful surroundings.",
-    distance: "Short distance from the main temple complex",
-    activities: "Exploring historical architecture and enjoying the serene environment.",
-    tips: "Often less crowded, making it perfect for a quiet, peaceful visit. Respect the local customs."
   }
 ];
 
@@ -86,7 +61,7 @@ export function PlacesToVisit() {
         className="text-center mb-16"
       >
         <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Discover</span>
-        <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Best Places to Visit & Things to Do in Mukteshwar</h2>
+        <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Local Outdoor & Cultural Adventures</h2>
         <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
         <p className="text-lg text-primary/70 max-w-3xl mx-auto font-light leading-relaxed">
           Discover the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks and hidden waterfalls to ancient spiritual sites, these nearby attractions are easily accessible and promise to enrich your Mukteshwar experience.

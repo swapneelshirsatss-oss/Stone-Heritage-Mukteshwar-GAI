@@ -13,7 +13,7 @@ export function IntroSection() {
       >
         <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Welcome to Your Sanctuary</span>
         <h2 className="text-3xl md:text-5xl font-serif font-medium mb-8 text-primary max-w-4xl mx-auto leading-tight">
-          Welcome to Stone Heritage — Your Family-Friendly Homestay in Mukteshwar
+          Welcome to Stone Heritage — Your Family Mountain Retreat
         </h2>
         <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-8"></div>
         <p className="text-lg text-primary/80 max-w-3xl mx-auto leading-relaxed mb-20 font-light">
@@ -23,7 +23,7 @@ export function IntroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
           {[
             {
-              title: "Heritage Architecture",
+              title: "Authentic Handcrafted Kumaoni Stone Architecture",
               desc: "Authentic stone cottages blending seamlessly with the natural landscape.",
               icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -32,7 +32,7 @@ export function IntroSection() {
               )
             },
             {
-              title: "Panoramic Views",
+              title: "180° Panoramic Himalayan Sunset Views",
               desc: "Breathtaking sunrises and uninterrupted views of the Himalayan ranges.",
               icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -41,7 +41,7 @@ export function IntroSection() {
               )
             },
             {
-              title: "Authentic Kumaoni Cuisine",
+              title: "Fresh Home-Cooked Pure Vegetarian Dining",
               desc: "Pure vegetarian homemade food prepared with fresh local ingredients.",
               icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

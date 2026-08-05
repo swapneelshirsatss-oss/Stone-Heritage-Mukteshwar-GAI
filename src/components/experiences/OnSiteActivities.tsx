@@ -3,8 +3,8 @@ import { motion } from 'motion/react';
 
 const experiences = [
   {
-    title: "Stargazing under Himalayan Skies",
-    description: "The clear mountain air offers pristine views of the night sky. Enjoy a guided stargazing session right from our terrace.",
+    title: "Stargazing & Bonfires under Mountain Skies",
+    description: "The clear mountain air offers pristine views of the night sky. Enjoy a guided stargazing session right from our terrace along with cozy evening bonfires.",
     icon: "✨"
   },
   {
@@ -17,11 +17,6 @@ const experiences = [
     description: "Embark on curated nature retreats and guided trekking experiences through scenic trails, designed for both beginners and seasoned adventurers. Personally hosted and guided by Harsh & Priyanka.",
     hostLink: { text: "Learn more about hosts Harsh & Priyanka on Our Story", url: "/our-story/#hosts" },
     icon: "🏕️"
-  },
-  {
-    title: "Bonfires, BBQ & Stargazing",
-    description: "Experience clear-sky stargazing and curated outdoor bonfires & barbeque at Stone Heritage Mukteshwar. Book direct for complimentary winter camping access and hot Kumaoni snacks.",
-    icon: "🔥"
   },
   {
     title: "Special Yoga Sessions for Groups",
@@ -40,7 +35,7 @@ export function OnSiteActivities() {
         className="text-center mb-24"
       >
         <span className="text-secondary font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">On-Site Activities</span>
-        <h1 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Top Things to Do & Experiences in Mukteshwar</h1>
+        <h1 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Top Things to Do in Mukteshwar — Curated Experiences Guide</h1>
         <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed">
           Thoughtfully crafted to make your stay truly memorable. From guided treks to stargazing, there are plenty of unique things to do in Mukteshwar right at Stone Heritage.

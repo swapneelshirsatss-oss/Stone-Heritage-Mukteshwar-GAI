@@ -14,7 +14,7 @@ export function LocalAttractionsSection() {
           className="text-center mb-16"
         >
           <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Discover Mukteshwar</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Things to Do Near Stone Heritage, Mukteshwar</h2>
+          <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Things to Do Near Stone Heritage Mukteshwar</h2>
           <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
           <p className="text-lg text-primary/70 max-w-3xl mx-auto font-light leading-relaxed">
             Explore the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites, Mukteshwar offers an unforgettable experience.
@@ -24,7 +24,7 @@ export function LocalAttractionsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {[
             {
-              name: "Rock Climbing at Chauli Ki Jali",
+              name: "Chauli Ki Jali Rock Climbing",
               description: "A stunning cliff known for overhanging rocks, deep valley views, and adventure sports. Perfect for rock climbing, rappelling, and mesmerizing sunsets.",
               image: "/chauli-ki-jali-in-mukteshwar.webp",
               alt: "View of the deep valley from Chauli Ki Jali cliff, a popular tourist attraction for sunsets in Mukteshwar",
@@ -32,7 +32,7 @@ export function LocalAttractionsSection() {
               tag: "Adventure & Views"
             },
             {
-              name: "Nature Trails & Village Walks",
+              name: "Bhalu Gaad Waterfall Trek",
               description: "Embark on guided or self-guided nature trails through lush forests, discovering the rich biodiversity and charming local villages of Mukteshwar.",
               image: "/Bhalugaad-Waterfall-Mukteshwar.webp",
               alt: "Scenic nature trails and village walks around Stone Heritage in Mukteshwar",
@@ -40,12 +40,12 @@ export function LocalAttractionsSection() {
               tag: "Nature & Trekking"
             },
             {
-              name: "Bonfire, BBQ & Stargazing Nights",
-              description: "Gather around a cozy bonfire for a delightful BBQ experience under the clear, star-studded Himalayan night sky.",
+              name: "Mukteshwar Dham Temple Visit",
+              description: "Visit the historic 350-year-old Shiva temple atop the highest point in Mukteshwar, offering spiritual serenity and panoramic valley views.",
               image: "/himalayan-view-terrace-mukteshwar.webp",
-              alt: "Stargazing and bonfire nights at Stone Heritage Mukteshwar",
-              distance: "At the property",
-              tag: "Leisure"
+              alt: "Mukteshwar Dham Temple and surrounding mountain scenery near Stone Heritage Mukteshwar",
+              distance: "15 mins drive",
+              tag: "Spiritual & Heritage"
             }
           ].map((place, index) => (
             <motion.div 

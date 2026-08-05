@@ -28,7 +28,7 @@ export function Stay() {
               <Camera className="w-4 h-4 text-amber-700" />
               <span>Aesthetic Place to Stay • Recommended for Instagrammers & Content Creators</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary leading-tight">Stone Cottage Homestay in Mukteshwar for Families</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary leading-tight">Stone Cottage Homestay in Mukteshwar — Rooms & Suites</h1>
             <p className="text-lg text-primary/70 max-w-3xl mx-auto mb-6 font-light leading-relaxed">
               Discover the charm of staying at an authentic stone cottage in Mukteshwar. Our boutique homestay seamlessly blends traditional Kumaoni stone architecture with modern luxury, en-suite bathrooms, high-speed Wi-Fi, and panoramic Himalayan views.
             </p>
@@ -45,7 +45,22 @@ export function Stay() {
                 Delhi to Mukteshwar Road Trip →
               </a>
             </div>
-            <h2 className="text-3xl font-bold text-primary">Our 9 Stone Cottage Rooms in Mukteshwar</h2>
+            <h2 className="text-3xl font-bold text-primary mb-6">Boutique Accommodations at Stone Heritage</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10 text-center">
+              <div className="p-4 bg-stone-100/80 rounded-xl border border-stone-200">
+                <h3 className="text-lg font-bold text-primary mb-1">Family Suites & Group Stay Units</h3>
+                <p className="text-xs text-primary/70 font-light">Spacious Stonewood Family Retreat & Copper Room for 4–6 guests.</p>
+              </div>
+              <div className="p-4 bg-stone-100/80 rounded-xl border border-stone-200">
+                <h3 className="text-lg font-bold text-primary mb-1">Heritage Stone Cottages for Couples</h3>
+                <p className="text-xs text-primary/70 font-light">Brass, Vintage & Stone and Story rooms featuring traditional masonry.</p>
+              </div>
+              <div className="p-4 bg-stone-100/80 rounded-xl border border-stone-200">
+                <h3 className="text-lg font-bold text-primary mb-1">Workation Rooms with High-Speed Fiber WiFi</h3>
+                <p className="text-xs text-primary/70 font-light">Dedicated Himalayan Workation setup with high-speed fiber internet.</p>
+              </div>
+            </div>
           </motion.div>
         </header>
 
@@ -83,6 +98,10 @@ export function Stay() {
           ))}
         </section>
 
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-serif font-bold text-primary mb-2">Room Tariff & Capacity Comparison</h2>
+            <p className="text-sm text-primary/70">Compare capacity, bed types, and amenities across all 9 stone cottage rooms.</p>
+          </div>
 
           <div className="overflow-x-auto bg-white shadow-sm border border-stone-200 rounded-2xl mb-16">
             <table className="w-full text-left border-collapse">

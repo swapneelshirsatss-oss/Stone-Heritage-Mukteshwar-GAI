@@ -90,14 +90,14 @@ export function Contact() {
   const [openFaqs, setOpenFaqs] = useState<number[]>([]);
 
   const toggleFaq = (index: number) => {
-    setOpenFaqs(prev => 
+    setOpenFaqs(prev =>
       prev.includes(index) ? prev.filter(i => i !== index) : [...prev, index]
     );
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (typeof window !== 'undefined' && (window as any).dataLayer) {
       (window as any).dataLayer.push({
         event: 'Form_Submission',
@@ -114,7 +114,7 @@ export function Contact() {
   return (
     <div className="py-16 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold mb-4 text-primary">Contact Us — Homestay at Mukteshwar, Uttarakhand</h1>
+        <h1 className="text-4xl font-bold mb-4 text-primary">Plan Your Weekend Getaway from Delhi to Mukteshwar — Contact Us</h1>
         <p className="text-lg text-primary/70 max-w-2xl mx-auto font-light leading-relaxed">
           Contact Stone Heritage, a top-rated homestay at Mukteshwar, Uttarakhand. Reach out directly via WhatsApp, phone, or email for priority room allocation and best available direct rates.
         </p>
@@ -124,15 +124,15 @@ export function Contact() {
         {/* Contact Info & Map */}
         <div className="space-y-8">
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
-            <h2 className="text-2xl font-bold mb-6">Contact Details</h2>
+            <h2 className="text-2xl font-bold mb-6">Location, Directions & Driving Route from Delhi NCR</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold text-secondary">Address</p>
-                <p className="text-primary/80">Bhowali Dhanachuli Rd, South Gola Range,<br/>Mukteshwar, Uttarakhand 263138</p>
+                <p className="text-primary/80">Bhowali Dhanachuli Rd, South Gola Range,<br />Mukteshwar, Uttarakhand 263138</p>
               </div>
               <div>
-                <p className="font-semibold text-secondary">Phone</p>
-                <p className="text-primary/80">+91 9027844424<br/>+91 7900200563</p>
+                <h3 className="font-semibold text-secondary text-base mb-1">Call or WhatsApp Front Desk Direct</h3>
+                <p className="text-primary/80">+91 9027844424<br />+91 7900200563</p>
               </div>
               <div>
                 <p className="font-semibold text-secondary">Email</p>
@@ -143,21 +143,21 @@ export function Contact() {
 
           <div>
             <div className="rounded-2xl overflow-hidden h-[360px] bg-stone-200 border border-stone-200 shadow-sm">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin"
                 title="Google Maps Location of Stone Heritage Mukteshwar"
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
                 referrerPolicy="strict-origin-when-cross-origin"
               ></iframe>
             </div>
             <div className="mt-3 text-left">
-              <a 
-                href="https://www.google.com/maps/place/?cid=5074157692820223333" 
-                target="_blank" 
+              <a
+                href="https://www.google.com/maps/place/?cid=5074157692820223333"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm text-secondary hover:text-primary font-medium transition-colors underline underline-offset-4"
               >
@@ -169,52 +169,52 @@ export function Contact() {
 
         {/* Inquiry Form */}
         <div className="bg-white p-8 rounded-2xl shadow-sm border border-stone-200">
-          <h2 className="text-2xl font-bold mb-6">Direct Bookings & Real-Time Availability</h2>
+          <h2 className="text-2xl font-bold mb-6">Direct Booking Inquiries & Availability</h2>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">Full Name</label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 id="name"
                 required
                 className="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all"
                 value={formData.name}
-                onChange={e => setFormData({...formData, name: e.target.value})}
+                onChange={e => setFormData({ ...formData, name: e.target.value })}
               />
             </div>
             <div>
               <label htmlFor="phone" className="block text-sm font-medium text-primary mb-2">Phone Number / WhatsApp</label>
-              <input 
-                type="tel" 
+              <input
+                type="tel"
                 id="phone"
                 required
                 className="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all"
                 value={formData.phone}
-                onChange={e => setFormData({...formData, phone: e.target.value})}
+                onChange={e => setFormData({ ...formData, phone: e.target.value })}
               />
             </div>
             <div>
               <label htmlFor="dates" className="block text-sm font-medium text-primary mb-2">Preferred Dates</label>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 id="dates"
                 placeholder="e.g. Oct 12 - Oct 15"
                 className="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all"
                 value={formData.dates}
-                onChange={e => setFormData({...formData, dates: e.target.value})}
+                onChange={e => setFormData({ ...formData, dates: e.target.value })}
               />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">Message or Special Requests</label>
-              <textarea 
+              <textarea
                 id="message"
                 rows={4}
                 className="w-full px-4 py-3 rounded-xl border border-stone-300 focus:ring-2 focus:ring-accent focus:border-accent outline-none transition-all resize-none"
                 value={formData.message}
-                onChange={e => setFormData({...formData, message: e.target.value})}
+                onChange={e => setFormData({ ...formData, message: e.target.value })}
               ></textarea>
             </div>
-            <button 
+            <button
               type="submit"
               className="w-full bg-primary hover:bg-secondary text-white font-bold py-4 px-8 rounded-xl transition-colors text-lg"
             >
@@ -238,7 +238,7 @@ export function Contact() {
           {contactFaqs.map((faq, index) => {
             const isOpen = openFaqs.includes(index);
             return (
-              <div 
+              <div
                 key={index}
                 className="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden transition-all duration-300"
               >
