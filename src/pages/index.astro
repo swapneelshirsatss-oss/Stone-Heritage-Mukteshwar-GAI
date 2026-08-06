@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from "../layouts/Layout.astro";
 import FloatingWhatsAppButton from "../components/FloatingWhatsAppButton.astro";
 
@@ -11,8 +12,22 @@ import { ValuePropSection } from "../components/home/ValuePropSection";
 import { BookingCtaSection } from "../components/home/BookingCtaSection";
 import { LocalAttractionsSection } from "../components/home/LocalAttractionsSection";
 import { PartnersSection } from "../components/home/PartnersSection";
+import { BlogCarouselSection } from "../components/home/BlogCarouselSection";
 import { FaqAccordion } from "../components/FaqAccordion";
 import { LocationSection } from "../components/home/LocationSection";
+
+const allPosts = await getCollection('blog');
+const formattedPosts = allPosts.map(post => ({
+  slug: post.slug,
+  title: post.data.title,
+  excerpt: post.data.excerpt,
+  date: post.data.date,
+  author: post.data.author,
+  category: post.data.category,
+  image: post.data.image,
+  readTime: post.data.readTime,
+}));
+formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 <Layout 
   title="Homestay in Mukteshwar for Families | Stone Heritage" 
@@ -29,8 +44,10 @@ import { LocationSection } from "../components/home/LocationSection";
     <BookingCtaSection client:visible />
     <LocalAttractionsSection client:visible />
     <PartnersSection client:visible />
+    <BlogCarouselSection posts={formattedPosts} client:visible />
     <FaqAccordion client:visible />
     <LocationSection client:visible />
   </div>
   <FloatingWhatsAppButton />
 </Layout>
+

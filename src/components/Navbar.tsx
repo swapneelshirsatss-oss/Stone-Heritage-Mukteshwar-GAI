@@ -22,6 +22,7 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
     { name: 'Experiences', path: '/experiences/' },
     { name: 'Our Story', path: '/our-story/' },
     { name: 'Gallery', path: '/gallery/' },
+    { name: 'Blog', path: '/blog/' },
     { name: 'Contact', path: '/contact/' },
   ];
 
@@ -53,7 +54,7 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
           </a>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex gap-8 items-center">
+          <nav className="hidden md:flex gap-5 lg:gap-8 items-center">
             {navLinks.map((link) => {
               const active = isLinkActive(link.path);
               return (
