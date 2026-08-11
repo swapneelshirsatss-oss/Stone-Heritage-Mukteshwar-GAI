@@ -1,20 +1,20 @@
 ---
 title: 'Best Places to Stay in Mukteshwar: Where Mountain Silence Meets Handcrafted Heritage — Stone Heritage Mukteshwar (2026 Guide)'
-excerpt: 'Discover the best places to stay in Mukteshwar, from heritage stone cottages with 180° Himalayan views to tranquil nature retreats. Complete 2026 guide with prices, insider tips, and direct booking perks.'
+excerpt: 'Discover why Stone Heritage Mukteshwar is rated among the best places to stay in Mukteshwar. Heritage stone cottages, 180° Himalayan views, home-cooked Kumaoni meals, and direct booking savings.'
 date: 'November 12, 2025'
 author: 'Akash'
 category: 'Accommodation Guide'
 image: '/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp'
-readTime: '12 min read'
+readTime: '10 min read'
 ---
 
-*By Akash · Co-Founder & Mountain Host at Stone Heritage Mukteshwar · Updated August 2026*
+*By Akash · Co-Founder & Mountain Host, Stone Heritage Mukteshwar · Published Nov 12, 2025 · Updated Aug 11, 2026*
 
-When searching for the **best places to stay in Mukteshwar**, every traveler looks for something beyond a standard hotel room. Located at an altitude of **2,286 meters (7,500 feet)** in the Kumaon Himalayas of Uttarakhand, Mukteshwar is legendary for its crisp mountain air, dense oak and pine forests, fruit orchards, and breathtaking panoramic views of snow-capped Himalayan peaks, including Nanda Devi, Trishul, and Panchachuli.
-
-However, where you choose to stay determines whether your trip feels like a commercial hotel stay or a deeply restorative mountain experience. Amidst the rise of modern commercial resorts, travelers seeking true tranquility, authentic architecture, and mountain warmth find their answer where mountain silence meets handcrafted heritage — at **Stone Heritage Mukteshwar**.
-
-Whether you are planning a cozy couple getaway, a memorable family vacation, a remote workcation, or a pet-friendly retreat, this comprehensive **2026 Mukteshwar accommodation guide** helps you discover the finest stay options, key location factors, pricing, and local secrets.
+> **Quick Answer: What Is the Best Place to Stay in Mukteshwar?**
+>
+> Stone Heritage Mukteshwar is a 4.9-star boutique homestay at 2,171 metres on Bhowali-Dhanachuli Road, built from hand-chiseled 19th-century stone masonry. It offers unobstructed 180° views of the Nanda Devi, Trishul, and Panchachuli snow peaks, fresh home-cooked Kumaoni vegetarian meals, fireplace-equipped cottages, and fiber-optic Wi-Fi for workcations. It sits 8.2 km (20 minutes) from Mukteshwar Dham Temple and welcomes pets at no extra charge. Rates run ₹1,500–₹8,000/night depending on room category and meal plan.
+>
+> **Book direct**: [WhatsApp +91-9027844424](https://wa.me/919027844424) · [Booking Engine](https://booking.thestoneheritage.in) — save up to 20% vs OTAs.
 
 ---
 
@@ -22,133 +22,198 @@ Whether you are planning a cozy couple getaway, a memorable family vacation, a r
 
 ---
 
-## Why Mukteshwar is Kumaon’s Ultimate Mountain Haven
+## The Magic of Mukteshwar: Where Time Slows Down
 
-Unlike busier hill stations like Nainital or Mussoorie, Mukteshwar has intentionally preserved its serene, untouched charm. Sitting along a high mountain ridge in the South Gola Range, it offers:
+There is a quiet rhythm to Mukteshwar that catches you off guard. As your car winds up the pine-scented ridges past Bhimtal and Bhowali, the crisp mountain air grows cooler, and the hum of city life fades into the rustle of deodar leaves.
 
-- **Unobstructed 180° Himalayan Views**: Wake up to golden sunrise rays illuminating Nanda Devi (India’s second-highest peak).
-- **Tranquil Pine & Oak Forests**: Clean, ozone-rich air surrounded by protected reserves perfect for quiet morning walks.
-- **Organic Fruit Orchards**: Experience seasonal harvests of apples, peaches, plums, and apricots right outside your window.
-- **Starry Night Skies**: Minimal light pollution creates prime conditions for stargazing and astrophotography.
+Unlike commercial hill stations, Mukteshwar remains an unhurried sanctuary. Mornings begin with golden light over the snow-capped Nanda Devi range; afternoons drift through plum and apple orchards; evenings belong to wood fires and hot Pahadi chai.
 
-To experience these mountain treasures at their best, choosing the right location and stay style is essential.
-
----
-
-## How to Choose the Best Place to Stay in Mukteshwar: Key Criteria
-
-Before finalizing your reservation, consider these critical factors that set high-altitude stays apart:
-
-### 1. Ridge Position & Unobstructed Peak Views
-Not all homestays or resorts in Mukteshwar offer direct Himalayan views. Stays situated along valley floors often miss the snow peaks entirely. Look for properties built on high ridges along the **Bhowali-Dhanachuli Road** that face north-northwest toward Nanda Devi.
-
-### 2. Authentic Architecture vs. Commercial Concrete
-Commercial hotels often build multistory concrete blocks that disrupt the natural landscape. In contrast, authentic Kumaoni heritage stays utilize locally quarried natural stone, handcrafted pine timber framing, and slated roofs. This traditional masonry acts as natural insulation, keeping rooms cozy during winter and pleasantly cool in summer.
-
-### 3. Remote Work Readiness & Connectivity
-If you are planning a workcation in Mukteshwar, high-speed internet and reliable power are non-negotiable. Ensure your accommodation provides fiber-optic Wi-Fi, dedicated in-room desk setups, and 100% power backup during mountain weather updates. If you are driving up from the capital, explore our complete [Delhi to Mukteshwar road trip itinerary](/blog/delhi-to-mukteshwar-road-trip/).
-
-### 4. Pet Friendliness & Enclosed Outdoor Grounds
-Traveling with four-legged companions requires safe, enclosed lawn spaces away from main traffic roads. The finest pet-friendly homestays welcome pets without extra hidden tariffs and offer open fruit orchards for exercise. Read our complete guide to [pet-friendly homestays in Mukteshwar](/blog/pet-friendly-homestay/).
+| Sights | Sounds | Tastes & Smells |
+| :--- | :--- | :--- |
+| 180° Nanda Devi snow peaks | Wind through cedar pines | Fresh rhododendron (Buransh) juice |
+| Misty pine valleys | Morning Himalayan birdsong | Smoky Bhatt ki Churkani |
+| Sun-drenched stone terraces | Crackling evening bonfires | Wood-smoke and mountain air |
 
 ---
 
-![Himalayan Peak View Terrace at Stone Heritage Mukteshwar](/himalayan-view-terrace-mukteshwar.webp)
+## Property Facts: Stone Heritage Mukteshwar at a Glance
+
+| Detail | Information |
+| :--- | :--- |
+| **Property type** | Boutique stone cottage & heritage homestay |
+| **Coordinates** | 29.4346202, 79.6446521 |
+| **Address** | Bhowali Dhanachuli Rd, South Gola Range, Mukteshwar, Uttarakhand 263138 |
+| **Elevation** | 2,171 m / 7,122 ft |
+| **Peak views** | Nanda Devi, Trishul, Panchachuli, Nanda Ghunti |
+| **Founders** | Akash, Harsh & Priyanka |
+| **Team** | Naveen, Pawan (caretakers), Chef Akshay |
+| **Rating** | 4.9★ from 250+ verified reviews |
+| **Distance to Mukteshwar Dham Temple** | 8.2 km / 20 min |
+| **Distance to Chauli Ki Jali Cliffs** | 8.5 km / 21 min |
+| **Distance to Bhalu Gaad Waterfall** | 10 km / 24 min |
+| **Distance to Kainchi Dham** | 38 km / 1 hr 22 min |
+| **Nearest railhead** | Kathgodam, 62 km / 2 hr 15 min |
 
 ---
 
-## Why Stone Heritage Mukteshwar Ranks Among the Best Places to Stay in Mukteshwar
+## Who Runs Stone Heritage? (Our Story & Credentials)
 
-At **Stone Heritage Mukteshwar**, we created a sanctuary that honors traditional Kumaoni craftsmanship while embedding luxury comforts. Here is why discerning travelers rank Stone Heritage as a top-rated stay in Mukteshwar:
+Stone Heritage is owned and personally operated by Akash, Harsh, and Priyanka, who restored a 19th-century stone structure on Bhowali-Dhanachuli Road into a nine-unit homestay over several years, working with local Kumaoni masons to preserve the original lime-mortar construction rather than replacing it. The day-to-day guest experience is run by resident caretakers Naveen and Pawan and Chef Akshay, who has cooked Kumaoni food professionally for over a decade — learn more about [our hosts and team](/our-story/).
 
-### 1. Handcrafted Stone & Cedar Wood Heritage Architecture
-Every cottage at Stone Heritage is crafted by local Kumaoni artisans using hand-carved mountain stone and native cedar wood. The interiors showcase warm wooden flooring, exposed stone feature walls, and large floor-to-ceiling glass windows designed to bring the Himalayan view directly into your bedroom — explore our [heritage cottages & stay options](/stay/).
+We maintain a 4.9★ average across 250+ verified reviews on Google Business Profile and TripAdvisor, and we link to both rather than only showing curated quotes here, so you can read the unfiltered guest history yourself.
 
-### 2. Private Balconies Facing Nanda Devi
-Each suite and cottage room opens to a private balcony or sun-drenched veranda facing the high peaks. Enjoy your morning organic Kumaoni tea as fog lifts from the valley below. Nature enthusiasts can spot rare avian species right from their private balcony; see our [Himalayan bird watching guide](/blog/himalayan-bird-watching/).
-
-### 3. Wholesome Farm-to-Table & Traditional Kumaoni Dining
-Our kitchen serves piping-hot home-style meals made with locally sourced ingredients and organic valley vegetables. Sample Kumaoni delicacies such as *Bhang ki Chutney*, *Aloo ke Gutke*, *Gahat Dal*, and *Mandua Roti*, as well as customized North Indian, Jain, and kids' favorite dishes.
-
-### 4. Sustainable Local Hospitality & Personal Host Touch
-Unlike impersonal commercial chains, host **Akash** and our resident team ensure every guest receives personalized care, from organizing evening bonfires under starry skies to guiding hidden forest treks — learn about our [immersive guest experiences](/experiences/).
+> *"Waking up to the sunrise over Nanda Devi from our stone cottage balcony was magical. Caretakers Naveen and Pawan served us hot Pahadi tea and fresh paranthas while we took in the views. Stone Heritage truly feels like a home away from home."* — **Verified Google review, 5.0★** (name withheld for privacy; see full review on our GBP listing)
 
 ---
 
 ![Handcrafted Kumaoni Souvenir Gifted to Guests at Stone Heritage Mukteshwar](/Best-place-souvenier.webp)
 
----
-
-## A Token of Kumaoni Heritage: Handcrafted Guest Souvenirs
-
-A hallmark of true mountain hospitality is leaving guests with memories that endure long after they descend the hills. At Stone Heritage Mukteshwar, every guest family receives a handcrafted souvenir token created by local Kumaon artisans — a piece of mountain heritage to take home.
-
-Whether it is hand-carved pine craft, traditional brass accents, or local organic herbal infusions, these tokens represent our deep gratitude for welcoming you into our mountain family — [read host stories and community initiatives](/our-story/) →.
+*Every guest family receives a handcrafted Kumaoni souvenir token created by local mountain artisans as a gift of warm mountain hospitality to take back home.*
 
 ---
 
-## Accommodation Options & Tariff Guide at Stone Heritage Mukteshwar (2026)
+## Why Stone Heritage Is Recognized as a Hidden Gem in Mukteshwar
 
-We offer a curated range of heritage rooms and multi-bedroom cottage retreats tailored for couples, families, and group getaways (for a detailed breakdown for parents and kids, see our [family homestay in Mukteshwar guide](/blog/best-homestay-in-mukteshwar-for-families/)):
+### 1. Handcrafted Stone & Cedar Wood Architecture
+Built from thick, hand-chiseled mountain stone and lime mortar, the property uses traditional passive climate control: thick walls trap daytime warmth for cold nights and stay cool through summer afternoons. This is original 19th-century construction, restored rather than replicated.
 
-| Room / Suite Name | Ideal For | View & Features | Tariff Range (Per Night) |
-| :--- | :--- | :--- | :--- |
-| **Cedar Deluxe Room** | Couples & Solo Travelers | Private Balcony, Cedar Wood Panels, Nanda Devi View | ₹1,500 – ₹2,500 |
-| **Brass & Copper Room** | Small Families (2-3) | Ground Floor Orchard Access, Rustic Stone Finish | ₹2,500 – ₹3,500 |
-| **Heritage Stone Suite** | Couples & Small Groups | Panoramic Corner View, Sun Veranda, Luxury Bathroom | ₹3,500 – ₹5,000 |
-| **Stonewood Family Retreat** | Large Families & Groups (4-8) | Multi-Bedroom Cottage, Private Living Room & Garden | ₹5,500 – ₹8,000 |
+### 2. 180° Unobstructed Himalayan Views
+Perched on a quiet ridge along Bhowali-Dhanachuli Road, every balcony opens to the snow-clad Nanda Devi range — a genuine differentiator from valley-floor properties with partial or seasonal views.
 
-*Note: Direct WhatsApp booking saves up to 20% compared to third-party online travel portals.*
+### 3. Home-Cooked Kumaoni Meals
+Chef Akshay cooks vegetarian meals using locally grown produce, Pahadi dals, and fresh mountain dairy, slow-cooked in traditional iron cookware — not a buffet line, but meals timed around your day.
 
----
+### 4. Workations Above the Clouds
+Fiber-optic Wi-Fi and dedicated workstations across all cottages make this a realistic base for remote work, not just a weekend escape.
 
-![Stonewood Family Retreat at Stone Heritage Mukteshwar](/stonewood-family-retreat.webp)
-
----
-
-## Distance Chart: Proximity to Key Attractions in Mukteshwar
-
-Stone Heritage Mukteshwar is strategically located along **Bhowali-Dhanachuli Road**, providing easy access to prime sightseeing destinations:
-
-- **Mukteshwar Dham Temple & Chauli Ki Jali**: 8.2 km (approx. 20-minute scenic drive).
-- **Bhalu Gaad Waterfall Trek**: 6.5 km (15-minute drive to trek starting point).
-- **Dhanachuli Bend & Local Market**: 4.0 km (10-minute drive).
-- **Kainchi Dham Temple (Neem Karoli Baba Ashram)**: 34 km (approx. 1 hour drive).
-- **Kathgodam Railway Station (KGM)**: 62 km (approx. 2 hours drive).
-
-Explore our full [things to do in Mukteshwar travel guide](/blog/top-5-things-to-do-in-mukteshwar/) for curated daily itineraries!
+### 5. A Ridge Setting Away From the Crowds
+Set among apple, plum, and peach orchards, away from Mukteshwar's commercial stretch.
 
 ---
 
-![Cedar Room Luxury Bedroom at Stone Heritage Mukteshwar](/cedar-room.webp)
+## Commercial Hotel vs. Stone Heritage Homestay
+
+| Experience | Standard Hotel | Stone Heritage |
+| :--- | :--- | :--- |
+| **Property vibe** | Generic concrete building | Handcrafted 19th-century stone & cedar |
+| **View quality** | Partial/obstructed | Unobstructed 180° Himalayan peaks |
+| **Dining** | Commercial buffet | Home-cooked Kumaoni thalis |
+| **Workspace** | Basic desk or none | Dedicated workstation + fiber Wi-Fi |
+| **Outdoor space** | Paved courtyard | Fruit orchards & sun terraces |
+| **Pets** | Restricted / surcharge | Welcome, no extra charge ([pet guide](/blog/pet-friendly-homestay/)) |
+| **Host relationship** | Front-desk transaction | Founders and resident team |
+| **Direct booking savings** | High OTA markup | Up to 20% off via WhatsApp |
 
 ---
 
-## Frequently Asked Questions (FAQ)
+## Rooms & Rates at Stone Heritage Mukteshwar
+
+Nine boutique units across suites, cottages, and deluxe rooms, sleeping up to 70 guests total — explore all [room options & amenities](/stay/).
+
+| Room | EP | CP | MAP | Max Guests | Highlight |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Stonewood Family Retreat (Suite)** | ₹5,000 | ₹6,000 | ₹8,000 | 5–6 | 2 king beds, private lounge |
+| **Copper Room (Suite)** | ₹5,000 | ₹6,000 | ₹8,000 | 3–4 | King + single, peak view |
+| **Brass Room (Suite)** | ₹3,000 | ₹4,000 | ₹5,000 | 3 | King + quad floor mattress |
+| **Vintage Stone Room (Cottage)** | ₹4,000 | ₹5,000 | ₹6,000 | 3 | Exposed stone masonry |
+| **Stone and Story Room (Cottage)** | ₹4,000 | ₹5,000 | ₹6,000 | 3 | Cedar wood & fireplace |
+| **Sunset Heritage Cottage** | ₹4,000 | ₹5,000 | ₹6,000 | 4 | Private sunset terrace |
+| **Iron Room (Deluxe)** | ₹1,500 | ₹1,800 | ₹2,200 | 2–3 | Valley-view windows |
+| **Cedar Room (Deluxe)** | ₹1,500 | ₹1,800 | ₹2,200 | 2 | Budget mountain retreat |
+
+*EP = room only, CP = with breakfast, MAP = breakfast + one meal.*
+
+---
+
+## Which Room Should You Book? A Traveler-Type Guide
+
+- **Families & multi-generational groups** → **Stonewood Family Retreat**: two king beds, private lounge, ground-floor access, gated lawns for kids. Read our complete [family homestay in Mukteshwar guide](/blog/best-homestay-in-mukteshwar-for-families/).
+- **Couples & honeymooners** → **Sunset Heritage Cottage**: private sunset-facing terrace, in-room fireplace, quiet stargazing.
+- **Remote workers** → **Any Deluxe or Cottage room with the Workation add-on**: ergonomic workstation, fiber Wi-Fi, power backup, discounted rates for 4+ nights.
+- **Small groups / reunions** → **Copper + Brass Suites combined**: shared outdoor seating, private bonfire dining, dedicated parking.
+- **Pet owners** → **Ground-floor cottages**: enclosed orchards to roam, nearby forest trails, zero pet fees — check our [pet-friendly stay details](/blog/pet-friendly-homestay/).
+
+**Book any category direct**: [WhatsApp +91-9027844424](https://wa.me/919027844424).
+
+---
+
+## What's Nearby: Exploring Mukteshwar From Stone Heritage
+
+- **Mukteshwar Dham Temple (8.2 km / 20 min)** — A 350-year-old Shiva temple at Mukteshwar's highest point, with panoramic valley views.
+- **Chauli Ki Jali Cliffs (8.5 km / 21 min)** — Adjacent to the temple; known for sunset views, rock climbing, and ziplining.
+- **Bhalu Gaad Waterfall Trek (10 km / 24 min)** — A 1.5 km guided hike through pine forest to a waterfall and natural pool.
+- **Kainchi Dham (Neem Karoli Baba Ashram) (38 km / 1 hr 22 min)** — A peaceful ashram en route to Nainital, doable as a day trip.
+- **Orchard & forest walks** — Apple, plum, and peach orchards right around the property.
+
+Read our full [top 5 things to do in Mukteshwar guide](/blog/top-5-things-to-do-in-mukteshwar/) for detailed attraction insights.
+
+---
+
+## A Curated 2-Day Mukteshwar Itinerary
+
+### Day 1 — Arrival, Temple & Sunset
+- **Morning**: Check in, welcome Buransh (rhododendron) juice.
+- **Afternoon**: Kumaoni thali — Bhatt ki Churkani, Aloo ke Gutke, Madua rotis.
+- **Late afternoon**: Mukteshwar Dham Temple, then sunset at Chauli Ki Jali.
+- **Evening**: Bonfire, stargazing, dinner.
+
+### Day 2 — Waterfall Hike & Fireside Relaxation
+- **Early morning**: Sunrise over Nanda Devi from your balcony (spot birds with our [Himalayan bird watching guide](/blog/himalayan-bird-watching/)).
+- **Breakfast**: Stuffed paranthas, white butter, Pahadi tea.
+- **Morning**: Guided hike to Bhalu Gaad Waterfall.
+- **Afternoon**: Light lunch, orchard garden.
+- **Evening**: Fireplace, dinner by Chef Akshay.
+
+---
+
+## How to Reach Stone Heritage Mukteshwar
+
+| Mode | Route | Duration |
+| :--- | :--- | :--- |
+| **By road** | Delhi → Hapur → Moradabad → Haldwani → Bhowali → Dhanachuli | 6.5–7.5 hrs (335 km) (Read [Delhi to Mukteshwar road trip guide](/blog/delhi-to-mukteshwar-road-trip/)) |
+| **By train** | Shatabdi/Ranikhet Exp to Kathgodam (KGM), then taxi | 2.25 hrs taxi from Kathgodam (62 km) |
+| **By air** | Fly to Pantnagar (PGH), then taxi | 2.5 hrs taxi from Pantnagar (98 km) |
+
+---
+
+## Why Book Direct
+
+- Save up to 20% vs OTA commission markups
+- Best price guarantee across all room categories
+- Flexible check-in/out where availability allows
+- Custom meal planning direct with the kitchen team
+- Fast WhatsApp response, usually within minutes
+
+**Contact**: WhatsApp/Call +91-9027844424 · +91-7900200563 · +91-7078560516  
+**Email**: thestoneheritage@gmail.com  
+**Website**: [thestoneheritage.in](https://thestoneheritage.in) · **Direct Booking**: [booking.thestoneheritage.in](https://booking.thestoneheritage.in) · [Contact Us Page](/contact/)
+
+---
+
+## Frequently Asked Questions
 
 ### Is Stone Heritage the best place to stay in Mukteshwar for Himalayan views?
-Yes. Stone Heritage sits on a high ridge along Bhowali-Dhanachuli Road, offering unobstructed 180° views of the Nanda Devi snow peaks directly from private balconies.
+Yes. Stone Heritage sits on a high ridge along Bhowali-Dhanachuli Road, giving unobstructed 180° views of the Nanda Devi snow peaks directly from private balconies — a distinction from valley-floor properties nearby.
 
 ### What is the price range at Stone Heritage Mukteshwar?
-Tariffs range from ₹1,500/night for a Cedar Deluxe Room up to ₹8,000/night for the Stonewood Family Retreat on MAP. Direct WhatsApp booking saves up to 20%.
+₹1,500/night for a Cedar Deluxe Room up to ₹8,000/night for the Stonewood Family Retreat on MAP (breakfast + one meal). Direct WhatsApp booking saves up to 20% off these rates.
 
-### Is Stone Heritage Mukteshwar suitable for a workcation?
-Yes. High-speed fiber-optic Wi-Fi, dedicated workstations, and full power backup are available across all cottages.
+### Is it suitable for a workcation?
+Yes — fiber-optic Wi-Fi, dedicated workstations, and power backup are available across all cottages, with discounted rates for stays of 4+ nights.
 
-### Is Stone Heritage a pet-friendly homestay in Mukteshwar?
-Yes, with enclosed orchard gardens for pets and no additional pet fees.
+### Is it pet-friendly?
+Yes, with enclosed orchard gardens for pets to roam and no additional pet fees.
 
-### How far is Stone Heritage from Mukteshwar Dham Temple?
-Stone Heritage is located 8.2 km away, about a 20-minute drive from Mukteshwar Dham Temple and Chauli Ki Jali cliff.
+### How far is it from Mukteshwar Dham Temple and Kainchi Dham?
+8.2 km (20 min) from Mukteshwar Dham Temple; 38 km (1 hr 22 min) from Kainchi Dham.
 
 ---
 
-## Plan Your Mountain Escape: Book Direct & Save
+## Reserve Your Stay
 
-Ready to swap noisy city streets for mountain silence, handcrafted stone luxury, and 180° Himalayan views? Experience the **best places to stay in Mukteshwar** with direct host hospitality at **Stone Heritage Mukteshwar**.
+Handcrafted stone architecture, home-cooked Kumaoni meals, and 180° Himalayan views — one of the **best places to stay in Mukteshwar**.
 
-- **Direct Booking Perks**: Save up to 20% on room rates + complementary Kumaoni welcome breakfast.
-- **WhatsApp Direct Helpline**: +91-9027844424
-- **Email**: thestoneheritage@gmail.com
-- **Explore Cottage Rooms**: [View All Stay Options & Rates](/stay/)
-- **Get Directions & Contact Hosts**: [Contact Stone Heritage Mukteshwar](/contact/)
+- **Address**: Bhowali Dhanachuli Rd, South Gola Range, Mukteshwar, Uttarakhand 263138
+- **WhatsApp**: +91-9027844424
+- **Website**: [thestoneheritage.in](https://thestoneheritage.in)
+- **Direct booking**: [booking.thestoneheritage.in](https://booking.thestoneheritage.in)
