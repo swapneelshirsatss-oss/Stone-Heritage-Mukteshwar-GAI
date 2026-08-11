@@ -66,14 +66,14 @@ export function BlogCarouselSection({ posts }: BlogCarouselSectionProps) {
                 className="flex-none w-[88%] sm:w-[46%] lg:w-[31%] snap-start rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl border border-stone-200/80 transition-all duration-300 flex flex-col group/card"
               >
                 {/* Thumbnail Image */}
-                <a href={`/blog/${post.slug}/`} className="block relative aspect-[16/10] overflow-hidden bg-stone-200">
+                <a href={`/blog/${post.slug}/`} className="block relative aspect-[16/10] overflow-hidden bg-stone-100">
                   <OptimizedImage
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/card:scale-105"
                     loading={index < 3 ? "eager" : "lazy"}
                   />
-                  <div className="absolute top-3 left-3 bg-stone-950/70 backdrop-blur-md text-stone-100 text-xs font-medium px-3 py-1 rounded-full tracking-wide">
+                  <div className="absolute top-3 left-3 bg-stone-900/60 backdrop-blur-md text-stone-100 text-[11px] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-white/10 z-10">
                     {post.category}
                   </div>
                 </a>

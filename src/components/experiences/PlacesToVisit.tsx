@@ -89,14 +89,14 @@ export function PlacesToVisit() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: index % 2 === 0 ? 0 : 0.1 }}
-            className="bg-white shadow-sm border border-stone-200 hover:shadow-xl transition-all duration-500 overflow-hidden flex flex-col group"
+            className="bg-white rounded-2xl shadow-sm border border-stone-200/80 hover:shadow-xl transition-all duration-500 overflow-hidden flex flex-col group"
           >
             {place.image && (
-              <div className="h-72 relative overflow-hidden bg-stone-200 shrink-0">
+              <div className="h-72 relative overflow-hidden bg-stone-100 shrink-0">
                 <OptimizedImage 
                   src={place.image} 
                   alt={place.alt || `${place.name} - Mukteshwar`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
               </div>

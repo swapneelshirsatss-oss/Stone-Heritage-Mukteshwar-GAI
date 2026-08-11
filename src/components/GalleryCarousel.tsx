@@ -35,14 +35,24 @@ export function GalleryCarousel() {
         {displayImages.map((image, index) => (
           <div 
             key={index} 
-            className="flex-none w-[85%] md:w-[45%] lg:w-[30%] snap-center rounded-xl overflow-hidden bg-stone-100 shadow-sm transition-shadow duration-300 hover:shadow-md relative aspect-[4/3]"
+            className="flex-none w-[85%] md:w-[45%] lg:w-[30%] snap-center rounded-2xl overflow-hidden bg-stone-100 shadow-sm border border-stone-200/80 hover:shadow-xl transition-all duration-500 relative aspect-[4/3] group/item cursor-pointer"
           >
             <OptimizedImage
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/item:scale-105"
               loading={index < 3 ? "eager" : "lazy"}
             />
+            {image.categoryLabel && (
+              <span className="absolute top-4 left-4 bg-stone-900/60 backdrop-blur-md text-stone-100 text-[11px] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-white/10 z-10">
+                {image.categoryLabel}
+              </span>
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-500 flex items-end p-5">
+              <p className="text-stone-100 text-xs font-light line-clamp-2 leading-relaxed">
+                {image.alt}
+              </p>
+            </div>
           </div>
         ))}
       </div>

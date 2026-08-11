@@ -67,14 +67,17 @@ export function Stay() {
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {rooms.map((room, i) => (
-            <article key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-              <div className="h-56 relative overflow-hidden bg-stone-200">
+            <article key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200/80 flex flex-col group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+              <div className="h-56 relative overflow-hidden bg-stone-100">
                 <OptimizedImage 
                   src={room.image} 
                   alt={room.alt} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   loading="lazy"
                 />
+                <span className="absolute top-3 left-3 bg-stone-900/60 backdrop-blur-md text-stone-100 text-[11px] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-white/10 z-10">
+                  {room.view}
+                </span>
               </div>
               <div className="p-6 flex-grow flex flex-col">
                 <h3 className="text-2xl font-bold mb-2">{room.name}</h3>

@@ -54,16 +54,16 @@ export function LocalAttractionsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-stone-50 overflow-hidden shadow-sm border border-stone-200 hover:shadow-lg transition-all duration-500 group flex flex-col"
+              className="bg-stone-50 rounded-2xl overflow-hidden shadow-sm border border-stone-200/80 hover:shadow-xl transition-all duration-500 group flex flex-col"
             >
-              <div className="h-64 relative overflow-hidden bg-stone-200">
+              <div className="h-64 relative overflow-hidden bg-stone-100">
                 <OptimizedImage 
                   src={place.image} 
                   alt={place.alt} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-1.5 text-[10px] uppercase tracking-widest font-medium text-primary shadow-sm border border-stone-200/50">
+                <div className="absolute top-4 right-4 bg-stone-900/60 backdrop-blur-md px-3.5 py-1 text-[11px] uppercase tracking-wider font-medium text-stone-100 shadow-sm border border-white/10 rounded-full">
                   {place.tag}
                 </div>
               </div>

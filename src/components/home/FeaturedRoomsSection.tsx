@@ -19,21 +19,24 @@ export function FeaturedRoomsSection() {
             { name: "Sunset Heritage Cottage", image: "/homestay-in-mukteshwar.webp", alt: "Sunset Heritage Cottage featuring private terrace balcony at Stone Heritage" },
             { name: "Stone and Story Suite", image: "/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort in Mukteshwar" }
           ].map((room) => (
-            <div key={room.name} className="bg-white overflow-hidden shadow-sm border border-stone-200 flex flex-col group hover:shadow-lg transition-all duration-500">
-              <div className="h-72 relative overflow-hidden bg-stone-200">
+            <div key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200/80 flex flex-col group hover:shadow-xl transition-all duration-500">
+              <div className="h-72 relative overflow-hidden bg-stone-100">
                 <OptimizedImage 
                   src={room.image} 
                   alt={room.alt} 
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                <div className="absolute top-4 left-4 bg-stone-900/60 backdrop-blur-md text-stone-100 text-[11px] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-white/10 z-10">
+                  Cottage Room
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-stone-950/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
                   <div className="p-6 w-full text-center">
                     <a 
                       href={`https://wa.me/919027844424?text=${encodeURIComponent(`Hi, I'm interested in booking the ${room.name}.`)}`}
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-block bg-highlight text-primary font-sans font-medium uppercase tracking-widest py-2.5 px-6 border border-highlight hover:bg-white transition-colors text-xs shadow-sm"
+                      className="inline-block bg-highlight text-primary font-sans font-medium uppercase tracking-widest py-2.5 px-6 border border-highlight hover:bg-white transition-colors text-xs shadow-sm rounded-lg"
                     >
                       Book via WhatsApp
                     </a>
