@@ -2,13 +2,13 @@
 title: 'Best Places to Stay in Mukteshwar: Where Mountain Silence Meets Handcrafted Heritage — Stone Heritage Mukteshwar (2026 Guide)'
 excerpt: 'Discover the best places to stay in Mukteshwar, from heritage stone cottages with 180° Himalayan views to tranquil nature retreats. Complete 2026 guide with prices, insider tips, and direct booking perks.'
 date: 'November 12, 2025'
-author: 'Akash Bisht'
+author: 'Akash'
 category: 'Accommodation Guide'
 image: '/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp'
 readTime: '12 min read'
 ---
 
-*By Akash Bisht · Co-Founder & Mountain Host at Stone Heritage Mukteshwar · Updated August 2026*
+*By Akash · Co-Founder & Mountain Host at Stone Heritage Mukteshwar · Updated August 2026*
 
 When searching for the **best places to stay in Mukteshwar**, every traveler looks for something beyond a standard hotel room. Located at an altitude of **2,286 meters (7,500 feet)** in the Kumaon Himalayas of Uttarakhand, Mukteshwar is legendary for its crisp mountain air, dense oak and pine forests, fruit orchards, and breathtaking panoramic views of snow-capped Himalayan peaks, including Nanda Devi, Trishul, and Panchachuli.
 
@@ -71,7 +71,7 @@ Each suite and cottage room opens to a private balcony or sun-drenched veranda f
 Our kitchen serves piping-hot home-style meals made with locally sourced ingredients and organic valley vegetables. Sample Kumaoni delicacies such as *Bhang ki Chutney*, *Aloo ke Gutke*, *Gahat Dal*, and *Mandua Roti*, as well as customized North Indian, Jain, and kids' favorite dishes.
 
 ### 4. Sustainable Local Hospitality & Personal Host Touch
-Unlike impersonal commercial chains, host **Akash Bisht** and our resident team ensure every guest receives personalized care, from organizing evening bonfires under starry skies to guiding hidden forest treks.
+Unlike impersonal commercial chains, host **Akash** and our resident team ensure every guest receives personalized care, from organizing evening bonfires under starry skies to guiding hidden forest treks.
 
 ---
 
