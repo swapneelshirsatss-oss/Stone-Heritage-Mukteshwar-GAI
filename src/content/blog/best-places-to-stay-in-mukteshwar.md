@@ -46,10 +46,10 @@ Not all homestays or resorts in Mukteshwar offer direct Himalayan views. Stays s
 Commercial hotels often build multistory concrete blocks that disrupt the natural landscape. In contrast, authentic Kumaoni heritage stays utilize locally quarried natural stone, handcrafted pine timber framing, and slated roofs. This traditional masonry acts as natural insulation, keeping rooms cozy during winter and pleasantly cool in summer.
 
 ### 3. Remote Work Readiness & Connectivity
-If you are planning a workcation in Mukteshwar, high-speed internet and reliable power are non-negotiable. Ensure your accommodation provides fiber-optic Wi-Fi, dedicated in-room desk setups, and 100% power backup during mountain weather updates.
+If you are planning a workcation in Mukteshwar, high-speed internet and reliable power are non-negotiable. Ensure your accommodation provides fiber-optic Wi-Fi, dedicated in-room desk setups, and 100% power backup during mountain weather updates. If you are driving up from the capital, explore our complete [Delhi to Mukteshwar road trip itinerary](/blog/delhi-to-mukteshwar-road-trip/).
 
 ### 4. Pet Friendliness & Enclosed Outdoor Grounds
-Traveling with four-legged companions requires safe, enclosed lawn spaces away from main traffic roads. The finest pet-friendly homestays welcome pets without extra hidden tariffs and offer open fruit orchards for exercise.
+Traveling with four-legged companions requires safe, enclosed lawn spaces away from main traffic roads. The finest pet-friendly homestays welcome pets without extra hidden tariffs and offer open fruit orchards for exercise. Read our complete guide to [pet-friendly homestays in Mukteshwar](/blog/pet-friendly-homestay/).
 
 ---
 
@@ -62,16 +62,16 @@ Traveling with four-legged companions requires safe, enclosed lawn spaces away f
 At **Stone Heritage Mukteshwar**, we created a sanctuary that honors traditional Kumaoni craftsmanship while embedding luxury comforts. Here is why discerning travelers rank Stone Heritage as a top-rated stay in Mukteshwar:
 
 ### 1. Handcrafted Stone & Cedar Wood Heritage Architecture
-Every cottage at Stone Heritage is crafted by local Kumaoni artisans using hand-carved mountain stone and native cedar wood. The interiors showcase warm wooden flooring, exposed stone feature walls, and large floor-to-ceiling glass windows designed to bring the Himalayan view directly into your bedroom.
+Every cottage at Stone Heritage is crafted by local Kumaoni artisans using hand-carved mountain stone and native cedar wood. The interiors showcase warm wooden flooring, exposed stone feature walls, and large floor-to-ceiling glass windows designed to bring the Himalayan view directly into your bedroom — explore our [heritage cottages & stay options](/stay/).
 
 ### 2. Private Balconies Facing Nanda Devi
-Each suite and cottage room opens to a private balcony or sun-drenched veranda facing the high peaks. Enjoy your morning organic Kumaoni tea as fog lifts from the valley below.
+Each suite and cottage room opens to a private balcony or sun-drenched veranda facing the high peaks. Enjoy your morning organic Kumaoni tea as fog lifts from the valley below. Nature enthusiasts can spot rare avian species right from their private balcony; see our [Himalayan bird watching guide](/blog/himalayan-bird-watching/).
 
 ### 3. Wholesome Farm-to-Table & Traditional Kumaoni Dining
 Our kitchen serves piping-hot home-style meals made with locally sourced ingredients and organic valley vegetables. Sample Kumaoni delicacies such as *Bhang ki Chutney*, *Aloo ke Gutke*, *Gahat Dal*, and *Mandua Roti*, as well as customized North Indian, Jain, and kids' favorite dishes.
 
 ### 4. Sustainable Local Hospitality & Personal Host Touch
-Unlike impersonal commercial chains, host **Akash** and our resident team ensure every guest receives personalized care, from organizing evening bonfires under starry skies to guiding hidden forest treks.
+Unlike impersonal commercial chains, host **Akash** and our resident team ensure every guest receives personalized care, from organizing evening bonfires under starry skies to guiding hidden forest treks — learn about our [immersive guest experiences](/experiences/).
 
 ---
 
@@ -89,7 +89,7 @@ Whether it is hand-carved pine craft, traditional brass accents, or local organi
 
 ## Accommodation Options & Tariff Guide at Stone Heritage Mukteshwar (2026)
 
-We offer a curated range of heritage rooms and multi-bedroom cottage retreats tailored for couples, families, and group getaways:
+We offer a curated range of heritage rooms and multi-bedroom cottage retreats tailored for couples, families, and group getaways (for a detailed breakdown for parents and kids, see our [family homestay in Mukteshwar guide](/blog/best-homestay-in-mukteshwar-for-families/)):
 
 | Room / Suite Name | Ideal For | View & Features | Tariff Range (Per Night) |
 | :--- | :--- | :--- | :--- |
@@ -150,4 +150,5 @@ Ready to swap noisy city streets for mountain silence, handcrafted stone luxury,
 - **Direct Booking Perks**: Save up to 20% on room rates + complementary Kumaoni welcome breakfast.
 - **WhatsApp Direct Helpline**: +91-9027844424
 - **Email**: thestoneheritage@gmail.com
-- **Explore Cottage Rooms**: [View All Stay Options & Amenities](/stay/)
+- **Explore Cottage Rooms**: [View All Stay Options & Rates](/stay/)
+- **Get Directions & Contact Hosts**: [Contact Stone Heritage Mukteshwar](/contact/)

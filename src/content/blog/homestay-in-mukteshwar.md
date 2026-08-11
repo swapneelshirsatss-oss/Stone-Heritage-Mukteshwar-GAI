@@ -14,7 +14,7 @@ If you are reading this, you are likely dreaming of escaping the sweltering heat
 
 When you journey up into the Kumaon hills of Uttarakhand, you aren't just looking for a place to sleep; you are looking for a place to breathe, recharge, and reconnect. But to truly experience the magic of these mountains, commercial concrete hotels simply don't cut it. To feel the authentic soul of Kumaon, you need a true **homestay in Mukteshwar**.
 
-Here at **Stone Heritage Mukteshwar**, we don't operate a cookie-cutter resort. We run a heritage home, and we’d love to share what makes staying with us an unforgettable experience.
+Here at **Stone Heritage Mukteshwar**, we don't operate a cookie-cutter resort. We run a heritage home, and we’d love to share what makes staying with us one of the [best places to stay in Mukteshwar](/blog/best-places-to-stay-in-mukteshwar/).
 
 ---
 
