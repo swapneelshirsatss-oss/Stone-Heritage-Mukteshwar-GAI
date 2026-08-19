@@ -1,5 +1,5 @@
 const HOST = 'thestoneheritage.in';
-const KEY = 'a3f890b21c4e76d589e0214f5678ab9c';
+const KEY = '593c87e7da264df4a721010fb72224ed';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 // List of updated or new URLs to submit to Bing & IndexNow search engines
