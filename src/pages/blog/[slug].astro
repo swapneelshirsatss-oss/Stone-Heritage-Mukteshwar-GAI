@@ -17,6 +17,7 @@ const { Content } = await render(post);
 
 const isTopThingsToDo = post.slug === 'top-5-things-to-do-in-mukteshwar';
 const isBestPlacesToStay = post.slug === 'best-places-to-stay-in-mukteshwar';
+const isWorkationInMukteshwar = post.slug === 'workation-in-mukteshwar';
 
 const blogSchema = isBestPlacesToStay ? {
   "@context": "https://schema.org",
@@ -216,13 +217,66 @@ const blogSchema = isBestPlacesToStay ? {
           }
         }
       ]
+    }] : isWorkationInMukteshwar ? [{
+      "@type": "FAQPage",
+      "@id": `https://thestoneheritage.in/blog/${post.slug}/#faq`,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Mukteshwar good for a workation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It has fiber-optic connectivity in select homestays, cool year-round temperatures, and less tourist congestion than Goa, Rishikesh, or Dharamshala, while remaining under 7 hours from Delhi by road."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What internet speed can I expect in Mukteshwar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This varies by property. Stone Heritage Mukteshwar runs fiber-optic broadband across all cottages; request a current speed-test result before booking if your work depends on video calls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should a Mukteshwar workation be?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most remote workers find 1 to 4 weeks ideal, timed October through April to avoid monsoon disruptions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Stone Heritage Workation Package include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A private room with a dedicated workstation, fiber Wi-Fi, and power backup at Rs 1,000 per day, a 40 percent discount off standard nightly rates, arranged separately from the standard room categories. Meals are ordered separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a community aspect to staying at Stone Heritage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Co-founder Akash also runs Maati Living, a community of entrepreneurs and artists, and it is common for founders and makers staying at Stone Heritage to connect and share ideas informally over meals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What food is available for long-stay guests at Stone Heritage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both local Kumaoni dishes and North Indian home-style food, including Punjabi staples, so guests on longer workations are not limited to one cuisine."
+          }
+        }
+      ]
     }] : [])
   ]
 };
 ---
 
 <Layout 
-  title={`${post.data.title} | Stone Heritage`} 
+  title={post.data.metaTitle || `${post.data.title} | Stone Heritage`} 
   description={post.data.excerpt} 
   schema={blogSchema}
   image={post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`}

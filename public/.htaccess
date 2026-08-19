@@ -10,9 +10,11 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.thestoneheritage\.in$ [NC]
 RewriteRule ^(.*)$ https://thestoneheritage.in/$1 [R=301,L]
 
-# 2.5 Redirect legacy volunteer URLs
+# 2.5 Redirect legacy volunteer & shortcut URLs
 Redirect 301 /volunteer https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/
 Redirect 301 /volunteer/ https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/
+Redirect 301 /workation-in-mukteshwar https://thestoneheritage.in/blog/workation-in-mukteshwar/
+Redirect 301 /workation-in-mukteshwar/ https://thestoneheritage.in/blog/workation-in-mukteshwar/
 
 # 3. Force trailing slash on all extensionless directory paths
 RewriteCond %{REQUEST_FILENAME} !-f
