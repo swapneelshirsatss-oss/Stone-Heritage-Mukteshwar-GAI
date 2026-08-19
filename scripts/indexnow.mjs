@@ -4,9 +4,12 @@ const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
 // List of updated or new URLs to submit to Bing & IndexNow search engines
 const urlsToSubmit = [
+  `https://${HOST}/blog/workation-in-mukteshwar/`,
+  `https://${HOST}/blog/best-places-to-stay-in-mukteshwar/`,
   `https://${HOST}/blog/mukteshwar-ramgarh-travel-guide/`,
   `https://${HOST}/blog/`,
-  `https://${HOST}/sitemap.xml`
+  `https://${HOST}/sitemap.xml`,
+  `https://${HOST}/sitemap-blog.xml`
 ];
 
 async function submitIndexNow() {

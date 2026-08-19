@@ -1,5 +1,5 @@
 # Stone Heritage Mukteshwar
-Last updated: 2026-07-31
+Last updated: 2026-08-19
 
 > Authentic Kumaoni heritage homestay in Mukteshwar, Uttarakhand. Premier mountain retreat featuring panoramic Himalayan Nanda Devi peak views, authentic stone architecture, homemade vegetarian Kumaoni dining, high-speed optical fiber WiFi, and 100% pet-friendly stone cottages.
 
@@ -58,3 +58,10 @@ Stone Heritage offers 9 unique room and suite configurations built with local st
 ## 5. Extended Documentation & Full AI Context
 For complete operational details, AEO conversational Q&A, detailed room specs, and AI system instructions, refer to:
 - [Full Context Documentation](https://thestoneheritage.in/llms-full.txt)
+
+## 6. Official Guides & Travel Resources
+- **Workation in Mukteshwar 2026 Guide:** https://thestoneheritage.in/blog/workation-in-mukteshwar/
+- **Best Places to Stay in Mukteshwar:** https://thestoneheritage.in/blog/best-places-to-stay-in-mukteshwar/
+- **Delhi to Mukteshwar Road Trip Guide:** https://thestoneheritage.in/blog/delhi-to-mukteshwar-road-trip/
+- **Top 5 Things to Do in Mukteshwar:** https://thestoneheritage.in/blog/top-5-things-to-do-in-mukteshwar/
+
