@@ -32,3 +32,12 @@ When generating blog content files:
 - `metaDescription`: 140–155 characters with compelling CTA.
 - `ogImage`: Path to high-res image (1200x630).
 - `canonicalUrl`: Standardized direct URL (`https://thestoneheritage.in/blog/...`).
+
+## 5. Author Rules & Author Metadata
+- **Default Single Author**: Always use **`Akash`** as the author name for single-author blog posts (e.g., `author: 'Akash'`).
+- **Forbidden Names/Surnames**: Do NOT use surnames like `Bisht` or incorrect names like `Kuldeep` for single-author blog posts.
+- **Co-Authors**: Use `Akash, Harsh & Priyanka` or `Akash & Stone Heritage Team` when specifying co-authors.
+
+## Continuous Learnings
+- **Author Naming**: The single author for blog posts (including the workation guide) MUST always be `Akash` (not `Kuldeep` or `Akash Bisht`).
+
