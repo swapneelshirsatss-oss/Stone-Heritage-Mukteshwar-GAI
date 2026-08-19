@@ -3,13 +3,13 @@ title: 'Workation in Mukteshwar: The Complete 2026 Guide to Working From the Him
 metaTitle: 'Workation in Mukteshwar 2026: Where to Work & Stay'
 excerpt: 'Planning a workation in Mukteshwar? Get fiber Wi-Fi speeds, best months, cost breakdown & the top stone-cottage stay with dedicated workstations.'
 date: 'August 19, 2026'
-author: 'Akash Bisht'
+author: 'Akash'
 category: 'Workation & Travel'
 image: '/workation-blog/workation-in-mukteshwar.webp'
 readTime: '8 min read'
 ---
 
-*By **Akash Bisht**, Co-Founder, Stone Heritage Mukteshwar (12 years operating heritage stays in Kumaon) · Reviewed by **Priyanka Bisht**, Co-Founder & Guest Experience Lead · Published Aug 19, 2026 (Updated with Community & Food Insights)*
+*By **Akash**, Co-Founder, Stone Heritage Mukteshwar (12 years operating heritage stays in Kumaon) · Reviewed by **Priyanka**, Co-Founder & Guest Experience Lead · Published Aug 19, 2026 (Updated with Community & Food Insights)*
 
 ---
 
