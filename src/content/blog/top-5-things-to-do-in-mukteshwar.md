@@ -4,7 +4,7 @@ excerpt: 'Having lived and hosted travelers in the Kumaon hills for years, Akash
 date: 'October 15, 2023'
 author: 'Akash'
 category: 'Travel Guide'
-image: '/thing-to-do-in-mukteshwar.webp'
+image: '/images/experiences/thing-to-do-in-mukteshwar.webp'
 readTime: '7 min read'
 ---
 
@@ -32,7 +32,7 @@ If you are planning a journey to this quiet mountain haven and searching for the
 
 ## 1. Sunset Meditation at Chauli Ki Jali & Mukteshwar Dham
 
-![Chauli Ki Jali Cliff View in Mukteshwar](/chauli-ki-jali-in-mukteshwar.webp)
+![Chauli Ki Jali Cliff View in Mukteshwar](/images/experiences/chauli-ki-jali-in-mukteshwar.webp)
 
 Perched right behind the 350-year-old **Mukteshwar Dham Shiva Temple** lies **Chauli Ki Jali**, a dramatic cliffside rock formation with a sheer vertical drop into the Kumaon valley below. Local mythology holds that a hole in the cliff rock grants blessings of good health and prosperity to those who step through it.
 
@@ -44,7 +44,7 @@ While thrill-seekers visit for rock climbing and rappelling, my favorite way to 
 
 ## 2. Stargazing Under Kumaon’s Darkest Night Skies
 
-![Stargazing and Night Sky Observation in Mukteshwar](/sky-observation-in-mukteshwar.webp)
+![Stargazing and Night Sky Observation in Mukteshwar](/images/experiences/sky-observation-in-mukteshwar.webp)
 
 One of the rarest luxuries Mukteshwar offers is its exceptionally dark, unpolluted night sky. Situated far away from the light pollution of urban plains, the night air here is crisp, dry, and crystal-clear.
 
@@ -58,7 +58,7 @@ If you wish to explore astronomy deeper with professional instruments, Mukteshwa
 
 ## 3. Forest Hike to the Bhalu Gaad Waterfall
 
-![Bhalu Gaad Waterfall Jungle Trek in Mukteshwar](/Bhalugaad-Waterfall-Mukteshwar.webp)
+![Bhalu Gaad Waterfall Jungle Trek in Mukteshwar](/images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp)
 
 Unlike commercial commercialized waterfalls that feature concrete staircases and loud food stalls, the trek to **Bhalu Gaad** (which translates to "Bear's Stream" in local Kumaoni dialect) retains its raw, natural beauty.
 
@@ -72,7 +72,7 @@ At the end of the trail, the waterfall drops into a serene, crystal-clear emeral
 
 ## 4. Savoring Slow-Cooked Kumaoni Soul Food by the Fire
 
-![Cozy Evening Ambiance at Stone Heritage Mukteshwar](/luxury-heritage-homestay-in-mukteshwar.webp)
+![Cozy Evening Ambiance at Stone Heritage Mukteshwar](/images/property/luxury-heritage-homestay-in-mukteshwar.webp)
 
 To truly connect with Kumaon, you must taste its traditional mountain cuisine. Kumaoni food is rustic, seasonal, and deeply nourishing—crafted using local mountain pulses, wild herbs, and regional grains designed to keep the body warm in high altitudes.
 
@@ -89,7 +89,7 @@ In the evening, as the temperature drops, sit around our signature outdoor wood 
 
 ## 5. The Art of Doing Absolutely Nothing
 
-![Mountain living and balcony views at Stone Heritage Mukteshwar](/mountain-living-best-homestay-Mukteshwar.webp)
+![Mountain living and balcony views at Stone Heritage Mukteshwar](/images/property/mountain-living-best-homestay-Mukteshwar.webp)
 
 In our fast-paced lives, we often forget how to simply slow down without feeling guilty. Mukteshwar’s ultimate luxury is permission to unplug and rest.
 

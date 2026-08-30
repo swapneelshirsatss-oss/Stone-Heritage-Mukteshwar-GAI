@@ -4,7 +4,7 @@ excerpt: 'Discover why Stone Heritage Mukteshwar is rated among the best places 
 date: 'August 11, 2026'
 author: 'Akash'
 category: 'Accommodation Guide'
-image: '/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp'
+image: '/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp'
 readTime: '10 min read'
 ---
 
@@ -18,7 +18,7 @@ readTime: '10 min read'
 
 ---
 
-![Stone Heritage boutique homestay in Mukteshwar at dusk with lantern-lit stone cottage and Himalayan pine forest](/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp)
+![Stone Heritage boutique homestay in Mukteshwar at dusk with lantern-lit stone cottage and Himalayan pine forest](/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp)
 
 ---
 
@@ -66,7 +66,7 @@ We maintain a 4.9★ average across 250+ verified reviews on Google Business Pro
 
 ---
 
-![Handcrafted Kumaoni Souvenir Gifted to Guests at Stone Heritage Mukteshwar](/Best-place-souvenier.webp)
+![Handcrafted Kumaoni Souvenir Gifted to Guests at Stone Heritage Mukteshwar](/images/property/Best-place-souvenier.webp)
 
 *Every guest family receives a handcrafted Kumaoni souvenir token created by local mountain artisans as a gift of warm mountain hospitality to take back home.*
 

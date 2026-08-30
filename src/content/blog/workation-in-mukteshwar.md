@@ -5,7 +5,7 @@ excerpt: 'Planning a workation in Mukteshwar? Get fiber Wi-Fi speeds, best month
 date: 'August 19, 2026'
 author: 'Akash'
 category: 'Workation & Travel'
-image: '/workation-blog/workation-in-mukteshwar.webp'
+image: '/images/blog/workation-in-mukteshwar.webp'
 readTime: '8 min read'
 ---
 
@@ -26,7 +26,7 @@ At [Stone Heritage Mukteshwar](/stay/), we offer dedicated workstations, high-sp
 
 ---
 
-![Scenic Himalayan view from stone cottage balcony workspace during a workation in Mukteshwar](/workation-blog/workation-in-mukteshwar.webp)
+![Scenic Himalayan view from stone cottage balcony workspace during a workation in Mukteshwar](/images/blog/workation-in-mukteshwar.webp)
 
 ---
 
@@ -59,7 +59,7 @@ A remote work trip only succeeds if the technical fundamentals hold up under the
 
 ---
 
-![Peaceful mountain surroundings and quiet workstation setup for remote workers in Mukteshwar](/workation-blog/Why-Remote-Workers-Are-Choosing-Mukteshwar-Over-Goa-or-Dharamshala.webp)
+![Peaceful mountain surroundings and quiet workstation setup for remote workers in Mukteshwar](/images/blog/Why-Remote-Workers-Are-Choosing-Mukteshwar-Over-Goa-or-Dharamshala.webp)
 
 ---
 
@@ -89,7 +89,7 @@ Unlike standard weekend bookings that charge full nightly rates, Stone Heritage 
 
 ---
 
-![Dedicated wooden desk workstation with high-speed fiber Wi-Fi and mountain view at Stone Heritage Mukteshwar](/workation-blog/Stone-Heritage-Mukteshwar's-Workation-Setup.webp)
+![Dedicated wooden desk workstation with high-speed fiber Wi-Fi and mountain view at Stone Heritage Mukteshwar](/images/blog/Stone-Heritage-Mukteshwar's-Workation-Setup.webp)
 
 ---
 

@@ -4,7 +4,7 @@ excerpt: 'Planning a scenic weekend road trip from Delhi to Mukteshwar? Mapped d
 date: 'November 18, 2023'
 author: 'Akash, Harsh & Priyanka'
 category: 'Road Trip'
-image: '/Why-stay-near-mukteshwar.webp'
+image: '/images/blog/Why-stay-near-mukteshwar.webp'
 readTime: '8 min read'
 ---
 
@@ -18,7 +18,7 @@ Whether you are an experienced mountain driver or planning your very first Himal
 
 ---
 
-![Delhi to Mukteshwar Road Trip driving route through Kumaon pine forests and mountain passes](/Why-stay-near-mukteshwar.webp)
+![Delhi to Mukteshwar Road Trip driving route through Kumaon pine forests and mountain passes](/images/blog/Why-stay-near-mukteshwar.webp)
 
 ---
 

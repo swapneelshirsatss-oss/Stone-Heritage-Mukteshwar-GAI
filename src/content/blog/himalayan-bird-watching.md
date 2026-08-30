@@ -4,7 +4,7 @@ excerpt: 'Mukteshwar is a pristine paradise for bird watchers. Species checklist
 date: 'December 5, 2023'
 author: 'Akash & Stone Heritage Team'
 category: 'Nature'
-image: '/garden-area-stone-heritage.webp'
+image: '/images/property/garden-area-stone-heritage.webp'
 readTime: '8 min read'
 ---
 
@@ -16,7 +16,7 @@ Whether you are a seasoned ornithologist armed with a telephoto lens or a casual
 
 ---
 
-![Himalayan Bird Watching at South Gola Range near Stone Heritage Homestay in Mukteshwar](/garden-area-stone-heritage.webp)
+![Himalayan Bird Watching at South Gola Range near Stone Heritage Homestay in Mukteshwar](/images/property/garden-area-stone-heritage.webp)
 
 ---
 

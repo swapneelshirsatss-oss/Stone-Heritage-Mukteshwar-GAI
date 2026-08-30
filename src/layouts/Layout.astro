@@ -19,7 +19,7 @@ const {
   description = 'Stone Heritage is a top-rated homestay in Mukteshwar for families, couples & pet owners — authentic Kumaoni heritage stays with panoramic Himalayan views.',
   keywords = 'homestay in mukteshwar, best homestay in mukteshwar, homestay in mukteshwar for families, stone cottage in mukteshwar, pet friendly homestay in mukteshwar, kumaoni heritage stay, homestay near delhi ncr, workation in mukteshwar',
   type = 'website',
-  image = 'https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp',
+  image = 'https://thestoneheritage.in/images/property/luxury-heritage-homestay-in-mukteshwar.webp',
   noindex = false,
   schema
 } = Astro.props;
@@ -100,9 +100,9 @@ const structuredData = {
       },
       "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
       "image": [
-        "https://thestoneheritage.in/luxury-heritage-homestay-in-mukteshwar.webp",
-        "https://thestoneheritage.in/himalayan-view-terrace-mukteshwar.webp",
-        "https://thestoneheritage.in/garden-area-stone-heritage.webp"
+        "https://thestoneheritage.in/images/property/luxury-heritage-homestay-in-mukteshwar.webp",
+        "https://thestoneheritage.in/images/property/himalayan-view-terrace-mukteshwar.webp",
+        "https://thestoneheritage.in/images/property/garden-area-stone-heritage.webp"
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -413,8 +413,8 @@ const speakableSchema = {
     <!-- Responsive High-Priority Preload for Homepage Hero Image -->
     {Astro.url.pathname === '/' && (
       <>
-        <link rel="preload" as="image" href="/best-family-homestay-in-mukteshwar-mobile.webp" media="(max-width: 767px)" type="image/webp" fetchpriority="high" />
-        <link rel="preload" as="image" href="/best-family-homestay-in-mukteshwar.webp" media="(min-width: 768px)" type="image/webp" fetchpriority="high" />
+        <link rel="preload" as="image" href="/images/property/best-family-homestay-in-mukteshwar-mobile.webp" media="(max-width: 767px)" type="image/webp" fetchpriority="high" />
+        <link rel="preload" as="image" href="/images/property/best-family-homestay-in-mukteshwar.webp" media="(min-width: 768px)" type="image/webp" fetchpriority="high" />
       </>
     )}
     

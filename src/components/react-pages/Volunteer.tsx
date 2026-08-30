@@ -69,7 +69,7 @@ export function Volunteer() {
       <section className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0 bg-stone-900">
           <OptimizedImage 
-            src="/copper-room.webp" 
+            src="/images/rooms/copper-room.webp" 
             alt="Himalayan Mountains at Stone Heritage Mukteshwar" 
             className="w-full h-full object-cover opacity-40 mix-blend-overlay"
             loading="eager"

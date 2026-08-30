@@ -9,7 +9,7 @@ const placesToVisit = [
     distance: "1.5 km from property",
     activities: "Rock climbing, rappelling, ziplining, and sunset watching.",
     tips: "Moderate walking involved. Hire certified local guides for adventure sports. Best visited in the late afternoon.",
-    image: "/chauli-ki-jali-in-mukteshwar.webp",
+    image: "/images/experiences/chauli-ki-jali-in-mukteshwar.webp",
     alt: "Tourists enjoying rock climbing and adventure sports at the scenic Chauli Ki Jali cliff in Mukteshwar"
   },
   {
@@ -18,7 +18,7 @@ const placesToVisit = [
     distance: "Approx. 10 km from Mukteshwar",
     activities: "Short jungle trek, bird watching, and picnicking by the water.",
     tips: "Involves a 2 km moderate trek from the road head. Wear comfortable trekking shoes and carry drinking water.",
-    image: "/Bhalugaad-Waterfall-Mukteshwar.webp",
+    image: "/images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp",
     alt: "Hidden 60-foot water plunge into a pristine clear pool at Bhalu Gaad Waterfall near Mukteshwar"
   },
   {
@@ -27,7 +27,7 @@ const placesToVisit = [
     distance: "Short drive from property / 40 km to Kainchi Dham",
     activities: "Spiritual reflection, meditation, and seeking blessings.",
     tips: "Visit early morning for peaceful darshan.",
-    image: "/Kainchi_dham_mukteshwar.webp",
+    image: "/images/experiences/Kainchi_dham_mukteshwar.webp",
     alt: "Spiritual pilgrimage destinations Mukteshwar Dham and Kainchi Dham Ashram"
   },
   {
@@ -36,7 +36,7 @@ const placesToVisit = [
     distance: "Visible from Mukteshwar town",
     activities: "Sunrise photography, nature walks, and scenic sightseeing.",
     tips: "Best time to view is early morning on clear days. Carry a good camera or binoculars.",
-    image: "/nanda-devi-peak-view-mukteshwar.webp",
+    image: "/images/property/nanda-devi-peak-view-mukteshwar.webp",
     alt: "Panoramic sunrise view of the majestic Nanda Devi Peak from Mukteshwar"
   },
   {
@@ -45,7 +45,7 @@ const placesToVisit = [
     distance: "A short drive from the town center",
     activities: "Stargazing, astrophotography, and guided astronomy tours.",
     tips: "Book in advance as slots are limited. Best visited on clear, moonless nights. Dress warmly.",
-    image: "/sky-observation-in-mukteshwar.webp",
+    image: "/images/experiences/sky-observation-in-mukteshwar.webp",
     alt: "Professional telescopes set up for stargazing and night sky observation at Starscapes Observatory in Mukteshwar"
   }
 ];

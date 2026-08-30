@@ -4,7 +4,7 @@ excerpt: 'Tired of generic commercial hotels? Discover why staying in an authent
 date: 'August 15, 2024'
 author: 'Akash, Harsh & Priyanka'
 category: 'Travel Guide'
-image: '/homestay-in-mukteshwar.webp'
+image: '/images/property/homestay-in-mukteshwar.webp'
 readTime: '10 min read'
 ---
 
@@ -18,7 +18,7 @@ Here at **Stone Heritage Mukteshwar**, we don't operate a cookie-cutter resort. 
 
 ---
 
-![Authentic Kumaoni Stone Cottage Homestay in Mukteshwar with panoramic Himalayan peak views](/homestay-in-mukteshwar.webp)
+![Authentic Kumaoni Stone Cottage Homestay in Mukteshwar with panoramic Himalayan peak views](/images/property/homestay-in-mukteshwar.webp)
 
 ---
 

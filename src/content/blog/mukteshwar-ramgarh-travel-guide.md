@@ -4,13 +4,13 @@ excerpt: 'Planning a trip to Mukteshwar or Ramgarh? This complete 2026 travel gu
 date: 'August 18, 2026'
 author: 'Akash'
 category: 'Travel Guide'
-image: '/Blog-images/Complete-Travel-Guide-to-Mukteshwar-and-Ramgarh-2026.webp'
+image: '/images/blog/Complete-Travel-Guide-to-Mukteshwar-and-Ramgarh-2026.webp'
 readTime: '12 min read'
 ---
 
 *By Akash · Co-Founder & Mountain Host, Stone Heritage Mukteshwar · Updated August 2026*
 
-![Complete Travel Guide to Mukteshwar and Ramgarh 2026 showing Himalayan mountain views, pine forests, and fruit orchards in Uttarakhand](/Blog-images/Complete-Travel-Guide-to-Mukteshwar-and-Ramgarh-2026.webp)
+![Complete Travel Guide to Mukteshwar and Ramgarh 2026 showing Himalayan mountain views, pine forests, and fruit orchards in Uttarakhand](/images/blog/Complete-Travel-Guide-to-Mukteshwar-and-Ramgarh-2026.webp)
 
 ---
 
@@ -60,7 +60,7 @@ Nanda Devi Mela at Mukteshwar Dham and local Kumaoni festivals bring the communi
 
 ## What to See and Do — Top Experiences in Mukteshwar and Ramgarh
 
-![Top experiences in Mukteshwar and Ramgarh including Mukteshwar Dham Temple, Chauli Ki Jali, Bhalu Gaad Waterfall, Kainchi Dham, Ramgarh Orchards, and bird watching](/Blog-images/What-to-See-and-Do-Top-Experiences-in-Mukteshwar-and-Ramgarh.webp)
+![Top experiences in Mukteshwar and Ramgarh including Mukteshwar Dham Temple, Chauli Ki Jali, Bhalu Gaad Waterfall, Kainchi Dham, Ramgarh Orchards, and bird watching](/images/blog/What-to-See-and-Do-Top-Experiences-in-Mukteshwar-and-Ramgarh.webp)
 
 ### 1. Mukteshwar Dham Temple
 
@@ -116,7 +116,7 @@ The stream corridor along the Bhalu Gaad trail is the single most productive bir
 
 ## Where to Stay in Mukteshwar and Ramgarh
 
-![Best resort near Mukteshwar Uttarakhand - Whispering Pines Resort by Casa De Bello in Ramgarh with 180 degree Himalayan views](/Blog-images/best-resort-near-mukteshwar-uttarkhand.webp)
+![Best resort near Mukteshwar Uttarakhand - Whispering Pines Resort by Casa De Bello in Ramgarh with 180 degree Himalayan views](/images/blog/best-resort-near-mukteshwar-uttarkhand.webp)
 
 The Bhowali-Ramgarh-Mukteshwar corridor offers genuine diversity of accommodation — from intimate heritage homestays to full-service boutique resorts. Choosing where to stay depends on your group size, travel style, and what you want from the mountain experience.
 

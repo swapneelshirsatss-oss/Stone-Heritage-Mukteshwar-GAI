@@ -10,7 +10,7 @@ export function OurStoryContent() {
       <section className="relative py-24 md:py-32 bg-primary text-stone-100 overflow-hidden">
         <div className="absolute inset-0 z-0 bg-stone-900">
           <OptimizedImage 
-            src="/luxury-heritage-homestay-in-mukteshwar.webp" 
+            src="/images/property/luxury-heritage-homestay-in-mukteshwar.webp" 
             alt="Authentic traditional Kumaoni stone architecture of Stone Heritage Mukteshwar" 
             className="absolute inset-0 w-full h-full object-cover opacity-35"
             loading="eager"
@@ -85,7 +85,7 @@ export function OurStoryContent() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-stone-200 group">
                 <OptimizedImage 
-                  src="/luxury-heritage-homestay-in-mukteshwar.webp" 
+                  src="/images/property/luxury-heritage-homestay-in-mukteshwar.webp" 
                   alt="Exterior view of Stone Heritage homestay cottages in Mukteshwar" 
                   className="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
@@ -125,7 +125,7 @@ export function OurStoryContent() {
               <div>
                 <div className="w-28 h-28 rounded-2xl overflow-hidden mb-4 border-2 border-accent/40 shadow-sm mx-auto sm:mx-0">
                   <OptimizedImage 
-                    src="/akash.webp" 
+                    src="/images/property/akash.webp" 
                     alt="Akash - Founder & Host at Stone Heritage Mukteshwar" 
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -153,7 +153,7 @@ export function OurStoryContent() {
               <div>
                 <div className="w-28 h-28 rounded-2xl overflow-hidden mb-4 border-2 border-accent/40 shadow-sm bg-stone-100 mx-auto sm:mx-0">
                   <OptimizedImage 
-                    src="/Bhalugaad-Waterfall-Mukteshwar.webp" 
+                    src="/images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp" 
                     alt="Harsh and Priyanka leading nature treks in Mukteshwar" 
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -183,7 +183,7 @@ export function OurStoryContent() {
               <div>
                 <div className="w-28 h-28 rounded-2xl overflow-hidden mb-4 border-2 border-accent/40 shadow-sm bg-stone-100 mx-auto sm:mx-0">
                   <OptimizedImage 
-                    src="/mountain-living-best-homestay-Mukteshwar.webp" 
+                    src="/images/property/mountain-living-best-homestay-Mukteshwar.webp" 
                     alt="Our Local Kumaoni Team preparing home-cooked vegetarian meals at Stone Heritage" 
                     className="w-full h-full object-cover"
                     loading="lazy"

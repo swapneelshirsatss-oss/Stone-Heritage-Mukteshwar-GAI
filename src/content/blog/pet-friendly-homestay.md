@@ -4,7 +4,7 @@ excerpt: 'Planning a mountain getaway with your dog or cat? Discover why Stone H
 date: 'November 2, 2023'
 author: 'Akash & Stone Heritage Team'
 category: 'Accommodation'
-image: '/pet-friendly-homestay-resort.webp'
+image: '/images/property/pet-friendly-homestay-resort.webp'
 readTime: '7 min read'
 ---
 
@@ -18,7 +18,7 @@ At [Stone Heritage Mukteshwar](/stay/), we do things differently. We don't just 
 
 ---
 
-![Pet-Friendly Homestay Resort in Mukteshwar featuring open lawn spaces and heritage stone cottages for dogs and pets](/pet-friendly-homestay-resort.webp)
+![Pet-Friendly Homestay Resort in Mukteshwar featuring open lawn spaces and heritage stone cottages for dogs and pets](/images/property/pet-friendly-homestay-resort.webp)
 
 ---
 

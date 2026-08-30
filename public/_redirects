@@ -1,1 +1,49 @@
-# Redirects handled by .htaccess on Apache/Hostinger
+# 301 Redirects for organized image assets
+/copper-room.webp /images/rooms/copper-room.webp 301
+/brass-room-homestay-in-mukteshwar.webp /images/rooms/brass-room-homestay-in-mukteshwar.webp 301
+/cedar-room.webp /images/rooms/cedar-room.webp 301
+/iron-room.webp /images/rooms/iron-room.webp 301
+/vintage-room.webp /images/rooms/vintage-room.webp 301
+/stone-and-story-suite-homestay.webp /images/rooms/stone-and-story-suite-homestay.webp 301
+/stonewood-family-retreat.webp /images/rooms/stonewood-family-retreat.webp 301
+/stonewood-family-retreat-group-stay.webp /images/rooms/stonewood-family-retreat-group-stay.webp 301
+/modern-ensuite-bathroom-luxury.webp /images/rooms/modern-ensuite-bathroom-luxury.webp 301
+/vintage-homestay-in-mukteshwar.webp /images/rooms/vintage-homestay-in-mukteshwar.webp 301
+/best-family-homestay-in-mukteshwar.webp /images/property/best-family-homestay-in-mukteshwar.webp 301
+/best-family-homestay-in-mukteshwar-mobile.webp /images/property/best-family-homestay-in-mukteshwar-mobile.webp 301
+/garden-area-stone-heritage.webp /images/property/garden-area-stone-heritage.webp 301
+/himalayan-view-terrace-mukteshwar.webp /images/property/himalayan-view-terrace-mukteshwar.webp 301
+/homestay-in-mukteshwar.webp /images/property/homestay-in-mukteshwar.webp 301
+/homestay-mukteshwar-mountains-view-from-room.webp /images/property/homestay-mukteshwar-mountains-view-from-room.webp 301
+/luxury-heritage-homestay-in-mukteshwar.webp /images/property/luxury-heritage-homestay-in-mukteshwar.webp 301
+/luxury-homestay-UttarakhandMukteshwar-homestay.webp /images/property/luxury-homestay-UttarakhandMukteshwar-homestay.webp 301
+/mountain-living-best-homestay-Mukteshwar.webp /images/property/mountain-living-best-homestay-Mukteshwar.webp 301
+/mukteshwar-inspection.webp /images/property/mukteshwar-inspection.webp 301
+/nanda-devi-peak-view-mukteshwar.webp /images/property/nanda-devi-peak-view-mukteshwar.webp 301
+/pet-friendly-homestay-resort.webp /images/property/pet-friendly-homestay-resort.webp 301
+/Mukteshwar-homestay (6).webp /images/property/Mukteshwar-homestay-6.webp 301
+/Mukteshwar-homestay-6.webp /images/property/Mukteshwar-homestay-6.webp 301
+/akash.webp /images/property/akash.webp 301
+/Best-place-souvenier.webp /images/property/Best-place-souvenier.webp 301
+/Bhalugaad-Waterfall-Mukteshwar.webp /images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp 301
+/chauli-ki-jali-in-mukteshwar.webp /images/experiences/chauli-ki-jali-in-mukteshwar.webp 301
+/Kainchi_dham_mukteshwar.webp /images/experiences/Kainchi_dham_mukteshwar.webp 301
+/sky-observation-in-mukteshwar.webp /images/experiences/sky-observation-in-mukteshwar.webp 301
+/thing-to-do-in-mukteshwar.webp /images/experiences/thing-to-do-in-mukteshwar.webp 301
+/Best-Homestay-in-Mukteshwar-for-Families-2026-Guide.webp /images/blog/Best-Homestay-in-Mukteshwar-for-Families-2026-Guide.webp 301
+/Best-Homestay-in-Mukteshwar-for-Families.webp /images/blog/Best-Homestay-in-Mukteshwar-for-Families.webp 301
+/Why-stay-near-mukteshwar.webp /images/blog/Why-stay-near-mukteshwar.webp 301
+/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp /images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp 301
+/Complete-Travel-Guide-to-Mukteshwar-and-Ramgarh-2026.webp /images/blog/Complete-Travel-Guide-to-Mukteshwar-and-Ramgarh-2026.webp 301
+/What-to-See-and-Do-Top-Experiences-in-Mukteshwar-and-Ramgarh.webp /images/blog/What-to-See-and-Do-Top-Experiences-in-Mukteshwar-and-Ramgarh.webp 301
+/best-resort-near-mukteshwar-uttarkhand.webp /images/blog/best-resort-near-mukteshwar-uttarkhand.webp 301
+/Stone-Heritage-Mukteshwar's-Workation-Setup.webp /images/blog/Stone-Heritage-Mukteshwar's-Workation-Setup.webp 301
+/Why-Remote-Workers-Are-Choosing-Mukteshwar-Over-Goa-or-Dharamshala.webp /images/blog/Why-Remote-Workers-Are-Choosing-Mukteshwar-Over-Goa-or-Dharamshala.webp 301
+/workation-in-mukteshwar.webp /images/blog/workation-in-mukteshwar.webp 301
+/gagan.webp /images/testimonials/gagan.webp 301
+/Khushi.webp /images/testimonials/Khushi.webp 301
+/nikhil.webp /images/testimonials/nikhil.webp 301
+/Rashmi.webp /images/testimonials/Rashmi.webp 301
+/saransh.webp /images/testimonials/saransh.webp 301
+
+# SPA and Astro fallback rules

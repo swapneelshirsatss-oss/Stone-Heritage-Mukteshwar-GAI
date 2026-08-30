@@ -37,7 +37,7 @@ const quickTransitMatrix: TransitItem[] = [
     mode: "Self-Drive / Cab (NE-3 & NH-9)",
     category: "transit",
     typeIcon: Car,
-    badge: "Primary Feeder",
+    badge: "Direct Highway Route",
     mapLink: "https://www.google.com/maps/dir/New+Delhi,+Delhi,+India/Stone+Heritage+Mukteshwar,+Bhowali+Dhanachuli+Rd,+South+Gola+Range,+Mukteshwar,+Uttarakhand+263138,+India/data=!4m14!4m13!1m5!1m1!19sChIJLbZ-NFv9DDkRzk0gTkm3wlI!2m2!1d77.2088282!2d28.613929799999998!1m5!1m1!19sChIJl-SiNX29oDkRZXXdnokHa0Y!2m2!1d79.644592899999992!2d29.4344681!3e0"
   },
   {
@@ -161,72 +161,45 @@ export function LocationSection() {
           </p>
         </div>
 
-        {/* Interactive Map & Official Pin Box */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 items-stretch">
-          <div className="lg:col-span-8 rounded-2xl overflow-hidden shadow-md border border-stone-200 bg-white min-h-[380px] lg:min-h-[460px]">
+        {/* Interactive Map */}
+        <div className="rounded-2xl overflow-hidden shadow-md border border-stone-200 bg-white mb-16">
+          <div className="w-full h-[380px] sm:h-[460px]">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
               title="Google Maps Location of Stone Heritage Mukteshwar"
               width="100%" 
               height="100%" 
-              className="w-full h-full min-h-[380px]"
+              className="w-full h-full"
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy" 
               referrerPolicy="strict-origin-when-cross-origin"
             ></iframe>
           </div>
-
-          <div className="lg:col-span-4 bg-white p-8 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
-            <div>
-              <div className="flex items-center gap-2 text-accent font-sans text-xs uppercase tracking-widest font-semibold mb-3">
-                <MapPin className="w-4 h-4 shrink-0" />
-                <span>Verified Entity Location</span>
-              </div>
-              <h3 className="text-2xl font-serif font-medium text-primary mb-3">Stone Heritage Mukteshwar</h3>
-              <p className="text-stone-600 text-sm font-light leading-relaxed mb-6">
-                Bhowali Dhanachuli Rd, South Gola Range,<br />
-                Mukteshwar, Uttarakhand 263138
-              </p>
-
-              <div className="space-y-3 pt-4 border-t border-stone-100 text-xs text-stone-600">
-                <div className="flex items-center justify-between">
-                  <span className="text-stone-500">Geo Coordinates:</span>
-                  <span className="font-mono font-medium text-primary">29.4346° N, 79.6447° E</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-stone-500">Elevation:</span>
-                  <span className="font-medium text-primary">~2,171 m (7,120 ft)</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-stone-500">Front Desk:</span>
-                  <a href="tel:+919027844424" className="font-medium text-accent hover:underline">+91 90278 44424</a>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-stone-500">Direct Route:</span>
-                  <span className="font-medium text-stone-800">Bhowali-Dhanachuli Road</span>
-                </div>
-              </div>
+          
+          <div className="bg-stone-50 border-t border-stone-200 p-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-2.5 text-stone-700 text-xs sm:text-sm">
+              <MapPin className="w-4 h-4 text-accent shrink-0" />
+              <span><strong>Stone Heritage Mukteshwar</strong>, Bhowali-Dhanachuli Road, Mukteshwar, Uttarakhand 263138</span>
             </div>
-
-            <div className="pt-6 mt-6 border-t border-stone-100 flex flex-col gap-3">
+            <div className="flex items-center gap-3 w-full sm:w-auto">
               <a 
                 href="https://www.google.com/maps/dir/?api=1&destination=Stone+Heritage+Mukteshwar" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 bg-primary text-white hover:bg-secondary py-3 px-4 rounded-xl text-xs sm:text-sm font-medium tracking-wide transition-colors shadow-sm"
+                className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-secondary text-white py-2 px-4 rounded-xl text-xs font-medium tracking-wide transition-colors shadow-sm shrink-0 w-full sm:w-auto"
               >
-                <Navigation className="w-4 h-4" />
-                Get Turn-by-Turn GPS Directions
+                <Navigation className="w-3.5 h-3.5" />
+                Get Driving Directions
               </a>
               <a 
                 href="https://www.google.com/maps/place/?cid=5074157692820223333" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full inline-flex items-center justify-center gap-1.5 bg-stone-100 hover:bg-stone-200 text-primary py-2.5 px-4 rounded-xl text-xs font-medium transition-colors"
+                className="hidden md:inline-flex items-center justify-center gap-1.5 bg-white hover:bg-stone-100 text-stone-700 py-2 px-4 rounded-xl text-xs font-medium border border-stone-200 transition-colors shrink-0"
               >
                 <ExternalLink className="w-3.5 h-3.5 text-accent" />
-                Open Official Google Maps Pin (CID)
+                Open in Google Maps
               </a>
             </div>
           </div>

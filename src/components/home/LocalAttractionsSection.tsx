@@ -26,7 +26,7 @@ export function LocalAttractionsSection() {
             {
               name: "Chauli Ki Jali Rock Climbing",
               description: "A stunning cliff known for overhanging rocks, deep valley views, and adventure sports. Perfect for rock climbing, rappelling, and mesmerizing sunsets.",
-              image: "/chauli-ki-jali-in-mukteshwar.webp",
+              image: "/images/experiences/chauli-ki-jali-in-mukteshwar.webp",
               alt: "View of the deep valley from Chauli Ki Jali cliff, a popular tourist attraction for sunsets in Mukteshwar",
               distance: "1.5 km away",
               tag: "Adventure & Views"
@@ -34,7 +34,7 @@ export function LocalAttractionsSection() {
             {
               name: "Bhalu Gaad Waterfall Trek",
               description: "Embark on guided or self-guided nature trails through lush forests, discovering the rich biodiversity and charming local villages of Mukteshwar.",
-              image: "/Bhalugaad-Waterfall-Mukteshwar.webp",
+              image: "/images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp",
               alt: "Scenic nature trails and village walks around Stone Heritage in Mukteshwar",
               distance: "Around the property",
               tag: "Nature & Trekking"
@@ -42,7 +42,7 @@ export function LocalAttractionsSection() {
             {
               name: "Mukteshwar Dham Temple Visit",
               description: "Visit the historic 350-year-old Shiva temple atop the highest point in Mukteshwar, offering spiritual serenity and panoramic valley views.",
-              image: "/himalayan-view-terrace-mukteshwar.webp",
+              image: "/images/property/himalayan-view-terrace-mukteshwar.webp",
               alt: "Mukteshwar Dham Temple and surrounding mountain scenery near Stone Heritage Mukteshwar",
               distance: "15 mins drive",
               tag: "Spiritual & Heritage"
