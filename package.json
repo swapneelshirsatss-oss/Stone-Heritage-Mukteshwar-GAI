@@ -1,7 +1,8 @@
 {
-  "name": "react-example",
+  "name": "stone-heritage-mukteshwar",
+  "description": "Official website for Stone Heritage Mukteshwar - Luxury Heritage Homestay",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "engines": {
     "node": ">=18.0.0"
