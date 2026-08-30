@@ -50,11 +50,11 @@ const { posts } = Astro.props;
         <div class="p-8 flex flex-col flex-grow">
           <div class="flex items-center gap-4 text-sm text-primary/60 mb-4">
             <div class="flex items-center gap-1.5">
-              <Calendar class="w-4 h-4" />
+              <Calendar className="w-4 h-4" />
               <span>{post.date}</span>
             </div>
             <div class="flex items-center gap-1.5">
-              <User class="w-4 h-4" />
+              <User className="w-4 h-4" />
               <span>{post.author}</span>
             </div>
           </div>
@@ -71,7 +71,7 @@ const { posts } = Astro.props;
             <div class="flex items-center justify-between">
               <span class="text-sm font-medium text-primary/50">{post.readTime}</span>
               <a href={`/blog/${post.slug}/`} class="flex items-center gap-2 text-accent font-semibold hover:text-accent/80 transition-colors">
-                Read Article <ArrowRight class="w-4 h-4" />
+                Read Article <ArrowRight className="w-4 h-4" />
               </a>
             </div>
             <ShareButtons url={`https://thestoneheritage.in/blog/${post.slug}/`} title={post.title} />

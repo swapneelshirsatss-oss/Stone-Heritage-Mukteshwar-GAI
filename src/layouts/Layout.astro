@@ -138,6 +138,31 @@ const structuredData = {
           "value": true
         }
       ],
+      "checkinTime": "12:00",
+      "checkoutTime": "10:00",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "areaServed": [
+        { "@type": "City", "name": "Mukteshwar" },
+        { "@type": "AdministrativeArea", "name": "Nainital District" },
+        { "@type": "AdministrativeArea", "name": "Kumaon" },
+        { "@type": "AdministrativeArea", "name": "Uttarakhand" },
+        { "@type": "AdministrativeArea", "name": "Delhi NCR" }
+      ],
       "containsPlace": [
         {
           "@type": ["HotelRoom", "Suite"],
@@ -372,6 +397,12 @@ const speakableSchema = {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://www.googletagmanager.com" />
     <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://news.google.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
+    
+    <!-- Google Preferred Source Script -->
+    <script async src="https://news.google.com/swg/js/v1/publisher.js"></script>
     
     <!-- Non-Render-Blocking Google Fonts (font-display: swap) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'" />
@@ -393,6 +424,7 @@ const speakableSchema = {
     <meta name="keywords" content={keywords} />
     <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
     <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="Stone Heritage Mukteshwar LLM Knowledge Base" />
     <link rel="llms" href="/llms.txt" />
     
     <!-- Open Graph Meta Tags (for social & AI parsers) -->

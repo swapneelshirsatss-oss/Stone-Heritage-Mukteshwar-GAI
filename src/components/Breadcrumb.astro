@@ -59,7 +59,7 @@ if (items && items.length > 0) {
             <meta itemprop="position" content={String(index + 1)} />
             {index === 0 ? (
               <a href={item.url} itemprop="item" class="flex items-center gap-1 hover:text-primary transition-colors text-stone-500">
-                <Home class="w-3.5 h-3.5" />
+                <Home className="w-3.5 h-3.5" />
                 <span itemprop="name">{item.name}</span>
               </a>
             ) : isLast ? (
@@ -69,7 +69,7 @@ if (items && items.length > 0) {
                 <span itemprop="name">{item.name}</span>
               </a>
             )}
-            {!isLast && <ChevronRight class="w-3.5 h-3.5 text-stone-400 shrink-0" />}
+            {!isLast && <ChevronRight className="w-3.5 h-3.5 text-stone-400 shrink-0" />}
           </li>
         );
       })}

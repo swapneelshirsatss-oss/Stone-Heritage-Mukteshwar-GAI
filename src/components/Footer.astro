@@ -1,75 +1,210 @@
 ---
-import { Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Twitter, MapPin, Phone, Mail, Compass, Users, Laptop, Dog, Car } from 'lucide-react';
 import { Image } from 'astro:assets';
 
 const currentYear = new Date().getFullYear();
 ---
-<footer class="bg-primary text-stone-100 pt-12 pb-44 md:pb-12 mt-auto overflow-hidden">
+<footer class="bg-primary text-stone-100 pt-16 pb-44 md:pb-12 mt-auto overflow-hidden border-t border-stone-800">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
-      <div class="lg:col-span-4">
-        <div class="flex items-center gap-4 mb-8">
+    
+    {/* Main Footer Grid */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
+      
+      {/* Column 1: Brand & Follow */}
+      <div class="lg:col-span-3">
+        <div class="flex items-center gap-4 mb-6">
           <Image src="/Logo.webp" alt="Stone Heritage Logo" class="h-16 w-auto bg-stone-50 rounded-sm p-1" width={200} height={200} loading="lazy" />
           <div class="flex flex-col justify-center">
             <h3 class="text-xl font-serif font-semibold text-accent tracking-normal leading-none mb-1">Stone Heritage</h3>
             <span class="text-[10px] tracking-[0.3em] text-stone-300 font-medium uppercase mt-1">Mukteshwar</span>
           </div>
         </div>
-        <p class="text-stone-300 text-sm font-light leading-relaxed mb-6">
-          Authentic Kumaoni heritage homestay offering breathtaking Himalayan views. The perfect escape for couples, families, and remote workers.
+        <p class="text-stone-300 text-xs sm:text-sm font-light leading-relaxed mb-5">
+          Authentic handcrafted Kumaoni heritage homestay offering 180° panoramic Himalayan peak views, pet-friendly gardens, and fresh home-cooked vegetarian dining.
         </p>
-        <h2 class="text-xs font-sans font-medium tracking-wider uppercase text-highlight mb-6">
-          Book Direct for Exclusive Rates & Perks
-        </h2>
-        <div class="flex gap-4">
-          <a href="https://www.facebook.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="Facebook">
-            <Facebook size={20} />
+        
+        <div class="bg-stone-900/50 p-3.5 rounded-xl border border-stone-800 mb-6">
+          <h4 class="text-[11px] font-sans font-semibold tracking-wider uppercase text-highlight mb-1">
+            Book Direct Benefits
+          </h4>
+          <p class="text-[11px] text-stone-400 font-light">
+            Up to 20% lower rates vs OTAs, priority room selection & complimentary bonfire evenings.
+          </p>
+        </div>
+
+        <div class="flex gap-3 text-stone-300">
+          <a href="https://www.facebook.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" class="hover:text-accent p-2 bg-stone-800/80 rounded-lg transition-colors" aria-label="Facebook">
+            <Facebook size={18} />
           </a>
-          <a href="https://www.instagram.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="Instagram">
-            <Instagram size={20} />
+          <a href="https://www.instagram.com/thestoneheritage/" target="_blank" rel="noopener noreferrer" class="hover:text-accent p-2 bg-stone-800/80 rounded-lg transition-colors" aria-label="Instagram">
+            <Instagram size={18} />
           </a>
-          <a href="https://www.youtube.com/@StoneHeritageMukteshwar" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="YouTube">
-            <Youtube size={20} />
+          <a href="https://www.youtube.com/@StoneHeritageMukteshwar" target="_blank" rel="noopener noreferrer" class="hover:text-accent p-2 bg-stone-800/80 rounded-lg transition-colors" aria-label="YouTube">
+            <Youtube size={18} />
           </a>
-          <a href="https://x.com/stone_heritage" target="_blank" rel="noopener noreferrer" class="text-stone-300 hover:text-accent transition-colors" aria-label="Twitter">
-            <Twitter size={20} />
+          <a href="https://x.com/stone_heritage" target="_blank" rel="noopener noreferrer" class="hover:text-accent p-2 bg-stone-800/80 rounded-lg transition-colors" aria-label="Twitter">
+            <Twitter size={18} />
           </a>
+        </div>
+
+        <div class="mt-6 pt-5 border-t border-stone-800">
+          <p class="text-xs text-stone-300 font-medium mb-3 flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-accent" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+            Follow on Google Search & News:
+          </p>
+          <div class="g-preferred-source" data-domain="thestoneheritage.in" google-add-preferred-source-btn data-theme="dark" data-lang="en"></div>
         </div>
       </div>
       
+      {/* Column 2: Quick Links */}
       <div class="lg:col-span-2">
-        <h3 class="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Quick Links</h3>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-4 gap-y-3 text-sm text-stone-300 font-light">
-          <li><a href="/stay/" class="hover:text-highlight transition-colors">Stay</a></li>
-          <li><a href="/experiences/" class="hover:text-highlight transition-colors">Experiences</a></li>
-          <li><a href="/our-story/" class="hover:text-highlight transition-colors">Our Story</a></li>
-          <li><a href="/gallery/" class="hover:text-highlight transition-colors">Gallery</a></li>
-          <li><a href="/blog/" class="hover:text-highlight transition-colors">Blog</a></li>
-          <li><a href="/testimonials/" class="hover:text-highlight transition-colors">Testimonials</a></li>
-          <li><a href="/search/" class="hover:text-highlight transition-colors">Search</a></li>
-          <li><a href="/contact/" class="hover:text-highlight transition-colors">Contact Us</a></li>
-          <li><a href="https://booking.thestoneheritage.in/" target="_blank" rel="noopener noreferrer" class="hover:text-highlight transition-colors">Book Now</a></li>
+        <h3 class="text-xs font-sans font-semibold tracking-widest uppercase mb-5 text-accent flex items-center gap-1.5">
+          Explore
+        </h3>
+        <ul class="space-y-2.5 text-xs sm:text-sm text-stone-300 font-light">
+          <li><a href="/stay/" class="hover:text-highlight transition-colors">Rooms & Cottages</a></li>
+          <li><a href="/experiences/" class="hover:text-highlight transition-colors">On-Site Experiences</a></li>
+          <li><a href="/our-story/" class="hover:text-highlight transition-colors">Our Kumaoni Story</a></li>
+          <li><a href="/gallery/" class="hover:text-highlight transition-colors">Photo Gallery</a></li>
+          <li><a href="/blog/" class="hover:text-highlight transition-colors">Travel Guides & Blog</a></li>
+          <li><a href="/testimonials/" class="hover:text-highlight transition-colors">Guest Testimonials</a></li>
+          <li><a href="/volunteer-work-exchange-mukteshwar/" class="hover:text-highlight transition-colors">Volunteer & Exchange</a></li>
+          <li><a href="/contact/" class="hover:text-highlight transition-colors">Contact Front Desk</a></li>
+          <li>
+            <a href="https://booking.thestoneheritage.in/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white font-medium transition-colors">
+              Book Direct Engine →
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Column 3: High-Intent Experience & Persona Silos */}
+      <div class="lg:col-span-2">
+        <h3 class="text-xs font-sans font-semibold tracking-widest uppercase mb-5 text-accent flex items-center gap-1.5">
+          Target Getaways
+        </h3>
+        <ul class="space-y-2.5 text-xs text-stone-300 font-light">
+          <li>
+            <a href="/blog/best-homestay-in-mukteshwar-for-families/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Metro Families</span>
+              <span class="block text-[11px] text-stone-400">Large Suites & Enclosed Lawns</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/workation-in-mukteshwar/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Himalayan Workations</span>
+              <span class="block text-[11px] text-stone-400">Fiber Wi-Fi & Extended Stays</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/pet-friendly-homestay/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Pet-Friendly Stay</span>
+              <span class="block text-[11px] text-stone-400">Private Garden & Nature Trails</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/mukteshwar-ramgarh-travel-guide/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Kainchi Dham Pilgrimage</span>
+              <span class="block text-[11px] text-stone-400">Neem Karoli Baba & Mukteshwar</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/top-5-things-to-do-in-mukteshwar/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Things to Do & Treks</span>
+              <span class="block text-[11px] text-stone-400">Chauli Ki Jali & Bhalu Gaad</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/himalayan-bird-watching/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Bird Watching Trails</span>
+              <span class="block text-[11px] text-stone-400">Oak & Pine Forest Walks</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Column 4: Drive-To Feeder Corridors & City Connectivity */}
+      <div class="lg:col-span-2">
+        <h3 class="text-xs font-sans font-semibold tracking-widest uppercase mb-5 text-accent flex items-center gap-1.5">
+          Feeder Cities
+        </h3>
+        <ul class="space-y-2.5 text-xs text-stone-300 font-light">
+          <li>
+            <a href="/blog/delhi-to-mukteshwar-road-trip/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Delhi NCR (NE-3 & NH-9)</span>
+              <span class="block text-[11px] text-stone-400">~357 km | 7–7.5 hrs Drive</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/delhi-to-mukteshwar-road-trip/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Noida & Ghaziabad</span>
+              <span class="block text-[11px] text-stone-400">Direct Hapur Bypass Route</span>
+            </a>
+          </li>
+          <li>
+            <a href="/blog/delhi-to-mukteshwar-road-trip/" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Gurugram & Faridabad</span>
+              <span class="block text-[11px] text-stone-400">Via Eastern Peripheral / NE-3</span>
+            </a>
+          </li>
+          <li>
+            <a href="/#transit-matrix" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Lucknow & Bareilly</span>
+              <span class="block text-[11px] text-stone-400">Via NH-30 & Kathgodam</span>
+            </a>
+          </li>
+          <li>
+            <a href="/#transit-matrix" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Chandigarh & Dehradun</span>
+              <span class="block text-[11px] text-stone-400">Scenic Kumaon Bypass</span>
+            </a>
+          </li>
+          <li>
+            <a href="/#transit-matrix" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Mumbai, Surat & Ahmedabad</span>
+              <span class="block text-[11px] text-stone-400">Fly to Pantnagar (PGH) / Bareilly</span>
+            </a>
+          </li>
+          <li>
+            <a href="/#transit-matrix" class="hover:text-highlight transition-colors block">
+              <span class="text-stone-200 font-normal">Kathgodam Shatabdi (KGM)</span>
+              <span class="block text-[11px] text-stone-400">58 km | 2 hrs Station Taxi</span>
+            </a>
+          </li>
         </ul>
       </div>
       
+      {/* Column 5: Contact & Maps Location */}
       <div class="lg:col-span-3">
-        <h3 class="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Contact Information</h3>
-        <address class="not-italic text-sm text-stone-300 space-y-2 font-light">
-          <p>Bhowali Dhanachuli Rd, South Gola Range,</p>
-          <p>Mukteshwar, Uttarakhand 263138</p>
-          <p class="mt-4">
-            <a href="tel:+919027844424" class="hover:text-highlight transition-colors">+91 9027844424</a> <br/>
-            <a href="tel:+917900200563" class="hover:text-highlight transition-colors">+91 7900200563</a>
-          </p>
+        <h3 class="text-xs font-sans font-semibold tracking-widest uppercase mb-5 text-accent flex items-center gap-1.5">
+          Contact & Location
+        </h3>
+        <address class="not-italic text-xs sm:text-sm text-stone-300 space-y-2 font-light mb-4">
+          <p class="font-medium text-stone-100 text-sm">Stone Heritage Mukteshwar</p>
           <p>
+            <a 
+              href="https://www.google.com/maps/place/?cid=5074157692820223333" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="hover:text-highlight transition-colors"
+              title="View Stone Heritage Mukteshwar on Google Maps"
+            >
+              Bhowali Dhanachuli Rd, South Gola Range,<br />
+              Mukteshwar, Uttarakhand 263138
+            </a>
+          </p>
+          <p class="pt-2">
+            <a href="tel:+919027844424" class="hover:text-highlight transition-colors font-medium text-stone-200 block">+91 90278 44424</a>
+            <a href="tel:+917900200563" class="hover:text-highlight transition-colors text-stone-400 block">+91 79002 00563</a>
+          </p>
+          <p class="pt-1">
             <a href="mailto:thestoneheritage@gmail.com" class="hover:text-highlight transition-colors">thestoneheritage@gmail.com</a>
           </p>
         </address>
-      </div>
 
-      <div class="lg:col-span-3">
-        <h3 class="text-sm font-sans font-medium tracking-widest uppercase mb-6 text-accent">Location</h3>
-        <div class="rounded-sm overflow-hidden h-48 bg-stone-800 border border-stone-700/50">
+        <div class="rounded-xl overflow-hidden h-36 bg-stone-800 border border-stone-700/50 shadow-inner">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.798426132153!2d79.64472459999999!3d29.434687300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0bd7d35a2e497%3A0x466b07899edd7565!2sStone%20Heritage%20Mukteshwar!5e0!3m2!1sen!2sin!4v1782816534338!5m2!1sen!2sin" 
             title="Google Maps Location of Stone Heritage Mukteshwar"
@@ -81,20 +216,43 @@ const currentYear = new Date().getFullYear();
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div class="mt-2">
+        <div class="mt-2 text-right">
           <a 
             href="https://www.google.com/maps/place/?cid=5074157692820223333" 
             target="_blank" 
             rel="noopener noreferrer" 
-            class="text-xs text-accent hover:text-white transition-colors underline underline-offset-2"
+            class="text-[11px] text-accent hover:text-white transition-colors underline underline-offset-2 inline-flex items-center gap-1"
           >
-            Open in Google Maps →
+            <span>Open Google Maps Pin (CID) →</span>
           </a>
         </div>
       </div>
     </div>
+
+    {/* Hyper-Local Persona & Feeder Corridor Contextual Silo Bar */}
+    <div class="mt-12 pt-8 border-t border-stone-800/80 bg-stone-900/40 p-6 rounded-2xl border border-stone-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-stone-300">
+        <div>
+          <h4 class="font-sans font-semibold text-accent uppercase tracking-wider mb-2 text-[11px]">
+            Target Travel Experiences in Mukteshwar
+          </h4>
+          <p class="font-light leading-relaxed text-stone-400">
+            Handcrafted for <strong>Delhi NCR & metro families</strong> seeking quiet Kumaoni valley escapes, <strong>remote workationers</strong> needing fiber Wi-Fi, <strong>pet owners</strong> traveling with dogs, and <strong>pilgrims</strong> visiting Neem Karoli Baba Ashram (Kainchi Dham) and Mukteshwar Dham Temple.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-sans font-semibold text-accent uppercase tracking-wider mb-2 text-[11px]">
+            Primary Drive-To & Transit Access Corridors
+          </h4>
+          <p class="font-light leading-relaxed text-stone-400">
+            Direct 6–8 hr highway access from <strong>South Delhi, Noida, Gurugram, Ghaziabad, Faridabad, Lucknow, and Chandigarh</strong> via NE-3 and NH-9. Fly-in connectivity from <strong>Mumbai, Surat, and Ahmedabad</strong> via Pantnagar Airport (PGH) and Bareilly Airport (BEK).
+          </p>
+        </div>
+      </div>
+    </div>
     
-    <div class="border-t border-stone-700 mt-12 pt-8 text-center text-xs text-stone-400 flex flex-col items-center justify-center gap-3">
+    {/* Bottom Legal & Copyright Bar */}
+    <div class="border-t border-stone-800 mt-8 pt-6 text-center text-xs text-stone-400 flex flex-col items-center justify-center gap-3">
       <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
         <p>&copy; {currentYear} Stone Heritage Mukteshwar. All rights reserved.</p>
         <span class="hidden md:inline text-stone-600">|</span>
@@ -109,7 +267,6 @@ const currentYear = new Date().getFullYear();
       <p class="text-xs text-stone-400">
         Website developed & other services by <a href="https://growguest.in/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors underline underline-offset-2">Growguest</a>
       </p>
-    </div>
     </div>
   </div>
 </footer>

@@ -128,15 +128,29 @@ export function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="font-semibold text-secondary">Address</p>
-                <p className="text-primary/80">Bhowali Dhanachuli Rd, South Gola Range,<br />Mukteshwar, Uttarakhand 263138</p>
+                <p className="text-primary/80">
+                  <a 
+                    href="https://www.google.com/maps/place/?cid=5074157692820223333" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-secondary underline underline-offset-2 transition-colors"
+                  >
+                    Bhowali Dhanachuli Rd, South Gola Range,<br />Mukteshwar, Uttarakhand 263138
+                  </a>
+                </p>
               </div>
               <div>
                 <h3 className="font-semibold text-secondary text-base mb-1">Call or WhatsApp Front Desk Direct</h3>
-                <p className="text-primary/80">+91 9027844424<br />+91 7900200563</p>
+                <p className="text-primary/80">
+                  <a href="tel:+919027844424" className="hover:text-secondary font-medium transition-colors">+91 90278 44424</a><br />
+                  <a href="tel:+917900200563" className="hover:text-secondary transition-colors">+91 79002 00563</a>
+                </p>
               </div>
               <div>
                 <p className="font-semibold text-secondary">Email</p>
-                <p className="text-primary/80">thestoneheritage@gmail.com</p>
+                <p className="text-primary/80">
+                  <a href="mailto:thestoneheritage@gmail.com" className="hover:text-secondary transition-colors">thestoneheritage@gmail.com</a>
+                </p>
               </div>
             </div>
           </div>
