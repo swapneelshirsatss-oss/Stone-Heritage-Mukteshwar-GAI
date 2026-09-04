@@ -42,8 +42,8 @@ export function LocalAttractionsSection() {
             {
               name: "Mukteshwar Dham Temple Visit",
               description: "Visit the historic 350-year-old Shiva temple atop the highest point in Mukteshwar, offering spiritual serenity and panoramic valley views.",
-              image: "/images/property/himalayan-view-terrace-mukteshwar.webp",
-              alt: "Mukteshwar Dham Temple and surrounding mountain scenery near Stone Heritage Mukteshwar",
+              image: "/images/experiences/Uttarakhand-Nainital-Mukteshwar-Temple.webp",
+              alt: "Historic 350-year-old Mukteshwar Dham Shiva Temple atop the mountain ridge in Mukteshwar, Uttarakhand",
               distance: "15 mins drive",
               tag: "Spiritual & Heritage"
             }

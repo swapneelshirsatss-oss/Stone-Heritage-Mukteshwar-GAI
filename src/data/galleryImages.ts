@@ -30,5 +30,6 @@ export const galleryImages: GalleryImage[] = [
   { src: '/images/property/nanda-devi-peak-view-mukteshwar.webp', alt: 'Nanda Devi Peak View from Mukteshwar', category: 'views', categoryLabel: 'Himalayan Views' },
   { src: '/images/experiences/sky-observation-in-mukteshwar.webp', alt: 'Stargazing and night sky observation at Stone Heritage Mukteshwar', category: 'experiences', categoryLabel: 'Night Sky Stargazing' },
   { src: '/images/property/homestay-in-mukteshwar.webp', alt: 'A serene view of our heritage stone homestay property in Mukteshwar', category: 'rooms', categoryLabel: 'Heritage Cottages' },
+  { src: '/images/experiences/Uttarakhand-Nainital-Mukteshwar-Temple.webp', alt: 'Historic 350-year-old Mukteshwar Dham Shiva Temple in Mukteshwar', category: 'experiences', categoryLabel: 'Spiritual Sites' },
   { src: '/images/experiences/thing-to-do-in-mukteshwar.webp', alt: 'Exploring activities and things to do in Mukteshwar', category: 'experiences', categoryLabel: 'Treks & Experiences' }
 ];

@@ -64,6 +64,8 @@ Nanda Devi Mela at Mukteshwar Dham and local Kumaoni festivals bring the communi
 
 ### 1. Mukteshwar Dham Temple
 
+![Historic 350-year-old Mukteshwar Dham Shiva Temple atop the mountain ridge in Mukteshwar, Uttarakhand](/images/experiences/Uttarakhand-Nainital-Mukteshwar-Temple.webp)
+
 The defining experience of any visit to Mukteshwar — a 350-year-old Shiva temple perched at 2,286 metres on a rocky summit with a sheer cliff drop on one side and unobstructed Himalayan panoramas on the other. Nanda Devi, Trishul, and Panchachuli are all visible from the temple courtyard on clear mornings.
 
 The best time to visit is early morning — arrive by 7 AM before the day-tripper crowds from Nainital arrive, and you will have the temple and the view almost entirely to yourself.
