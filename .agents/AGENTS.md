@@ -83,3 +83,38 @@ When adding or updating local attraction photos in `public/images/experiences/`,
 4. `src/content/blog/mukteshwar-ramgarh-travel-guide.md` (Pillar travel guide article)
 5. Run `node scripts/verify-assets.mjs` to ensure zero broken paths.
 
+---
+
+## 10. Verified Property Inventory & Operational Policies (Ground Truth)
+
+### A. Room Inventory & Bed Configurations
+Always maintain exact room names and bed configurations across all page listings, comparison tables, and Schema.org data:
+1. **Brass Room**: 1 King Size Bed (2–3 Guests)
+2. **Copper Room**: 1 King Size Bed + Sofa cum 1 bed (2–4 Guests)
+3. **Vintage Stone Room**: 1 King Size Bed (2–3 Guests)
+4. **Iron Room**: 1 King Size Bed (2 Guests)
+5. **Cedar Room**: 1 Queen Size Bed (2 Guests) *(Never list as King Bed)*
+6. **Stonewood Family Retreat**: 2 King Size Beds (4–6 Guests, living lounge & private balcony)
+7. **Stone and Story Room**: 1 King Size Bed (2–3 Guests)
+8. **Himalayan Workation Room**: Workstation Setup + Mountain Views (1–2 Guests)
+9. **Stone Cottage Room (Sunset Heritage Cottage)**: 1 King Size Bed (2–4 Guests)
+
+### B. Standard Timings & Schema Invariants
+- **Check-in Time**: `13:00 PM` (`13:00 hrs IST`) -> Schema: `"checkinTime": "13:00"`
+- **Check-out Time**: `11:00 AM` (`11:00 hrs IST`) -> Schema: `"checkoutTime": "11:00"`
+
+### C. Dining & Meal Amenities
+- **On-Site Dining**: Fresh home-cooked Food & Breakfast is available daily.
+- **Kitchen Type**: 100% Pure Vegetarian (Kumaoni specialties & North Indian comfort food cooked fresh to order).
+- **Schema Amenity**: Always include `{"@type": "LocationFeatureSpecification", "name": "Fresh Food & Breakfast Available", "value": true}` in lodging schemas.
+
+---
+
+## 11. Spiritual & Cultural Attraction Separation Invariant
+- **Mukteshwar Dham Temple** (350-year-old Shiva temple, 8.2 km, highest ridge at 7,500 ft, image: `/images/experiences/Uttarakhand-Nainital-Mukteshwar-Temple.webp`) and **Kainchi Dham Ashram** (Neem Karoli Baba ashram, 39 km, Bhowali valley, image: `/images/experiences/Kainchi_dham_mukteshwar.webp`) must **ALWAYS** remain two separate, dedicated entities in:
+  1. `src/components/experiences/PlacesToVisit.tsx` (Individual cards)
+  2. `src/pages/experiences/index.astro` (Schema.org `ItemListElement`)
+  3. All travel guides and attraction matrices
+  - **Do NOT** merge them into a single combined pilgrimage entry.
+
+
