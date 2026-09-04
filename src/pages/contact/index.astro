@@ -8,10 +8,58 @@ const pageTitle = "Contact Us | Homestay in Mukteshwar | Stone Heritage";
 const pageDescription = "Contact Stone Heritage, a top-rated homestay in Mukteshwar, Uttarakhand. Reach out directly via WhatsApp or phone for best direct booking rates.";
 const pageKeywords = "weekend getaway from delhi to mukteshwar, homestay at mukteshwar uttarakhand, contact homestay in mukteshwar, best homestay in mukteshwar uttarakhand, stone heritage mukteshwar contact";
 
-const faqSchemaData = {
+const contactSchemaData = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://thestoneheritage.in/contact/#contactpage",
+      "url": canonicalUrl,
+      "name": pageTitle,
+      "description": pageDescription,
+      "isPartOf": {
+        "@id": "https://thestoneheritage.in/#website"
+      },
+      "about": {
+        "@type": ["BedAndBreakfast", "Resort", "Hotel"],
+        "@id": "https://thestoneheritage.in/#localbusiness",
+        "name": "Stone Heritage Mukteshwar",
+        "telephone": "+919027844424",
+        "email": "thestoneheritage@gmail.com",
+        "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 29.4346202,
+          "longitude": 79.6446521
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bhowali Dhanachuli Rd, South Gola Range",
+          "addressLocality": "Mukteshwar",
+          "addressRegion": "Uttarakhand",
+          "postalCode": "263138",
+          "addressCountry": "IN"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+919027844424",
+            "contactType": "reservations",
+            "availableLanguage": ["English", "Hindi"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+917900200563",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Hindi"]
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thestoneheritage.in/contact/#faq",
+      "mainEntity": [
     {
       "@type": "Question",
       "name": "Which is the best homestay in Mukteshwar?",
@@ -173,6 +221,8 @@ const faqSchemaData = {
       }
     }
   ]
+    }
+  ]
 };
 ---
 
@@ -181,7 +231,7 @@ const faqSchemaData = {
   description={pageDescription}
   keywords={pageKeywords}
   canonicalUrl={canonicalUrl}
-  schema={faqSchemaData}
+  schema={contactSchemaData}
 >
   <Breadcrumb />
   <Contact client:load />

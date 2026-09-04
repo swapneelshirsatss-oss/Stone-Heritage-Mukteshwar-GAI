@@ -49,7 +49,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["BedAndBreakfast", "Hotel", "Resort", "LodgingBusiness"],
+      "@type": ["BedAndBreakfast", "Resort", "Hotel"],
       "@id": "https://thestoneheritage.in/#localbusiness",
       "additionalType": [
         "https://en.wikipedia.org/wiki/Homestay",
@@ -57,18 +57,33 @@ const structuredData = {
         "https://en.wikipedia.org/wiki/Cottage"
       ],
       "name": "Stone Heritage Mukteshwar",
+      "alternateName": [
+        "Stone Heritage Resort",
+        "Stone Heritage",
+        "The Stone Heritage Mukteshwar",
+        "Stone Heritage Homestay"
+      ],
       "description": "Stone Heritage Mukteshwar is a boutique heritage homestay offering handcrafted stone cottages, 180° panoramic Himalayan peak views, pet-friendly gardens, and fresh home-cooked Kumaoni vegetarian dining.",
       "url": "https://thestoneheritage.in/",
       "logo": "https://thestoneheritage.in/Logo.webp",
       "telephone": "+919027844424",
       "email": "thestoneheritage@gmail.com",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, Credit Card, Debit Card, UPI, Net Banking",
+      "priceRange": "₹1,500 - ₹15,000",
       "petsAllowed": true,
       "numberOfRooms": 9,
-      "priceRange": "₹1,500 - ₹15,000",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+919027844424",
+        "contactType": "reservations",
+        "availableLanguage": ["English", "Hindi"]
+      },
       "founder": {
         "@type": "Person",
         "@id": "https://thestoneheritage.in/our-story/#akash",
         "name": "Akash",
+        "jobTitle": "Founder & Host",
         "knowsAbout": [
           "Mukteshwar Tourism",
           "Kumaoni Heritage Architecture",
@@ -249,6 +264,12 @@ const structuredData = {
       "@id": "https://thestoneheritage.in/#website",
       "url": "https://thestoneheritage.in/",
       "name": "Stone Heritage Mukteshwar",
+      "alternateName": [
+        "Stone Heritage Resort",
+        "Stone Heritage",
+        "The Stone Heritage Mukteshwar",
+        "Stone Heritage Homestay"
+      ],
       "publisher": { "@id": "https://thestoneheritage.in/#localbusiness" }
     },
     {

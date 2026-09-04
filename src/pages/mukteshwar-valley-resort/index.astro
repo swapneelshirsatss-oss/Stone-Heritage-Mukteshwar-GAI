@@ -60,6 +60,38 @@ const lodgingSchema = {
         "bestRating": "5",
         "worstRating": "1"
       },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Manish Joshi" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "We had a wonderful stay at the hotel. Harsh was a great host, very warm and especially good with kids, which made our stay even more comfortable. The food was delicious, and the room had all the necessary facilities for a cold location, making it cozy and convenient. Parking was easily available, and having a general store and a good restaurant nearby was very helpful. There was also a small trek right next to the property where you could enjoy beautiful sundown views, and the sunrise right from the lawn area was absolutely stunning. Overall, it was a very pleasant and hassle-free stay!"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Satya Prakash" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Had an amazing experience at Stone Heritage. Special thanks to Host - Harsh for being such a professional and welcoming host. His communication, confidence, hospitality, and the way he handled everything made the stay feel very comfortable and memorable. The service, atmosphere, and overall facilities were excellent. Definitely one of the best homestay experiences in Mukteshwar – highly recommended!"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Sandeep Sharma" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Had a wonderful stay here. The property was clean, comfortable, and very well maintained. The view was absolutely stunning and made our stay even more special. The staff was warm, friendly, and always helpful. A perfect place to relax and unwind. Highly recommended, and I would love to visit again!"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Priyanka Todkari" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "The Stone Heritage Homestay, Mukteshwar is truly a hidden gem. The property is absolutely beautiful, surrounded by serene mountains, old-world charm, and peaceful vibes that instantly make you feel calm and connected to nature. Every corner reflects warmth, heritage, and thoughtful detailing. What made our stay even more special was the exceptional hospitality. The staff is extremely courteous, attentive, and always ready to help with a smile. A special mention to Manager Parul — her grace, professionalism, and personal care towards guests truly stand out."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Abhineet Singh" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Amazing property,peaceful loctaion and you can have breathtaking views from the property itself. Hospitality was fantastic and staff was very co-operative.Only vegetarian food is allowed but tastes good and is freshly prepared. Overall highly recommended if u r looking for a place to stay nearby mukteshwar."
+        }
+      ],
       "priceRange": "₹₹ - ₹₹₹",
       "amenityFeature": [
         { "@type": "LocationFeatureSpecification", "name": "180° Himalayan View", "value": true },
@@ -263,6 +295,64 @@ const faqs = [
   {
     q: "Why is booking directly on your website recommended?",
     a: "Direct booking at booking.thestoneheritage.in gives you up to 20% lower pricing than third-party platforms, transparent billing with zero OTA commissions, direct communication with host Akash, priority cottage selection, and complimentary evening courtyard bonfires."
+  }
+];
+
+const googleReviews = [
+  {
+    name: "Manish Joshi",
+    timeAgo: "6 months ago",
+    tag: "Family Stay with Kids",
+    highlight: "Warm Host & Delicious Food",
+    text: "We had a wonderful stay at the hotel. Harsh was a great host, very warm and especially good with kids, which made our stay even more comfortable. The food was delicious, and the room had all the necessary facilities for a cold location, making it cozy and convenient. Parking was easily available, and having a general store and a good restaurant nearby was very helpful. There was also a small trek right next to the property where you could enjoy beautiful sundown views, and the sunrise right from the lawn area was absolutely stunning. Overall, it was a very pleasant and hassle-free stay!",
+    rooms: "5.0",
+    service: "5.0",
+    location: "5.0",
+    featured: false
+  },
+  {
+    name: "Satya Prakash",
+    timeAgo: "3 months ago",
+    tag: "Holiday | Family",
+    highlight: "Hotel highlights: Luxury",
+    text: "Had an amazing experience at Stone Heritage. Special thanks to Host - Harsh for being such a professional and welcoming host. His communication, confidence, hospitality, and the way he handled everything made the stay feel very comfortable and memorable. The service, atmosphere, and overall facilities were excellent. Definitely one of the best homestay experiences in Mukteshwar – highly recommended! ⭐⭐⭐⭐⭐",
+    rooms: "5.0",
+    service: "5.0",
+    location: "5.0",
+    featured: false
+  },
+  {
+    name: "Sandeep Sharma",
+    timeAgo: "2 months ago",
+    tag: "Holiday",
+    highlight: "Clean & Peaceful",
+    text: "Had a wonderful stay here. The property was clean, comfortable, and very well maintained. The view was absolutely stunning and made our stay even more special. The staff was warm, friendly, and always helpful. A perfect place to relax and unwind. Highly recommended, and I would love to visit again!",
+    rooms: "5.0",
+    service: "5.0",
+    location: "5.0",
+    featured: false
+  },
+  {
+    name: "Priyanka Todkari",
+    timeAgo: "7 months ago",
+    tag: "Hidden Gem",
+    highlight: "Special Mention: Manager Parul",
+    text: "The Stone Heritage Homestay, Mukteshwar is truly a hidden gem. The property is absolutely beautiful, surrounded by serene mountains, old-world charm, and peaceful vibes that instantly make you feel calm and connected to nature. Every corner reflects warmth, heritage, and thoughtful detailing.\\n\\nWhat made our stay even more special was the exceptional hospitality. The staff is extremely courteous, attentive, and always ready to help with a smile. A special mention to Manager Parul — her grace, professionalism, and personal care towards guests truly stand out. She ensures everything is smooth and makes you feel genuinely welcomed, not just hosted.\\n\\nThe food, cleanliness, and overall experience were top-notch. If you’re looking for a soulful stay with comfort, authenticity, and heartfelt service, this place is a must-visit. I would happily return and recommend it to anyone visiting Mukteshwar.",
+    rooms: "5.0",
+    service: "5.0",
+    location: "5.0",
+    featured: true
+  },
+  {
+    name: "Abhineet Singh",
+    timeAgo: "2 months ago",
+    tag: "Breathtaking Views",
+    highlight: "Pure Veg Dining",
+    text: "Amazing property,peaceful loctaion and you can have breathtaking views from the property itself. Hospitality was fantastic and staff was very co-operative.Only vegetarian food is allowed but tastes good and is freshly prepared. Overall highly recommended if u r looking for a place to stay nearby mukteshwar.",
+    rooms: "5.0",
+    service: "5.0",
+    location: "5.0",
+    featured: false
   }
 ];
 ---
@@ -836,63 +926,62 @@ const faqs = [
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
-            <div>
-              <div class="flex text-amber-400 mb-3">
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-              </div>
-              <p class="text-xs sm:text-sm text-stone-700 italic font-light leading-relaxed mb-4">
-                "The stone architecture is truly spectacular. We woke up to front-row snow peak views of Trishul and Nanda Devi right from our bedroom. The 100% pure veg Pahadi food was healthy and delicious, and our golden retriever had the time of his life in the garden lawn!"
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stone-100">
-              <span class="block text-xs font-bold text-primary">Rohit Sharma & Family</span>
-              <span class="text-[11px] text-stone-400">Delhi NCR • Verified Google Review</span>
-            </div>
-          </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {googleReviews.map((review) => (
+            <div class={`bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between hover:shadow-md transition-shadow ${review.featured ? 'md:col-span-2 lg:col-span-2 bg-gradient-to-br from-white to-amber-50/20' : ''}`}>
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex text-amber-400">
+                    <Star className="w-4 h-4 fill-amber-400" />
+                    <Star className="w-4 h-4 fill-amber-400" />
+                    <Star className="w-4 h-4 fill-amber-400" />
+                    <Star className="w-4 h-4 fill-amber-400" />
+                    <Star className="w-4 h-4 fill-amber-400" />
+                  </div>
+                  <div class="flex items-center gap-1.5 bg-stone-100 px-2.5 py-1 rounded-full text-stone-700">
+                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
+                      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                    </svg>
+                    <span class="text-[11px] font-semibold">5/5 on Google</span>
+                  </div>
+                </div>
 
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
-            <div>
-              <div class="flex text-amber-400 mb-3">
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-              </div>
-              <p class="text-xs sm:text-sm text-stone-700 italic font-light leading-relaxed mb-4">
-                "Far better than commercial, noisy resorts in Nainital. Stone Heritage is quiet, peaceful, and beautifully maintained. The fiber Wi-Fi worked flawlessly during my work calls, and the evening bonfire under the stars was an unforgettable memory."
-              </p>
-            </div>
-            <div class="pt-4 border-t border-stone-100">
-              <span class="block text-xs font-bold text-primary">Ananya Sengupta</span>
-              <span class="text-[11px] text-stone-400">Gurugram • Verified Google Review</span>
-            </div>
-          </div>
+                <div class="mb-3 flex flex-wrap items-center gap-2">
+                  {review.tag && (
+                    <span class="text-[11px] font-medium text-stone-600 bg-stone-100/90 px-2 py-0.5 rounded">
+                      {review.tag}
+                    </span>
+                  )}
+                  {review.highlight && (
+                    <span class="text-[10px] bg-amber-100/80 text-amber-900 font-semibold px-2 py-0.5 rounded-full">
+                      {review.highlight}
+                    </span>
+                  )}
+                </div>
 
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between">
-            <div>
-              <div class="flex text-amber-400 mb-3">
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
-                <Star className="w-4 h-4 fill-amber-400" />
+                <p class="text-xs sm:text-sm text-stone-700 italic font-light leading-relaxed mb-4 whitespace-pre-line">
+                  "{review.text}"
+                </p>
               </div>
-              <p class="text-xs sm:text-sm text-stone-700 italic font-light leading-relaxed mb-4">
-                "Host Akash and the entire staff treated us like family. Easy highway accessibility with ample safe car parking right outside the cottages. Very convenient base for Kainchi Dham and Chauli Ki Jali excursions."
-              </p>
+
+              <div class="pt-4 border-t border-stone-100 space-y-2">
+                <div class="flex items-center justify-between">
+                  <span class="block text-xs font-bold text-primary">{review.name}</span>
+                  <span class="text-[11px] text-stone-400">{review.timeAgo}</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-[11px] text-stone-500 font-medium">
+                  <span>Rooms <strong class="text-stone-800">{review.rooms}</strong></span>
+                  <span>•</span>
+                  <span>Service <strong class="text-stone-800">{review.service}</strong></span>
+                  <span>•</span>
+                  <span>Location <strong class="text-stone-800">{review.location}</strong></span>
+                </div>
+              </div>
             </div>
-            <div class="pt-4 border-t border-stone-100">
-              <span class="block text-xs font-bold text-primary">Vikramaditya Pant</span>
-              <span class="text-[11px] text-stone-400">Lucknow • Verified Google Review</span>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div class="mt-8 text-center">

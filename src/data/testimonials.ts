@@ -1,5 +1,23 @@
 export const testimonials = [
   {
+    text: "Had an amazing experience at Stone Heritage. Special thanks to Host - Harsh for being such a professional and welcoming host. His communication, confidence, hospitality, and the way he handled everything made the stay feel very comfortable and memorable. The service, atmosphere, and overall facilities were excellent. Definitely one of the best homestay experiences in Mukteshwar – highly recommended! ⭐⭐⭐⭐⭐",
+    name: "Satya Prakash",
+    role: "Google Review",
+    image: ""
+  },
+  {
+    text: "The Stone Heritage Homestay, Mukteshwar is truly a hidden gem. The property is absolutely beautiful, surrounded by serene mountains, old-world charm, and peaceful vibes that instantly make you feel calm and connected to nature. Every corner reflects warmth, heritage, and thoughtful detailing. What made our stay even more special was the exceptional hospitality. The staff is extremely courteous, attentive, and always ready to help with a smile. A special mention to Manager Parul — her grace, professionalism, and personal care towards guests truly stand out. She ensures everything is smooth and makes you feel genuinely welcomed, not just hosted. The food, cleanliness, and overall experience were top-notch. If you’re looking for a soulful stay with comfort, authenticity, and heartfelt service, this place is a must-visit. I would happily return and recommend it to anyone visiting Mukteshwar.",
+    name: "Priyanka Todkari",
+    role: "Google Review",
+    image: ""
+  },
+  {
+    text: "We had a wonderful stay at the hotel. Harsh was a great host, very warm and especially good with kids, which made our stay even more comfortable. The food was delicious, and the room had all the necessary facilities for a cold location, making it cozy and convenient. Parking was easily available, and having a general store and a good restaurant nearby was very helpful. There was also a small trek right next to the property where you could enjoy beautiful sundown views, and the sunrise right from the lawn area was absolutely stunning. Overall, it was a very pleasant and hassle-free stay!",
+    name: "Manish Joshi",
+    role: "Google Review",
+    image: ""
+  },
+  {
     text: "best homestay located very close to mukteshwar Uttarakhand, india. Good for relaxation and Styacation",
     name: "Neel Infinity",
     role: "Google Review",

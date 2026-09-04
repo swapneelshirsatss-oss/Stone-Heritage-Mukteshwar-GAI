@@ -6,10 +6,28 @@ const canonicalUrl = "https://thestoneheritage.in/volunteer-work-exchange-muktes
 const pageTitle = "Content Creator Work Exchange in Mukteshwar | Stone Heritage";
 const pageDescription = "Join our content creator & volunteer work exchange in Mukteshwar. Exchange photography, videography, blogging & design skills for a stay in Uttarakhand.";
 
-const faqSchemaData = {
+const pageSchemaData = {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/#webpage",
+      "url": canonicalUrl,
+      "name": pageTitle,
+      "description": pageDescription,
+      "isPartOf": {
+        "@id": "https://thestoneheritage.in/#website"
+      },
+      "about": {
+        "@type": ["BedAndBreakfast", "Resort", "Hotel"],
+        "@id": "https://thestoneheritage.in/#localbusiness",
+        "name": "Stone Heritage Mukteshwar"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/#faq",
+      "mainEntity": [
     {
       "@type": "Question",
       "name": "How long is the content creator work exchange program?",
@@ -51,6 +69,8 @@ const faqSchemaData = {
       }
     }
   ]
+    }
+  ]
 };
 ---
 
@@ -58,7 +78,7 @@ const faqSchemaData = {
   title={pageTitle} 
   description={pageDescription}
   canonicalUrl={canonicalUrl}
-  schema={faqSchemaData}
+  schema={pageSchemaData}
 >
   <Volunteer client:load />
 </Layout>
