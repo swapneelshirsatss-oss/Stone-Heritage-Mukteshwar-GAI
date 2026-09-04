@@ -23,7 +23,9 @@
 ---
 
 ## 3. SEO & Rich Snippets Standards
-- **Structured Data**: `LodgingBusiness`, `BedAndBreakfast` or `Hotel`, `BreadcrumbList`, and `FAQPage`.
+- **Structured Data**: `["BedAndBreakfast", "Resort", "Hotel"]` (omit generic `LodgingBusiness`), `BreadcrumbList`, `FAQPage`, `ContactPage`, and `Review`.
+- **Entity Brand Aliasing**: Maintain `alternateName` arrays containing "Stone Heritage Resort", "Stone Heritage", and "Stone Heritage Homestay" across `WebSite` and root business schemas.
+- **Review Veracity**: All displayed guest testimonials must reflect verbatim Google Reviews with authentic reviewer names, dates, and sub-score metrics (Rooms, Service, Location).
 - **Search Directives**:
   - Trailing slash consistency as configured in `astro.config.mjs`.
   - Maintain verified IndexNow key in `public/` for real-time search engine crawling.
