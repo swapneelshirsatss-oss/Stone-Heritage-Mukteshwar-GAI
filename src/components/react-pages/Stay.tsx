@@ -4,15 +4,15 @@ import { OptimizedImage } from '../../components/OptimizedImage';
 import { Wifi, UtensilsCrossed, Mountain, Castle, Dog, Camera, Sparkles } from 'lucide-react';
 
 const rooms = [
-  { name: "Brass Room", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples & Small Families", view: "Mountain View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
-  { name: "Copper Room", capacity: "2-4 Guests", bedType: "King Bed + Single", idealFor: "Families", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/copper-room.webp", alt: "Spacious Copper Room interior, perfect for families visiting Stone Heritage homestay" },
-  { name: "The Vintage Room", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples", view: "Valley View", amenities: "Heritage Architecture, Wi-Fi", image: "/images/rooms/vintage-room.webp", alt: "The Vintage Room showing classic heritage architecture and cozy bedding" },
-  { name: "Stonewood Family Retreat", capacity: "4-6 Guests", bedType: "2 King Beds", idealFor: "Families & Multi-Generational Groups", view: "Panoramic View", amenities: "Private Balcony, Wi-Fi", image: "/images/rooms/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king beds for multi-generational stays" },
-  { name: "Stone and Story Suite", capacity: "2-3 Guests", bedType: "King Bed", idealFor: "Couples", view: "Mountain View", amenities: "Premium Setup, Wi-Fi", image: "/images/rooms/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort and a relaxing atmosphere in Mukteshwar" },
-  { name: "Iron Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Couples", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/iron-room.webp", alt: "Cozy Iron Room setup, ideal for couples staying at Stone Heritage" },
-  { name: "Cedar Room", capacity: "2 Guests", bedType: "King Bed", idealFor: "Solo Travellers", view: "Forest View", amenities: "Wooden Paneling, Wi-Fi", image: "/images/rooms/cedar-room.webp", alt: "Cedar Room interior with beautiful wooden paneling and natural light" },
-  { name: "Himalayan Workation", capacity: "1-2 Guests", bedType: "Workstation Setup", idealFor: "Remote Workers & Solo Travellers", view: "Himalayan View", amenities: "High-Speed Wi-Fi, Desk", image: "/images/property/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace space perfect for a Himalayan workation at Stone Heritage" },
-  { name: "Stone Cottage Room", capacity: "2-4 Guests", bedType: "King Bed", idealFor: "Families & Couples", view: "Sunset & Mountain View", amenities: "Private Terrace, Wi-Fi", image: "/images/property/homestay-in-mukteshwar.webp", alt: "Stone Cottage Room featuring private terrace and panoramic mountain views" }
+  { name: "Brass Room", capacity: "2-3 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Small Families", view: "Mountain View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
+  { name: "Copper Room", capacity: "2-4 Guests", bedType: "1 King Size Bed + Sofa cum 1 bed", idealFor: "Families", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/copper-room.webp", alt: "Spacious Copper Room interior with king bed and sofa cum bed, perfect for families" },
+  { name: "Vintage Stone Room", capacity: "2-3 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Small Families", view: "Valley View", amenities: "Heritage Architecture, Wi-Fi", image: "/images/rooms/vintage-room.webp", alt: "Vintage Stone Room showing classic heritage architecture and cozy king bedding" },
+  { name: "Iron Room", capacity: "2 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Peace Seekers", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/iron-room.webp", alt: "Cozy Iron Room setup with 1 King Size Bed, ideal for couples staying at Stone Heritage" },
+  { name: "Cedar Room", capacity: "2 Guests", bedType: "1 Queen Size Bed", idealFor: "Couples & Solo Travellers", view: "Forest View", amenities: "Wooden Paneling, Wi-Fi", image: "/images/rooms/cedar-room.webp", alt: "Cedar Room interior with 1 Queen Size Bed, beautiful wooden paneling and natural light" },
+  { name: "Stonewood Family Retreat", capacity: "4-6 Guests", bedType: "2 King Size Beds", idealFor: "Families & Multi-Generational Groups", view: "Panoramic View", amenities: "Private Balcony, Wi-Fi", image: "/images/rooms/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king size beds for multi-generational stays" },
+  { name: "Stone and Story Room", capacity: "2-3 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Heritage Lovers", view: "Mountain View", amenities: "Premium Setup, Wi-Fi", image: "/images/rooms/stone-and-story-suite-homestay.webp", alt: "Stone and Story Room offering 1 King Size Bed and premium comfort in Mukteshwar" },
+  { name: "Himalayan Workation Room", capacity: "1-2 Guests", bedType: "Workstation Setup", idealFor: "Remote Workers & Solo Travellers", view: "Himalayan View", amenities: "High-Speed Wi-Fi, Desk", image: "/images/property/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace and dedicated workspace for a Himalayan workation at Stone Heritage" },
+  { name: "Stone Cottage Room", capacity: "2-4 Guests", bedType: "1 King Size Bed", idealFor: "Families & Couples", view: "Sunset & Mountain View", amenities: "Private Terrace, Wi-Fi", image: "/images/property/homestay-in-mukteshwar.webp", alt: "Stone Cottage Room featuring 1 King Size Bed, private terrace and panoramic mountain views" }
 ];
 
 export function Stay() {
@@ -44,6 +44,17 @@ export function Stay() {
               <a href="/blog/delhi-to-mukteshwar-road-trip/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">
                 Delhi to Mukteshwar Road Trip →
               </a>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-3 max-w-3xl mx-auto mb-6 text-xs sm:text-sm">
+              <span className="px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-800 border border-stone-200 font-medium">
+                🕒 Check-in: <strong>13:00 PM</strong>
+              </span>
+              <span className="px-3.5 py-1.5 rounded-full bg-stone-100 text-stone-800 border border-stone-200 font-medium">
+                🕚 Check-out: <strong>11:00 AM</strong>
+              </span>
+              <span className="px-3.5 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200 font-medium">
+                ☕ Fresh Food & Breakfast Available (100% Pure Veg)
+              </span>
             </div>
             <h2 className="text-3xl font-bold text-primary mb-6">Boutique Accommodations at Stone Heritage</h2>
             
@@ -176,9 +187,9 @@ export function Stay() {
               <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-4">
                 <UtensilsCrossed className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-primary mb-2">Home-Cooked Kumaoni Meals</h3>
+              <h3 className="text-xl font-bold text-primary mb-2">Fresh Food & Breakfast Available</h3>
               <p className="text-primary/70 text-sm leading-relaxed">
-                Delicious, freshly prepared organic home-style vegetarian dining tailored for families, couples, and long-stay guests.
+                Freshly prepared home-cooked breakfast and meals daily from our 100% pure vegetarian kitchen, featuring North Indian comfort dishes and authentic Kumaoni recipes.
               </p>
             </div>
 
@@ -224,9 +235,10 @@ export function Stay() {
             <div className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl mx-auto font-medium">
               <p className="mb-4">Get the best rates, complimentary upgrades (subject to availability), and personalized service when you bypass OTAs and book directly with us.</p>
               <ul className="text-left max-w-md mx-auto list-disc pl-5 space-y-2 mb-6">
-                <li>Best price guarantee</li>
-                <li>Priority room allocation</li>
-                <li>Direct contact: +91 9027844424</li>
+                <li>Best price guarantee & priority allocation</li>
+                <li>Standard Check-in: 13:00 PM • Check-out: 11:00 AM</li>
+                <li>Fresh home-cooked food & breakfast available</li>
+                <li>Direct host contact: +91 9027844424</li>
                 <li>Location: Bhowali Dhanachuli Rd, Mukteshwar, Uttarakhand 263138</li>
               </ul>
             </div>

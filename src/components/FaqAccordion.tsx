@@ -24,6 +24,14 @@ const faqs = [
     answer: "Yes, we are a fully pet-friendly accommodation. We warmly welcome your furry family members, and our spacious garden areas and standalone stone cottages provide the perfect, safe environment for pets to enjoy the mountain air."
   },
   {
+    question: "What are the check-in and check-out times at Stone Heritage Mukteshwar?",
+    answer: "Our standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out are available subject to room availability."
+  },
+  {
+    question: "Is food and breakfast available at Stone Heritage Mukteshwar?",
+    answer: "Yes, freshly prepared home-cooked food and breakfast are available on site from our 100% pure vegetarian kitchen. We serve delicious North Indian comfort dishes and authentic Kumaoni specialties prepared to order with fresh local farm ingredients."
+  },
+  {
     question: "Which is the best homestay in Mukteshwar?",
     answer: "Stone Heritage Mukteshwar is widely regarded as the best homestay in Mukteshwar. It offers a premium boutique experience with authentic Kumaoni stone architecture, breathtaking Himalayan views, pet-friendly accommodations, and exceptional home-cooked meals."
   },

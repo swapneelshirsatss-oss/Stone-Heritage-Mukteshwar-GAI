@@ -17,7 +17,7 @@ const contactFaqs = [
   },
   {
     q: "4. What is included in a stay at Stone Heritage homestay in Mukteshwar?",
-    a: "A stay includes accommodation in heritage stone cottage rooms, Wi-Fi, and access to on-site experiences such as bonfires, BBQ nights, and stargazing. Breakfast is not included in the room rate but is available on request for an additional charge."
+    a: "A stay includes accommodation in heritage stone cottage rooms, high-speed Wi-Fi, and access to on-site lawn grounds, bonfire setups, and stargazing areas. Freshly prepared home-cooked food and breakfast are available on site from our 100% pure vegetarian kitchen."
   },
   {
     q: "5. Is Stone Heritage a good homestay in Mukteshwar for families with kids?",
@@ -64,8 +64,8 @@ const contactFaqs = [
     a: "Yes. Booking directly with Stone Heritage — via WhatsApp, phone, or email — offers the best available rates, along with complimentary upgrades (subject to availability) and priority room allocation, compared to booking through third-party OTA platforms."
   },
   {
-    q: "16. What is the cancellation policy at Stone Heritage?",
-    a: "Cancellations made at least 24 hours before check-in time are eligible for a 100% refund, with no cancellation charges."
+    q: "16. What are the check-in and check-out times, and cancellation policy at Stone Heritage?",
+    a: "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out are available subject to room availability. Cancellations made at least 24 hours before check-in time are eligible for a 100% refund, with no cancellation charges."
   },
   {
     q: "17. Is Stone Heritage a pet-friendly homestay in Mukteshwar?",
@@ -80,8 +80,8 @@ const contactFaqs = [
     a: "Yes. The Himalayan Workation room offers a dedicated workstation setup with high-speed Wi-Fi, well suited to remote work stays. Workation packages require a minimum stay of 7 days — contact us directly for pricing."
   },
   {
-    q: "20. What food is served at Stone Heritage — is it vegetarian or Kumaoni cuisine?",
-    a: "Stone Heritage serves pure vegetarian, home-cooked meals prepared with fresh local ingredients, rooted in authentic Kumaoni cuisine."
+    q: "20. What food and breakfast options are available at Stone Heritage?",
+    a: "Fresh home-cooked food and breakfast are available on site daily from our 100% pure vegetarian kitchen. We serve delicious North Indian comfort meals and authentic Kumaoni regional dishes prepared fresh with local ingredients."
   }
 ];
 

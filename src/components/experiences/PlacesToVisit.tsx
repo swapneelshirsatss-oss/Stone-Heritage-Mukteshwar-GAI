@@ -22,13 +22,22 @@ const placesToVisit = [
     alt: "Hidden 60-foot water plunge into a pristine clear pool at Bhalu Gaad Waterfall near Mukteshwar"
   },
   {
-    name: "Pilgrimage to Mukteshwar Dham Temple & Kainchi Dham",
-    description: "Visit the ancient 350-year-old Lord Shiva temple atop Mukteshwar hill peak and the renowned Neem Karoli Baba Ashram at Kainchi Dham for deep spiritual peace.",
-    distance: "Short drive from property / 40 km to Kainchi Dham",
-    activities: "Spiritual reflection, meditation, and seeking blessings.",
-    tips: "Visit early morning for peaceful darshan.",
+    name: "Mukteshwar Dham Temple",
+    description: "An ancient 350-year-old Lord Shiva temple perched atop the highest ridge in Mukteshwar at 7,500 ft. Surrounded by whispering pine and deodar forests, it offers divine tranquility, sacred Kumaoni stone architecture, and sweeping 360° views of the Himalayan range.",
+    distance: "8.2 km from property (approx. 15–20 mins drive)",
+    activities: "Spiritual darshan, meditation, heritage architecture, and sunrise panoramic views.",
+    tips: "Visit early morning before 8 AM for peaceful darshan and crystal-clear Himalayan views.",
+    image: "/images/experiences/Uttarakhand-Nainital-Mukteshwar-Temple.webp",
+    alt: "Historic 350-year-old Mukteshwar Dham Shiva Temple atop the mountain ridge in Mukteshwar, Uttarakhand"
+  },
+  {
+    name: "Kainchi Dham Ashram (Neem Karoli Baba)",
+    description: "The world-renowned spiritual ashram established by Neem Karoli Baba in 1962, nestled beside a mountain stream in the lush Bhowali valley. A sacred sanctuary for meditation, quiet reflection, and spiritual peace attracting travelers from across the globe.",
+    distance: "Approx. 39 km from property (approx. 75 mins drive)",
+    activities: "Spiritual reflection, prayer, aarti, and serene meditation.",
+    tips: "Visit early morning on weekdays to avoid weekend crowds. Dress modestly for temple visits.",
     image: "/images/experiences/Kainchi_dham_mukteshwar.webp",
-    alt: "Spiritual pilgrimage destinations Mukteshwar Dham and Kainchi Dham Ashram"
+    alt: "Kainchi Dham Neem Karoli Baba spiritual ashram and temple near Mukteshwar"
   },
   {
     name: "Nanda Devi Peak Viewpoint",

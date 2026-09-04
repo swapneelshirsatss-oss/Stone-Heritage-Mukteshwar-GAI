@@ -30,9 +30,9 @@ const schemaData = {
           "item": {
             "@type": "HotelRoom",
             "name": "Brass Room",
-            "description": "King Bed room with mountain view, en-suite bathroom and Wi-Fi.",
+            "description": "1 King Size Bed room with mountain view, en-suite bathroom and Wi-Fi.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed" },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" },
             "amenityFeature": [
               { "@type": "LocationFeatureSpecification", "name": "En-suite Bathroom", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
@@ -46,9 +46,9 @@ const schemaData = {
           "item": {
             "@type": "HotelRoom",
             "name": "Copper Room",
-            "description": "King Bed + Single Bed room with garden view, en-suite bathroom and Wi-Fi, suited for families.",
+            "description": "1 King Size Bed + Sofa cum 1 bed with garden view, en-suite bathroom and Wi-Fi, suited for families.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed + Single Bed" },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed + Sofa cum 1 bed" },
             "amenityFeature": [
               { "@type": "LocationFeatureSpecification", "name": "En-suite Bathroom", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
@@ -61,10 +61,10 @@ const schemaData = {
           "position": 3,
           "item": {
             "@type": "HotelRoom",
-            "name": "The Vintage Room",
-            "description": "King Bed room with valley view, featuring heritage architecture and Wi-Fi.",
+            "name": "Vintage Stone Room",
+            "description": "1 King Size Bed room with valley view, featuring authentic heritage stone architecture and Wi-Fi.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed" },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" },
             "amenityFeature": [
               { "@type": "LocationFeatureSpecification", "name": "Heritage Architecture", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
@@ -77,42 +77,10 @@ const schemaData = {
           "position": 4,
           "item": {
             "@type": "HotelRoom",
-            "name": "Stonewood Family Retreat",
-            "description": "2 King Bed suite with panoramic view and private balcony, ideal for multi-generational family stays.",
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "2 King Beds" },
-            "amenityFeature": [
-              { "@type": "LocationFeatureSpecification", "name": "Private Balcony", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Panoramic View", "value": true }
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "HotelRoom",
-            "name": "Stone and Story Suite",
-            "description": "King Bed suite with mountain view and a premium room setup.",
-            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed" },
-            "amenityFeature": [
-              { "@type": "LocationFeatureSpecification", "name": "Premium Setup", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
-              { "@type": "LocationFeatureSpecification", "name": "Mountain View", "value": true }
-            ]
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "HotelRoom",
             "name": "Iron Room",
-            "description": "King Bed room with garden view, en-suite bathroom and Wi-Fi.",
+            "description": "1 King Size Bed room with garden view, en-suite bathroom and Wi-Fi.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed" },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" },
             "amenityFeature": [
               { "@type": "LocationFeatureSpecification", "name": "En-suite Bathroom", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
@@ -122,13 +90,13 @@ const schemaData = {
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 5,
           "item": {
             "@type": "HotelRoom",
             "name": "Cedar Room",
-            "description": "King Bed room with forest view and wooden paneling, well suited for solo travellers.",
+            "description": "1 Queen Size Bed room with forest view and aromatic wooden paneling, well suited for couples or solo travellers.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed" },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 Queen Size Bed" },
             "amenityFeature": [
               { "@type": "LocationFeatureSpecification", "name": "Wooden Paneling", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
@@ -138,10 +106,42 @@ const schemaData = {
         },
         {
           "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": ["HotelRoom", "Suite"],
+            "name": "Stonewood Family Retreat",
+            "description": "2 King Size Beds suite with panoramic view, living lounge, and private balcony, ideal for multi-generational family stays.",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
+            "bed": { "@type": "BedDetails", "typeOfBed": "2 King Size Beds" },
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Private Balcony", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Panoramic View", "value": true }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "HotelRoom",
+            "name": "Stone and Story Room",
+            "description": "1 King Size Bed room with mountain view, cedar wood interiors, and premium room setup.",
+            "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" },
+            "amenityFeature": [
+              { "@type": "LocationFeatureSpecification", "name": "Premium Setup", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+              { "@type": "LocationFeatureSpecification", "name": "Mountain View", "value": true }
+            ]
+          }
+        },
+        {
+          "@type": "ListItem",
           "position": 8,
           "item": {
             "@type": "HotelRoom",
-            "name": "Himalayan Workation",
+            "name": "Himalayan Workation Room",
             "description": "Dedicated workstation setup with high-speed Wi-Fi and a Himalayan view, designed for remote-work stays.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
             "bed": { "@type": "BedDetails", "typeOfBed": "Workstation Setup" },
@@ -158,9 +158,9 @@ const schemaData = {
           "item": {
             "@type": "HotelRoom",
             "name": "Stone Cottage Room",
-            "description": "King Bed stone cottage featuring private terrace balcony and panoramic sunset & mountain views.",
+            "description": "1 King Size Bed standalone stone cottage featuring private sunset terrace balcony and panoramic mountain views.",
             "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
-            "bed": { "@type": "BedDetails", "typeOfBed": "King Bed" },
+            "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" },
             "amenityFeature": [
               { "@type": "LocationFeatureSpecification", "name": "Private Terrace", "value": true },
               { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },

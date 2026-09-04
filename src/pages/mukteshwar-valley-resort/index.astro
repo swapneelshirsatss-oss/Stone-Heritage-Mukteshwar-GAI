@@ -93,7 +93,10 @@ const lodgingSchema = {
         }
       ],
       "priceRange": "₹₹ - ₹₹₹",
+      "checkinTime": "13:00",
+      "checkoutTime": "11:00",
       "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Fresh Food & Breakfast Available", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "180° Himalayan View", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Free High-Speed Fiber Wi-Fi", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "100% Pure Vegetarian Dining", "value": true },
@@ -183,6 +186,22 @@ const lodgingSchema = {
             "@type": "Answer",
             "text": "Booking directly at booking.thestoneheritage.in guarantees the best available price with up to 20% savings compared to third-party OTA portals, priority room allocation, direct host communication, and flexible check-in support."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the standard check-in and check-out times at Stone Heritage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out are available upon request, subject to availability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is food and breakfast available on site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, freshly prepared home-cooked food and breakfast are available daily on site. Our 100% pure vegetarian kitchen prepares authentic Kumaoni dishes and delicious North Indian comfort meals fresh to order."
+          }
         }
       ]
     }
@@ -191,44 +210,76 @@ const lodgingSchema = {
 
 const rooms = [
   {
-    name: "Stonewood Family Retreat",
-    category: "Signature Valley Suite",
-    occupancy: "Up to 6 Guests • 2 King Beds",
-    description: "Our premier family suite featuring handcrafted stone masonry, warm timber ceilings, an expansive living lounge, and a private valley balcony offering uninterrupted Himalayan sunrise views.",
-    image: "/images/rooms/stonewood-family-retreat.webp",
-    features: ["2 King Beds", "Private Valley Balcony", "Separate Living Lounge", "En-suite Bathroom", "High-Speed Wi-Fi"]
-  },
-  {
-    name: "Sunset Heritage Cottage",
-    category: "Standalone Cottage",
-    occupancy: "Up to 4 Guests • 1 King Bed + Lounge",
-    description: "A private standalone stone cottage with a dedicated sunset terrace overlooking the South Gola Valley. Crafted with antique Kumaoni woodwork and serene ambient lighting.",
-    image: "/images/property/mountain-living-best-homestay-Mukteshwar.webp",
-    features: ["Private Sunset Terrace", "Valley Panoramic Views", "Cozy Wooden Interiors", "Modern Heating Options", "Fiber Wi-Fi"]
-  },
-  {
-    name: "Vintage Stone Room",
-    category: "Heritage Stone Room",
-    occupancy: "Up to 3 Guests • 1 King Bed",
-    description: "Showcasing raw chiseled stone walls that naturally retain warmth, large glass windows capturing golden morning sunlight across the peaks, and handcrafted wooden furniture.",
-    image: "/images/rooms/vintage-room.webp",
-    features: ["Chiseled Stone Architecture", "Himalayan Sunrise Window", "En-suite Bath", "Work Desk", "Fiber Wi-Fi"]
+    name: "Brass Room",
+    category: "Heritage Mountain Room",
+    occupancy: "Up to 3 Guests • 1 King Size Bed",
+    description: "Elegantly finished with brass accents, cedar wood trims, and panoramic picture windows looking out onto the pine canopy and snow-clad Himalayan peaks.",
+    image: "/images/rooms/brass-room-homestay-in-mukteshwar.webp",
+    features: ["1 King Size Bed", "Himalayan Sunrise Window", "Brass Accent Heritage Decor", "En-suite Bathroom", "High-Speed Wi-Fi"]
   },
   {
     name: "Copper Room",
-    category: "Family Garden Room",
-    occupancy: "Up to 4 Guests • 1 King + 1 Single Bed",
-    description: "Sun-drenched family haven with direct access to garden lawns. Designed with warm earth tones, premium linen bedding, and quiet mountain tranquility.",
+    category: "Spacious Family Room",
+    occupancy: "Up to 4 Guests • 1 King Size Bed + Sofa cum 1 bed",
+    description: "Sun-drenched family haven with direct access to peaceful garden lawns. Designed with warm earth tones, premium linen bedding, and quiet mountain tranquility.",
     image: "/images/rooms/copper-room.webp",
-    features: ["1 King Bed + 1 Single Bed", "Garden & Valley Outlook", "Child-Safe Ground Access", "En-suite Bathroom", "Fiber Wi-Fi"]
+    features: ["1 King Size Bed + Sofa cum 1 bed", "Direct Garden Access", "Valley Outlook", "En-suite Bathroom", "Fiber Wi-Fi"]
   },
   {
-    name: "Brass Room",
+    name: "Vintage Stone Room",
+    category: "Heritage Stone Cottage",
+    occupancy: "Up to 3 Guests • 1 King Size Bed",
+    description: "Showcasing authentic hand-chiseled stone walls that naturally regulate indoor temperature, large glass windows capturing golden valley morning light, and handcrafted timber furnishings.",
+    image: "/images/rooms/vintage-room.webp",
+    features: ["1 King Size Bed", "Authentic Stone Architecture", "Valley View Windows", "En-suite Bath", "Fiber Wi-Fi"]
+  },
+  {
+    name: "Iron Room",
     category: "Deluxe Mountain Room",
-    occupancy: "Up to 3 Guests • 1 King Bed",
-    description: "Elegantly finished with brass accents, cedar wood trims, and panoramic picture windows looking out onto the valley pine canopy and snow-clad Himalayan peaks.",
-    image: "/images/rooms/brass-room-homestay-in-mukteshwar.webp",
-    features: ["Brass Accent Heritage Decor", "Himalayan View Window", "Modern Rain Shower", "Work Desk", "High-Speed Wi-Fi"]
+    occupancy: "Up to 2 Guests • 1 King Size Bed",
+    description: "A quiet and intimate retreat framed by rich metallic detailing and natural wooden finishes, featuring scenic mountain valley windows and modern en-suite conveniences.",
+    image: "/images/rooms/iron-room.webp",
+    features: ["1 King Size Bed", "Mountain Valley Windows", "Quiet & Peaceful Location", "En-suite Bathroom", "Fiber Wi-Fi"]
+  },
+  {
+    name: "Cedar Room",
+    category: "Cozy Heritage Deluxe",
+    occupancy: "Up to 2 Guests • 1 Queen Size Bed",
+    description: "Intimate heritage hideaway crafted with aromatic mountain cedar wood paneling, peaceful forest and sunrise vistas, a private en-suite bathroom, and a dedicated work desk.",
+    image: "/images/rooms/cedar-room.webp",
+    features: ["1 Queen Size Bed", "Aromatic Cedar Paneling", "Forest & Sunrise Views", "En-suite Bathroom", "Fiber Wi-Fi"]
+  },
+  {
+    name: "Stonewood Family Retreat",
+    category: "Signature Valley Suite",
+    occupancy: "Up to 6 Guests • 2 King Size Beds",
+    description: "Our premier family suite featuring handcrafted stone masonry, warm timber ceilings, an expansive living lounge, and a private valley balcony offering uninterrupted Himalayan sunrise views.",
+    image: "/images/rooms/stonewood-family-retreat.webp",
+    features: ["2 King Size Beds", "Private Valley Balcony", "Separate Living Lounge", "En-suite Bathroom", "High-Speed Wi-Fi"]
+  },
+  {
+    name: "Stone and Story Room",
+    category: "Heritage Story Suite",
+    occupancy: "Up to 3 Guests • 1 King Size Bed",
+    description: "Character-rich cottage room adorned with handcrafted Kumaoni woodwork and stonework, offering scenic mountain views, warm ambient lighting, and bespoke heritage comfort.",
+    image: "/images/rooms/stone-and-story-suite-homestay.webp",
+    features: ["1 King Size Bed", "Bespoke Heritage Woodwork", "Mountain View Window", "En-suite Bathroom", "Fiber Wi-Fi"]
+  },
+  {
+    name: "Himalayan Workation Room",
+    category: "Panoramic Workstation",
+    occupancy: "Up to 2 Guests • Workstation Setup",
+    description: "Designed for digital nomads and productive getaways, featuring a dedicated work desk, blazing-fast fiber Wi-Fi, and inspiring 180° panoramic Himalayan terrace vistas.",
+    image: "/images/property/himalayan-view-terrace-mukteshwar.webp",
+    features: ["Dedicated Work Desk", "High-Speed Fiber Wi-Fi", "180° Himalayan Mountain View", "Outdoor Terrace Access", "Power Backup"]
+  },
+  {
+    name: "Stone Cottage Room",
+    category: "Standalone Heritage Cottage",
+    occupancy: "Up to 4 Guests • 1 King Size Bed",
+    description: "A private standalone stone cottage with a dedicated sunset terrace overlooking the valley. Crafted with antique Kumaoni woodwork, cozy interiors, and panoramic vistas.",
+    image: "/images/property/mountain-living-best-homestay-Mukteshwar.webp",
+    features: ["1 King Size Bed", "Private Sunset Terrace", "Valley Panoramic Views", "Cozy Wooden Interiors", "Fiber Wi-Fi"]
   }
 ];
 
@@ -295,6 +346,14 @@ const faqs = [
   {
     q: "Why is booking directly on your website recommended?",
     a: "Direct booking at booking.thestoneheritage.in gives you up to 20% lower pricing than third-party platforms, transparent billing with zero OTA commissions, direct communication with host Akash, priority cottage selection, and complimentary evening courtyard bonfires."
+  },
+  {
+    q: "What are the check-in and check-out times at Stone Heritage?",
+    a: "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out can be accommodated subject to availability upon request."
+  },
+  {
+    q: "Is food and breakfast available for resort guests?",
+    a: "Yes! Freshly cooked, pure vegetarian food and hearty mountain breakfast are available on site. We serve delicious home-style North Indian meals and authentic Kumaoni dishes prepared fresh with local ingredients."
   }
 ];
 

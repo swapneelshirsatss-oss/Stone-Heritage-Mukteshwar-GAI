@@ -139,6 +139,11 @@ const structuredData = {
         },
         {
           "@type": "LocationFeatureSpecification",
+          "name": "Fresh Food & Breakfast Available",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
           "name": "Pure Vegetarian Home-Cooked Kumaoni Meals",
           "value": true
         },
@@ -153,8 +158,8 @@ const structuredData = {
           "value": true
         }
       ],
-      "checkinTime": "12:00",
-      "checkoutTime": "10:00",
+      "checkinTime": "13:00",
+      "checkoutTime": "11:00",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -180,66 +185,67 @@ const structuredData = {
       ],
       "containsPlace": [
         {
-          "@type": ["HotelRoom", "Suite"],
-          "name": "Stonewood Family Retreat",
-          "description": "Premium group or family retreat with 2 King Beds, private living lounge, and mountain view balcony.",
-          "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "2 King Beds" }
+          "@type": "HotelRoom",
+          "name": "Brass Room",
+          "description": "Charming heritage mountain room featuring 1 King Size Bed, mountain views, and modern comforts.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Copper Room",
-          "description": "Spacious family room with 1 King Bed and 1 Single Bed with valley view balcony.",
+          "description": "Spacious family room featuring 1 King Size Bed + Sofa cum 1 bed with peaceful garden and valley outlook.",
           "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed, 1 Single Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Brass Room",
-          "description": "Charming suite featuring 1 King Bed with quad-bed floor mattress options.",
-          "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed + Sofa cum 1 bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Vintage Stone Room",
-          "description": "Authentic stone masonry cottage room featuring 1 King Bed.",
+          "description": "Authentic stone masonry cottage room featuring 1 King Size Bed and valley views.",
           "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Stone and Story Room",
-          "description": "Cedar wood interiors cottage featuring 1 King Bed.",
-          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Iron Room",
-          "description": "Deluxe room with mountain valley windows and 1 King Bed.",
-          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
+          "description": "Deluxe room with mountain valley windows and 1 King Size Bed.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" }
         },
         {
           "@type": "HotelRoom",
           "name": "Cedar Room",
-          "description": "Cozy deluxe room with wooden paneling and 1 Queen Bed.",
+          "description": "Cozy heritage deluxe room with aromatic wooden paneling and 1 Queen Size Bed.",
           "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 Queen Bed" }
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 Queen Size Bed" }
+        },
+        {
+          "@type": ["HotelRoom", "Suite"],
+          "name": "Stonewood Family Retreat",
+          "description": "Premium multi-generational family retreat with 2 King Size Beds, private living lounge, and mountain view balcony.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 6 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "2 King Size Beds" }
         },
         {
           "@type": "HotelRoom",
-          "name": "Sunset Heritage Cottage",
-          "description": "Standalone cottage featuring private sunset terrace balcony and 1 King Bed.",
+          "name": "Stone and Story Room",
+          "description": "Cedar wood interiors cottage featuring 1 King Size Bed and mountain views.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" }
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Himalayan Workation Room",
+          "description": "Dedicated workstation setup with high-speed fiber Wi-Fi and Himalayan mountain views.",
+          "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
+          "bed": { "@type": "BedDetails", "typeOfBed": "Workstation Setup" }
+        },
+        {
+          "@type": "HotelRoom",
+          "name": "Stone Cottage Room",
+          "description": "Standalone stone cottage featuring private terrace balcony, 1 King Size Bed, and panoramic mountain views.",
           "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
-          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Bed" }
-        },
-        {
-          "@type": "HotelRoom",
-          "name": "Himalayan Workation",
-          "description": "Dedicated workstation setup with high-speed fiber Wi-Fi and mountain views.",
-          "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 }
+          "bed": { "@type": "BedDetails", "typeOfBed": "1 King Size Bed" }
         }
       ],
       "potentialAction": {
@@ -315,6 +321,36 @@ const structuredData = {
             "text": "You can book directly by calling or messaging +91-9027844424 or through official booking engine at booking.thestoneheritage.in to save up to 20% compared to OTA platforms.",
             "datePublished": "2026-08-05",
             "upvoteCount": 18,
+            "author": {
+              "@type": "Organization",
+              "name": "Stone Heritage Mukteshwar"
+            }
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the check-in and check-out times at Stone Heritage Mukteshwar?",
+          "answerCount": 1,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out are subject to availability upon request.",
+            "datePublished": "2026-08-05",
+            "upvoteCount": 16,
+            "author": {
+              "@type": "Organization",
+              "name": "Stone Heritage Mukteshwar"
+            }
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is food and breakfast available at Stone Heritage Mukteshwar?",
+          "answerCount": 1,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, freshly prepared home-cooked food and breakfast are available on site from our 100% pure vegetarian kitchen. We serve authentic Pahadi Kumaoni delicacies and wholesome North Indian comfort dishes cooked fresh to order with local ingredients.",
+            "datePublished": "2026-08-05",
+            "upvoteCount": 15,
             "author": {
               "@type": "Organization",
               "name": "Stone Heritage Mukteshwar"
