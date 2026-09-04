@@ -1,0 +1,91 @@
+---
+import { Phone, MessageCircle, CalendarCheck } from 'lucide-react';
+
+interface Props {
+  phone?: string;
+  whatsappNumber?: string;
+  bookingUrl?: string;
+  whatsappText?: string;
+}
+
+const {
+  phone = "+919027844424",
+  whatsappNumber = "919027844424",
+  bookingUrl = "https://booking.thestoneheritage.in/",
+  whatsappText = "Hi! I am inquiring about availability and direct rates for Stone Heritage Mukteshwar Valley Resort."
+} = Astro.props;
+
+const cleanPhone = phone.replace(/[^+\d]/g, '');
+const encodedWaText = encodeURIComponent(whatsappText);
+const waUrl = `https://wa.me/${whatsappNumber}?text=${encodedWaText}`;
+---
+
+<!-- Persistent Mobile Conversion Bar (Sticky Bottom) -->
+<aside 
+  class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-stone-900/95 backdrop-blur-md border-t border-stone-800 shadow-[0_-4px_20px_rgba(0,0,0,0.25)] px-3 py-2.5 pb-[calc(0.625rem+env(safe-area-inset-bottom,0px))]"
+  aria-label="Quick booking and contact actions"
+>
+  <div class="grid grid-cols-12 gap-2 items-center max-w-md mx-auto">
+    <!-- Quick Call Button -->
+    <a 
+      href={`tel:${cleanPhone}`}
+      class="col-span-3 flex flex-col items-center justify-center py-1 px-1 rounded-lg bg-stone-800/90 text-stone-200 hover:text-white hover:bg-stone-700/90 transition-all active:scale-95 text-center"
+      aria-label="Call front desk directly"
+      id="mobile-action-call"
+    >
+      <Phone className="w-4 h-4 text-accent mb-0.5" />
+      <span class="text-[10px] font-medium tracking-tight">Call Desk</span>
+    </a>
+
+    <!-- Quick WhatsApp Button -->
+    <a 
+      href={waUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="col-span-3 flex flex-col items-center justify-center py-1 px-1 rounded-lg bg-[#25D366]/15 border border-[#25D366]/30 text-emerald-400 hover:text-white hover:bg-[#25D366]/30 transition-all active:scale-95 text-center"
+      aria-label="Chat with reservation concierge on WhatsApp"
+      id="mobile-action-whatsapp"
+    >
+      <MessageCircle className="w-4 h-4 text-[#25D366] mb-0.5" />
+      <span class="text-[10px] font-medium tracking-tight">WhatsApp</span>
+    </a>
+
+    <!-- Primary Direct Booking Button -->
+    <a 
+      href={bookingUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="col-span-6 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg bg-accent text-white font-semibold text-xs shadow-md hover:bg-accent/90 transition-all active:scale-95 text-center"
+      aria-label="Book cottage stay direct and save"
+      id="mobile-action-book"
+    >
+      <CalendarCheck className="w-4 h-4 shrink-0" />
+      <div class="flex flex-col text-left leading-tight">
+        <span class="font-bold uppercase tracking-wider text-[11px]">Book Direct</span>
+        <span class="text-[9px] text-amber-100/90 font-normal">Save 20% • Best Rate</span>
+      </div>
+    </a>
+  </div>
+</aside>
+
+<script is:inline>
+  (function() {
+    function trackAction(id, eventName, label) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener('click', function() {
+        if (typeof window.dataLayer !== 'undefined') {
+          window.dataLayer.push({
+            event: eventName,
+            category: 'Mobile_Conversion_Bar',
+            action: 'Click',
+            label: label
+          });
+        }
+      });
+    }
+    trackAction('mobile-action-call', 'Phone_Call_Initiated', 'Mobile_Sticky_Call');
+    trackAction('mobile-action-whatsapp', 'WhatsApp_Lead_Initiated', 'Mobile_Sticky_WhatsApp');
+    trackAction('mobile-action-book', 'Booking_Engine_Initiated', 'Mobile_Sticky_BookDirect');
+  })();
+</script>

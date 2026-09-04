@@ -3,6 +3,7 @@ export async function GET({ site }: { site?: URL }) {
 
   const pages = [
     { url: '/', priority: '1.00', changefreq: 'daily' },
+    { url: '/mukteshwar-valley-resort/', priority: '0.95', changefreq: 'weekly' },
     { url: '/stay/', priority: '0.90', changefreq: 'weekly' },
     { url: '/experiences/', priority: '0.85', changefreq: 'weekly' },
     { url: '/our-story/', priority: '0.85', changefreq: 'monthly' },
