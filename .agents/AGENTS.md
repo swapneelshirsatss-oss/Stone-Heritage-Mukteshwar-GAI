@@ -51,3 +51,33 @@
 
 ## 6. Git & Deployment Guardrails
 - **No Auto-Commit / No Auto-Push**: Run local test build (`npm run build`) before pushing. Only commit and push when explicitly requested by user.
+
+---
+
+## 7. Tracking, Analytics & Tag Manager
+- **Container ID (Stone Heritage)**: `GTM-WDVGR88X` (domain: `thestoneheritage.in`)
+  *(Note: Sister property "The Mukteshwar Villa" uses `GTM-PC5P9B63`)*
+- **Astro Inline Requirement**: Always use `<script is:inline>` for GTM and synchronous tracking tags in `src/layouts/Layout.astro` so Astro compiler does not defer or convert them into module bundles.
+
+---
+
+## 8. Deployment Workflow (Direct Hostinger MCP)
+- **Primary Live Deployment**: Use the Hostinger MCP server (`hostinger-hosting`) for zero-friction production deployments (bypasses broken GitHub Actions FTP credentials):
+  1. Compile static bundle: `npm run build`
+  2. Verify assets: `node scripts/verify-assets.mjs`
+  3. Create root-level archive: `Compress-Archive -Path dist/* -DestinationPath dist_TIMESTAMP.zip`
+  4. Deploy via `hosting_deployStaticWebsite` (domain: `thestoneheritage.in`, removeArchive: true)
+  5. Flush cache via `hosting_clearWebsiteCacheV1` (domain: `thestoneheritage.in`, username: `u629155100`)
+  6. Verify live HTTP response via curl.
+- **GitHub Sync**: Commit and push to GitHub `main` only when explicitly requested by user.
+
+---
+
+## 9. Experience & Attraction Asset Synchronization
+When adding or updating local attraction photos in `public/images/experiences/`, sync all 5 touchpoints:
+1. `src/components/home/LocalAttractionsSection.tsx` (Homepage carousel/cards)
+2. `src/data/galleryImages.ts` (Interactive gallery categories)
+3. `src/pages/gallery/index.astro` (Schema.org `ImageGallery` structured data)
+4. `src/content/blog/mukteshwar-ramgarh-travel-guide.md` (Pillar travel guide article)
+5. Run `node scripts/verify-assets.mjs` to ensure zero broken paths.
+
