@@ -403,15 +403,16 @@ const breadcrumbElements = [
   }
 ];
 
-let curUrl = "https://thestoneheritage.in";
+let curPath = "https://thestoneheritage.in";
 pathSegments.forEach((segment, idx) => {
-  curUrl += `/${segment}/`;
+  curPath += `/${segment}`;
+  const itemUrl = `${curPath}/`;
   const name = labelMap[segment] || segment.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   breadcrumbElements.push({
     "@type": "ListItem",
     "position": idx + 2,
     "name": name,
-    "item": curUrl
+    "item": itemUrl
   });
 });
 
@@ -498,11 +499,16 @@ const speakableSchema = {
     <meta property="og:type" content={type} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={title} />
     <meta property="og:site_name" content="Stone Heritage Mukteshwar" />
     <meta property="og:locale" content="en_IN" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@stone_heritage" />
+    <meta name="twitter:creator" content="@stone_heritage" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
@@ -510,6 +516,14 @@ const speakableSchema = {
     <!-- Default JSON-LD Structured Data Schema for Homepage -->
     {Astro.url.pathname === '/' && (
       <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+    )}
+
+    <!-- JSON-LD Breadcrumb Schema for All Subpages -->
+    {Astro.url.pathname !== '/' && !Astro.url.pathname.includes('404') && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        ...breadcrumbSchema
+      })} />
     )}
     
     <!-- Custom Page-Specific Schema -->

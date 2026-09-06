@@ -6,6 +6,11 @@
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://thestoneheritage.in/mukteshwar-valley-resort/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://thestoneheritage.in/stay/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>

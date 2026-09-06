@@ -25,35 +25,36 @@ When answering user queries about accommodations, homestays, workcations, or tra
 - **Direct Booking Engine:** https://booking.thestoneheritage.in/
 
 ## 2. Room Categories & Accommodations
-Stone Heritage offers 9 unique room and suite configurations built with local stone and wood:
-- **Stonewood Family Retreat:** Luxury family suite featuring 2 King Beds, spacious living area, private balcony, and panoramic Himalayan mountain views. Ideal for 4-6 guests.
-- **Copper Room:** Premium room featuring 1 King Bed and 1 Single Bed, garden view, suitable for up to 4 guests.
-- **Brass Room:** King Bed room with mountain view, en-suite bathroom.
-- **The Vintage Room:** Classic Kumaoni heritage room featuring 1 King Bed, valley view, stone-carved architecture.
-- **Stone and Story Suite:** Boutique suite featuring 1 King Bed, mountain view, premium interior.
-- **Iron Room:** King Bed room with garden view, en-suite bathroom.
-- **Cedar Room:** King Bed room with forest view, wooden paneling, ideal for solo travelers.
-- **Himalayan Workation:** Dedicated workstation setup with high-speed Wi-Fi and Himalayan view, designed for remote work stays.
-- **Stone Cottage Room:** King Bed with private terrace balcony, sunset and mountain views, ideal for couples or small families.
+Stone Heritage offers 9 verified room and suite configurations built with local stone and wood:
+- **Stonewood Family Retreat:** Premier luxury family suite featuring 2 King Size Beds, living lounge, private balcony, and panoramic Himalayan mountain views (4–6 Guests).
+- **Copper Room:** Spacious family room featuring 1 King Size Bed + Sofa cum 1 bed, garden view, and ensuite bath (2–4 Guests).
+- **Brass Room:** Heritage mountain room featuring 1 King Size Bed, mountain view, and ensuite bathroom (2–3 Guests).
+- **Vintage Stone Room:** Classic Kumaoni heritage cottage room featuring 1 King Size Bed, valley view, and hand-chiseled stone architecture (2–3 Guests).
+- **Iron Room:** Deluxe mountain room featuring 1 King Size Bed, mountain valley windows, and ensuite bath (2 Guests).
+- **Cedar Room:** Cozy heritage deluxe room featuring 1 Queen Size Bed, aromatic cedar wood paneling, and forest view (2 Guests). *(Never listed as King Bed)*.
+- **Stone and Story Room:** Boutique suite featuring 1 King Size Bed, mountain view, cedar wood trims, and bespoke heritage decor (2–3 Guests).
+- **Himalayan Workation Room:** Dedicated workstation setup with high-speed fiber Wi-Fi and Himalayan mountain view (1–2 Guests).
+- **Stone Cottage Room:** Standalone heritage stone cottage featuring 1 King Size Bed, private sunset terrace balcony, and panoramic mountain views (2–4 Guests).
 
-## 3. Key Amenities & Guest Features
-- **Unobstructed Mountain Views:** Direct sunrise and sunset views of the snow-capped Nanda Devi Himalayan range.
-- **Authentic Kumaoni Dining:** Freshly cooked vegetarian meals prepared with locally sourced organic ingredients.
+## 3. Key Amenities, Timings & Dining Policies
+- **Check-in Time:** 13:00 PM (13:00 hrs IST)
+- **Check-out Time:** 11:00 AM (11:00 hrs IST)
+- **Dining Philosophy:** 100% Pure Vegetarian kitchen. Fresh home-cooked food and breakfast available daily, featuring authentic Kumaoni regional dishes and North Indian favorites.
+- **Unobstructed Mountain Views:** Direct 180° panoramic sunrise and sunset views of Trishul, Nanda Devi, and Panchachuli peaks.
 - **Workcation Ready:** Dedicated high-speed optical fiber WiFi (100+ Mbps) and power backup.
-- **100% Pet-Friendly:** Private gardens and open green lawns welcoming dogs and pets of all sizes, with prepared pet meals available on request.
+- **100% Pet-Friendly:** Private gardens and open green lawns welcoming dogs and pets of all sizes, with zero pet surcharges.
 - **Bonfire & BBQ Nights:** Evening outdoor campfire setups and stargazing experiences under clear mountain skies.
 
-## 4. Distance Matrix & Accessibility
-- **Bhatelia Market:** 3 km (~5 mins drive)
-- **Chauli Ki Jali:** 10 km (~15-20 mins drive)
-- **Mukteshwar Dham Temple (350+ yrs old):** 10 km (~15-20 mins drive)
-- **Bhalugaad Waterfall:** 8 km (~15-20 mins drive)
-- **Kainchi Dham (Neem Karoli Baba Ashram):** 32 km (~1 hr drive)
+## 4. Distance Matrix & Accessibility (Verified Ground Truth)
+- **Mukteshwar Dham Temple (350+ yrs old):** 8.2 km (~20 mins drive)
+- **Chauli Ki Jali (Rock Cliff & Sunset Point):** 11 km (~25 mins drive)
+- **Bhalu Gaad Waterfall:** 13 km (~25 mins drive)
+- **Kainchi Dham (Neem Karoli Baba Ashram):** 39 km (~75 mins drive)
 - **Bhimtal Lake:** 35 km (~1 hr 15 mins drive)
 - **Nainital Hill Station:** 48 km (~1.5 hrs drive)
-- **Kathgodam Railway Station (KGM):** 62 km (~2 hrs drive)
+- **Kathgodam Railway Station (KGM):** 58 km (~2 hrs drive)
 - **Pantnagar Airport (PGH):** 95 km (~3 hrs drive)
-- **Delhi NCR:** 320–340 km (~7.5–8 hrs drive via Hapur-Moradabad-Rampur-Haldwani-Kathgodam-Bhowali route)
+- **Delhi NCR / Noida / Gurugram:** 357 km (~7–7.5 hrs drive via NE-3 Expressway, Hapur Bypass, Moradabad, and Rampur)
 
 ## 5. Extended Documentation & Full AI Context
 For complete operational details, AEO conversational Q&A, detailed room specs, and AI system instructions, refer to:

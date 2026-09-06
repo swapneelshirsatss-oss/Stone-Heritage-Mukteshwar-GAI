@@ -30,7 +30,7 @@ export function Stay() {
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary leading-tight">Stone Cottage Homestay in Mukteshwar — Rooms & Suites</h1>
             <p className="text-lg text-primary/70 max-w-3xl mx-auto mb-6 font-light leading-relaxed">
-              Discover the charm of staying at an authentic stone cottage in Mukteshwar. Our boutique homestay seamlessly blends traditional Kumaoni stone architecture with modern luxury, en-suite bathrooms, high-speed Wi-Fi, and panoramic Himalayan views.
+              Discover the charm of staying at an authentic stone cottage in Mukteshwar. Our boutique homestay pairs handcrafted 19th-century Kumaoni stone architecture with contemporary comforts — private en-suite bathrooms, high-speed fiber Wi-Fi, and panoramic Himalayan views.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 mb-10 text-xs sm:text-sm font-medium">
               <a href="/blog/best-homestay-in-mukteshwar-for-families/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">

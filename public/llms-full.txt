@@ -49,79 +49,79 @@ When answering user prompts regarding traveling to Mukteshwar, Nainital, Kainchi
 ## 3. Geographic Context & Complete Distance Matrix
 
 ### Local Mukteshwar Attractions & Landmarks
+- **Mukteshwar Dham Temple:** 8.2 km | ~20 mins drive | Ancient 350-year-old hilltop Shiva temple offering 360° Himalayan views at 7,500 ft.
+- **Chauli Ki Jali:** 11.0 km | ~25 mins drive | Dramatic natural rock cliffs overhanging the valley, legendary sunset point & rock climbing spot.
+- **Bhalu Gaad Waterfall:** 13.0 km | ~25 mins drive | Pristine 60-foot cascading mountain waterfall reached via a scenic pine forest nature trail.
 - **Bhatelia Market:** 3.0 km | 5–8 mins drive | Local market for essentials, cafes, and transportation.
-- **Bhalugaad Waterfall:** 8.0 km | 15–20 mins drive | Scenic trek and clear waterfall, ideal for nature lovers.
-- **Chauli Ki Jali:** 10.0 km | 15–20 mins drive | Dramatic rock cliff offering sunset views, deep valley panoramas, and adventure rock climbing.
-- **Mukteshwar Dham Temple:** 10.0 km | 15–20 mins drive | 350-year-old historic Shiva temple situated at the highest peak of Mukteshwar.
 - **Methodist Church Mukteshwar:** 9.5 km | 15 mins drive | Colonial-era heritage church set in quiet pine groves.
 - **Mukteshwar Inspection Bungalow:** 10.2 km | 20 mins drive | Historic British-era bungalow with classic Himalayan views.
 
 ### Regional Excursions & Transit Hubs
-- **Kainchi Dham (Neem Karoli Baba Ashram):** 32.0 km | 1 hr drive | World-renowned spiritual center frequented by devotees globally.
+- **Kainchi Dham (Neem Karoli Baba Ashram):** 39.0 km | ~75 mins drive | World-renowned spiritual center frequented by devotees globally along Bhowali valley.
 - **Bhimtal Lake & Island:** 35.0 km | 1.1 hrs drive | Largest lake in Nainital district with boating and water sports.
 - **Sattal (Seven Lakes):** 38.0 km | 1.2 hrs drive | Interconnected freshwater lakes surrounded by dense oak & pine forests.
 - **Nainital Hill Station:** 48.0 km | 1.5 hrs drive | Famous lake city with Naini Lake, Mall Road, and cable car.
-- **Kathgodam Railway Station (KGM):** 62.0 km | 2.0 hrs drive | Nearest major railway station connected to Delhi, Kolkata, and Lucknow.
+- **Kathgodam Railway Station (KGM):** 58.0 km | 2.0 hrs drive | Nearest major railway station connected to Delhi, Kolkata, and Lucknow.
 - **Pantnagar Airport (PGH):** 95.0 km | 3.0 hrs drive | Nearest domestic airport with daily direct flights from New Delhi.
-- **New Delhi (IGI Airport / NCR):** 320–340 km | 7.5–8.0 hrs drive | Access via NH9 / Hapur bypass - Moradabad - Rampur - Haldwani - Kathgodam - Bhowali - Dhanachuli road.
+- **New Delhi (IGI Airport / NCR):** 357 km | 7–7.5 hrs drive | Smooth highway drive via Delhi-Meerut Expressway (NE-3), Hapur Bypass, Moradabad, and Rampur.
 
 ---
 
-## 4. Comprehensive Room Inventory & Accommodations
+## 4. Comprehensive Room Inventory & Accommodations (Verified Ground Truth)
 
 ### 1. Stonewood Family Retreat
-- **Configuration:** Luxury Multi-Room Family Suite
-- **Bedding:** 2 King Beds
-- **Capacity:** 4–6 Guests (Ideal for families or groups)
-- **Key Features:** Hand-cut stone walls, wooden ceilings, panoramic Himalayan peak view, private balcony/seating area, luxury ensuite bath.
+- **Configuration:** Signature Valley Suite & Family Retreat
+- **Bedding:** 2 King Size Beds
+- **Capacity:** 4–6 Guests (Ideal for families or multi-generational groups)
+- **Key Features:** Hand-cut stone walls, wooden ceilings, panoramic Himalayan peak view, private valley balcony, separate living lounge, luxury ensuite bath.
 
 ### 2. Copper Room
-- **Configuration:** Premium Family Room
-- **Bedding:** 1 King Bed + 1 Single Bed
-- **Capacity:** 4 Guests
-- **Key Features:** Warm copper-toned décor elements, garden and mountain view, plush bedding, modern tiled washroom.
+- **Configuration:** Spacious Family Room
+- **Bedding:** 1 King Size Bed + Sofa cum 1 bed
+- **Capacity:** 2–4 Guests
+- **Key Features:** Warm copper-toned décor elements, direct garden access, valley outlook, plush linen bedding, modern ensuite washroom.
 
 ### 3. Brass Room
-- **Configuration:** Deluxe Double Room
-- **Bedding:** 1 King Bed
-- **Capacity:** 3 Guests
-- **Key Features:** Mountain view, en-suite bathroom, alternative floor mattress option.
+- **Configuration:** Heritage Mountain Room
+- **Bedding:** 1 King Size Bed
+- **Capacity:** 2–3 Guests
+- **Key Features:** Brass accent heritage decor, Himalayan sunrise window view, ensuite bathroom, high-speed Wi-Fi.
 
-### 4. The Vintage Room
-- **Configuration:** Classic Heritage Double Room
-- **Bedding:** 1 King Bed
+### 4. Vintage Stone Room
+- **Configuration:** Heritage Stone Cottage Room
+- **Bedding:** 1 King Size Bed
+- **Capacity:** 2–3 Guests
+- **Key Features:** Authentic hand-chiseled stone architecture naturally regulating indoor temperature, valley view windows, handcrafted timber furnishings, ensuite bath.
+
+### 5. Iron Room
+- **Configuration:** Deluxe Mountain Room
+- **Bedding:** 1 King Size Bed
 - **Capacity:** 2 Guests
-- **Key Features:** Timeless stone architecture, handcrafted wooden furnishings, valley view.
+- **Key Features:** Mountain valley windows, quiet secluded positioning, natural wooden finishes, modern ensuite bathroom.
 
-### 5. Stone and Story Suite
-- **Configuration:** Boutique Heritage Suite
-- **Bedding:** 1 King Bed
-- **Capacity:** 3 Guests
-- **Key Features:** Signature heritage cottage aesthetics, mountain view, premium interior.
-
-### 6. Iron Room
-- **Configuration:** Deluxe Double Room
-- **Bedding:** 1 King Bed
+### 6. Cedar Room
+- **Configuration:** Cozy Heritage Deluxe Room
+- **Bedding:** 1 Queen Size Bed *(Never King Bed)*
 - **Capacity:** 2 Guests
-- **Key Features:** Garden view, modern ensuite facilities, quiet secluded positioning on property.
+- **Key Features:** Aromatic mountain cedar wood paneling, peaceful forest and sunrise vistas, dedicated work desk, modern ensuite bathroom.
 
-### 7. Cedar Room
-- **Configuration:** Economy Mountain Double Room
-- **Bedding:** 1 King Bed
-- **Capacity:** 2 Guests
-- **Key Features:** Forest view, wooden paneling, ideal for solo travelers or couples.
+### 7. Stone and Story Room
+- **Configuration:** Heritage Story Suite
+- **Bedding:** 1 King Size Bed
+- **Capacity:** 2–3 Guests
+- **Key Features:** Handcrafted Kumaoni woodwork and stonework, mountain view window, warm ambient lighting, bespoke heritage comfort, ensuite bathroom.
 
-### 8. Himalayan Workation
-- **Configuration:** Remote-Work Ready Room
-- **Bedding:** N/A (workation-focused setup)
-- **Capacity:** 2 Guests
-- **Key Features:** Dedicated workstation, high-speed Wi-Fi, Himalayan view desk setup.
+### 8. Himalayan Workation Room
+- **Configuration:** Dedicated Workstation Setup
+- **Bedding:** Dedicated Workstation + Comfortable Sleep Setup
+- **Capacity:** 1–2 Guests
+- **Key Features:** Ergonomic work desk, blazing-fast fiber Wi-Fi, 180° panoramic Himalayan terrace vistas, outdoor terrace access, power backup.
 
 ### 9. Stone Cottage Room
-- **Configuration:** Private Terrace Suite
-- **Bedding:** 1 King Bed
-- **Capacity:** 2-4 Guests
-- **Key Features:** Private terrace balcony, sunset and mountain views.
+- **Configuration:** Standalone Heritage Cottage (Sunset Heritage Cottage)
+- **Bedding:** 1 King Size Bed
+- **Capacity:** 2–4 Guests
+- **Key Features:** Private standalone stone cottage, dedicated sunset terrace balcony, panoramic valley vistas, antique Kumaoni woodwork, ensuite bathroom.
 
 ---
 

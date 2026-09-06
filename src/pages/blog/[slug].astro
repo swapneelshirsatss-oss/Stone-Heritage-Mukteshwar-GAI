@@ -24,7 +24,7 @@ const blogSchema = isBestPlacesToStay ? {
   "@graph": [
     {
       "@type": ["BedAndBreakfast", "Resort", "Hotel"],
-      "@id": "https://thestoneheritage.in/#lodging",
+      "@id": "https://thestoneheritage.in/#localbusiness",
       "name": "Stone Heritage Mukteshwar",
       "url": "https://thestoneheritage.in/",
       "image": "https://thestoneheritage.in/gallery/",
@@ -73,7 +73,7 @@ const blogSchema = isBestPlacesToStay ? {
         "name": "Akash",
         "jobTitle": "Co-Founder, Stone Heritage Mukteshwar"
       },
-      "publisher": { "@id": "https://thestoneheritage.in/#lodging" },
+      "publisher": { "@id": "https://thestoneheritage.in/#localbusiness" },
       "mainEntityOfPage": `https://thestoneheritage.in/blog/${post.slug}/`
     },
     {
@@ -142,8 +142,8 @@ const blogSchema = isBestPlacesToStay ? {
         }
       },
       "publisher": {
-        "@type": "Organization",
-        "@id": "https://thestoneheritage.in/#organization",
+        "@type": ["BedAndBreakfast", "Resort", "Hotel"],
+        "@id": "https://thestoneheritage.in/#localbusiness",
         "name": "Stone Heritage Mukteshwar",
         "url": "https://thestoneheritage.in/",
         "logo": {
@@ -189,7 +189,7 @@ const blogSchema = isBestPlacesToStay ? {
           "name": "How far is Stone Heritage Homestay from Chauli Ki Jali and Mukteshwar Temple?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Stone Heritage is located directly in Mukteshwar, just 1.5 to 2 km away from both Mukteshwar Dham Temple and Chauli Ki Jali cliff."
+            "text": "Stone Heritage Mukteshwar is located along Bhowali-Dhanachuli Road, approximately 8.2–10 km (about a 20-minute drive) from Mukteshwar Dham Temple and approximately 11 km (about 25 minutes) from Chauli Ki Jali cliff."
           }
         },
         {

@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import FloatingWhatsAppButton from "../../components/FloatingWhatsAppButton.astro";
 import MobileBottomActionBar from "../../components/MobileBottomActionBar.astro";
 import { 
@@ -424,6 +425,7 @@ const googleReviews = [
   image="https://thestoneheritage.in/images/property/luxury-heritage-homestay-in-mukteshwar.webp"
   schema={lodgingSchema}
 >
+  <Breadcrumb />
   <!-- Main Page Container with bottom padding for mobile action bar -->
   <div class="flex flex-col bg-stone-50 pb-20 md:pb-0">
 
