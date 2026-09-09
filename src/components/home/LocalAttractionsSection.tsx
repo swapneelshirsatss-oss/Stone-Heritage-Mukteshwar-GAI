@@ -33,10 +33,10 @@ export function LocalAttractionsSection() {
             },
             {
               name: "Bhalu Gaad Waterfall Trek",
-              description: "Embark on guided or self-guided nature trails through lush forests, discovering the rich biodiversity and charming local villages of Mukteshwar.",
+              description: "A 60-foot natural mountain waterfall and crystal-clear plunge pool, reached via a gentle 1.8 km forest trail through dense oak woods.",
               image: "/images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp",
-              alt: "Scenic nature trails and village walks around Stone Heritage in Mukteshwar",
-              distance: "Around the property",
+              alt: "Bhalu Gaad waterfall plunge pool near Mukteshwar surrounded by pine and oak trees",
+              distance: "12 km away",
               tag: "Nature & Trekking"
             },
             {

@@ -32,7 +32,7 @@ const placesToVisit = [
   },
   {
     name: "Kainchi Dham Ashram (Neem Karoli Baba)",
-    description: "The world-renowned spiritual ashram established by Neem Karoli Baba in 1962, nestled beside a mountain stream in the lush Bhowali valley. A sacred sanctuary for meditation, quiet reflection, and spiritual peace attracting travelers from across the globe.",
+    description: "The world-renowned spiritual ashram established by Neem Karoli Baba in 1962, situated beside a mountain stream in the forested Bhowali valley. A revered pilgrimage site for meditation, prayer, and quiet reflection, attracting devotees and seekers worldwide.",
     distance: "Approx. 39 km from property (approx. 75 mins drive)",
     activities: "Spiritual reflection, prayer, aarti, and serene meditation.",
     tips: "Visit early morning on weekdays to avoid weekend crowds. Dress modestly for temple visits.",

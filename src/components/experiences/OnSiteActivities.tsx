@@ -14,7 +14,7 @@ const experiences = [
   },
   {
     title: "Guided Treks & Nature Retreats",
-    description: "Embark on curated nature retreats and guided trekking experiences through scenic trails, designed for both beginners and seasoned adventurers. Personally hosted and guided by Harsh & Priyanka.",
+    description: "Join curated nature walks and guided mountain treks through scenic forest trails, tailored for both beginners and seasoned hikers. Personally guided by local hosts Harsh & Priyanka.",
     hostLink: { text: "Learn more about hosts Harsh & Priyanka on Our Story", url: "/our-story/#hosts" },
     icon: "🏕️"
   },
