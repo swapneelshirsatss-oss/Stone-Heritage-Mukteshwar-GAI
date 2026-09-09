@@ -52,7 +52,7 @@ Based on what families consistently look for when choosing where to stay in the 
 - **Outdoor spaces** for bonfires, stargazing, and morning views
 - **A rating and review history** you can actually trust
 
-Stone Heritage is built around every one of these, across 9 distinct rooms rather than a single one-size-fits-all layout.
+Stone Heritage is built around every one of these, across 9 distinct rooms rather than a single one-size-fits-all layout — explore our [Mukteshwar Valley Resort & Family Cottages](/mukteshwar-valley-resort/) guide for complete gallery and category details.
 
 ---
 
@@ -71,7 +71,7 @@ Stone Heritage is built around every one of these, across 9 distinct rooms rathe
 | **Brass Room** | 2-3 Guests | King Bed | Mountain View | **₹3,500 – ₹4,000** | Couples & Families with 1 Child |
 | **The Vintage Room** | 2-3 Guests | King Bed | Valley View | **₹3,500 – ₹3,800** | Couples & Heritage Lovers |
 | **Iron Room** | 2 Guests | King Bed | Garden View | **₹3,000 – ₹3,500** | Couples & Solo Travelers |
-| **Cedar Room** | 2 Guests | King Bed | Forest View | **₹2,000** | Solo Travelers & Small Groups |
+| **Cedar Room** | 2 Guests | Queen Bed | Forest View | **₹2,000** | Solo Travelers & Small Groups |
 | **Himalayan Workation** | 1-2 Guests | Workstation Setup | Himalayan View | **₹1,500** | Remote Workers & Budget Workations |
 
 *Tariffs range from ₹1,500 to ₹5,000 per night depending on room selection, season, dates, and guest occupancy. Booking directly via phone/WhatsApp guarantees the lowest available rates without third-party commission fees.*

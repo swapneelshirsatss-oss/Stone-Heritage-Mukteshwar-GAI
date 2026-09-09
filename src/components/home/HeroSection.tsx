@@ -1,6 +1,4 @@
 import React from 'react';
-import { motion } from 'motion/react';
-import { OptimizedImage } from '../OptimizedImage';
 
 export function HeroSection() {
   return (
@@ -23,11 +21,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-primary/90"></div>
       </div>
       
-      <motion.div 
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="relative z-10 max-w-4xl mx-auto px-4 text-center"
+      <div 
+        className="relative z-10 max-w-4xl mx-auto px-4 text-center animate-fade-in-up"
       >
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-stone-50 md:drop-shadow-lg leading-tight tracking-tight">
           Homestay in Mukteshwar for Families — Stone Heritage
@@ -71,7 +66,7 @@ export function HeroSection() {
           <span className="font-bold text-white group-hover:text-stone-100 transition-colors">4.9/5 (250+ Google reviews)</span>
         </a>
       </div>
-    </motion.div>
+    </div>
   </section>
   );
 }

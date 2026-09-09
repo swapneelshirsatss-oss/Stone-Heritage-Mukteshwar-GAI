@@ -108,7 +108,7 @@ Set among apple, plum, and peach orchards, away from Mukteshwar's commercial str
 
 ## Rooms & Rates at Stone Heritage Mukteshwar
 
-Nine boutique units across suites, cottages, and deluxe rooms, sleeping up to 70 guests total — explore all [room options & amenities](/stay/).
+Nine boutique units across suites, cottages, and deluxe rooms, sleeping up to 70 guests total — explore all [room options & amenities](/stay/) or visit our dedicated [Mukteshwar Valley Resort & Cottages landing page](/mukteshwar-valley-resort/).
 
 | Room | EP | CP | MAP | Max Guests | Highlight |
 | :--- | :--- | :--- | :--- | :--- | :--- |

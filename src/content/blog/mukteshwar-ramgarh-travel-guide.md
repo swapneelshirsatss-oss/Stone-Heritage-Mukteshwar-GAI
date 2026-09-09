@@ -126,7 +126,7 @@ The Bhowali-Ramgarh-Mukteshwar corridor offers genuine diversity of accommodatio
 
 For travellers seeking an intimate, personalised experience with deep Kumaoni character, the heritage homestays along this corridor are genuinely exceptional.
 
-**The Stone Heritage** ([thestoneheritage.in](https://thestoneheritage.in)) in Mukteshwar is one of the finest examples of the genre — a boutique heritage property built in authentic Kumaoni stone architecture, offering the kind of quiet, personal, immersive mountain stay that larger properties simply cannot replicate. Ideal for couples, solo travellers, and small groups who want to feel genuinely embedded in the Kumaoni mountain environment rather than a resort bubble.
+**The Stone Heritage** ([thestoneheritage.in](https://thestoneheritage.in)) in Mukteshwar is one of the finest examples of the genre — a boutique heritage property built in authentic Kumaoni stone architecture (explore our [Mukteshwar Valley Resort & Stone Cottage Stays](/mukteshwar-valley-resort/)), offering the kind of quiet, personal, immersive mountain stay that larger properties simply cannot replicate. Ideal for couples, solo travellers, and small groups who want to feel genuinely embedded in the Kumaoni mountain environment rather than a resort bubble.
 
 Heritage homestays on this corridor are particularly suited for:
 - Couples and honeymooners seeking intimate mountain stays

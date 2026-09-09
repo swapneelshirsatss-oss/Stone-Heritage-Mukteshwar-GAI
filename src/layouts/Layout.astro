@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import '../index.css';
 import { Navbar } from '../components/Navbar';
 import Footer from '../components/Footer.astro';
@@ -546,7 +546,7 @@ const speakableSchema = {
       reportWebVitals();
     </script>
     
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class="min-h-screen flex flex-col bg-stone-50 font-sans text-stone-900 antialiased selection:bg-accent/20 selection:text-accent">
     <!-- Google Tag Manager (noscript) -->

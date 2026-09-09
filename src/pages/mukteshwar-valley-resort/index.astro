@@ -16,19 +16,26 @@ import {
   Calendar, 
   Car, 
   Flame, 
-  Zap, 
   Compass, 
   ChevronRight,
   Clock,
-  Navigation
+  Navigation,
+  Home,
+  Bed,
+  Users,
+  Laptop,
+  Sparkles,
+  Coffee,
+  Heart,
+  Trees
 } from 'lucide-react';
 
 const canonicalUrl = "https://thestoneheritage.in/mukteshwar-valley-resort/";
-const pageTitle = "Stone Heritage Mukteshwar | Stone Cottages & Family Resort Stay";
-const pageDescription = "Boutique handcrafted stone cottages in Mukteshwar with 180° Himalayan views. Enjoy pure veg Kumaoni dining, pet-friendly lawns & family suites. Book direct & save.";
-const pageKeywords = "mukteshwar valley resort, resort in mukteshwar, best valley resort in mukteshwar, stone heritage mukteshwar, stone cottages mukteshwar, family resort mukteshwar, luxury resort mukteshwar valley, pet friendly resort mukteshwar";
+const pageTitle = "Stone Heritage Mukteshwar | Luxury Homestay, Stone Cottages & Resort";
+const pageDescription = "Book Stone Heritage Mukteshwar: Luxury handcrafted stone cottages & boutique homestay with 180° Himalayan views, 100% pure veg dining & pet lawns. Save 20% direct.";
+const pageKeywords = "stone heritage mukteshwar, homestay in mukteshwar, luxury homestay in mukteshwar, boutique homestay experience in mukteshwar, stay in mukteshwar, stone cottages homestay in mukteshwar, pet friendly homestay in mukteshwar uttarakhand, homestay near bhimtal uttarakhand, handcrafted stone cottage stay, hotel accommodation in mukteshwar, holiday home mukteshwar, mukteshwar valley resort, best homestay in uttarakhand, homestay near bhalu gaad waterfall";
 
-// Corrected, validated Schema.org Structured Data
+// Verified Ground Truth NAP & Schema
 const lodgingSchema = {
   "@context": "https://schema.org",
   "@graph": [
@@ -36,14 +43,20 @@ const lodgingSchema = {
       "@type": ["BedAndBreakfast", "Hotel", "Resort"],
       "@id": "https://thestoneheritage.in/#lodging",
       "name": "Stone Heritage Mukteshwar",
-      "alternateName": "Stone Heritage",
-      "description": "Authentic 19th-century handcrafted stone cottages in Mukteshwar offering 180° Himalayan views, pure vegetarian Kumaoni cuisine, pet-friendly garden lawns, and high-speed fiber Wi-Fi.",
+      "alternateName": [
+        "Stone Heritage Resort",
+        "Stone Heritage",
+        "Stone Heritage Homestay",
+        "Stone Heritage Mukteshwar - Luxury Heritage Homestay"
+      ],
+      "description": "Authentic 19th-century handcrafted stone cottages and boutique mountain homestay in Mukteshwar offering 180° Himalayan snow peak views, 100% pure vegetarian Kumaoni cuisine, pet-friendly garden lawns, high-speed fiber Wi-Fi, and private family suites.",
       "url": "https://thestoneheritage.in/",
       "telephone": "+919027844424",
+      "priceRange": "₹₹ - ₹₹₹",
       "hasMap": "https://maps.google.com/maps?cid=5074157692820223333",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Bhowali-Dhanachuli Road, South Gola Range",
+        "streetAddress": "Bhowali-Dhanachuli Road, South Gola Range, Tehsil - Dhari, District - Nainital",
         "addressLocality": "Mukteshwar",
         "addressRegion": "Uttarakhand",
         "postalCode": "263138",
@@ -93,7 +106,6 @@ const lodgingSchema = {
           "reviewBody": "Amazing property,peaceful loctaion and you can have breathtaking views from the property itself. Hospitality was fantastic and staff was very co-operative.Only vegetarian food is allowed but tastes good and is freshly prepared. Overall highly recommended if u r looking for a place to stay nearby mukteshwar."
         }
       ],
-      "priceRange": "₹₹ - ₹₹₹",
       "checkinTime": "13:00",
       "checkoutTime": "11:00",
       "amenityFeature": [
@@ -104,7 +116,9 @@ const lodgingSchema = {
         { "@type": "LocationFeatureSpecification", "name": "Pet Friendly with Lawns", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Free On-Site Highway Parking", "value": true },
         { "@type": "LocationFeatureSpecification", "name": "Courtyard Bonfire & Stargazing", "value": true },
-        { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true }
+        { "@type": "LocationFeatureSpecification", "name": "Power Backup", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Guided Nature Walks & Village Trails", "value": true },
+        { "@type": "LocationFeatureSpecification", "name": "Entire Cottage Estate Buyout Available", "value": true }
       ],
       "potentialAction": {
         "@type": "ReserveAction",
@@ -119,7 +133,7 @@ const lodgingSchema = {
         },
         "result": {
           "@type": "LodgingReservation",
-          "name": "Direct Cottage Booking"
+          "name": "Direct Heritage Stay Reservation"
         }
       }
     },
@@ -142,66 +156,74 @@ const lodgingSchema = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Is Stone Heritage Mukteshwar a resort or a homestay?",
+          "name": "Is Stone Heritage Mukteshwar classified as a Homestay, Cottage, Hotel, or Resort?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar combines the authentic warmth and personalized care of a boutique Kumaoni homestay with the comfort, private cottage suites, open lawns, and 180° Himalayan peak views expected of a premium valley resort stay."
+            "text": "Stone Heritage Mukteshwar seamlessly integrates all five major hospitality categories. Our primary identity is an authentic luxury boutique Home Stay with warm personalized host hospitality. Our accommodations consist of authentic handcrafted stone Cottages and multi-room Hotel suites, offering full private Holiday Home estate buyouts and the panoramic amenities of a boutique valley mountain Resort."
           }
         },
         {
           "@type": "Question",
-          "name": "Is the dining at Stone Heritage 100% pure vegetarian?",
+          "name": "Is Stone Heritage Mukteshwar pet-friendly, and are there pet fees?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Stone Heritage Mukteshwar operates a strict 100% pure vegetarian kitchen. We serve freshly cooked Pahadi Kumaoni specialties, North Indian cuisine, and home-style meals prepared with locally sourced organic produce."
+            "text": "Yes, Stone Heritage Mukteshwar is 100% pet-friendly with zero pet surcharges! Your dogs have safe access to our enclosed grass lawns, surrounding forest walking trails, and our kitchen happily prepares fresh boiled pet meals upon request."
           }
         },
         {
           "@type": "Question",
-          "name": "Are pets allowed at the property, and is there an extra fee?",
+          "name": "Is the dining strictly 100% pure vegetarian on site?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Stone Heritage Mukteshwar is 100% pet-friendly with zero additional pet surcharge. Pets have ample space to play in our enclosed garden lawns and surrounding village walking trails."
+            "text": "Yes. Stone Heritage Mukteshwar operates a strictly 100% pure vegetarian kitchen. We prepare authentic Pahadi Kumaoni traditional specialties (Bhatt ki Churkani, Gahat Dal, Mandua Roti, Kumaoni Raita) alongside fresh North Indian comfort food cooked fresh to order with organic local ingredients."
           }
         },
         {
           "@type": "Question",
-          "name": "What Himalayan peaks are visible from Stone Heritage Mukteshwar?",
+          "name": "Can we rent the entire property as a private holiday home or family cottage buyout?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Guests enjoy an unobstructed 180° panoramic view of the majestic Greater Himalayas, including Trishul, Nanda Devi, Maiktoli, Mrigthuni, and the Panchachuli peaks directly from the cottages, private balconies, and open lawn terrace."
+            "text": "Yes! Stone Heritage Mukteshwar can be booked as an exclusive private holiday home buyout for 15 to 25 guests. You get private access to all 9 rooms and suites, the 180° Himalayan view terrace, sprawling garden lawns, bonfire courtyard, and dedicated private kitchen staff."
           }
         },
         {
           "@type": "Question",
-          "name": "How far is Stone Heritage Mukteshwar from Kainchi Dham and Chauli Ki Jali?",
+          "name": "What room types and bed configurations are available at Stone Heritage?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar is approximately 10 km (20 minutes) from Mukteshwar Dham Temple, 11 km (25 minutes) from Chauli Ki Jali, 13 km (25 minutes) from Bhalu Gaad Waterfall, and 39 km (about 75 minutes) from Neem Karoli Baba Kainchi Dham Ashram."
+            "text": "Our verified inventory comprises 9 unique accommodations: Brass Room (1 King Bed), Copper Room (1 King Bed + Sofa cum 1 bed), Vintage Stone Room (1 King Bed), Iron Room (1 King Bed), Cedar Room (1 Queen Bed), Stonewood Family Retreat (2 King Beds, living lounge & balcony), Stone and Story Room (1 King Bed), Himalayan Workation Room (Workstation Setup + Mountain Views), and Sunset Heritage Cottage Room (1 King Bed)."
           }
         },
         {
           "@type": "Question",
-          "name": "Why should I book directly through the official booking engine?",
+          "name": "How far is Stone Heritage from Mukteshwar Dham Temple and Kainchi Dham Ashram?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Booking directly at booking.thestoneheritage.in guarantees the best available price with up to 20% savings compared to third-party OTA portals, priority room allocation, direct host communication, and flexible check-in support."
+            "text": "Stone Heritage Mukteshwar is located 10 km (20 mins) from the 350-year-old Mukteshwar Dham Shiva Temple and 39 km (about 75 mins) from Neem Karoli Baba Kainchi Dham Ashram. We also sit just 13 km (25 mins) from Bhalu Gaad Waterfall and 11 km (25 mins) from Chauli Ki Jali."
           }
         },
         {
           "@type": "Question",
-          "name": "What are the standard check-in and check-out times at Stone Heritage?",
+          "name": "Is Stone Heritage suitable for remote work, workation, and long stays?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out are available upon request, subject to availability."
+            "text": "Absolutely. We offer high-speed fiber Wi-Fi with strong coverage across all rooms and outdoor garden lawns, dedicated work desks, uninterrupted power backup, ergonomic seating, peaceful valley surroundings, and attractive weekly/monthly extended stay rates."
           }
         },
         {
           "@type": "Question",
-          "name": "Is food and breakfast available on site?",
+          "name": "What are the standard check-in and check-out timings?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, freshly prepared home-cooked food and breakfast are available daily on site. Our 100% pure vegetarian kitchen prepares authentic Kumaoni dishes and delicious North Indian comfort meals fresh to order."
+            "text": "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in or late check-out can be accommodated based on cottage availability upon prior request."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I book directly on booking.thestoneheritage.in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Direct bookings at booking.thestoneheritage.in guarantee the best price with up to 20% savings compared to third-party OTA portals (MakeMyTrip, Agoda, Booking.com), direct communication with hosts Akash & Parul, complimentary evening bonfire sessions, and priority room view allocations."
           }
         }
       ]
@@ -209,155 +231,152 @@ const lodgingSchema = {
   ]
 };
 
+// Verified Ground Truth Room Inventory (Rule 10A)
 const rooms = [
+  {
+    name: "Stonewood Family Retreat",
+    category: "Signature Family Suite",
+    gmbCategory: "Hotel & Holiday Home Suite",
+    occupancy: "4–6 Guests • 2 King Size Beds",
+    description: "Our premier dual-bedroom family retreat featuring handcrafted stone masonry, warm timber ceilings, an expansive living lounge, and a private valley balcony offering uninterrupted Himalayan sunrise views.",
+    image: "/images/rooms/stonewood-family-retreat.webp",
+    features: ["2 King Size Beds", "Private Valley Balcony", "Separate Living Lounge", "En-suite Bathroom", "High-Speed Fiber Wi-Fi", "Electric Heating"]
+  },
+  {
+    name: "Copper Room",
+    category: "Spacious Family Haven",
+    gmbCategory: "Homestay & Hotel Room",
+    occupancy: "2–4 Guests • 1 King Size Bed + Sofa cum 1 bed",
+    description: "Sun-drenched family haven with direct access to peaceful green lawns. Designed with warm earth tones, premium linen bedding, en-suite bathroom, and quiet mountain tranquility.",
+    image: "/images/rooms/copper-room.webp",
+    features: ["1 King Size Bed + Sofa cum 1 bed", "Direct Garden Access", "Panoramic Valley Outlook", "En-suite Bathroom", "Fiber Wi-Fi"]
+  },
   {
     name: "Brass Room",
     category: "Heritage Mountain Room",
-    occupancy: "Up to 3 Guests • 1 King Size Bed",
-    description: "Elegantly finished with brass accents, cedar wood trims, and panoramic picture windows looking out onto the pine canopy and snow-clad Himalayan peaks.",
+    gmbCategory: "Boutique Homestay Suite",
+    occupancy: "2–3 Guests • 1 King Size Bed",
+    description: "Elegantly finished with warm brass accents, cedar wood trims, and expansive picture windows looking out onto the pine canopy and snow-clad Himalayan peaks.",
     image: "/images/rooms/brass-room-homestay-in-mukteshwar.webp",
     features: ["1 King Size Bed", "Himalayan Sunrise Window", "Brass Accent Heritage Decor", "En-suite Bathroom", "High-Speed Wi-Fi"]
   },
   {
-    name: "Copper Room",
-    category: "Spacious Family Room",
-    occupancy: "Up to 4 Guests • 1 King Size Bed + Sofa cum 1 bed",
-    description: "Sun-drenched family haven with direct access to peaceful garden lawns. Designed with warm earth tones, premium linen bedding, and quiet mountain tranquility.",
-    image: "/images/rooms/copper-room.webp",
-    features: ["1 King Size Bed + Sofa cum 1 bed", "Direct Garden Access", "Valley Outlook", "En-suite Bathroom", "Fiber Wi-Fi"]
+    name: "Stone Cottage Room",
+    category: "Sunset Heritage Cottage",
+    gmbCategory: "Cottage & Holiday Home",
+    occupancy: "2–4 Guests • 1 King Size Bed",
+    description: "A standalone handcrafted stone cottage with a dedicated sunset terrace overlooking the valley. Crafted with antique Kumaoni woodwork, cozy interiors, and 180° mountain vistas.",
+    image: "/images/property/mountain-living-best-homestay-Mukteshwar.webp",
+    features: ["1 King Size Bed", "Private Sunset Terrace", "Valley Panoramic Views", "Cozy Wooden Interiors", "Fiber Wi-Fi"]
   },
   {
     name: "Vintage Stone Room",
     category: "Heritage Stone Cottage",
-    occupancy: "Up to 3 Guests • 1 King Size Bed",
-    description: "Showcasing authentic hand-chiseled stone walls that naturally regulate indoor temperature, large glass windows capturing golden valley morning light, and handcrafted timber furnishings.",
+    gmbCategory: "Cottage & Homestay",
+    occupancy: "2–3 Guests • 1 King Size Bed",
+    description: "Showcasing authentic hand-chiseled stone walls that naturally regulate indoor temperature, large glass windows capturing golden morning light, and handcrafted timber furnishings.",
     image: "/images/rooms/vintage-room.webp",
     features: ["1 King Size Bed", "Authentic Stone Architecture", "Valley View Windows", "En-suite Bath", "Fiber Wi-Fi"]
   },
   {
-    name: "Iron Room",
-    category: "Deluxe Mountain Room",
-    occupancy: "Up to 2 Guests • 1 King Size Bed",
-    description: "A quiet and intimate retreat framed by rich metallic detailing and natural wooden finishes, featuring scenic mountain valley windows and modern en-suite conveniences.",
-    image: "/images/rooms/iron-room.webp",
-    features: ["1 King Size Bed", "Mountain Valley Windows", "Quiet & Peaceful Location", "En-suite Bathroom", "Fiber Wi-Fi"]
-  },
-  {
-    name: "Cedar Room",
-    category: "Cozy Heritage Deluxe",
-    occupancy: "Up to 2 Guests • 1 Queen Size Bed",
-    description: "Intimate heritage hideaway crafted with aromatic mountain cedar wood paneling, peaceful forest and sunrise vistas, a private en-suite bathroom, and a dedicated work desk.",
-    image: "/images/rooms/cedar-room.webp",
-    features: ["1 Queen Size Bed", "Aromatic Cedar Paneling", "Forest & Sunrise Views", "En-suite Bathroom", "Fiber Wi-Fi"]
-  },
-  {
-    name: "Stonewood Family Retreat",
-    category: "Signature Valley Suite",
-    occupancy: "Up to 6 Guests • 2 King Size Beds",
-    description: "Our premier family suite featuring handcrafted stone masonry, warm timber ceilings, an expansive living lounge, and a private valley balcony offering uninterrupted Himalayan sunrise views.",
-    image: "/images/rooms/stonewood-family-retreat.webp",
-    features: ["2 King Size Beds", "Private Valley Balcony", "Separate Living Lounge", "En-suite Bathroom", "High-Speed Wi-Fi"]
-  },
-  {
     name: "Stone and Story Room",
     category: "Heritage Story Suite",
-    occupancy: "Up to 3 Guests • 1 King Size Bed",
+    gmbCategory: "Boutique Hotel & Homestay",
+    occupancy: "2–3 Guests • 1 King Size Bed",
     description: "Character-rich cottage room adorned with handcrafted Kumaoni woodwork and stonework, offering scenic mountain views, warm ambient lighting, and bespoke heritage comfort.",
     image: "/images/rooms/stone-and-story-suite-homestay.webp",
     features: ["1 King Size Bed", "Bespoke Heritage Woodwork", "Mountain View Window", "En-suite Bathroom", "Fiber Wi-Fi"]
   },
   {
-    name: "Himalayan Workation Room",
-    category: "Panoramic Workstation",
-    occupancy: "Up to 2 Guests • Workstation Setup",
-    description: "Designed for digital nomads and productive getaways, featuring a dedicated work desk, blazing-fast fiber Wi-Fi, and inspiring 180° panoramic Himalayan terrace vistas.",
-    image: "/images/property/himalayan-view-terrace-mukteshwar.webp",
-    features: ["Dedicated Work Desk", "High-Speed Fiber Wi-Fi", "180° Himalayan Mountain View", "Outdoor Terrace Access", "Power Backup"]
+    name: "Cedar Room",
+    category: "Cozy Heritage Deluxe",
+    gmbCategory: "Homestay & Hotel Deluxe",
+    occupancy: "2 Guests • 1 Queen Size Bed",
+    description: "Intimate heritage hideaway crafted with aromatic mountain cedar wood paneling, peaceful forest and sunrise vistas, a private en-suite bathroom, and a dedicated work desk.",
+    image: "/images/rooms/cedar-room.webp",
+    features: ["1 Queen Size Bed", "Aromatic Cedar Paneling", "Forest & Sunrise Views", "En-suite Bathroom", "Fiber Wi-Fi"]
   },
   {
-    name: "Stone Cottage Room",
-    category: "Standalone Heritage Cottage",
-    occupancy: "Up to 4 Guests • 1 King Size Bed",
-    description: "A private standalone stone cottage with a dedicated sunset terrace overlooking the valley. Crafted with antique Kumaoni woodwork, cozy interiors, and panoramic vistas.",
-    image: "/images/property/mountain-living-best-homestay-Mukteshwar.webp",
-    features: ["1 King Size Bed", "Private Sunset Terrace", "Valley Panoramic Views", "Cozy Wooden Interiors", "Fiber Wi-Fi"]
+    name: "Iron Room",
+    category: "Deluxe Mountain Room",
+    gmbCategory: "Hotel & Homestay Deluxe",
+    occupancy: "2 Guests • 1 King Size Bed",
+    description: "A quiet and intimate retreat framed by rich metallic detailing and natural wooden finishes, featuring scenic mountain valley windows and modern en-suite conveniences.",
+    image: "/images/rooms/iron-room.webp",
+    features: ["1 King Size Bed", "Mountain Valley Windows", "Quiet & Peaceful Location", "En-suite Bathroom", "Fiber Wi-Fi"]
+  },
+  {
+    name: "Himalayan Workation Room",
+    category: "Panoramic Workstation",
+    gmbCategory: "Workation & Homestay Suite",
+    occupancy: "1–2 Guests • Workstation Setup",
+    description: "Engineered for digital nomads and executive getaways, featuring a dedicated work desk, blazing-fast fiber Wi-Fi, power backup, and inspiring 180° panoramic Himalayan terrace vistas.",
+    image: "/images/property/himalayan-view-terrace-mukteshwar.webp",
+    features: ["Dedicated Work Desk", "High-Speed Fiber Wi-Fi", "180° Himalayan Mountain View", "Outdoor Terrace Access", "Power Backup"]
   }
 ];
 
+// Strategic Hyper-Local Transit & Landmark Matrix (Separate Mukteshwar Dham & Kainchi Dham)
 const nearbyAttractions = [
   {
     name: "Mukteshwar Dham Temple",
     distance: "10 km",
     driveTime: "20 mins",
-    desc: "Ancient 350-year-old hilltop Shiva temple with stunning 360° Himalayan views at 7,500 ft."
-  },
-  {
-    name: "Chauli Ki Jali",
-    distance: "11 km",
-    driveTime: "25 mins",
-    desc: "Spectacular natural rock cliffs overhanging the valley, legendary sunset point & rock climbing spot."
+    category: "Spiritual & Heritage",
+    desc: "Ancient 350-year-old hilltop Shiva temple situated on the highest ridge of Mukteshwar at 7,500 ft with 360° Himalayan views."
   },
   {
     name: "Bhalu Gaad Waterfall",
     distance: "13 km",
     driveTime: "25 mins",
-    desc: "60-foot pristine cascading mountain waterfall reached via a scenic pine forest nature trail."
+    category: "Adventure & Trekking",
+    desc: "A breathtaking 60-foot natural cascading waterfall flowing through dense pine and oak forests, accessed via a scenic mountain walking trail."
   },
   {
-    name: "Kainchi Dham Ashram",
+    name: "Chauli Ki Jali",
+    distance: "11 km",
+    driveTime: "25 mins",
+    category: "Sightseeing & Sunset",
+    desc: "Famous natural overhanging rock cliffs behind Mukteshwar temple offering adrenaline rock climbing and dramatic sunset valley views."
+  },
+  {
+    name: "Kainchi Dham Ashram (Neem Karoli Baba)",
     distance: "39 km",
     driveTime: "75 mins",
-    desc: "World-renowned spiritual ashram of Neem Karoli Baba along the scenic Bhowali river valley."
+    category: "Spiritual Pilgrimage",
+    desc: "World-revered spiritual ashram of Neem Karoli Baba Maharaj located in the serene Bhowali river valley. Stone Heritage acts as an ideal peaceful basecamp."
+  },
+  {
+    name: "Bhimtal Lake & Valley",
+    distance: "32 km",
+    driveTime: "60 mins",
+    category: "Lakes & Recreation",
+    desc: "Picturesque Himalayan lake town featuring boating, lake-view cafes, and island aquarium, making for a scenic mountain day drive."
   },
   {
     name: "Kathgodam Railway Station",
     distance: "58 km",
     driveTime: "2 hrs",
-    desc: "Nearest railhead with direct Shatabdi and Ranikhet Express connections from New Delhi & Lucknow."
+    category: "Transit Railhead",
+    desc: "Nearest railway terminal with daily Shatabdi Express and Ranikhet Express connections from New Delhi, Ghaziabad, and Lucknow."
+  },
+  {
+    name: "Pantnagar Airport (PGH)",
+    distance: "92 km",
+    driveTime: "3 hrs",
+    category: "Aviation Hub",
+    desc: "Regional airport offering direct scheduled flights from New Delhi. Pre-arranged taxi pickups available directly to our homestay doorstep."
   },
   {
     name: "Delhi NCR / Noida / Gurugram",
     distance: "357 km",
     driveTime: "7–7.5 hrs",
-    desc: "Smooth highway drive via Delhi-Meerut Expressway (NE-3), Hapur Bypass, Moradabad, and Rampur."
+    category: "Drive-To Corridor",
+    desc: "Smooth road trip via Delhi-Meerut Expressway (NE-3), Hapur Bypass, NH-9 via Moradabad, Rampur, Haldwani, and Bhowali-Dhanachuli Road."
   }
 ];
 
-const faqs = [
-  {
-    q: "Is Stone Heritage Mukteshwar a resort or a homestay?",
-    a: "Stone Heritage Mukteshwar combines the authentic warmth, home-cooked food, and personalized host care of a boutique Kumaoni homestay with the spacious comfort, private cottage suites, open lawns, and 180° Himalayan peak views expected of a premium valley resort stay."
-  },
-  {
-    q: "Is the food strictly 100% pure vegetarian?",
-    a: "Yes. We take immense pride in operating a dedicated 100% pure vegetarian kitchen. Our chef prepares authentic Pahadi Kumaoni dishes (Bhatt ki Churkani, Gahat Dal, Kumaoni Raita, Mandua rotis) alongside fresh North Indian favorites using organic local ingredients."
-  },
-  {
-    q: "Is Stone Heritage pet-friendly, and are there extra charges?",
-    a: "We are 100% pet-friendly with zero pet surcharges! Your four-legged family members can explore our enclosed grass lawns safely, and our kitchen team is happy to prepare pet-friendly meals upon request."
-  },
-  {
-    q: "Which Himalayan peaks can we see from the cottages?",
-    a: "On clear days, you will witness a breathtaking 180° panorama of the Central Himalayan range, including Trishul (7,120 m), Nanda Devi (7,816 m), Maiktoli, Mrigthuni, and the Panchachuli five peaks right from our terrace, lawn, and balconies."
-  },
-  {
-    q: "What is the best way to reach Stone Heritage Mukteshwar from Delhi NCR?",
-    a: "By car, take the Delhi-Meerut Expressway (NE-3) to Hapur, then NH-9 via Moradabad and Rampur to Kathgodam, followed by the scenic Bhowali-Dhanachuli Road. The journey is approximately 357 km and takes 7 to 7.5 hours. By train, take the Kathgodam Shatabdi (#12040) to Kathgodam, followed by a 2-hour pre-arranged taxi to our doorstep."
-  },
-  {
-    q: "Why is booking directly on your website recommended?",
-    a: "Direct booking at booking.thestoneheritage.in gives you up to 20% lower pricing than third-party platforms, transparent billing with zero OTA commissions, direct communication with host Akash, priority cottage selection, and complimentary evening courtyard bonfires."
-  },
-  {
-    q: "What are the check-in and check-out times at Stone Heritage?",
-    a: "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in and late check-out can be accommodated subject to availability upon request."
-  },
-  {
-    q: "Is food and breakfast available for resort guests?",
-    a: "Yes! Freshly cooked, pure vegetarian food and hearty mountain breakfast are available on site. We serve delicious home-style North Indian meals and authentic Kumaoni dishes prepared fresh with local ingredients."
-  }
-];
-
+// Verified Google Reviews
 const googleReviews = [
   {
     name: "Manish Joshi",
@@ -397,7 +416,7 @@ const googleReviews = [
     timeAgo: "7 months ago",
     tag: "Hidden Gem",
     highlight: "Special Mention: Manager Parul",
-    text: "The Stone Heritage Homestay, Mukteshwar is truly a hidden gem. The property is absolutely beautiful, surrounded by serene mountains, old-world charm, and peaceful vibes that instantly make you feel calm and connected to nature. Every corner reflects warmth, heritage, and thoughtful detailing.\\n\\nWhat made our stay even more special was the exceptional hospitality. The staff is extremely courteous, attentive, and always ready to help with a smile. A special mention to Manager Parul — her grace, professionalism, and personal care towards guests truly stand out. She ensures everything is smooth and makes you feel genuinely welcomed, not just hosted.\\n\\nThe food, cleanliness, and overall experience were top-notch. If you’re looking for a soulful stay with comfort, authenticity, and heartfelt service, this place is a must-visit. I would happily return and recommend it to anyone visiting Mukteshwar.",
+    text: "The Stone Heritage Homestay, Mukteshwar is truly a hidden gem. The property is absolutely beautiful, surrounded by serene mountains, old-world charm, and peaceful vibes that instantly make you feel calm and connected to nature. Every corner reflects warmth, heritage, and thoughtful detailing.\n\nWhat made our stay even more special was the exceptional hospitality. The staff is extremely courteous, attentive, and always ready to help with a smile. A special mention to Manager Parul — her grace, professionalism, and personal care towards guests truly stand out. She ensures everything is smooth and makes you feel genuinely welcomed, not just hosted.\n\nThe food, cleanliness, and overall experience were top-notch. If you’re looking for a soulful stay with comfort, authenticity, and heartfelt service, this place is a must-visit. I would happily return and recommend it to anyone visiting Mukteshwar.",
     rooms: "5.0",
     service: "5.0",
     location: "5.0",
@@ -415,6 +434,11 @@ const googleReviews = [
     featured: false
   }
 ];
+
+const faqs = lodgingSchema["@graph"][2].mainEntity.map((item: any) => ({
+  q: item.name,
+  a: item.acceptedAnswer.text
+}));
 ---
 
 <Layout 
@@ -426,29 +450,34 @@ const googleReviews = [
   schema={lodgingSchema}
 >
   <Breadcrumb />
-  <!-- Main Page Container with bottom padding for mobile action bar -->
+  
   <div class="flex flex-col bg-stone-50 pb-20 md:pb-0">
 
-    <!-- 1. HERO SECTION -->
-    <section class="relative bg-stone-900 text-stone-100 overflow-hidden min-h-[88vh] flex items-center justify-center">
-      <!-- Background Image with Dark Vignette & Gradient Overlay -->
+    <!-- 1. HERO SECTION: GMB MULTI-CATEGORY LANDING -->
+    <section class="relative bg-stone-950 text-stone-100 overflow-hidden min-h-[90vh] flex items-center justify-center">
+      <!-- Background Image -->
       <div class="absolute inset-0 z-0">
         <img 
           src="/images/property/best-family-homestay-in-mukteshwar.webp" 
           alt="Exterior view of Stone Heritage Mukteshwar handcrafted stone cottages with Himalayan valley background"
-          class="w-full h-full object-cover object-center filter brightness-[0.65] contrast-[1.05]"
+          class="w-full h-full object-cover object-center filter brightness-[0.62] contrast-[1.05]"
           loading="eager"
           fetchpriority="high"
           width="1920"
           height="1080"
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-900/60 to-black/40"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/65 to-black/40"></div>
       </div>
 
       <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center flex flex-col items-center">
         
-        <!-- Local Authority & Rating Trust Pill -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-900/80 backdrop-blur-md border border-amber-500/30 text-amber-300 text-xs sm:text-sm font-medium mb-6 shadow-lg">
+        <!-- Google Business Profile Rating Pill -->
+        <a 
+          href="https://maps.google.com/maps?cid=5074157692820223333" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-stone-900/85 backdrop-blur-md border border-amber-500/40 text-amber-300 text-xs sm:text-sm font-medium mb-6 shadow-xl hover:border-amber-400 transition-all group"
+        >
           <div class="flex items-center text-amber-400">
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
@@ -456,58 +485,88 @@ const googleReviews = [
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
             <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
           </div>
-          <span class="font-semibold text-white">4.9★</span>
+          <span class="font-bold text-white">4.9★</span>
           <span class="text-stone-300">from 250+ Verified Google Reviews</span>
           <span class="text-amber-400 hidden sm:inline">•</span>
-          <span class="text-stone-300 hidden sm:inline">South Gola Range, Mukteshwar</span>
-        </div>
+          <span class="text-amber-200 hidden sm:inline group-hover:underline">View on Google Maps →</span>
+        </a>
 
-        <!-- Strict Single H1 Tag -->
-        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight max-w-5xl leading-[1.15] mb-6 drop-shadow-md">
-          Stone Heritage Mukteshwar <span class="block text-2xl sm:text-3xl md:text-4xl font-normal text-amber-200 mt-2 font-sans">Stone Cottages & Family Resort Stay</span>
+        <!-- H1 Heading: Primary Entity & Major GMB Categories -->
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white tracking-tight max-w-5xl leading-[1.12] mb-6 drop-shadow-md">
+          Stone Heritage Mukteshwar
+          <span class="block text-xl sm:text-3xl md:text-4xl font-normal text-amber-200 mt-3 font-sans">
+            Luxury Mountain Homestay, Stone Cottages & Valley Resort
+          </span>
         </h1>
 
         <!-- High-Information Keyword-Rich Subtitle -->
-        <p class="text-stone-200 text-base sm:text-lg md:text-xl max-w-3xl font-light leading-relaxed mb-8 drop-shadow">
-          Authentic 19th-century handcrafted stone and cedar timber cottages perched at 7,500 ft in Mukteshwar. Enjoy 180° panoramic Himalayan snow-peak views, wholesome 100% pure vegetarian Kumaoni dining, and pet-friendly private lawns.
+        <p class="text-stone-200 text-sm sm:text-base md:text-lg max-w-3xl font-light leading-relaxed mb-8 drop-shadow">
+          Your official mountain sanctuary in South Gola Range, Mukteshwar. Experience the authentic warmth of a <strong>boutique homestay</strong>, the timeless craft of <strong>handcrafted stone cottages</strong>, private <strong>holiday home buyouts</strong>, and the sweeping 180° Himalayan peak views of a <strong>valley resort</strong>. Strictly 100% pure vegetarian dining & zero pet fees.
         </p>
 
-        <!-- Direct CTA Button Cluster (Desktop & Tablet) -->
+        <!-- Direct CTA Button Cluster -->
         <div class="flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto mb-10">
           <a 
             href="https://booking.thestoneheritage.in/" 
             target="_blank" 
             rel="noopener noreferrer"
-            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-accent text-white font-bold text-base shadow-xl hover:bg-accent/90 hover:scale-[1.02] active:scale-98 transition-all flex items-center justify-center gap-2 border border-amber-400/30 group"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-accent text-white font-bold text-sm sm:text-base shadow-xl hover:bg-accent/90 hover:scale-[1.02] active:scale-98 transition-all flex items-center justify-center gap-2 border border-amber-400/30 group"
           >
             <Calendar className="w-5 h-5 group-hover:rotate-6 transition-transform" />
-            <span>Check Availability & Book Direct</span>
+            <span>Check Availability & Save 20%</span>
           </a>
 
           <a 
             href="tel:+919027844424" 
-            class="w-full sm:w-auto px-7 py-4 rounded-xl bg-stone-900/80 backdrop-blur-md text-stone-100 font-semibold text-base border border-stone-700 hover:bg-stone-800 hover:text-white transition-all flex items-center justify-center gap-2"
+            class="w-full sm:w-auto px-7 py-4 rounded-xl bg-stone-900/85 backdrop-blur-md text-stone-100 font-semibold text-sm sm:text-base border border-stone-700 hover:bg-stone-800 hover:text-white transition-all flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4 text-amber-400" />
             <span>Call +91 90278 44424</span>
           </a>
 
           <a 
-            href="https://wa.me/919027844424?text=Hi%20Stone%20Heritage%20Mukteshwar!%20I%20am%20looking%20for%20a%20valley%20resort%20cottage%20stay.%20Please%20share%20details%20and%20rates." 
+            href="https://wa.me/919027844424?text=Hi%20Stone%20Heritage%20Mukteshwar!%20I%20am%20exploring%20your%20GMB%20profile%20and%20would%20like%20to%20know%20about%20availability%20and%20rates." 
             target="_blank" 
             rel="noopener noreferrer"
-            class="w-full sm:w-auto px-6 py-4 rounded-xl bg-[#25D366]/20 border border-[#25D366]/40 text-emerald-300 font-medium text-base hover:bg-[#25D366]/30 hover:text-white transition-all flex items-center justify-center gap-2"
+            class="w-full sm:w-auto px-6 py-4 rounded-xl bg-[#25D366]/20 border border-[#25D366]/40 text-emerald-300 font-medium text-sm sm:text-base hover:bg-[#25D366]/30 hover:text-white transition-all flex items-center justify-center gap-2"
           >
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.062-2.18-.553-1.614-.668-2.673-2.316-2.755-2.426-.081-.11-.649-.864-.649-1.65 0-.785.412-1.172.558-1.332.146-.16.32-.2.428-.2.107 0 .214.002.308.006.101.005.237-.038.37.284.144.35.49 1.196.533 1.284.043.088.072.19.014.305-.058.115-.087.187-.173.289-.086.102-.182.228-.26.306-.086.086-.176.18-.076.352.1.172.443.731.95 1.183.653.582 1.204.762 1.376.848.172.086.273.072.374-.044.101-.116.432-.503.547-.676.115-.173.23-.144.388-.086.158.058 1.007.475 1.18.561.173.086.288.13.331.202.043.072.043.419-.101.824z"/>
             </svg>
-            <span>WhatsApp Desk</span>
+            <span>WhatsApp Concierge</span>
           </a>
+        </div>
+
+        <!-- 5 Major GMB Category Interactive Navigation Strip -->
+        <div class="w-full max-w-4xl p-2 rounded-2xl bg-stone-900/80 backdrop-blur-md border border-stone-800 shadow-2xl mb-8">
+          <p class="text-[11px] uppercase tracking-widest text-amber-300 font-bold mb-2">Explore by GMB Hospitality Category:</p>
+          <div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-xs font-medium">
+            <a href="#homestay" class="p-2.5 rounded-xl bg-stone-800/90 hover:bg-accent text-stone-200 hover:text-white transition-all flex flex-col items-center justify-center gap-1 border border-stone-700/50">
+              <Home className="w-4 h-4 text-amber-400" />
+              <span>1. Home Stay</span>
+            </a>
+            <a href="#cottages" class="p-2.5 rounded-xl bg-stone-800/90 hover:bg-accent text-stone-200 hover:text-white transition-all flex flex-col items-center justify-center gap-1 border border-stone-700/50">
+              <Trees className="w-4 h-4 text-amber-400" />
+              <span>2. Cottages</span>
+            </a>
+            <a href="#hotel-suites" class="p-2.5 rounded-xl bg-stone-800/90 hover:bg-accent text-stone-200 hover:text-white transition-all flex flex-col items-center justify-center gap-1 border border-stone-700/50">
+              <Bed className="w-4 h-4 text-amber-400" />
+              <span>3. Hotel Suites</span>
+            </a>
+            <a href="#holiday-home" class="p-2.5 rounded-xl bg-stone-800/90 hover:bg-accent text-stone-200 hover:text-white transition-all flex flex-col items-center justify-center gap-1 border border-stone-700/50">
+              <Users className="w-4 h-4 text-amber-400" />
+              <span>4. Holiday Home</span>
+            </a>
+            <a href="#resort" class="col-span-2 sm:col-span-1 p-2.5 rounded-xl bg-stone-800/90 hover:bg-accent text-stone-200 hover:text-white transition-all flex flex-col items-center justify-center gap-1 border border-stone-700/50">
+              <Mountain className="w-4 h-4 text-amber-400" />
+              <span>5. Valley Resort</span>
+            </a>
+          </div>
         </div>
 
         <!-- 6 Core Feature Signals (Grid) -->
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 w-full max-w-5xl text-left">
-          <div class="p-3.5 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
+          <div class="p-3 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
             <Mountain className="w-5 h-5 text-amber-400 shrink-0" />
             <div class="text-xs leading-tight">
               <span class="block font-semibold text-white">180° Views</span>
@@ -515,42 +574,42 @@ const googleReviews = [
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
+          <div class="p-3 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
             <Utensils className="w-5 h-5 text-amber-400 shrink-0" />
             <div class="text-xs leading-tight">
               <span class="block font-semibold text-white">100% Pure Veg</span>
-              <span class="text-stone-400 text-[11px]">Kumaoni Mountain Kitchen</span>
+              <span class="text-stone-400 text-[11px]">Kumaoni Dining</span>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
+          <div class="p-3 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
             <PawPrint className="w-5 h-5 text-amber-400 shrink-0" />
             <div class="text-xs leading-tight">
               <span class="block font-semibold text-white">100% Pet-Friendly</span>
-              <span class="text-stone-400 text-[11px]">Zero Pet Surcharges</span>
+              <span class="text-stone-400 text-[11px]">Zero Pet Fees</span>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
+          <div class="p-3 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
             <Wifi className="w-5 h-5 text-amber-400 shrink-0" />
             <div class="text-xs leading-tight">
               <span class="block font-semibold text-white">Fiber Wi-Fi</span>
-              <span class="text-stone-400 text-[11px]">Seamless Workations</span>
+              <span class="text-stone-400 text-[11px]">High-Speed Workation</span>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
+          <div class="p-3 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
             <Car className="w-5 h-5 text-amber-400 shrink-0" />
             <div class="text-xs leading-tight">
               <span class="block font-semibold text-white">Highway Access</span>
-              <span class="text-stone-400 text-[11px]">On-Site Safe Parking</span>
+              <span class="text-stone-400 text-[11px]">Safe On-Site Parking</span>
             </div>
           </div>
 
-          <div class="p-3.5 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
+          <div class="p-3 rounded-xl bg-stone-900/60 backdrop-blur-md border border-stone-800/80 flex items-center gap-2.5">
             <Flame className="w-5 h-5 text-amber-400 shrink-0" />
             <div class="text-xs leading-tight">
-              <span class="block font-semibold text-white">Night Bonfires</span>
+              <span class="block font-semibold text-white">Bonfire Nights</span>
               <span class="text-stone-400 text-[11px]">Stargazing Lawn</span>
             </div>
           </div>
@@ -559,7 +618,7 @@ const googleReviews = [
       </div>
     </section>
 
-    <!-- 2. DIRECT BOOKING SAVINGS BANNER -->
+    <!-- 2. DIRECT BOOKING SAVINGS & PRICE TRANSPARENCY STRIP -->
     <section class="bg-amber-900/20 border-y border-amber-900/30 py-4 px-4 sm:px-6">
       <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         <div class="flex items-center gap-3">
@@ -568,141 +627,275 @@ const googleReviews = [
           </div>
           <div>
             <p class="text-sm font-bold text-primary">Direct Reservation Advantage — Save Up to 20% on Rates</p>
-            <p class="text-xs text-stone-600 font-light">Zero OTA commission fees • Direct host coordination • Priority valley room allocation • Complimentary evening bonfire</p>
+            <p class="text-xs text-stone-600 font-light">Zero OTA commission fees • Direct host coordination with Harsh & Parul • Priority Himalayan view allocation • Complimentary evening bonfire</p>
           </div>
         </div>
         <a 
           href="https://booking.thestoneheritage.in/" 
           target="_blank" 
           rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-accent text-white text-xs font-semibold hover:bg-accent/90 transition-all shrink-0"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-accent text-white text-xs font-semibold hover:bg-accent/90 transition-all shrink-0 shadow"
         >
-          <span>Book Direct Engine</span>
+          <span>Book Direct & Save</span>
           <ChevronRight className="w-4 h-4" />
         </a>
       </div>
     </section>
 
-    <!-- 3. VALLEY RESORT OVERVIEW & ARCHITECTURE -->
-    <section class="py-16 md:py-24 bg-white border-b border-stone-200">
+    <!-- 3. GMB CATEGORY 1: 🏡 HOME STAY (MAIN & PRIMARY CATEGORY) -->
+    <section class="py-16 md:py-24 bg-white border-b border-stone-200" id="homestay">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+            <Home className="w-3.5 h-3.5 text-accent" />
+            <span>Primary GMB Category: Home Stay in Mukteshwar</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight leading-snug mb-4">
+            Authentic Boutique Home Stay Experience in Mukteshwar, Uttarakhand
+          </h2>
+
+          <!-- Direct Answer Snippet Block (AEO / GEO / Google Featured Snippets) -->
+          <div class="p-4 sm:p-5 rounded-xl bg-amber-50/70 border-l-4 border-accent text-stone-800 text-xs sm:text-sm leading-relaxed mb-6 shadow-sm">
+            <p>
+              <strong>Stone Heritage Mukteshwar</strong> is a 4.9★ verified luxury mountain homestay and handcrafted stone cottage retreat in Mukteshwar, Uttarakhand. Perched at 7,500 ft in South Gola Range, it features 180° Himalayan snow-peak views, 100% pure vegetarian Kumaoni dining, pet-friendly private lawns, high-speed fiber Wi-Fi, and 9 boutique suites.
+            </p>
+          </div>
+
+          <p class="text-stone-700 text-sm sm:text-base font-light leading-relaxed">
+            Ranked among the <strong>best homestays in Uttarakhand</strong> and recognized as a premier <strong>luxury homestay in Mukteshwar</strong>, Stone Heritage Mukteshwar redefines authentic mountain living. We bridge the soulful warmth, personal care, and home-cooked culinary heritage of a traditional Kumaoni homestay with the five-star comfort of a boutique mountain villa.
+          </p>
+        </div>
+
+        <!-- 4 Persona Grid for Homestay Search Intent -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           
-          <div class="lg:col-span-7">
-            <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-              South Gola Valley Sanctuary
-            </span>
-            <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-6 leading-snug">
-              Authentic Handcrafted Stone Cottages Overlooking the Mukteshwar Valley
-            </h2>
-            <div class="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-light">
-              <p>
-                Unlike generic concrete hotels, <strong>Stone Heritage Mukteshwar</strong> is crafted according to age-old Kumaoni mountain architecture. Heavy, hand-chiseled stones sourced from regional quarries are layered with sturdy cedar timber, creating natural thermal insulation that stays pleasantly cool under the summer sun and deeply comforting during crisp Himalayan winter evenings.
-              </p>
-              <p>
-                Perched along the quiet Bhowali-Dhanachuli corridor at an altitude of approximately 7,500 feet, our property gazes directly across the pristine <strong>South Gola Range</strong> valley. Every morning unfolds with golden alpine light illuminating snow-crested peaks including Trishul, Nanda Devi, and the Panchachuli range.
-              </p>
-              <p>
-                Whether you are seeking a peaceful family vacation with children, an extended mountain workation with high-speed fiber internet, or a refreshing nature escape with your pets, Stone Heritage offers the privacy, quietude, and refined comforts of an exclusive valley resort stay.
+          <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 hover:border-accent/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center mb-4">
+                <Users className="w-5 h-5 text-accent" />
+              </div>
+              <h3 class="text-base font-serif font-bold text-primary mb-2">Homestays for Families</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-3">
+                Multi-room cottage suites, safe enclosed lawns for kids, board games, customized non-spicy child meals, and warm hosts who make your family feel genuinely cherished.
               </p>
             </div>
+            <a href="/blog/best-homestay-in-mukteshwar-for-families/" class="text-xs font-semibold text-accent hover:text-primary transition-colors flex items-center gap-1 mt-2">
+              <span>Family Suites Guide</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
 
-            <!-- Highlights Checklist -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-8 pt-6 border-t border-stone-100">
-              <div class="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <span class="text-xs sm:text-sm text-stone-700">19th-century Kumaoni stone masonry</span>
+          <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 hover:border-accent/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center mb-4">
+                <Heart className="w-5 h-5 text-accent" />
               </div>
-              <div class="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <span class="text-xs sm:text-sm text-stone-700">180° uninterrupted snow-peak views</span>
+              <h3 class="text-base font-serif font-bold text-primary mb-2">Homestays for Couples</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-3">
+                Romantic handcrafted stone rooms, uninterrupted Himalayan sunrise vistas, quiet balcony tea setups, and private evening bonfires under star-filled mountain skies.
+              </p>
+            </div>
+            <a href="#cottages" class="text-xs font-semibold text-accent hover:text-primary transition-colors flex items-center gap-1 mt-2">
+              <span>View Romantic Cottages</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+          <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 hover:border-accent/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center mb-4">
+                <Laptop className="w-5 h-5 text-accent" />
               </div>
-              <div class="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <span class="text-xs sm:text-sm text-stone-700">Strictly 100% pure vegetarian kitchen</span>
+              <h3 class="text-base font-serif font-bold text-primary mb-2">Homestay for Remote Work</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-3">
+                High-speed fiber Wi-Fi across every room and lawn, dedicated workstations, uninterrupted power backup, ergonomic chairs, and discounted long-stay workation packages.
+              </p>
+            </div>
+            <a href="/blog/workation-in-mukteshwar/" class="text-xs font-semibold text-accent hover:text-primary transition-colors flex items-center gap-1 mt-2">
+              <span>Himalayan Workation Guide</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+          <div class="bg-stone-50 rounded-2xl p-6 border border-stone-200 hover:border-accent/50 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center mb-4">
+                <PawPrint className="w-5 h-5 text-accent" />
               </div>
-              <div class="flex items-start gap-2.5">
-                <CheckCircle2 className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <span class="text-xs sm:text-sm text-stone-700">Spacious family suites & standalone cottages</span>
+              <h3 class="text-base font-serif font-bold text-primary mb-2">Pet-Friendly Homestay</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-3">
+                100% pet-friendly with zero pet surcharges. Private garden lawns, safe forest walking tracks, and freshly boiled pet meals prepared daily by our kitchen team.
+              </p>
+            </div>
+            <a href="/blog/pet-friendly-homestay/" class="text-xs font-semibold text-accent hover:text-primary transition-colors flex items-center gap-1 mt-2">
+              <span>Pet-Friendly Stay Guide</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Narrative & Feature Spotlight -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-6 space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-light">
+            <p>
+              Looking for a <strong>homestay near Bhimtal Uttarakhand</strong> or a peaceful basecamp for regional exploration? Perched along the serene South Gola Range on the Bhowali-Dhanachuli corridor, Stone Heritage offers swift access to Mukteshwar's top attractions while preserving complete tranquility away from crowded commercial markets. Planning a road trip from Delhi NCR? Review our <a href="/blog/delhi-to-mukteshwar-road-trip/" class="text-accent hover:underline font-medium">Delhi to Mukteshwar Road Trip Guide</a> for optimal routes.
+            </p>
+            <p>
+              Unlike impersonal commercial hotels, our homestay experience is anchored in human hospitality. Hosted with warmth by Harsh and Manager Parul, every guest is treated like extended family. From guiding you along quiet village forest trails to arranging <strong>Bhalu Gaad Waterfall excursion support</strong> and peaceful <strong>Kainchi Dham pilgrimage day-trips</strong> (see our <a href="/blog/mukteshwar-ramgarh-travel-guide/" class="text-accent hover:underline font-medium">Mukteshwar & Ramgarh Travel Guide</a>), we curate authentic mountain moments.
+            </p>
+            
+            <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Stone Cottages homestay in Mukteshwar</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Luxury Himalayan Stone Villa Stay</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Traditional homestay hospitality</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800 font-medium">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Affordable Homestay with Bonfire</span>
               </div>
             </div>
           </div>
 
-          <div class="lg:col-span-5 flex flex-col gap-4">
-            <div class="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] group">
+          <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+            <div class="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
               <img 
-                src="/images/property/himalayan-view-terrace-mukteshwar.webp" 
-                alt="Panoramic Himalayan view terrace at Stone Heritage Mukteshwar Valley Resort"
+                src="/images/property/luxury-homestay-UttarakhandMukteshwar-homestay.webp" 
+                alt="Stone Heritage Luxury Homestay in Mukteshwar Uttarakhand overlooking the valley"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                width="600"
+                height="450"
+              />
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-lg aspect-[4/3]">
+              <img 
+                src="/images/property/garden-area-stone-heritage.webp" 
+                alt="Open garden lawns at Stone Heritage homestay for family relaxation and pets"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                width="600"
+                height="450"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. GMB CATEGORY 2: 🛖 COTTAGE (HANDCRAFTED STONE COTTAGES) -->
+    <section class="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200" id="cottages">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
+              <img 
+                src="/images/property/mountain-living-best-homestay-Mukteshwar.webp" 
+                alt="Handcrafted stone cottage stay at Stone Heritage Mukteshwar"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 width="800"
                 height="600"
               />
-              <div class="absolute bottom-3 left-3 right-3 bg-stone-900/80 backdrop-blur-md p-3 rounded-xl text-white text-xs border border-white/10">
-                <p class="font-semibold text-amber-200">180° Panoramic Mountain Terrace</p>
-                <p class="text-[11px] text-stone-300">Front-row views of Trishul & Nanda Devi massifs</p>
+              <div class="absolute bottom-3 left-3 right-3 bg-stone-950/85 backdrop-blur-md p-3.5 rounded-xl text-white text-xs border border-white/10">
+                <p class="font-bold text-amber-300">19th-Century Kumaoni Architecture</p>
+                <p class="text-[11px] text-stone-300">Hand-chiseled stone masonry with thermal climate control</p>
               </div>
             </div>
+          </div>
 
-            <div class="grid grid-cols-2 gap-4">
-              <div class="relative rounded-xl overflow-hidden shadow aspect-[4/3]">
-                <img 
-                  src="/images/property/garden-area-stone-heritage.webp" 
-                  alt="Open garden lawns at Stone Heritage Mukteshwar for family relaxation and pets"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  width="400"
-                  height="300"
-                />
+          <div class="lg:col-span-7 order-1 lg:order-2">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+              <Trees className="w-3.5 h-3.5 text-accent" />
+              <span>GMB Category: Handcrafted Stone Cottages in Mukteshwar</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight leading-snug mb-5">
+              Handcrafted Heritage Stone Cottage Stay — Romantic Valley View Ridge Cottages
+            </h2>
+            <div class="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-light">
+              <p>
+                At Stone Heritage, your cottage is an authentic architectural heirloom. Built using native mountain rock chiseled by master stone artisans and layered with aromatic cedar timber, our <strong>stone cottages in Mukteshwar</strong> naturally retain soothing warmth during freezing mountain nights and remain refreshingly cool throughout summer days.
+              </p>
+              <p>
+                Choose our standalone <strong>Sunset Heritage Stone Cottage</strong> for intimate privacy with a private sunset terrace, or our spacious <strong>Family Stone Cottage Suite</strong> with panoramic picture windows overlooking the South Gola Valley and the distant snow-crested Greater Himalayas.
+              </p>
+              <p>
+                As twilight settles over the hills, gather in the stone courtyard for our signature <strong>cottage bonfire & stargazing experience in Mukteshwar</strong>, with crisp alpine breezes, acoustic quietude, and zero city light pollution.
+              </p>
+            </div>
+
+            <!-- Cottage Highlights Pill Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-6 pt-6 border-t border-stone-200">
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800">
+                <Flame className="w-4 h-4 text-accent shrink-0" />
+                <span>Cottage bonfire & stargazing evenings</span>
               </div>
-              <div class="relative rounded-xl overflow-hidden shadow aspect-[4/3]">
-                <img 
-                  src="/images/property/luxury-heritage-homestay-in-mukteshwar.webp" 
-                  alt="Traditional stone architecture details at Stone Heritage Mukteshwar"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                  width="400"
-                  height="300"
-                />
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800">
+                <Mountain className="w-4 h-4 text-accent shrink-0" />
+                <span>Romantic Himalayan View Cottage Suites</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800">
+                <PawPrint className="w-4 h-4 text-accent shrink-0" />
+                <span>Pet-friendly mountain cottage stay</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs sm:text-sm text-stone-800">
+                <Laptop className="w-4 h-4 text-accent shrink-0" />
+                <span>Heritage cottage workation retreat</span>
               </div>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- 4. VALLEY COTTAGES & FAMILY SUITES SHOWCASE -->
-    <section class="py-16 md:py-24 bg-stone-100/60" id="cottages">
+    <!-- 5. GMB CATEGORY 3: 🛎️ HOTEL & ACCOMMODATION SUITES (VERIFIED ROOM INVENTORY) -->
+    <section class="py-16 md:py-24 bg-white border-b border-stone-200" id="hotel-suites">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-            Rooms & Private Cottages
-          </span>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+            <Bed className="w-3.5 h-3.5 text-accent" />
+            <span>GMB Category: Hotel Accommodation in Mukteshwar</span>
+          </div>
           <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-4">
-            Handcrafted Stone Cottages & Family Resort Suites
+            Luxury Heritage Suite Booking & Mountain View Hotel Accommodations
           </h2>
           <p class="text-stone-600 text-sm sm:text-base font-light">
-            Every room at Stone Heritage Mukteshwar is individually designed with native stone textures, fine wood finishes, modern en-suite bathrooms, and panoramic windows framing the valley and peaks.
+            Each room at Stone Heritage Mukteshwar is individually curated with natural stone textures, fine wood paneling, modern en-suite bathrooms, electric heating amenities, and panoramic windows framing Himalayan snow peaks.
           </p>
         </div>
 
+        <!-- 9 Verified Room Inventory Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {rooms.map((room) => (
-            <article class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 border border-stone-200 flex flex-col group">
+            <article class="bg-stone-50 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-stone-200 flex flex-col group">
               <!-- Room Image -->
               <div class="relative aspect-[16/10] overflow-hidden bg-stone-200">
                 <img 
                   src={room.image} 
-                  alt={`${room.name} at Stone Heritage Mukteshwar Valley Resort`}
+                  alt={`${room.name} - ${room.category} at Stone Heritage Mukteshwar`}
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   width="600"
                   height="375"
                 />
-                <div class="absolute top-3 left-3 bg-stone-900/80 backdrop-blur-md text-amber-200 text-[11px] font-semibold px-2.5 py-1 rounded-md">
-                  {room.category}
+                <div class="absolute top-3 left-3 bg-stone-950/85 backdrop-blur-md text-amber-200 text-[11px] font-semibold px-2.5 py-1 rounded-md border border-white/10">
+                  {room.gmbCategory}
                 </div>
               </div>
 
@@ -711,7 +904,7 @@ const googleReviews = [
                 <h3 class="text-xl font-serif font-bold text-primary mb-1 group-hover:text-accent transition-colors">
                   {room.name}
                 </h3>
-                <p class="text-xs font-medium text-amber-800 mb-3 flex items-center gap-1.5">
+                <p class="text-xs font-semibold text-amber-800 mb-3 flex items-center gap-1.5">
                   <span>{room.occupancy}</span>
                 </p>
                 <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-5 flex-grow">
@@ -719,7 +912,7 @@ const googleReviews = [
                 </p>
 
                 <!-- Amenities Checklist -->
-                <ul class="space-y-1.5 mb-6 pt-4 border-t border-stone-100 text-xs text-stone-500 font-light">
+                <ul class="space-y-1.5 mb-6 pt-4 border-t border-stone-200 text-xs text-stone-600 font-light">
                   {room.features.map(f => (
                     <li class="flex items-center gap-2">
                       <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
@@ -734,9 +927,9 @@ const googleReviews = [
                     href="https://booking.thestoneheritage.in/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="w-full py-2.5 px-4 rounded-xl bg-stone-900 text-white hover:bg-accent font-semibold text-xs transition-colors flex items-center justify-center gap-1.5"
+                    class="w-full py-2.5 px-4 rounded-xl bg-stone-900 text-white hover:bg-accent font-semibold text-xs transition-colors flex items-center justify-center gap-1.5 shadow"
                   >
-                    <span>Check Rates & Book Room</span>
+                    <span>Check Rates & Book Direct</span>
                     <ChevronRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
@@ -745,26 +938,176 @@ const googleReviews = [
           ))}
         </div>
 
-        <div class="mt-12 text-center">
-          <p class="text-xs sm:text-sm text-stone-600 mb-4 font-light">
-            Planning a multi-family reunion or an exclusive private villa buyout? We offer complete estate buyout packages.
+      </div>
+    </section>
+
+    <!-- 6. GMB CATEGORY 4: 🔑 HOLIDAY HOME & PRIVATE ESTATE BUYOUT -->
+    <section class="py-16 md:py-24 bg-stone-900 text-stone-100" id="holiday-home">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold mb-4 border border-amber-500/30">
+              <Users className="w-3.5 h-3.5" />
+              <span>GMB Category: Entire Mountain Holiday Home Rental</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight leading-snug mb-6">
+              Entire Private Mountain Holiday Home Rental & Multi-Bedroom Estate Buyouts
+            </h2>
+            <div class="space-y-4 text-stone-300 text-sm sm:text-base leading-relaxed font-light">
+              <p>
+                Searching for an exclusive <strong>multi-bedroom family vacation home</strong> in Mukteshwar? Stone Heritage offers complete private estate buyouts, transforming our 9-room heritage haven into your private sanctuary.
+              </p>
+              <p>
+                Accommodating groups of <strong>15 to 25 guests</strong>, our entire holiday home rental includes exclusive access to all suites, the panoramic 180° Himalayan observation terrace, sprawling private garden lawns, and the evening bonfire courtyard.
+              </p>
+              <p>
+                Enjoy dedicated on-site hospitality with a private kitchen team crafting fresh, customized, 100% pure vegetarian breakfasts, Pahadi lunches, and evening high tea. Perfect for multi-generational family reunions, anniversaries, corporate leadership retreats, and intimate celebrations.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-stone-800 text-xs sm:text-sm text-stone-200">
+              <div class="flex items-center gap-2.5">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Private Group & Family Cottage Buyout</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Airbnb-Style Heritage Vacation Stay</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Pet-friendly holiday home with garden lawns</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <span>Fresh home-cooked pure vegetarian meals</span>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-col sm:flex-row items-center gap-4">
+              <a 
+                href="https://wa.me/919027844424?text=Hello!%20I%20am%20inquiring%20about%20an%20Entire%20Private%20Holiday%20Home%20buyout%20at%20Stone%20Heritage%20Mukteshwar%20for%20our%20group." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-accent text-white font-bold text-xs sm:text-sm hover:bg-accent/90 transition-all shadow-lg flex items-center justify-center gap-2"
+              >
+                <span>Inquire About Estate Buyout via WhatsApp</span>
+                <ChevronRight className="w-4 h-4" />
+              </a>
+              <a 
+                href="tel:+919027844424" 
+                class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-stone-800 text-stone-200 hover:text-white font-semibold text-xs sm:text-sm border border-stone-700 transition-all flex items-center justify-center gap-2"
+              >
+                <Phone className="w-4 h-4 text-amber-400" />
+                <span>Call Concierge: +91 90278 44424</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] border border-stone-800">
+              <img 
+                src="/images/rooms/stonewood-family-retreat-group-stay.webp" 
+                alt="Private group and family holiday home buyout at Stone Heritage Mukteshwar"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. GMB CATEGORY 5: 🌄 RESORT HOTEL & VALLEY EXPERIENCE -->
+    <section class="py-16 md:py-24 bg-white border-b border-stone-200" id="resort">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+            <Mountain className="w-3.5 h-3.5 text-accent" />
+            <span>GMB Category: Resort Hotel & Mountain Sanctuary</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-4">
+            Luxury Boutique Resort Experience in South Gola Valley, Mukteshwar
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base font-light">
+            Enjoy the expansive outdoor spaces, panoramic viewing terraces, and nature experiences of a boutique mountain resort with the bespoke warmth of a private heritage retreat.
           </p>
-          <a 
-            href="https://wa.me/919027844424?text=Hello!%20I%20am%20inquiring%20about%20a%20full%20property%20buyout%20at%20Stone%20Heritage%20Mukteshwar." 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-primary transition-colors underline underline-offset-4"
-          >
-            <span>Inquire About Full Resort Buyouts via WhatsApp Concierge</span>
-            <ChevronRight className="w-4 h-4" />
-          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
+          
+          <div class="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img 
+                src="/images/property/himalayan-view-terrace-mukteshwar.webp" 
+                alt="180 Degree Himalayan peak view terrace at Stone Heritage Mukteshwar Valley Resort"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                width="500"
+                height="320"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-lg font-serif font-bold text-primary mb-2">180° Himalayan Peak Panorama</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-4 flex-grow">
+                Wake up to uninterrupted front-row views of Trishul (7,120 m), Nanda Devi (7,816 m), Maiktoli, and the Panchachuli range right from your cottage balcony and terrace.
+              </p>
+              <span class="text-xs font-semibold text-accent">Morning Alpine Sunrises →</span>
+            </div>
+          </div>
+
+          <div class="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img 
+                src="/images/experiences/sky-observation-in-mukteshwar.webp" 
+                alt="Courtyard bonfire and stargazing evenings at Stone Heritage Mukteshwar"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                width="500"
+                height="320"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-lg font-serif font-bold text-primary mb-2">Himalayan Stargazing & Bonfires</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-4 flex-grow">
+                Crisp mountain nights gathered around a crackling wood bonfire. Sip piping hot masala chai while gazing at constellations and the Milky Way under crystal-clear skies.
+              </p>
+              <span class="text-xs font-semibold text-accent">Night Stargazing Lawn →</span>
+            </div>
+          </div>
+
+          <div class="bg-stone-50 rounded-2xl overflow-hidden border border-stone-200 shadow-sm flex flex-col">
+            <div class="aspect-[16/10] overflow-hidden">
+              <img 
+                src="/images/experiences/Bhalugaad-Waterfall-Mukteshwar.webp" 
+                alt="Guided Bhalu Gaad Waterfall and nature trail excursions near Stone Heritage Mukteshwar"
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                width="500"
+                height="320"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <h3 class="text-lg font-serif font-bold text-primary mb-2">Waterfall Treks & Nature Trails</h3>
+              <p class="text-xs sm:text-sm text-stone-600 font-light leading-relaxed mb-4 flex-grow">
+                Located just 13 km from Bhalu Gaad Waterfall with gentle pine and deodar forest trails starting right at our doorstep for birdwatching and scenic hikes.
+              </p>
+              <span class="text-xs font-semibold text-accent">Guided Excursions →</span>
+            </div>
+          </div>
+
         </div>
 
       </div>
     </section>
 
-    <!-- 5. 100% PURE VEGETARIAN GASTRONOMY -->
-    <section class="py-16 md:py-24 bg-white border-b border-stone-200">
+    <!-- 8. 100% PURE VEGETARIAN KUMAONI GASTRONOMY -->
+    <section class="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200" id="dining">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
@@ -778,48 +1121,49 @@ const googleReviews = [
                 width="800"
                 height="1000"
               />
-              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/80 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-transparent to-transparent"></div>
               <div class="absolute bottom-6 left-6 right-6 text-white">
                 <span class="text-xs uppercase font-bold tracking-widest text-amber-300 block mb-1">
                   100% Pure Vegetarian Kitchen
                 </span>
-                <p class="text-lg font-serif font-bold">Pahadi Flavors & Wholesome Farm Meals</p>
-                <p class="text-xs text-stone-300 mt-1 font-light">Freshly cooked to order using local organic Himalayan grains & vegetables.</p>
+                <p class="text-lg font-serif font-bold">Authentic Pahadi Flavors & Farm-to-Table Dining</p>
+                <p class="text-xs text-stone-300 mt-1 font-light">Freshly cooked to order using locally sourced organic Himalayan grains and vegetables.</p>
               </div>
             </div>
           </div>
 
           <div class="lg:col-span-7 order-1 lg:order-2">
-            <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-              Culinary Heritage
-            </span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+              <Utensils className="w-3.5 h-3.5 text-accent" />
+              <span>Culinary Heritage: 100% Pure Veg Dining</span>
+            </div>
             <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-6 leading-snug">
-              Authentic Kumaoni Mountain Gastronomy from a 100% Pure Veg Kitchen
+              Authentic Kumaoni Mountain Gastronomy & Homestyle Pure Veg Dining
             </h2>
             <div class="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-light">
               <p>
-                Food at Stone Heritage Mukteshwar is an integral part of your mountain immersion. We operate a strictly <strong>100% pure vegetarian kitchen</strong> adhering to the highest standards of culinary cleanliness and authentic Pahadi hospitality.
+                Dining at Stone Heritage Mukteshwar is an integral part of your mountain journey. We operate a strictly <strong>100% pure vegetarian kitchen</strong> adhering to the highest standards of culinary hygiene and authentic Pahadi hospitality.
               </p>
               <p>
-                Our chefs craft hearty homestyle meals using locally grown mountain staples: iron-rich <em>Bhatt ki Churkani</em> (black soybean curry), comforting <em>Gahat ki Dal</em> (horsegram lentils), freshly crushed <em>Kumaoni Cucumber Raita</em> seasoned with yellow mountain mustard, and warm <em>Mandua ki Roti</em> (nutritious finger millet flatbreads).
+                Our cook prepares comforting homestyle meals using locally cultivated mountain grains: iron-rich <em>Bhatt ki Churkani</em> (black soybean stew), nourishing <em>Gahat ki Dal</em> (horsegram lentils), freshly crushed <em>Kumaoni Cucumber Raita</em> tempered with mountain mustard, and warm <em>Mandua ki Roti</em> (finger millet flatbreads).
               </p>
               <p>
-                For family guests, children, and elderly travelers, we gladly customize meal spice levels and dietary preferences. Savor your breakfast on the sunny open terrace while gazing at snow peaks, and enjoy hot masala chai and freshly fried pakoras as the evening mountain breeze rolls in.
+                For family travelers, children, and elderly guests, we happily customize spice levels and dietary needs. Savor your breakfast on the sunny open terrace while gazing at snow peaks, and enjoy hot pakoras and tea as evening clouds roll through the valley.
               </p>
             </div>
 
             <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-3">
-              <div class="p-3 bg-stone-50 rounded-xl border border-stone-200/80">
-                <span class="block text-xs font-semibold text-primary">Farm-Fresh Produce</span>
-                <span class="text-[11px] text-stone-500 font-light">Locally sourced organic crops</span>
+              <div class="p-3.5 bg-white rounded-xl border border-stone-200 shadow-sm">
+                <span class="block text-xs font-bold text-primary">Farm-Fresh Produce</span>
+                <span class="text-[11px] text-stone-500 font-light">Organic Himalayan crops</span>
               </div>
-              <div class="p-3 bg-stone-50 rounded-xl border border-stone-200/80">
-                <span class="block text-xs font-semibold text-primary">Customized Spices</span>
+              <div class="p-3.5 bg-white rounded-xl border border-stone-200 shadow-sm">
+                <span class="block text-xs font-bold text-primary">Customized Spices</span>
                 <span class="text-[11px] text-stone-500 font-light">Child-friendly & mild options</span>
               </div>
-              <div class="p-3 bg-stone-50 rounded-xl border border-stone-200/80">
-                <span class="block text-xs font-semibold text-primary">Terrace Dining</span>
-                <span class="text-[11px] text-stone-500 font-light">Meals with Himalayan vistas</span>
+              <div class="p-3.5 bg-white rounded-xl border border-stone-200 shadow-sm">
+                <span class="block text-xs font-bold text-primary">Terrace Dining</span>
+                <span class="text-[11px] text-stone-500 font-light">Meals with 180° peak views</span>
               </div>
             </div>
           </div>
@@ -828,33 +1172,34 @@ const googleReviews = [
       </div>
     </section>
 
-    <!-- 6. 100% PET-FRIENDLY RESORT HAVEN -->
-    <section class="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200">
+    <!-- 9. 100% PET-FRIENDLY MOUNTAIN STAY -->
+    <section class="py-16 md:py-24 bg-white border-b border-stone-200" id="pet-friendly">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div class="lg:col-span-7">
-            <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-              Pet-Friendly Mountain Stay
-            </span>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+              <PawPrint className="w-3.5 h-3.5 text-accent" />
+              <span>Pet-Friendly Verified: Zero Extra Fees</span>
+            </div>
             <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-6 leading-snug">
-              100% Pet-Friendly With Sprawling Private Lawns & Nature Trails
+              Pet-Friendly Mountain Homestay with Private Lawns & Forest Trails
             </h2>
             <div class="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-light">
               <p>
-                We believe family vacations are incomplete without your four-legged companions. Unlike restrictive resorts that ban pets or impose exorbitant surcharges, <strong>Stone Heritage Mukteshwar charges ZERO pet fees</strong>.
+                We believe mountain holidays are complete only when the entire family—including your beloved pets—travels together. Unlike commercial resorts that enforce strict bans or levy steep pet fees, <strong>Stone Heritage Mukteshwar charges ZERO pet surcharges</strong>.
               </p>
               <p>
-                Your dogs will revel in the freedom of our fenced open green lawns, clean mountain air, and gentle walking paths weaving through South Gola Range pine groves. Our compassionate staff is always on hand to assist with warm pet meals, fresh boiled milk, or clean bowls.
+                Your furry companions will love running freely on our enclosed grass lawns, breathing crisp mountain air, and joining you on gentle walking paths weaving through South Gola Range pine groves. Our compassionate staff is always ready with fresh boiled milk, pet bowls, or custom simple meals.
               </p>
               <p>
-                Experience total peace of mind knowing your pet can relax comfortably by your side while you take in panoramic Himalayan sunrises from your cottage terrace.
+                Relax peacefully knowing your pet can nap comfortably beside you while you watch the sunrise over the Trishul peak from your private terrace.
               </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-stone-200">
               <div class="flex items-center gap-3">
-                <div class="p-2 rounded-lg bg-white border border-stone-200 text-accent">
+                <div class="p-2 rounded-lg bg-stone-50 border border-stone-200 text-accent">
                   <PawPrint className="w-5 h-5" />
                 </div>
                 <div>
@@ -864,7 +1209,7 @@ const googleReviews = [
               </div>
 
               <div class="flex items-center gap-3">
-                <div class="p-2 rounded-lg bg-white border border-stone-200 text-accent">
+                <div class="p-2 rounded-lg bg-stone-50 border border-stone-200 text-accent">
                   <Compass className="w-5 h-5" />
                 </div>
                 <div>
@@ -874,12 +1219,12 @@ const googleReviews = [
               </div>
 
               <div class="flex items-center gap-3">
-                <div class="p-2 rounded-lg bg-white border border-stone-200 text-accent">
+                <div class="p-2 rounded-lg bg-stone-50 border border-stone-200 text-accent">
                   <Utensils className="w-5 h-5" />
                 </div>
                 <div>
                   <span class="text-xs font-bold text-primary block">Fresh Pet Meals</span>
-                  <span class="text-[11px] text-stone-500">Available upon request</span>
+                  <span class="text-[11px] text-stone-500">Prepared fresh on request</span>
                 </div>
               </div>
             </div>
@@ -889,15 +1234,15 @@ const googleReviews = [
             <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] group">
               <img 
                 src="/images/property/pet-friendly-homestay-resort.webp" 
-                alt="Happy pets enjoying the green lawns at Stone Heritage Mukteshwar pet-friendly resort"
+                alt="Happy pets enjoying the green lawns at Stone Heritage Mukteshwar pet-friendly homestay"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
                 width="800"
                 height="600"
               />
-              <div class="absolute bottom-3 left-3 right-3 bg-stone-900/85 backdrop-blur-md p-3 rounded-xl text-white text-xs border border-white/10">
-                <p class="font-semibold text-amber-200">Pet-Approved Mountain Haven</p>
-                <p class="text-[11px] text-stone-300">Open lawns, fresh air & village walking tracks</p>
+              <div class="absolute bottom-3 left-3 right-3 bg-stone-950/85 backdrop-blur-md p-3.5 rounded-xl text-white text-xs border border-white/10">
+                <p class="font-bold text-amber-300">Paws Welcome Always</p>
+                <p class="text-[11px] text-stone-300">Safe enclosed grass lawns & forest nature trails</p>
               </div>
             </div>
           </div>
@@ -906,55 +1251,61 @@ const googleReviews = [
       </div>
     </section>
 
-    <!-- 7. LOCAL TRANSIT & LANDMARK PROXIMITY MATRIX -->
-    <section class="py-16 md:py-24 bg-white border-b border-stone-200" id="location-transit">
+    <!-- 10. HYPER-LOCAL TRANSIT & LANDMARK MATRIX (LOCAL MAPS 3-PACK AUTHORITY) -->
+    <section class="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200" id="location-transit">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-            Local Connectivity & Day Excursions
-          </span>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+            <Navigation className="w-3.5 h-3.5 text-accent" />
+            <span>Local SEO & Google Maps Authority</span>
+          </div>
           <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-4">
-            Strategic Location Near Mukteshwar Attractions & Transit Hubs
+            Strategic Location Near Mukteshwar Attractions & Transit Corridors
           </h2>
           <p class="text-stone-600 text-sm sm:text-base font-light">
-            Conveniently situated on the all-weather Bhowali-Dhanachuli Road in South Gola Range, Stone Heritage Mukteshwar provides seamless highway accessibility with zero rough off-road driving.
+            Conveniently situated on the all-weather Bhowali-Dhanachuli Road in South Gola Range, Stone Heritage Mukteshwar provides seamless highway accessibility with zero rough off-road terrain.
           </p>
         </div>
 
-        <!-- Proximity Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <!-- Transit & Landmark Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
           {nearbyAttractions.map(item => (
-            <div class="bg-stone-50 rounded-xl p-6 border border-stone-200 hover:border-accent/40 transition-colors shadow-sm">
-              <div class="flex items-center justify-between mb-3">
-                <h3 class="text-base font-serif font-bold text-primary">
+            <div class="bg-white rounded-xl p-5 border border-stone-200 hover:border-accent/40 transition-colors shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-accent bg-accent/10 px-2 py-0.5 rounded">
+                    {item.category}
+                  </span>
+                  <span class="text-xs font-bold text-stone-700 bg-stone-100 px-2 py-0.5 rounded">
+                    {item.distance}
+                  </span>
+                </div>
+                <h3 class="text-base font-serif font-bold text-primary mb-1">
                   {item.name}
                 </h3>
-                <span class="text-xs font-semibold text-accent px-2 py-0.5 rounded bg-accent/10">
-                  {item.distance}
-                </span>
+                <p class="text-xs text-stone-500 mb-3 flex items-center gap-1 font-medium">
+                  <Clock className="w-3.5 h-3.5 text-stone-400" />
+                  <span>{item.driveTime} drive</span>
+                </p>
+                <p class="text-xs text-stone-600 font-light leading-relaxed">
+                  {item.desc}
+                </p>
               </div>
-              <p class="text-xs text-stone-500 mb-3 flex items-center gap-1.5 font-medium">
-                <Clock className="w-3.5 h-3.5 text-stone-400" />
-                <span>Approx. {item.driveTime} drive</span>
-              </p>
-              <p class="text-xs text-stone-600 font-light leading-relaxed">
-                {item.desc}
-              </p>
             </div>
           ))}
         </div>
 
-        <!-- Official NAP Anchor Box (Character-for-Character Accuracy) -->
-        <div class="bg-stone-900 text-stone-100 rounded-2xl p-6 sm:p-8 border border-stone-800 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Official Canonical NAP Ground Truth Card -->
+        <div class="bg-stone-950 text-stone-100 rounded-2xl p-6 sm:p-8 border border-stone-800 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="space-y-2 text-center md:text-left">
-            <span class="text-xs uppercase tracking-widest text-amber-300 font-semibold">Verified NAP Ground Truth</span>
+            <span class="text-xs uppercase tracking-widest text-amber-300 font-bold">Verified Google Business Profile Ground Truth</span>
             <h4 class="text-xl font-serif font-bold text-white">Stone Heritage Mukteshwar</h4>
             <p class="text-xs sm:text-sm text-stone-300 font-light">
-              Bhowali-Dhanachuli Road, South Gola Range, Mukteshwar, Uttarakhand 263138, India
+              Bhowali-Dhanachuli Road, South Gola Range, Tehsil - Dhari, District - Nainital, Mukteshwar, Uttarakhand - 263138, India
             </p>
             <p class="text-xs text-stone-400">
-              Coordinates: <span class="font-mono text-amber-200">29.4346873° N, 79.6447246° E</span> • Phone: <a href="tel:+919027844424" class="text-white hover:text-amber-300 underline underline-offset-2">+91 90278 44424</a>
+              Coordinates: <span class="font-mono text-amber-300">29.4346873° N, 79.6447246° E</span> • Phone: <a href="tel:+919027844424" class="text-white hover:text-amber-300 underline underline-offset-2">+91 90278 44424</a>
             </p>
           </div>
           <a 
@@ -964,32 +1315,33 @@ const googleReviews = [
             class="px-6 py-3.5 rounded-xl bg-accent text-white font-bold text-xs hover:bg-accent/90 transition-all shadow-md shrink-0 flex items-center gap-2"
           >
             <Navigation className="w-4 h-4" />
-            <span>Open in Google Maps Navigation</span>
+            <span>Open Google Maps Directions</span>
           </a>
         </div>
 
       </div>
     </section>
 
-    <!-- 8. GOOGLE REVIEWS & SOCIAL PROOF -->
-    <section class="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200">
+    <!-- 11. GOOGLE REVIEWS & AUTHENTIC GUEST SENTIMENT -->
+    <section class="py-16 md:py-24 bg-white border-b border-stone-200">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-            Verified Guest Sentiment
-          </span>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+            <Star className="w-3.5 h-3.5 text-accent fill-accent" />
+            <span>Verified Google Reviews (4.9★ Average)</span>
+          </div>
           <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-3">
-            Rated 4.9★ Average Across 250+ Google Reviews
+            Rated 4.9★ Across 250+ Google Business Profile Reviews
           </h2>
           <p class="text-stone-600 text-sm font-light">
-            Real guest feedback praising our handcrafted stone cottages, Himalayan vistas, pure vegetarian meals, and warm hospitality.
+            Real guest testimonials celebrating our handcrafted stone cottages, Himalayan snow-peak views, pure vegetarian dining, and heartfelt hospitality.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {googleReviews.map((review) => (
-            <div class={`bg-white p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between hover:shadow-md transition-shadow ${review.featured ? 'md:col-span-2 lg:col-span-2 bg-gradient-to-br from-white to-amber-50/20' : ''}`}>
+            <div class={`bg-stone-50 p-6 rounded-2xl shadow-sm border border-stone-200 flex flex-col justify-between hover:shadow-md transition-shadow ${review.featured ? 'md:col-span-2 lg:col-span-2 bg-gradient-to-br from-stone-50 to-amber-50/40' : ''}`}>
               <div>
                 <div class="flex items-center justify-between mb-3">
                   <div class="flex text-amber-400">
@@ -999,7 +1351,7 @@ const googleReviews = [
                     <Star className="w-4 h-4 fill-amber-400" />
                     <Star className="w-4 h-4 fill-amber-400" />
                   </div>
-                  <div class="flex items-center gap-1.5 bg-stone-100 px-2.5 py-1 rounded-full text-stone-700">
+                  <div class="flex items-center gap-1.5 bg-white border border-stone-200 px-2.5 py-1 rounded-full text-stone-700">
                     <svg class="w-3.5 h-3.5" viewBox="0 0 24 24">
                       <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
                       <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -1012,12 +1364,12 @@ const googleReviews = [
 
                 <div class="mb-3 flex flex-wrap items-center gap-2">
                   {review.tag && (
-                    <span class="text-[11px] font-medium text-stone-600 bg-stone-100/90 px-2 py-0.5 rounded">
+                    <span class="text-[11px] font-medium text-stone-600 bg-stone-200/80 px-2 py-0.5 rounded">
                       {review.tag}
                     </span>
                   )}
                   {review.highlight && (
-                    <span class="text-[10px] bg-amber-100/80 text-amber-900 font-semibold px-2 py-0.5 rounded-full">
+                    <span class="text-[10px] bg-amber-100 text-amber-900 font-semibold px-2 py-0.5 rounded-full">
                       {review.highlight}
                     </span>
                   )}
@@ -1028,7 +1380,7 @@ const googleReviews = [
                 </p>
               </div>
 
-              <div class="pt-4 border-t border-stone-100 space-y-2">
+              <div class="pt-4 border-t border-stone-200 space-y-2">
                 <div class="flex items-center justify-between">
                   <span class="block text-xs font-bold text-primary">{review.name}</span>
                   <span class="text-[11px] text-stone-400">{review.timeAgo}</span>
@@ -1059,25 +1411,26 @@ const googleReviews = [
       </div>
     </section>
 
-    <!-- 9. FREQUENTLY ASKED QUESTIONS (FAQ) -->
-    <section class="py-16 md:py-24 bg-white border-b border-stone-200" id="faqs">
+    <!-- 12. FREQUENTLY ASKED QUESTIONS (FAQ) -->
+    <section class="py-16 md:py-24 bg-stone-100/60 border-b border-stone-200" id="faqs">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center mb-14">
-          <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-2">
-            Helpful Information
-          </span>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold mb-3">
+            <Sparkles className="w-3.5 h-3.5 text-accent" />
+            <span>Search & Stay FAQ</span>
+          </div>
           <h2 class="text-2xl sm:text-4xl font-serif font-bold text-primary tracking-tight mb-4">
             Frequently Asked Questions
           </h2>
           <p class="text-stone-600 text-sm font-light">
-            Everything you need to know about staying at Stone Heritage Mukteshwar Valley Resort.
+            Everything you need to know about Stone Heritage Mukteshwar across all 5 stay categories.
           </p>
         </div>
 
         <div class="space-y-4">
-          {faqs.map((faq, idx) => (
-            <details class="group bg-stone-50 rounded-xl p-5 border border-stone-200 open:border-accent/50 open:bg-amber-50/20 transition-all">
+          {faqs.map((faq: { q: string; a: string }, idx: number) => (
+            <details class="group bg-white rounded-xl p-5 border border-stone-200 open:border-accent/50 open:bg-amber-50/20 transition-all shadow-sm">
               <summary class="flex justify-between items-center cursor-pointer list-none text-left">
                 <span class="text-sm sm:text-base font-serif font-bold text-primary group-open:text-accent pr-4">
                   {faq.q}
@@ -1098,16 +1451,17 @@ const googleReviews = [
       </div>
     </section>
 
-    <!-- 10. GOOGLE MAPS INTERACTIVE EMBED -->
-    <section class="py-14 bg-stone-50">
+    <!-- 13. GOOGLE MAPS INTERACTIVE EMBED (LOCAL PACK BOOST) -->
+    <section class="py-14 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-8">
           <span class="text-xs font-semibold tracking-widest text-accent uppercase block mb-1">
-            Map Location
+            Find Us on Google Maps
           </span>
           <h3 class="text-xl sm:text-2xl font-serif font-bold text-primary">
-            Find Us on Bhowali-Dhanachuli Road
+            Official Location on Bhowali-Dhanachuli Road
           </h3>
+          <p class="text-xs text-stone-500 mt-1">Easy highway drive with on-site secure parking for all vehicle types.</p>
         </div>
 
         <div class="rounded-2xl overflow-hidden shadow-lg border border-stone-300 h-80 sm:h-96 w-full">
@@ -1125,17 +1479,17 @@ const googleReviews = [
       </div>
     </section>
 
-    <!-- 11. FINAL BOOKING CALL TO ACTION -->
-    <section class="py-16 md:py-20 bg-stone-900 text-stone-100 text-center relative overflow-hidden">
+    <!-- 14. FINAL CONVERSION CALL TO ACTION -->
+    <section class="py-16 md:py-20 bg-stone-950 text-stone-100 text-center relative overflow-hidden border-t border-stone-800">
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <span class="text-xs uppercase font-bold tracking-widest text-amber-300 block mb-3">
-          Plan Your Mukteshwar Escape
+          Plan Your Mountain Getaway
         </span>
         <h2 class="text-2xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-6">
           Reserve Your Handcrafted Stone Cottage in Mukteshwar
         </h2>
         <p class="text-stone-300 text-sm sm:text-base font-light max-w-2xl mx-auto mb-8 leading-relaxed">
-          Escape city noise and awaken to 180° Himalayan snow peaks, wholesome pure vegetarian dining, and warm Kumaoni hospitality. Book directly to unlock guaranteed lowest prices and complimentary evening bonfires.
+          Escape urban noise and awaken to 180° Himalayan snow peaks, wholesome pure vegetarian dining, and warm Kumaoni hospitality. Book directly to unlock guaranteed lowest rates and complimentary evening courtyard bonfires.
         </p>
 
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1150,10 +1504,10 @@ const googleReviews = [
           </a>
 
           <a 
-            href="https://wa.me/919027844424?text=Hi%20Stone%20Heritage!%20I%20would%20like%20to%20reserve%20a%20cottage%20stay.%20Please%20share%20room%20options%20and%20rates." 
+            href="https://wa.me/919027844424?text=Hi%20Stone%20Heritage!%20I%20am%20ready%20to%20reserve%20a%20cottage%20stay.%20Please%20share%20room%20options%20and%20rates." 
             target="_blank" 
             rel="noopener noreferrer"
-            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-stone-800 text-stone-100 font-semibold text-sm sm:text-base border border-stone-700 hover:bg-stone-700 transition-all flex items-center justify-center gap-2"
+            class="w-full sm:w-auto px-8 py-4 rounded-xl bg-stone-900 text-stone-100 font-semibold text-sm sm:text-base border border-stone-700 hover:bg-stone-800 transition-all flex items-center justify-center gap-2"
           >
             <Phone className="w-4 h-4 text-accent" />
             <span>Connect on WhatsApp Desk</span>
