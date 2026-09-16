@@ -1,5 +1,7 @@
 ---
 title: 'Top 5 Things to Do in Mukteshwar: A Traveler’s Perspective (2026 Guide)'
+metaTitle: 'Top 5 Things to Do in Mukteshwar | Stone Heritage'
+metaDescription: 'Discover top 5 things to do in Mukteshwar: Chauli Ki Jali cliffs, Bhalu Gaad waterfall trek, Mukteshwar Dham Temple, and stargazing at Stone Heritage.'
 excerpt: 'Having lived and hosted travelers in the Kumaon hills for years, Akash shares his personal, unhurried guide to Mukteshwar—from sunset cliffs and hidden waterfall hikes to clear night sky stargazing.'
 date: 'October 15, 2023'
 author: 'Akash'

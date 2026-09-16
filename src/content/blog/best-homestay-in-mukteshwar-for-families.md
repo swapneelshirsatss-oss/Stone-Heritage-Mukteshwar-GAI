@@ -1,5 +1,7 @@
 ---
 title: 'Best Homestay in Mukteshwar for Families (2026 Guide)'
+metaTitle: 'Homestay in Mukteshwar for Families | Stone Heritage'
+metaDescription: "Looking for the best homestay in Mukteshwar for families? Explore Stone Heritage's 9 stone cottages, Himalayan views & veg dining. Book direct to save 20%."
 excerpt: "Looking for the best homestay in Mukteshwar for families? Discover Stone Heritage's 9 heritage stone cottages, real reviews & genuine Mukteshwar location."
 date: 'July 28, 2026'
 author: 'Akash'

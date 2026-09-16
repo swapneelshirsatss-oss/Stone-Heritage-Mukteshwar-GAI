@@ -12,7 +12,7 @@ ${posts.map(post => `  <url>
     <loc>${baseUrl}/blog/${post.slug}/</loc>
     <lastmod>${new Date(post.data.date).toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>`).join('\n')}
 </urlset>`;
 

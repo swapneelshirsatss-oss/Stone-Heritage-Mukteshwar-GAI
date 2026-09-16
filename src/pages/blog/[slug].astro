@@ -277,7 +277,7 @@ const blogSchema = isBestPlacesToStay ? {
 
 <Layout 
   title={post.data.metaTitle || `${post.data.title} | Stone Heritage`} 
-  description={post.data.excerpt} 
+  description={post.data.metaDescription || post.data.excerpt} 
   schema={blogSchema}
   image={post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`}
 >

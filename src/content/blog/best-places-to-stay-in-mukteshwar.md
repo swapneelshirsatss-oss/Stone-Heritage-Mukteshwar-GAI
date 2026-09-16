@@ -1,5 +1,7 @@
 ---
 title: 'Best Places to Stay in Mukteshwar: Where Mountain Silence Meets Handcrafted Heritage — Stone Heritage Mukteshwar (2026 Guide)'
+metaTitle: 'Best Places to Stay in Mukteshwar | Stone Heritage'
+metaDescription: 'Discover the best places to stay in Mukteshwar. Handcrafted stone cottages, 180° Himalayan peak views, and authentic Kumaoni dining. Book direct to save 20%.'
 excerpt: 'Discover why Stone Heritage Mukteshwar is rated among the best places to stay in Mukteshwar. Heritage stone cottages, 180° Himalayan views, home-cooked Kumaoni meals, and direct booking savings.'
 date: 'August 11, 2026'
 author: 'Akash'

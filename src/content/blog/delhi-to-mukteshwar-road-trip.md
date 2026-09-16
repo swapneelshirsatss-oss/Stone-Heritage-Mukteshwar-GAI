@@ -1,5 +1,7 @@
 ---
 title: 'The Ultimate Delhi to Mukteshwar Road Trip Itinerary (2026 Driving Guide)'
+metaTitle: 'Delhi to Mukteshwar Road Trip Guide | Stone Heritage'
+metaDescription: 'Plan your Delhi to Mukteshwar road trip with our 2026 guide. Detailed route map via NE-3, scenic pitstops, travel times, and tips for mountain driving.'
 excerpt: 'Planning a scenic weekend road trip from Delhi to Mukteshwar? Mapped driving routes, distance charts, dhaba pit stops, mountain driving tips, and arrival guide to Stone Heritage.'
 date: 'November 18, 2023'
 author: 'Akash, Harsh & Priyanka'

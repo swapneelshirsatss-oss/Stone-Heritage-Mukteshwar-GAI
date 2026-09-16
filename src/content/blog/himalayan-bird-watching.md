@@ -1,5 +1,7 @@
 ---
 title: 'A Local Guide to Himalayan Bird Watching at South Gola Range (2026 Guide)'
+metaTitle: 'Himalayan Bird Watching in Mukteshwar | Stone Heritage'
+metaDescription: 'Explore Himalayan bird watching in Mukteshwar. Guide to 150+ bird species, migration seasons, birding forest trails, and photography at Stone Heritage.'
 excerpt: 'Mukteshwar is a pristine paradise for bird watchers. Species checklist, seasonal migration calendar, top birding hotspots around Stone Heritage, and photography tips.'
 date: 'December 5, 2023'
 author: 'Akash & Stone Heritage Team'

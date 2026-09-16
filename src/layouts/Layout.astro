@@ -452,7 +452,9 @@ const speakableSchema = {
   "cssSelector": ["h1", "p"]
 };
 
-(structuredData["@graph"] as any[]).push(breadcrumbSchema);
+if (breadcrumbElements.length > 1) {
+  (structuredData["@graph"] as any[]).push(breadcrumbSchema);
+}
 (structuredData["@graph"] as any[]).push(speakableSchema);
 ---
 <!DOCTYPE html>

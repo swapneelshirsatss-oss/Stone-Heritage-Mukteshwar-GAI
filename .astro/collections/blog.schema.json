@@ -10,6 +10,9 @@
         "metaTitle": {
           "type": "string"
         },
+        "metaDescription": {
+          "type": "string"
+        },
         "excerpt": {
           "type": "string"
         },

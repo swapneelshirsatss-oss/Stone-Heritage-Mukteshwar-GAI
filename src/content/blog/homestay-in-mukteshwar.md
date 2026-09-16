@@ -1,5 +1,7 @@
 ---
 title: 'Finding the Perfect Homestay in Mukteshwar: Welcome to Our Mountain Home (2026 Guide)'
+metaTitle: 'Homestay in Mukteshwar: Stone Cottages | Stone Heritage'
+metaDescription: 'Looking for an authentic homestay in Mukteshwar? Experience handcrafted Kumaoni stone architecture, panoramic valley views, and home-cooked regional food.'
 excerpt: 'Tired of generic commercial hotels? Discover why staying in an authentic Kumaoni heritage stone cottage feels less like a hotel vacation, and more like coming home.'
 date: 'August 15, 2024'
 author: 'Akash, Harsh & Priyanka'

@@ -1,5 +1,7 @@
 ---
 title: 'Why Stone Heritage is the Best Pet-Friendly Homestay in Mukteshwar (2026 Guide)'
+metaTitle: 'Pet Friendly Homestay in Mukteshwar | Stone Heritage'
+metaDescription: 'Plan a getaway with your pet at Stone Heritage, the premier pet-friendly homestay in Mukteshwar. Wide open lawns, stone cottages & scenic nature trails.'
 excerpt: 'Planning a mountain getaway with your dog or cat? Discover why Stone Heritage is the premier pet-friendly homestay in Mukteshwar, featuring wide lawns, stone cottage acoustic privacy, and dog-friendly forest trails.'
 date: 'November 2, 2023'
 author: 'Akash & Stone Heritage Team'
