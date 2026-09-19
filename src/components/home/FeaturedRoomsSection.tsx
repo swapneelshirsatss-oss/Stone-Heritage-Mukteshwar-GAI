@@ -1,6 +1,8 @@
 import React from 'react';
 import { OptimizedImage } from '../OptimizedImage';
 
+import { featuredRooms } from '../../data/hotelData';
+
 export function FeaturedRoomsSection() {
   return (
     <section className="py-24 px-4 bg-stone-50 border-t border-stone-200">
@@ -13,12 +15,7 @@ export function FeaturedRoomsSection() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {[
-            { name: "Stonewood Family Retreat (Suite)", tag: "Built for Multi-Generational Stays", image: "/images/rooms/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat for multi-generational stays" },
-            { name: "Copper & Brass Rooms", image: "/images/rooms/copper-room.webp", alt: "Spacious Copper Room setup with mountain views, ideal for families staying in Mukteshwar" },
-            { name: "Sunset Heritage Cottage", image: "/images/property/homestay-in-mukteshwar.webp", alt: "Sunset Heritage Cottage featuring private terrace balcony at Stone Heritage" },
-            { name: "Stone and Story Suite", image: "/images/rooms/stone-and-story-suite-homestay.webp", alt: "Stone and Story Suite offering premium comfort in Mukteshwar" }
-          ].map((room) => (
+          {featuredRooms.map((room) => (
             <div key={room.name} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-stone-200/80 flex flex-col group hover:shadow-xl transition-all duration-500">
               <div className="h-72 relative overflow-hidden bg-stone-100">
                 <OptimizedImage 

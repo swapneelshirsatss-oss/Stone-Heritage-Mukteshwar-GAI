@@ -15,11 +15,37 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-const isTopThingsToDo = post.slug === 'top-5-things-to-do-in-mukteshwar';
-const isBestPlacesToStay = post.slug === 'best-places-to-stay-in-mukteshwar';
-const isWorkationInMukteshwar = post.slug === 'workation-in-mukteshwar';
+function extractFaqs(markdown: string) {
+  if (!markdown) return [];
+  const faqSectionMatch = markdown.match(/## Frequently Asked Questions[^\n]*\n([\s\S]*?)(?=\n## |\n---|\s*$)/i);
+  if (!faqSectionMatch) return [];
+  
+  const faqContent = faqSectionMatch[1];
+  const qnaBlocks = faqContent.split(/\n(?=###\s+)/);
+  const faqs: { question: string; answer: string }[] = [];
+  
+  for (const block of qnaBlocks) {
+    const match = block.match(/^###\s+(?:(?:\d+\.|\bQ\d*\.?)\s*)?([^\n]+)\n+([\s\S]+)$/);
+    if (match) {
+      const question = match[1].trim();
+      const answer = match[2]
+        .replace(/^(?:\*\*A:\*\*|A:)\s*/i, '')
+        .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+        .replace(/\*\*([^*]+)\*\*/g, '$1')
+        .replace(/\*([^*]+)\*/g, '$1')
+        .trim();
+      if (question && answer) {
+        faqs.push({ question, answer });
+      }
+    }
+  }
+  return faqs;
+}
 
-const blogSchema = isBestPlacesToStay ? {
+const extractedFaqs = extractFaqs(post.body);
+const postImageUrl = post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`;
+
+const blogSchema = {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -27,7 +53,7 @@ const blogSchema = isBestPlacesToStay ? {
       "@id": "https://thestoneheritage.in/#localbusiness",
       "name": "Stone Heritage Mukteshwar",
       "url": "https://thestoneheritage.in/",
-      "image": "https://thestoneheritage.in/gallery/",
+      "logo": "https://thestoneheritage.in/Logo.webp",
       "telephone": "+91-9027844424",
       "email": "thestoneheritage@gmail.com",
       "address": {
@@ -39,78 +65,27 @@ const blogSchema = isBestPlacesToStay ? {
         "addressCountry": "IN"
       },
       "geo": { "@type": "GeoCoordinates", "latitude": 29.4346202, "longitude": 79.6446521 },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "250" },
-      "priceRange": "₹1500 - ₹8000",
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "250", "bestRating": "5" },
+      "priceRange": "₹1,500 - ₹15,000",
       "petsAllowed": true,
       "checkinTime": "13:00",
       "checkoutTime": "11:00",
       "sameAs": [
-        "https://www.facebook.com/thestoneheritage",
-        "https://www.instagram.com/thestoneheritage",
-        "https://www.youtube.com/@thestoneheritage",
-        "https://www.tripadvisor.com/thestoneheritage"
+        "https://www.facebook.com/thestoneheritage/",
+        "https://www.instagram.com/thestoneheritage/",
+        "https://www.youtube.com/@StoneHeritageMukteshwar",
+        "https://maps.google.com/maps?cid=5074157692820223333",
+        "https://www.tripadvisor.in/Hotel_Review-g1162527-d33498951-Reviews-Stone_Heritage_Mukteshwar-Mukteshwar_Nainital_District_Uttarakhand.html"
       ]
     },
     {
       "@type": "ImageObject",
-      "@id": "https://thestoneheritage.in/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp/#primaryimage",
-      "url": "https://thestoneheritage.in/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp",
-      "contentUrl": "https://thestoneheritage.in/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp",
-      "caption": "Stone Heritage boutique homestay in Mukteshwar at dusk with lantern-lit stone cottage and Himalayan pine forest",
-      "description": "Stone Heritage boutique homestay in Mukteshwar at dusk with lantern-lit stone cottage and Himalayan pine forest",
-      "width": 1920,
-      "height": 1080
+      "@id": `${postImageUrl}/#primaryimage`,
+      "url": postImageUrl,
+      "contentUrl": postImageUrl,
+      "caption": post.data.title,
+      "description": post.data.excerpt || post.data.metaDescription
     },
-    {
-      "@type": "Article",
-      "@id": `https://thestoneheritage.in/blog/${post.slug}/#article`,
-      "headline": post.data.title,
-      "datePublished": "2026-08-11",
-      "dateModified": "2026-08-11",
-      "image": { "@id": "https://thestoneheritage.in/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp/#primaryimage" },
-      "author": {
-        "@type": "Person",
-        "name": "Akash",
-        "jobTitle": "Co-Founder, Stone Heritage Mukteshwar"
-      },
-      "publisher": { "@id": "https://thestoneheritage.in/#localbusiness" },
-      "mainEntityOfPage": `https://thestoneheritage.in/blog/${post.slug}/`
-    },
-    {
-      "@type": "FAQPage",
-      "@id": `https://thestoneheritage.in/blog/${post.slug}/#faq`,
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Stone Heritage the best place to stay in Mukteshwar for Himalayan views?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Stone Heritage sits on a high ridge along Bhowali-Dhanachuli Road, offering unobstructed 180° views of the Nanda Devi snow peaks directly from private balconies." }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the price range at Stone Heritage Mukteshwar?",
-          "acceptedAnswer": { "@type": "Answer", "text": "₹1,500/night for a Cedar Deluxe Room up to ₹8,000/night for the Stonewood Family Retreat on MAP. Direct WhatsApp booking saves up to 20%." }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Stone Heritage Mukteshwar suitable for a workcation?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Fiber-optic Wi-Fi, dedicated workstations, and power backup are available across all cottages." }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Stone Heritage a pet-friendly homestay in Mukteshwar?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes, with enclosed orchard gardens for pets and no additional pet fees." }
-        },
-        {
-          "@type": "Question",
-          "name": "How far is Stone Heritage from Mukteshwar Dham Temple?",
-          "acceptedAnswer": { "@type": "Answer", "text": "8.2 km, about a 20-minute drive." }
-        }
-      ]
-    }
-  ]
-} : {
-  "@context": "https://schema.org",
-  "@graph": [
     {
       "@type": ["BlogPosting", "TravelArticle"],
       "@id": `https://thestoneheritage.in/blog/${post.slug}/#article`,
@@ -119,14 +94,12 @@ const blogSchema = isBestPlacesToStay ? {
         "@id": `https://thestoneheritage.in/blog/${post.slug}/`
       },
       "headline": post.data.title,
-      "description": post.data.excerpt,
-      "image": [
-        post.data.image.startsWith('http') ? post.data.image : `https://thestoneheritage.in${post.data.image}`
-      ],
+      "description": post.data.metaDescription || post.data.excerpt,
+      "image": { "@id": `${postImageUrl}/#primaryimage` },
       "inLanguage": "en-IN",
       "isAccessibleForFree": true,
       "datePublished": new Date(post.data.date).toISOString(),
-      "dateModified": new Date("2026-07-28").toISOString(),
+      "dateModified": new Date(post.data.date).toISOString(),
       "author": {
         "@type": "Person",
         "@id": "https://thestoneheritage.in/our-story/#akash",
@@ -134,7 +107,7 @@ const blogSchema = isBestPlacesToStay ? {
         "url": "https://thestoneheritage.in/our-story/#hosts",
         "image": "https://thestoneheritage.in/images/property/akash.webp",
         "jobTitle": "Founder & Local Mountain Host",
-        "description": "Founder and local host at Stone Heritage Mukteshwar, seasoned Himalayan traveler, and local mountain guide.",
+        "description": "Founder and host at Stone Heritage Mukteshwar, seasoned Himalayan traveler, and local mountain guide.",
         "worksFor": {
           "@type": "Organization",
           "name": "Stone Heritage Mukteshwar",
@@ -142,22 +115,13 @@ const blogSchema = isBestPlacesToStay ? {
         }
       },
       "publisher": {
-        "@type": ["BedAndBreakfast", "Resort", "Hotel"],
-        "@id": "https://thestoneheritage.in/#localbusiness",
-        "name": "Stone Heritage Mukteshwar",
-        "url": "https://thestoneheritage.in/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://thestoneheritage.in/Logo.webp",
-          "width": 500,
-          "height": 500
-        }
+        "@id": "https://thestoneheritage.in/#localbusiness"
       },
       "about": [
         {
           "@type": "TouristDestination",
           "name": "Mukteshwar",
-          "description": "A quiet hill station in Uttarakhand known for panoramic Himalayan views, Chauli Ki Jali, Mukteshwar Dham Temple, and stargazing.",
+          "description": "A tranquil hill station in Uttarakhand known for 180° Himalayan views, Chauli Ki Jali cliffs, Mukteshwar Dham Temple, fruit orchards, and stargazing.",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Mukteshwar",
@@ -170,106 +134,23 @@ const blogSchema = isBestPlacesToStay ? {
             "longitude": 79.6472
           }
         }
-      ]
+      ],
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".prose > p:first-of-type"]
+      }
     },
-    ...(isTopThingsToDo ? [{
+    ...(extractedFaqs.length > 0 ? [{
       "@type": "FAQPage",
       "@id": `https://thestoneheritage.in/blog/${post.slug}/#faq`,
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How many days are sufficient for a trip to Mukteshwar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A 3-day, 2-night stay is ideal to visit key attractions like Chauli Ki Jali, Mukteshwar Temple, Bhalu Gaad Waterfall, and experience a relaxed evening of stargazing and Kumaoni food without feeling rushed."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How far is Stone Heritage Homestay from Chauli Ki Jali and Mukteshwar Temple?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar is located along Bhowali-Dhanachuli Road, approximately 8.2–10 km (about a 20-minute drive) from Mukteshwar Dham Temple and approximately 11 km (about 25 minutes) from Chauli Ki Jali cliff."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the Bhalu Gaad trek safe for families and children?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, the 2 km trail is easy-to-moderate and suitable for families and kids. We recommend wearing proper shoes with good grip as rocks near the stream can be slippery."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can we see snow in Mukteshwar during winter?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mukteshwar receives occasional snowfall during peak winter months, usually between late December and late January. Even without snow, winter offers the sharpest, clearest views of snow-clad Himalayan peaks."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the nearest railway station and airport to Mukteshwar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The nearest railway station is Kathgodam (KGM), located about 62 km away (approx. 2 to 2.5 hours by taxi). The nearest airport is Pantnagar (PGH), about 95 km away."
-          }
+      "mainEntity": extractedFaqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
         }
-      ]
-    }] : isWorkationInMukteshwar ? [{
-      "@type": "FAQPage",
-      "@id": `https://thestoneheritage.in/blog/${post.slug}/#faq`,
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Mukteshwar good for a workation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. It has fiber-optic connectivity in select homestays, cool year-round temperatures, and less tourist congestion than Goa, Rishikesh, or Dharamshala, while remaining under 7 hours from Delhi by road."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What internet speed can I expect in Mukteshwar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "This varies by property. Stone Heritage Mukteshwar runs fiber-optic broadband across all cottages; request a current speed-test result before booking if your work depends on video calls."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long should a Mukteshwar workation be?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Most remote workers find 1 to 4 weeks ideal, timed October through April to avoid monsoon disruptions."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What does the Stone Heritage Workation Package include?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A private room with a dedicated workstation, fiber Wi-Fi, and power backup at Rs 1,000 per day, a 40 percent discount off standard nightly rates, arranged separately from the standard room categories. Meals are ordered separately."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is there a community aspect to staying at Stone Heritage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Co-founder Akash also runs Maati Living, a community of entrepreneurs and artists, and it is common for founders and makers staying at Stone Heritage to connect and share ideas informally over meals."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What food is available for long-stay guests at Stone Heritage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Both local Kumaoni dishes and North Indian home-style food, including Punjabi staples, so guests on longer workations are not limited to one cuisine."
-          }
-        }
-      ]
+      }))
     }] : [])
   ]
 };

@@ -1,8 +1,13 @@
+/**
+ * Fast-Indexing Dual-Endpoint IndexNow Submission Script
+ * Automatically submits all 24 canonical URLs to api.indexnow.org and bing.com/indexnow
+ */
+
 const HOST = 'thestoneheritage.in';
 const KEY = '593c87e7da264df4a721010fb72224ed';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
-// Comprehensive list of all site URLs to submit to Bing & IndexNow search engines
+// Comprehensive list of all 24 production URLs across Stone Heritage Mukteshwar
 const urlsToSubmit = [
   `https://${HOST}/`,
   `https://${HOST}/mukteshwar-valley-resort/`,
@@ -32,17 +37,14 @@ const urlsToSubmit = [
   `https://${HOST}/blog/workation-in-mukteshwar/`
 ];
 
-async function submitIndexNow() {
-  console.log('Sending IndexNow ping to Bing & search engines...');
-  const payload = {
-    host: HOST,
-    key: KEY,
-    keyLocation: KEY_LOCATION,
-    urlList: urlsToSubmit
-  };
+const ENDPOINTS = [
+  { name: 'IndexNow Gateway', url: 'https://api.indexnow.org/indexnow' },
+  { name: 'Bing Webmaster Direct', url: 'https://www.bing.com/indexnow' }
+];
 
+async function submitEndpoint(endpoint, payload) {
   try {
-    const response = await fetch('https://api.indexnow.org/indexnow', {
+    const response = await fetch(endpoint.url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json; charset=utf-8'
@@ -51,15 +53,28 @@ async function submitIndexNow() {
     });
 
     if (response.ok || response.status === 200 || response.status === 202) {
-      console.log(`✅ IndexNow successfully submitted ${urlsToSubmit.length} URLs to Bing! Status: ${response.status}`);
+      console.log(`✅ [${endpoint.name}] Successfully submitted ${urlsToSubmit.length} URLs (Status: ${response.status})`);
     } else {
-      console.log(`ℹ️ IndexNow ping sent. Response status: ${response.status} ${response.statusText}`);
+      console.log(`ℹ️ [${endpoint.name}] Response: ${response.status} ${response.statusText}`);
       const text = await response.text();
-      if (text) console.log(text);
+      if (text) console.log(`   Details: ${text}`);
     }
-  } catch (error) {
-    console.error('❌ IndexNow submission error:', error);
+  } catch (err) {
+    console.error(`❌ [${endpoint.name}] Error:`, err.message);
   }
 }
 
-submitIndexNow();
+async function submitAll() {
+  console.log(`🚀 Dispatching IndexNow crawl pings for ${urlsToSubmit.length} URLs on ${HOST}...`);
+  const payload = {
+    host: HOST,
+    key: KEY,
+    keyLocation: KEY_LOCATION,
+    urlList: urlsToSubmit
+  };
+
+  await Promise.allSettled(ENDPOINTS.map(ep => submitEndpoint(ep, payload)));
+  console.log('✨ Dual-endpoint IndexNow dispatch completed.');
+}
+
+submitAll();

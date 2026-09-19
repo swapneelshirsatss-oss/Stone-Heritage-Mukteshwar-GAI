@@ -3,17 +3,7 @@ import { motion } from 'motion/react';
 import { OptimizedImage } from '../../components/OptimizedImage';
 import { Wifi, UtensilsCrossed, Mountain, Castle, Dog, Camera, Sparkles } from 'lucide-react';
 
-const rooms = [
-  { name: "Brass Room", capacity: "2-3 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Small Families", view: "Mountain View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/brass-room-homestay-in-mukteshwar.webp", alt: "Brass Room featuring a king-size bed and scenic mountain views at Stone Heritage Mukteshwar" },
-  { name: "Copper Room", capacity: "2-4 Guests", bedType: "1 King Size Bed + Sofa cum 1 bed", idealFor: "Families", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/copper-room.webp", alt: "Spacious Copper Room interior with king bed and sofa cum bed, perfect for families" },
-  { name: "Vintage Stone Room", capacity: "2-3 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Small Families", view: "Valley View", amenities: "Heritage Architecture, Wi-Fi", image: "/images/rooms/vintage-room.webp", alt: "Vintage Stone Room showing classic heritage architecture and cozy king bedding" },
-  { name: "Iron Room", capacity: "2 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Peace Seekers", view: "Garden View", amenities: "En-suite Bathroom, Wi-Fi", image: "/images/rooms/iron-room.webp", alt: "Cozy Iron Room setup with 1 King Size Bed, ideal for couples staying at Stone Heritage" },
-  { name: "Cedar Room", capacity: "2 Guests", bedType: "1 Queen Size Bed", idealFor: "Couples & Solo Travellers", view: "Forest View", amenities: "Wooden Paneling, Wi-Fi", image: "/images/rooms/cedar-room.webp", alt: "Cedar Room interior with 1 Queen Size Bed, beautiful wooden paneling and natural light" },
-  { name: "Stonewood Family Retreat", capacity: "4-6 Guests", bedType: "2 King Size Beds", idealFor: "Families & Multi-Generational Groups", view: "Panoramic View", amenities: "Private Balcony, Wi-Fi", image: "/images/rooms/stonewood-family-retreat.webp", alt: "Stonewood Family Retreat with two king size beds for multi-generational stays" },
-  { name: "Stone and Story Room", capacity: "2-3 Guests", bedType: "1 King Size Bed", idealFor: "Couples & Heritage Lovers", view: "Mountain View", amenities: "Premium Setup, Wi-Fi", image: "/images/rooms/stone-and-story-suite-homestay.webp", alt: "Stone and Story Room offering 1 King Size Bed and premium comfort in Mukteshwar" },
-  { name: "Himalayan Workation Room", capacity: "1-2 Guests", bedType: "Workstation Setup", idealFor: "Remote Workers & Solo Travellers", view: "Himalayan View", amenities: "High-Speed Wi-Fi, Desk", image: "/images/property/himalayan-view-terrace-mukteshwar.webp", alt: "Outdoor terrace and dedicated workspace for a Himalayan workation at Stone Heritage" },
-  { name: "Stone Cottage Room", capacity: "2-4 Guests", bedType: "1 King Size Bed", idealFor: "Families & Couples", view: "Sunset & Mountain View", amenities: "Private Terrace, Wi-Fi", image: "/images/property/homestay-in-mukteshwar.webp", alt: "Stone Cottage Room featuring 1 King Size Bed, private terrace and panoramic mountain views" }
-];
+import { rooms } from '../../data/hotelData';
 
 export function Stay() {
   return (

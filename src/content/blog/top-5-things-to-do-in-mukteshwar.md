@@ -125,7 +125,7 @@ If you are driving up from the NCR region—perhaps following our scenic route g
 **A:** A 3-day, 2-night stay is ideal to visit key attractions like Chauli Ki Jali, Mukteshwar Temple, Bhalu Gaad Waterfall, and experience a relaxed evening of stargazing and Kumaoni food without feeling rushed.
 
 ### Q2. How far is Stone Heritage Homestay from Chauli Ki Jali and Mukteshwar Temple?
-**A:** Stone Heritage is located directly in Mukteshwar, just **1.5 to 2 km** away from both Mukteshwar Dham Temple and Chauli Ki Jali cliff.
+**A:** Stone Heritage is located directly in Mukteshwar along Bhowali-Dhanachuli Road, approximately **8.2 km** (about 20 minutes drive) from Mukteshwar Dham Temple and Chauli Ki Jali cliff.
 
 ### Q3. Is the Bhalu Gaad trek safe for families and children?
 **A:** Yes, the 2 km trail is easy-to-moderate and suitable for families and kids. However, we recommend wearing proper shoes with good grip as rocks near the stream can be slippery.
