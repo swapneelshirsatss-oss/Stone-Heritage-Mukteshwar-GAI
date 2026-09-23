@@ -21,6 +21,7 @@ This skill provides rules, content guidelines, tone of voice, and SEO requiremen
 
 ## 3. Article Structure Template
 - **Title (H1)**: Engaging title incorporating location ("Mukteshwar") and benefit.
+- **Hero Image Invariant**: NEVER re-insert the featured cover image (`post.data.image`) at the top of the markdown body. The Astro layout `[slug].astro` already displays it as the top hero banner above `<Content />`. Placing it again inside the markdown creates an amateur duplicate image bug.
 - **Introduction**: Hook the reader with atmospheric imagery of the mountains + introduce topic.
 - **H2 Sections**: 3–5 structured sections covering key takeaways, travel tips, or itineraries.
 - **Visual Callouts**: Include image recommendations with descriptive alt text (`alt="Heritage stone cottage balcony overlooking Nanda Devi snow peaks in Mukteshwar"`).
@@ -40,4 +41,7 @@ When generating blog content files:
 
 ## Continuous Learnings
 - **Author Naming**: The single author for blog posts (including the workation guide) MUST always be `Akash` (not `Kuldeep` or `Akash Bisht`).
+- **Zero Duplicate Hero Images**: Do not add `![...](post.data.image)` at the top of the markdown file; doing so renders two identical images consecutively on the live page.
+- **Complete Infographic Embedding**: When the user provides a folder of infographics or charts (`public/images/blog/<folder>/`), audit 100% of the image assets and embed every single infographic across its matching contextual section with descriptive alt text and captions.
+
 

@@ -117,4 +117,11 @@ Always maintain exact room names and bed configurations across all page listings
   3. All travel guides and attraction matrices
   - **Do NOT** merge them into a single combined pilgrimage entry.
 
+---
+
+## 12. Blog Publishing & Asset Invariants
+- **No Hero Duplicate in Markdown**: `src/pages/blog/[slug].astro` automatically mounts `post.data.image` as the top hero banner above `<Content />`. Never embed the featured cover image again at the beginning of `src/content/blog/*.md`.
+- **Full Infographic Coverage**: When an article has dedicated infographics or charts in `public/images/blog/<folder>/`, audit 100% of the image files and embed all provided graphics across their matching narrative sections with descriptive alt text and context.
+
+
 
