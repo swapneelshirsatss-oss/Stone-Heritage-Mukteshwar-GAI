@@ -10,11 +10,29 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} ^www\.thestoneheritage\.in$ [NC]
 RewriteRule ^(.*)$ https://thestoneheritage.in/$1 [R=301,L]
 
-# 2.5 Redirect legacy volunteer & shortcut URLs
-Redirect 301 /volunteer https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/
-Redirect 301 /volunteer/ https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/
-Redirect 301 /workation-in-mukteshwar https://thestoneheritage.in/blog/workation-in-mukteshwar/
-Redirect 301 /workation-in-mukteshwar/ https://thestoneheritage.in/blog/workation-in-mukteshwar/
+# 2.5 Specific Case-Insensitive Canonical Redirects (Prevents 404s on /Stay, /Experiences, etc.)
+RewriteCond %{REQUEST_URI} !^/stay/$
+RewriteRule ^stay/?$ https://thestoneheritage.in/stay/ [R=301,L,NC]
+
+RewriteCond %{REQUEST_URI} !^/experiences/$
+RewriteRule ^experiences/?$ https://thestoneheritage.in/experiences/ [R=301,L,NC]
+
+RewriteCond %{REQUEST_URI} !^/gallery/$
+RewriteRule ^gallery/?$ https://thestoneheritage.in/gallery/ [R=301,L,NC]
+
+RewriteCond %{REQUEST_URI} !^/contact/$
+RewriteRule ^contact/?$ https://thestoneheritage.in/contact/ [R=301,L,NC]
+
+RewriteCond %{REQUEST_URI} !^/our-story/$
+RewriteRule ^our-story/?$ https://thestoneheritage.in/our-story/ [R=301,L,NC]
+
+RewriteCond %{REQUEST_URI} !^/testimonials/$
+RewriteRule ^testimonials/?$ https://thestoneheritage.in/testimonials/ [R=301,L,NC]
+
+RewriteCond %{REQUEST_URI} !^/volunteer-work-exchange-mukteshwar/$
+RewriteRule ^volunteer/?$ https://thestoneheritage.in/volunteer-work-exchange-mukteshwar/ [R=301,L,NC]
+
+RewriteRule ^workation-in-mukteshwar/?$ https://thestoneheritage.in/blog/workation-in-mukteshwar/ [R=301,L,NC]
 
 # 3. Force trailing slash on all extensionless directory paths
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -1,7 +1,7 @@
 ---
 title: 'Best Places to Stay in Mukteshwar: Where Mountain Silence Meets Handcrafted Heritage — Stone Heritage Mukteshwar (2026 Guide)'
-metaTitle: 'Best Places to Stay in Mukteshwar | Stone Heritage'
-metaDescription: 'Discover the best places to stay in Mukteshwar. Handcrafted stone cottages, 180° Himalayan peak views, and authentic Kumaoni dining. Book direct to save 20%.'
+metaTitle: 'Best Places to Stay in Mukteshwar (2026 Guide) | Stone Heritage'
+metaDescription: 'Discover the best places to stay in Mukteshwar. Handcrafted stone cottages, 180° Himalayan snow peak views, home-cooked Kumaoni dining & direct booking deals.'
 excerpt: 'Discover why Stone Heritage Mukteshwar is rated among the best places to stay in Mukteshwar. Heritage stone cottages, 180° Himalayan views, home-cooked Kumaoni meals, and direct booking savings.'
 date: 'August 11, 2026'
 author: 'Akash'
@@ -17,10 +17,6 @@ readTime: '10 min read'
 > Stone Heritage Mukteshwar is a 4.9-star boutique homestay at 2,171 metres on Bhowali-Dhanachuli Road, built from hand-chiseled 19th-century stone masonry. It offers unobstructed 180° views of the Nanda Devi, Trishul, and Panchachuli snow peaks, fresh home-cooked Kumaoni vegetarian meals, fireplace-equipped cottages, and fiber-optic Wi-Fi for [workations in Mukteshwar](/blog/workation-in-mukteshwar/). It sits 8.2 km (20 minutes) from Mukteshwar Dham Temple and welcomes pets at no extra charge. Rates run ₹1,500–₹8,000/night depending on room category and meal plan.
 >
 > **Book direct**: [WhatsApp +91-9027844424](https://wa.me/919027844424) · [Booking Engine](https://booking.thestoneheritage.in) — save up to 20% vs OTAs.
-
----
-
-![Stone Heritage boutique homestay in Mukteshwar at dusk with lantern-lit stone cottage and Himalayan pine forest](/images/blog/best-places-to-stay-mukteshwar-stone-heritage-hero-1920x1080.webp)
 
 ---
 

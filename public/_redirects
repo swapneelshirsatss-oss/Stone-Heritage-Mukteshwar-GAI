@@ -46,4 +46,14 @@
 /Rashmi.webp /images/testimonials/Rashmi.webp 301
 /saransh.webp /images/testimonials/saransh.webp 301
 
-# SPA and Astro fallback rules
+# Case-normalization and legacy redirects
+/Stay /stay/ 301
+/Stay/ /stay/ 301
+/Experiences /experiences/ 301
+/Experiences/ /experiences/ 301
+/Gallery /gallery/ 301
+/Gallery/ /gallery/ 301
+/volunteer /volunteer-work-exchange-mukteshwar/ 301
+/volunteer/ /volunteer-work-exchange-mukteshwar/ 301
+/workation-in-mukteshwar /blog/workation-in-mukteshwar/ 301
+/workation-in-mukteshwar/ /blog/workation-in-mukteshwar/ 301

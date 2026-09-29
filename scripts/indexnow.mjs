@@ -31,6 +31,7 @@ const urlsToSubmit = [
   `https://${HOST}/blog/delhi-to-mukteshwar-road-trip/`,
   `https://${HOST}/blog/himalayan-bird-watching/`,
   `https://${HOST}/blog/homestay-in-mukteshwar/`,
+  `https://${HOST}/blog/homestay-near-mukteshwar-uttarakhand/`,
   `https://${HOST}/blog/mukteshwar-ramgarh-travel-guide/`,
   `https://${HOST}/blog/pet-friendly-homestay/`,
   `https://${HOST}/blog/top-5-things-to-do-in-mukteshwar/`,
