@@ -60,6 +60,13 @@
 - **Container ID (Stone Heritage)**: `GTM-WDVGR88X` (domain: `thestoneheritage.in`)
   *(Note: Sister property "The Mukteshwar Villa" uses `GTM-PC5P9B63`)*
 - **Astro Inline Requirement**: Always use `<script is:inline>` for GTM and synchronous tracking tags in `src/layouts/Layout.astro` so Astro compiler does not defer or convert them into module bundles.
+- **Never Sandbag Tags in Partytown**: Never place primary analytics tags (`gtag.js`, GTM) inside `@astrojs/partytown` Web Workers. Google Tag Assistant and tag validators operate on the main window thread and will report connection or CSP failures.
+- **Content Security Policy (CSP) Invariants**:
+  - Both HTTP response headers (`public/.htaccess`, `vercel.json`) and the HTML `<head>` (`src/layouts/Layout.astro`) must explicitly allowlist:
+    - `script-src`: `'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://ssl.google-analytics.com https://news.google.com https://*.google.com https://*.google.co.in https://*.gstatic.com`
+    - `connect-src`: `'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://news.google.com https://*.google.com https://*.google.co.in`
+    - `frame-ancestors`: `'self' https://tagassistant.google.com` (essential for Google Tag Assistant troubleshooting mode to avoid iframe CSP blocks).
+  - The GTM container snippet must include official nonce-propagation query logic (`var n=d.querySelector('[nonce]'); n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));`).
 
 ---
 
