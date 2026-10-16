@@ -2,13 +2,11 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 
-import partytown from '@astrojs/partytown';
-
 export default defineConfig({
   site: 'https://thestoneheritage.in',
   trailingSlash: 'always',
   output: 'static',
-  integrations: [react(), partytown({ config: { forward: ['dataLayer.push'] } })],
+  integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
     build: {

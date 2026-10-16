@@ -462,11 +462,13 @@ if (breadcrumbElements.length > 1) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com https://www.google-analytics.com https://ssl.google-analytics.com https://news.google.com https://*.google.com https://*.google.co.in https://*.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://*.google.com https://*.google.co.in https://*.gstatic.com https://maps.gstatic.com https://maps.googleapis.com https://*.tripadvisor.com; connect-src 'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://news.google.com https://*.google.com https://*.google.co.in; frame-src 'self' https://www.googletagmanager.com https://tagmanager.google.com https://www.google.com https://maps.google.com https://*.google.com https://*.google.co.in; upgrade-insecure-requests;" />
     <!-- Google Tag Manager -->
     <script is:inline>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');
+    n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WDVGR88X');</script>
     <!-- End Google Tag Manager -->
     <!-- Favicon & Touch Icons -->
@@ -557,9 +559,9 @@ if (breadcrumbElements.length > 1) {
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}
-    <!-- Google tag (gtag.js) via Partytown -->
-    <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-9T01K9RSYE"></script>
-    <script type="text/partytown">
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-9T01K9RSYE"></script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
