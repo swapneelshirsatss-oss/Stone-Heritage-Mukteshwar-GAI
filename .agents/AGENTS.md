@@ -137,7 +137,7 @@ Always maintain exact room names and bed configurations across all page listings
 ### A. Global Sticky Conversion Bar (`StickyDirectBookingBar`)
 - Must reside in `src/components/StickyDirectBookingBar.astro` and be rendered globally in `src/layouts/Layout.astro` before `</body>`.
 - Specs: `z-index: 9999`, background `#602E08`, top border `2px solid #b36b39`, text `#FDFBF7`.
-- Left identity/rating: "Stone Heritage Mukteshwar (4.9★)" with subtext "Save 20% Direct • Free Breakfast • ₹0 Pet Fee".
+- Left identity/rating: "Stone Heritage Mukteshwar (4.9★)" with subtext "Save 20% Direct • ₹0 Pet Fee".
 - Right primary CTA: "💬 WhatsApp Cottages" (`+91-9027844424`).
 - Must dynamically inject `window.location.pathname` into WhatsApp pre-fill text so hosts know the referring page or blog article.
 - Mobile Layout Safety: Always apply `padding-bottom: 70px` to `body` on viewports `< 768px` so sticky conversion UI never obscures footer links.
