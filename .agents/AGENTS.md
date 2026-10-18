@@ -130,5 +130,36 @@ Always maintain exact room names and bed configurations across all page listings
 - **No Hero Duplicate in Markdown**: `src/pages/blog/[slug].astro` automatically mounts `post.data.image` as the top hero banner above `<Content />`. Never embed the featured cover image again at the beginning of `src/content/blog/*.md`.
 - **Full Infographic Coverage**: When an article has dedicated infographics or charts in `public/images/blog/<folder>/`, audit 100% of the image files and embed all provided graphics across their matching narrative sections with descriptive alt text and context.
 
+---
 
+## 13. Direct Booking CRO, Global Conversion Bar & Tracking Invariants
 
+### A. Global Sticky Conversion Bar (`StickyDirectBookingBar`)
+- Must reside in `src/components/StickyDirectBookingBar.astro` and be rendered globally in `src/layouts/Layout.astro` before `</body>`.
+- Specs: `z-index: 9999`, background `#602E08`, top border `2px solid #b36b39`, text `#FDFBF7`.
+- Left identity/rating: "Stone Heritage Mukteshwar (4.9★)" with subtext "Save 20% Direct • Free Breakfast • ₹0 Pet Fee".
+- Right primary CTA: "💬 WhatsApp Cottages" (`+91-9027844424`).
+- Must dynamically inject `window.location.pathname` into WhatsApp pre-fill text so hosts know the referring page or blog article.
+- Mobile Layout Safety: Always apply `padding-bottom: 70px` to `body` on viewports `< 768px` so sticky conversion UI never obscures footer links.
+
+### B. Canonical GA4 & DataLayer Conversion Events
+All interactive conversion elements must push to `window.dataLayer` and fire `window.gtag('event', ...)` using these exact 3 event names via a global event delegation listener on `document`:
+1. `whatsapp_chat_click` (all `wa.me` and `whatsapp.com` links)
+2. `phone_call_click` (all `tel:` links)
+3. `booking_engine_click` (all `booking.thestoneheritage.in` and `/stay` links)
+
+### C. Direct vs. OTA Comparison Table Standard (`DirectVsOtaTable`)
+- Follows the Stone Heritage Mukteshwar luxury palette: Primary `#602E08`, Deep Taupe `#5c4d43`, Warm Copper `#b36b39`, Warm Cream `#FDFBF7`.
+- 4 Core Invariant Rows:
+  1. Cottage & Suite Tariffs (Save 20% Direct vs 18%–25% OTA commission markup)
+  2. Dining & Perks (Complimentary Home-Cooked Pure-Veg Kumaoni Breakfast vs Room-only/paid add-ons)
+  3. Views & Room Allocation (Priority 180° Himalayan Snow-Peak Balcony & Fireplace Access vs Standard unguaranteed allocation)
+  4. Pet & Workcation Policy (100% Pet-Friendly with ₹0 Pet Fee + 150 Mbps Fiber Wi-Fi vs Hidden pet fees & rigid policies)
+- Placement Guidelines:
+  - `/stay`: Mount directly below the room cards grid before comparison tables.
+  - SEO Pillar Pages (e.g. `/mukteshwar-valley-resort`): Mount immediately below the 45-word AEO direct answer block under the first H2.
+  - Content Collection Blogs (`.md`): Inject `<div id="direct-vs-ota-table-placeholder"></div>` in markdown, and let `src/pages/blog/[slug].astro` relocate the server-rendered `<DirectVsOtaTable />` inside a `.not-prose` container into the placeholder.
+
+### D. Layout FAQPage Schema Non-Duplication
+- `src/layouts/Layout.astro` supports an optional `faqs` prop (`Array<{ question: string; answer: string }>`) rendering a dedicated `<script type="application/ld+json">` `FAQPage` block in `<head>`.
+- When passing `faqs` to `<Layout>`, do NOT duplicate `FAQPage` inside page-level `schema` (`lodgingSchema["@graph"]`). Keep `lodgingSchema` focused on `["BedAndBreakfast", "Hotel", "Resort"]` and `WebPage`.
