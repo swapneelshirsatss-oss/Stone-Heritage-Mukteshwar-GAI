@@ -1,8 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
-import FloatingWhatsAppButton from "../../components/FloatingWhatsAppButton.astro";
-import MobileBottomActionBar from "../../components/MobileBottomActionBar.astro";
+import DirectVsOtaTable from "../../components/DirectVsOtaTable.astro";
 import { 
   Star, 
   MapPin, 
@@ -31,8 +30,8 @@ import {
 } from 'lucide-react';
 
 const canonicalUrl = "https://thestoneheritage.in/mukteshwar-valley-resort/";
-const pageTitle = "Mukteshwar Valley Resort & Cottages | Stone Heritage";
-const pageDescription = "Experience luxury stone cottages & resort stays at Stone Heritage Mukteshwar. 180° Himalayan views, pure veg dining & pet-friendly lawns. Save 20% direct.";
+const pageTitle = "Best Heritage Homestay & Resort in Mukteshwar | 4.9★";
+const pageDescription = "Looking for a peaceful Mukteshwar valley stay? Stone Heritage offers 19th-century stone cottages, 180° Himalayan views & Kumaoni dining. Save 20% direct!";
 const pageKeywords = "stone heritage mukteshwar, homestay in mukteshwar, luxury homestay in mukteshwar, boutique homestay experience in mukteshwar, stay in mukteshwar, stone cottages homestay in mukteshwar, pet friendly homestay in mukteshwar uttarakhand, homestay near bhimtal uttarakhand, handcrafted stone cottage stay, hotel accommodation in mukteshwar, holiday home mukteshwar, mukteshwar valley resort, best homestay in uttarakhand, homestay near bhalu gaad waterfall";
 
 // Verified Ground Truth NAP & Schema
@@ -149,84 +148,6 @@ const lodgingSchema = {
       "about": {
         "@id": "https://thestoneheritage.in/#lodging"
       }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://thestoneheritage.in/mukteshwar-valley-resort/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is Stone Heritage Mukteshwar classified as a Homestay, Cottage, Hotel, or Resort?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar seamlessly integrates all five major hospitality categories. Our primary identity is an authentic luxury boutique Home Stay with warm personalized host hospitality. Our accommodations consist of authentic handcrafted stone Cottages and multi-room Hotel suites, offering full private Holiday Home estate buyouts and the panoramic amenities of a boutique valley mountain Resort."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Stone Heritage Mukteshwar pet-friendly, and are there pet fees?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, Stone Heritage Mukteshwar is 100% pet-friendly with zero pet surcharges! Your dogs have safe access to our enclosed grass lawns, surrounding forest walking trails, and our kitchen happily prepares fresh boiled pet meals upon request."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is the dining strictly 100% pure vegetarian on site?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Stone Heritage Mukteshwar operates a strictly 100% pure vegetarian kitchen. We prepare authentic Pahadi Kumaoni traditional specialties (Bhatt ki Churkani, Gahat Dal, Mandua Roti, Kumaoni Raita) alongside fresh North Indian comfort food cooked fresh to order with organic local ingredients."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can we rent the entire property as a private holiday home or family cottage buyout?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes! Stone Heritage Mukteshwar can be booked as an exclusive private holiday home buyout for 15 to 25 guests. You get private access to all 9 rooms and suites, the 180° Himalayan view terrace, sprawling garden lawns, bonfire courtyard, and dedicated private kitchen staff."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What room types and bed configurations are available at Stone Heritage?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Our verified inventory comprises 9 unique accommodations: Brass Room (1 King Bed), Copper Room (1 King Bed + Sofa cum 1 bed), Vintage Stone Room (1 King Bed), Iron Room (1 King Bed), Cedar Room (1 Queen Bed), Stonewood Family Retreat (2 King Beds, living lounge & balcony), Stone and Story Room (1 King Bed), Himalayan Workation Room (Workstation Setup + Mountain Views), and Sunset Heritage Cottage Room (1 King Bed)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How far is Stone Heritage from Mukteshwar Dham Temple and Kainchi Dham Ashram?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Stone Heritage Mukteshwar is located 10 km (20 mins) from the 350-year-old Mukteshwar Dham Shiva Temple and 39 km (about 75 mins) from Neem Karoli Baba Kainchi Dham Ashram. We also sit just 13 km (25 mins) from Bhalu Gaad Waterfall and 11 km (25 mins) from Chauli Ki Jali."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is Stone Heritage suitable for remote work, workation, and long stays?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Absolutely. We offer high-speed fiber Wi-Fi with strong coverage across all rooms and outdoor garden lawns, dedicated work desks, uninterrupted power backup, ergonomic seating, peaceful valley surroundings, and attractive weekly/monthly extended stay rates."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are the standard check-in and check-out timings?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in or late check-out can be accommodated based on cottage availability upon prior request."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Why should I book directly on booking.thestoneheritage.in?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Direct bookings at booking.thestoneheritage.in guarantee the best price with up to 20% savings compared to third-party OTA portals (MakeMyTrip, Agoda, Booking.com), direct communication with hosts Akash & Parul, complimentary evening bonfire sessions, and priority room view allocations."
-          }
-        }
-      ]
     }
   ]
 };
@@ -435,10 +356,62 @@ const googleReviews = [
   }
 ];
 
-const faqs = lodgingSchema["@graph"][2].mainEntity.map((item: any) => ({
-  q: item.name,
-  a: item.acceptedAnswer.text
-}));
+const stayFaqs = [
+  {
+    q: "Is Stone Heritage Mukteshwar classified as a Homestay, Cottage, Hotel, or Resort?",
+    a: "Stone Heritage Mukteshwar seamlessly integrates all five major hospitality categories. Our primary identity is an authentic luxury boutique Home Stay with warm personalized host hospitality. Our accommodations consist of authentic handcrafted stone Cottages and multi-room Hotel suites, offering full private Holiday Home estate buyouts and the panoramic amenities of a boutique valley mountain Resort."
+  },
+  {
+    q: "Why should I book directly on booking.thestoneheritage.in?",
+    a: "Direct bookings at booking.thestoneheritage.in guarantee the best price with up to 20% savings compared to third-party OTA portals (MakeMyTrip, Agoda, Booking.com), direct communication with hosts Akash & Parul, complimentary evening bonfire sessions, and priority room view allocations."
+  },
+  {
+    q: "Is Stone Heritage Mukteshwar pet-friendly, and are there pet fees?",
+    a: "Yes, Stone Heritage Mukteshwar is 100% pet-friendly with zero pet surcharges! Your dogs have safe access to our enclosed grass lawns, surrounding forest walking trails, and our kitchen happily prepares fresh boiled pet meals upon request."
+  },
+  {
+    q: "Is the dining strictly 100% pure vegetarian on site?",
+    a: "Yes. Stone Heritage Mukteshwar operates a strictly 100% pure vegetarian kitchen. We prepare authentic Pahadi Kumaoni traditional specialties (Bhatt ki Churkani, Gahat Dal, Mandua Roti, Kumaoni Raita) alongside fresh North Indian comfort food cooked fresh to order with organic local ingredients."
+  },
+  {
+    q: "Can we rent the entire property as a private holiday home or family cottage buyout?",
+    a: "Yes! Stone Heritage Mukteshwar can be booked as an exclusive private holiday home buyout for 15 to 25 guests. You get private access to all 9 rooms and suites, the 180° Himalayan view terrace, sprawling garden lawns, bonfire courtyard, and dedicated private kitchen staff."
+  },
+  {
+    q: "What room types and bed configurations are available at Stone Heritage?",
+    a: "Our verified inventory comprises 9 unique accommodations: Brass Room (1 King Bed), Copper Room (1 King Bed + Sofa cum 1 bed), Vintage Stone Room (1 King Bed), Iron Room (1 King Bed), Cedar Room (1 Queen Bed), Stonewood Family Retreat (2 King Beds, living lounge & balcony), Stone and Story Room (1 King Bed), Himalayan Workation Room (Workstation Setup + Mountain Views), and Sunset Heritage Cottage Room (1 King Bed)."
+  },
+  {
+    q: "How far is Stone Heritage from Mukteshwar Dham Temple and Kainchi Dham Ashram?",
+    a: "Stone Heritage Mukteshwar is located 10 km (20 mins) from the 350-year-old Mukteshwar Dham Shiva Temple and 39 km (about 75 mins) from Neem Karoli Baba Kainchi Dham Ashram. We also sit just 13 km (25 mins) from Bhalu Gaad Waterfall and 11 km (25 mins) from Chauli Ki Jali."
+  },
+  {
+    q: "Is Stone Heritage suitable for remote work, workation, and long stays?",
+    a: "Absolutely. We offer high-speed fiber Wi-Fi with strong coverage across all rooms and outdoor garden lawns, dedicated work desks, uninterrupted power backup, ergonomic seating, peaceful valley surroundings, and attractive weekly/monthly extended stay rates."
+  },
+  {
+    q: "What are the standard check-in and check-out timings?",
+    a: "Standard check-in time is 13:00 PM (1:00 PM IST) and check-out time is 11:00 AM (11:00 AM IST). Early check-in or late check-out can be accommodated based on cottage availability upon prior request."
+  }
+];
+
+const faqs = stayFaqs;
+
+// Top 3 Mukteshwar Stay FAQs for Layout FAQPage Schema (Task 4.1)
+const schemaFaqs = [
+  {
+    question: "Is Stone Heritage Mukteshwar classified as a Homestay, Cottage, Hotel, or Resort?",
+    answer: "Stone Heritage Mukteshwar seamlessly integrates all five major hospitality categories: an authentic luxury boutique Home Stay with warm personalized host hospitality. Our accommodations consist of authentic handcrafted stone Cottages and multi-room Hotel suites, offering full private Holiday Home estate buyouts and the panoramic amenities of a boutique valley mountain Resort."
+  },
+  {
+    question: "Why should I book directly on booking.thestoneheritage.in instead of third-party OTAs?",
+    answer: "Direct bookings at booking.thestoneheritage.in guarantee the best price with up to 20% savings compared to third-party OTA portals (MakeMyTrip, Agoda, Booking.com), complimentary home-cooked Kumaoni breakfast, priority 180° Himalayan snow-peak view room allocation, and direct communication with hosts Akash & Parul."
+  },
+  {
+    question: "Is Stone Heritage Mukteshwar pet-friendly, and are there pet fees?",
+    answer: "Yes, Stone Heritage Mukteshwar is 100% pet-friendly with zero pet surcharges! Your dogs have safe access to our enclosed grass lawns, surrounding forest walking trails, and our kitchen happily prepares fresh boiled pet meals upon request."
+  }
+];
 ---
 
 <Layout 
@@ -448,6 +421,7 @@ const faqs = lodgingSchema["@graph"][2].mainEntity.map((item: any) => ({
   canonicalUrl={canonicalUrl}
   image="https://thestoneheritage.in/images/property/luxury-heritage-homestay-in-mukteshwar.webp"
   schema={lodgingSchema}
+  faqs={schemaFaqs}
 >
   <Breadcrumb />
   
@@ -656,14 +630,17 @@ const faqs = lodgingSchema["@graph"][2].mainEntity.map((item: any) => ({
             Authentic Boutique Home Stay Experience in Mukteshwar, Uttarakhand
           </h2>
 
-          <!-- Direct Answer Snippet Block (AEO / GEO / Google Featured Snippets) -->
+          <!-- 45-Word AEO Direct Answer Block (Google AI Overviews & Featured Snippet Optimization) -->
           <div class="p-4 sm:p-5 rounded-xl bg-amber-50/70 border-l-4 border-accent text-stone-800 text-xs sm:text-sm leading-relaxed mb-6 shadow-sm">
             <p>
-              <strong>Stone Heritage Mukteshwar</strong> is a 4.9★ verified luxury mountain homestay and handcrafted stone cottage retreat in Mukteshwar, Uttarakhand. Perched at 7,500 ft in South Gola Range, it features 180° Himalayan snow-peak views, 100% pure vegetarian Kumaoni dining, pet-friendly private lawns, high-speed fiber Wi-Fi, and 9 boutique suites.
+              <strong>Stone Heritage Mukteshwar</strong> is a 4.9★ rated boutique heritage homestay on the scenic Bhowali-Dhanachuli Road, located 20 minutes from <strong>Mukteshwar Dham Temple</strong>. It features 9 handcrafted 19th-century stone cottages and family suites (up to 70 guests), 180° Himalayan snow-peak views, pure vegetarian Kumaoni dining, 150 Mbps fiber Wi-Fi, and 20% direct booking savings.
             </p>
           </div>
 
-          <p class="text-stone-700 text-sm sm:text-base font-light leading-relaxed">
+          <!-- Direct Vs OTA Comparison Table -->
+          <DirectVsOtaTable />
+
+          <p class="text-stone-700 text-sm sm:text-base font-light leading-relaxed mt-6">
             Ranked among the <strong>best homestays in Uttarakhand</strong> and recognized as a premier <strong>luxury homestay in Mukteshwar</strong>, Stone Heritage Mukteshwar redefines authentic mountain living. We bridge the soulful warmth, personal care, and home-cooked culinary heritage of a traditional Kumaoni homestay with the five-star comfort of a boutique mountain villa.
           </p>
         </div>
@@ -1517,10 +1494,4 @@ const faqs = lodgingSchema["@graph"][2].mainEntity.map((item: any) => ({
     </section>
 
   </div>
-
-  <!-- Floating Desktop WhatsApp Concierge Button -->
-  <FloatingWhatsAppButton />
-
-  <!-- Persistent Mobile Conversion Bar (<768px viewports) -->
-  <MobileBottomActionBar />
 </Layout>

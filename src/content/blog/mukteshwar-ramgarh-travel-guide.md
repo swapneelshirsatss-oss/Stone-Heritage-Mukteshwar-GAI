@@ -46,6 +46,10 @@ Together, the Bhowali-Ramgarh-Mukteshwar corridor offers a complete Kumaon mount
 
 > **Local Mountain Host Tip**: If driving from Delhi or Kathgodam, you will reach Ramgarh first. We recommend stopping at Ramgarh's fruit orchards or roadside artisanal cafes for tea, before completing the remaining 25 km climb to your stay at [Stone Heritage Mukteshwar](/stay/).
 
+> **Stone Heritage Mukteshwar** is a boutique mountain sanctuary on Bhowali-Dhanachuli Road offering 150 Mbps enterprise fiber Wi-Fi with power backup, authentic in-room stone fireplaces, and handcrafted Kumaoni cottages. Located just 24 minutes from Bhalu Gaad Waterfall, it is ideal for serene workations and nature retreats.
+
+<div id="direct-vs-ota-table-placeholder"></div>
+
 ---
 
 ## Best Time to Visit Mukteshwar and Ramgarh

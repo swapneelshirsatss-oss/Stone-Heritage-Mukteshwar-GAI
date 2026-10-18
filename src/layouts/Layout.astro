@@ -3,6 +3,7 @@ import { ClientRouter } from 'astro:transitions';
 import '../index.css';
 import { Navbar } from '../components/Navbar';
 import Footer from '../components/Footer.astro';
+import StickyDirectBookingBar from '../components/StickyDirectBookingBar.astro';
 
 export interface Props {
   title?: string;
@@ -13,6 +14,7 @@ export interface Props {
   image?: string;
   noindex?: boolean;
   schema?: Record<string, any>;
+  faqs?: Array<{ question: string; answer: string }> | Array<{ q: string; a: string }>;
 }
 const { 
   title = 'Best Homestay in Mukteshwar for Families | Stone Heritage',
@@ -21,7 +23,8 @@ const {
   type = 'website',
   image = 'https://thestoneheritage.in/images/property/luxury-heritage-homestay-in-mukteshwar.webp',
   noindex = false,
-  schema
+  schema,
+  faqs
 } = Astro.props;
 
 const siteOrigin = Astro.site ? Astro.site.origin : 'https://thestoneheritage.in';
@@ -559,6 +562,22 @@ if (breadcrumbElements.length > 1) {
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}
+
+    <!-- JSON-LD FAQPage Schema (when faqs prop is passed) -->
+    {faqs && faqs.length > 0 && (
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": (faq as any).question || (faq as any).q,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": (faq as any).answer || (faq as any).a
+          }
+        }))
+      })} />
+    )}
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-9T01K9RSYE"></script>
     <script is:inline>
@@ -587,5 +606,6 @@ if (breadcrumbElements.length > 1) {
       <slot />
     </main>
     <Footer />
+    <StickyDirectBookingBar />
   </body>
 </html>

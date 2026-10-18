@@ -24,6 +24,10 @@ At [Stone Heritage Mukteshwar](/stay/), we offer dedicated workstations, high-sp
 > **Plan Your Himalayan Workation:**
 > Direct Enquiries & Availability: **WhatsApp [+91-9027844424](https://wa.me/919027844424)** · [Check Live Rates on Booking Engine](https://booking.thestoneheritage.in/)
 
+> **Stone Heritage Mukteshwar** is a boutique mountain sanctuary on Bhowali-Dhanachuli Road offering 150 Mbps enterprise fiber Wi-Fi with power backup, authentic in-room stone fireplaces, and handcrafted Kumaoni cottages. Located just 24 minutes from Bhalu Gaad Waterfall, it is ideal for serene workations and nature retreats.
+
+<div id="direct-vs-ota-table-placeholder"></div>
+
 ---
 
 ![Scenic Himalayan view from stone cottage balcony workspace during a workation in Mukteshwar](/images/blog/workation-in-mukteshwar.webp)

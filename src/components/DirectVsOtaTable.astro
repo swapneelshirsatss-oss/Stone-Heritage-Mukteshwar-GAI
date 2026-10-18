@@ -1,0 +1,11 @@
+---
+import { DirectVsOtaTable as TableComponent } from './DirectVsOtaTable';
+
+interface Props {
+  className?: string;
+}
+
+const { className = '' } = Astro.props;
+---
+
+<TableComponent client:load className={className} />

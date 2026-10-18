@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { OptimizedImage } from '../../components/OptimizedImage';
 import { Wifi, UtensilsCrossed, Mountain, Castle, Dog, Camera, Sparkles } from 'lucide-react';
+import { DirectVsOtaTable } from '../DirectVsOtaTable';
 
 import { rooms } from '../../data/hotelData';
 
@@ -102,8 +103,11 @@ export function Stay() {
           ))}
         </section>
 
-          <div className="mb-8 text-center">
-            <h2 className="text-3xl font-serif font-bold text-primary mb-2">Room Tariff & Capacity Comparison</h2>
+        {/* Direct Booking vs OTA Table (Task 4.4) */}
+        <DirectVsOtaTable />
+
+        <div className="mb-8 text-center mt-16">
+          <h2 className="text-3xl font-serif font-bold text-primary mb-2">Room Tariff & Capacity Comparison</h2>
             <p className="text-sm text-primary/70">Compare capacity, bed types, and amenities across all 9 stone cottage rooms.</p>
           </div>
 
