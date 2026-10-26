@@ -1,25 +1,18 @@
 import React from 'react';
-import { motion } from 'motion/react';
 import { OptimizedImage } from '../OptimizedImage';
 
 export function LocalAttractionsSection() {
   return (
     <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Discover Mukteshwar</span>
           <h2 className="text-3xl md:text-5xl font-serif font-medium mb-6 text-primary tracking-tight">Things to Do Near Stone Heritage Mukteshwar</h2>
           <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-6"></div>
           <p className="text-lg text-primary/70 max-w-3xl mx-auto font-light leading-relaxed">
             Explore the rich heritage and natural wonders surrounding our homestay. From breathtaking Himalayan peaks to ancient spiritual sites, Mukteshwar offers an unforgettable experience.
           </p>
-        </motion.div>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {[
@@ -48,12 +41,8 @@ export function LocalAttractionsSection() {
               tag: "Spiritual & Heritage"
             }
           ].map((place, index) => (
-            <motion.div 
+            <div 
               key={index} 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-stone-50 rounded-2xl overflow-hidden shadow-sm border border-stone-200/80 hover:shadow-xl transition-all duration-500 group flex flex-col"
             >
               <div className="h-64 relative overflow-hidden bg-stone-100">
@@ -62,6 +51,9 @@ export function LocalAttractionsSection() {
                   alt={place.alt} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
+                  decoding="async"
+                  width="600"
+                  height="400"
                 />
                 <div className="absolute top-4 right-4 bg-stone-900/60 backdrop-blur-md px-3.5 py-1 text-[11px] uppercase tracking-wider font-medium text-stone-100 shadow-sm border border-white/10 rounded-full">
                   {place.tag}
@@ -79,7 +71,7 @@ export function LocalAttractionsSection() {
                   <span>{place.distance}</span>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 

@@ -1,21 +1,14 @@
 import React from 'react';
-import { motion } from 'motion/react';
 
 export function ValuePropSection() {
   return (
     <section className="py-20 px-4 bg-primary text-stone-100">
       <div className="max-w-7xl mx-auto">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
+        <div className="text-center mb-16">
           <span className="text-accent font-semibold tracking-wider uppercase text-sm mb-4 block">Perfect Getaway</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Families Choose Our Homestay in Mukteshwar</h2>
           <p className="text-lg text-stone-300 max-w-2xl mx-auto">Discover a top-rated homestay experience near Delhi NCR, offering authentic Kumaoni heritage architecture and Himalayan views.</p>
-        </motion.div>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
@@ -47,12 +40,8 @@ export function ValuePropSection() {
               )
             }
           ].map((feature, i) => (
-            <motion.div 
+            <div 
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
               className="p-8 rounded-2xl bg-stone-800/50 border border-stone-700 hover:border-accent/50 transition-colors"
             >
               <div className="text-accent mb-4">
@@ -60,7 +49,7 @@ export function ValuePropSection() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-stone-50">{feature.title}</h3>
               <p className="text-stone-300 text-sm leading-relaxed">{feature.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

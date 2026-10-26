@@ -1,16 +1,9 @@
 import React from 'react';
-import { motion } from 'motion/react';
 
 export function IntroSection() {
   return (
     <section className="py-24 px-4 bg-white">
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-        className="max-w-6xl mx-auto text-center"
-      >
+      <div className="max-w-6xl mx-auto text-center">
         <span className="text-accent font-sans font-medium tracking-[0.2em] uppercase text-xs mb-6 block">Welcome to Your Sanctuary</span>
         <h2 className="text-3xl md:text-5xl font-serif font-medium mb-8 text-primary max-w-4xl mx-auto leading-tight">
           Welcome to Stone Heritage — Your Family Mountain Retreat
@@ -79,12 +72,8 @@ export function IntroSection() {
               )
             }
           ].map((feature, i) => (
-            <motion.div 
+            <div 
               key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
               className="p-8 border border-stone-200/60 bg-transparent hover:bg-stone-50 transition-colors"
             >
               <div className="w-12 h-12 flex items-center justify-center mb-6 mx-auto text-accent">
@@ -92,10 +81,10 @@ export function IntroSection() {
               </div>
               <h3 className="font-serif font-medium text-xl mb-3 text-primary">{feature.title}</h3>
               <p className="text-sm text-primary/70 font-light leading-relaxed">{feature.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }

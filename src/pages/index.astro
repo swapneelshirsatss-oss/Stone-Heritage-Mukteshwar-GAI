@@ -36,13 +36,13 @@ formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getT
 >
   <div class="flex flex-col">
     <HeroSection />
-    <IntroSection client:visible />
+    <IntroSection />
     <FeaturedRoomsSection />
     <HomeGallerySection client:visible />
     <TestimonialsSection client:visible />
-    <ValuePropSection client:visible />
+    <ValuePropSection />
     <BookingCtaSection />
-    <LocalAttractionsSection client:visible />
+    <LocalAttractionsSection />
     <PartnersSection />
     <BlogCarouselSection posts={formattedPosts} client:visible />
     <FaqAccordion client:visible />
