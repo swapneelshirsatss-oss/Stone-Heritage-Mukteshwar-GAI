@@ -28,7 +28,7 @@ export function Stay() {
                 Family Homestay Guide →
               </a>
               <span className="text-stone-300 hidden sm:inline">•</span>
-              <a href="/blog/pet-friendly-homestay/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">
+              <a href="/blog/pet-friendly-homestay-in-mukteshwar/" className="text-secondary hover:text-primary transition-colors underline underline-offset-4">
                 Pet-Friendly Stay Info →
               </a>
               <span className="text-stone-300 hidden sm:inline">•</span>

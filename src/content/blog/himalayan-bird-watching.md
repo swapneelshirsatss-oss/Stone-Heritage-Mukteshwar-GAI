@@ -76,7 +76,7 @@ To enjoy an immersive, respectful birding experience in the Kumaon hills:
 2. **Earth-Toned Clothing:** Wear muted olive, brown, or beige jackets. Bright colors alert forest birds before you get close.
 3. **Use Bird Identification Apps:** Download *Merlin Bird ID* or *eBird* for offline audio call identification in Mukteshwar.
 4. **Silent Observation:** Move slowly along pine-needle paths and listen for rustling leaves. Often, you will hear a Blue Whistling Thrush or Woodpecker before spotting it.
-5. **Pet Safety on Trails:** If you are visiting with your dog (we are a fully [pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay/)), keep them on a leash on forest trails to prevent disturbing ground-nesting pheasants.
+5. **Pet Safety on Trails:** If you are visiting with your dog (we are a fully [pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay-in-mukteshwar/)), keep them on a leash on forest trails to prevent disturbing ground-nesting pheasants.
 
 ---
 

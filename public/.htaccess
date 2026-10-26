@@ -34,6 +34,9 @@ RewriteRule ^volunteer/?$ https://thestoneheritage.in/volunteer-work-exchange-mu
 
 RewriteRule ^workation-in-mukteshwar/?$ https://thestoneheritage.in/blog/workation-in-mukteshwar/ [R=301,L,NC]
 
+RewriteCond %{REQUEST_URI} !^/blog/pet-friendly-homestay-in-mukteshwar/$
+RewriteRule ^blog/pet-friendly-homestay/?$ https://thestoneheritage.in/blog/pet-friendly-homestay-in-mukteshwar/ [R=301,L,NC]
+
 # 3. Force trailing slash on all extensionless directory paths
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_URI} !(.*)/$

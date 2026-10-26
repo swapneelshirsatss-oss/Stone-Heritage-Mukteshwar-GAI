@@ -1,5 +1,17 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/blog/pet-friendly-homestay",
+      "destination": "/blog/pet-friendly-homestay-in-mukteshwar/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pet-friendly-homestay/",
+      "destination": "/blog/pet-friendly-homestay-in-mukteshwar/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

@@ -94,7 +94,7 @@ To ensure you choose a reliable stay that fits your specific needs, verify these
 1. **Location & Access Check:** Use Google Maps to check the precise road access. Message the host directly to ask: *"Is parking available on-site, or is there a walk/hike required from the parking spot to the property?"*
 2. **Review Recency & Specificity:** Look for guest reviews mentioning host responsiveness, cleanliness, bed comfort, food quality, and water pressure/heating consistency during winter.
 3. **Power & Wi-Fi Backups:** If working remotely, explicitly confirm high-speed Wi-Fi connectivity and power backup capabilities (inverters or generators) as hill power cuts can happen.
-4. **Pet & Family Policy Verification:** Check outdoor safety (gated compound, fenced perimeter) if traveling with pets (read our guide to [pet-friendly homestays in Mukteshwar](/blog/pet-friendly-homestay/)) or small children.
+4. **Pet & Family Policy Verification:** Check outdoor safety (gated compound, fenced perimeter) if traveling with pets (read our guide to [pet-friendly homestays in Mukteshwar](/blog/pet-friendly-homestay-in-mukteshwar/)) or small children.
 
 ---
 

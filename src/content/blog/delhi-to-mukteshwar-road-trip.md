@@ -101,7 +101,7 @@ Always aim to leave Delhi by **5:00 AM**. This lets you cross the Delhi-Ghaziaba
 When driving back down from Mukteshwar to Kathgodam, avoid keeping your foot on the brake pedal continuously, which can overheat brake pads. Instead, shift into **2nd or 3rd gear** and let engine braking regulate your speed smoothly.
 
 ### 4. Traveling with Pets
-If traveling with your dog, mountain curves can cause motion sickness. Roll down your car window slightly for cool airflow, take a 10-minute break at Bhimtal, and bring clean drinking water. Read our full guide on staying at a [pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay/).
+If traveling with your dog, mountain curves can cause motion sickness. Roll down your car window slightly for cool airflow, take a 10-minute break at Bhimtal, and bring clean drinking water. Read our full guide on staying at a [pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay-in-mukteshwar/).
 
 ---
 

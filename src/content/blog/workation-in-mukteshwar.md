@@ -175,7 +175,7 @@ Most remote professionals find **1 to 4 weeks** ideal to establish a healthy wor
 The Workation Package includes a private heritage room with a dedicated desk and chair, fiber Wi-Fi, and power backup at ₹1,000/day (a 40% discount on standard rates). Meals are billed separately based on what you order.
 
 ### Can I travel with my family or pets while working?
-Absolutely. We have spacious family suites and are a [fully pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay/) with enclosed garden areas.
+Absolutely. We have spacious family suites and are a [fully pet-friendly homestay in Mukteshwar](/blog/pet-friendly-homestay-in-mukteshwar/) with enclosed garden areas.
 
 ---
 

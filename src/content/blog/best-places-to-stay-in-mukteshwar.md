@@ -98,7 +98,7 @@ Set among apple, plum, and peach orchards, away from Mukteshwar's commercial str
 | **Dining** | Commercial buffet | Home-cooked Kumaoni thalis |
 | **Workspace** | Basic desk or none | Dedicated workstation + fiber Wi-Fi |
 | **Outdoor space** | Paved courtyard | Fruit orchards & sun terraces |
-| **Pets** | Restricted / surcharge | Welcome, no extra charge ([pet guide](/blog/pet-friendly-homestay/)) |
+| **Pets** | Restricted / surcharge | Welcome, no extra charge ([pet guide](/blog/pet-friendly-homestay-in-mukteshwar/)) |
 | **Host relationship** | Front-desk transaction | Founders and resident team |
 | **Direct booking savings** | High OTA markup | Up to 20% off via WhatsApp |
 
@@ -129,7 +129,7 @@ Nine boutique units across suites, cottages, and deluxe rooms, sleeping up to 70
 - **Couples & honeymooners** → **Sunset Heritage Cottage**: private sunset-facing terrace, in-room fireplace, quiet stargazing.
 - **Remote workers** → **Any Deluxe or Cottage room with the Workation add-on**: ergonomic workstation, fiber Wi-Fi, power backup, discounted rates for 4+ nights.
 - **Small groups / reunions** → **Copper + Brass Suites combined**: shared outdoor seating, private bonfire dining, dedicated parking.
-- **Pet owners** → **Ground-floor cottages**: enclosed orchards to roam, nearby forest trails, zero pet fees — check our [pet-friendly stay details](/blog/pet-friendly-homestay/).
+- **Pet owners** → **Ground-floor cottages**: enclosed orchards to roam, nearby forest trails, zero pet fees — check our [pet-friendly stay details](/blog/pet-friendly-homestay-in-mukteshwar/).
 
 **Book any category direct**: [WhatsApp +91-9027844424](https://wa.me/919027844424).
 

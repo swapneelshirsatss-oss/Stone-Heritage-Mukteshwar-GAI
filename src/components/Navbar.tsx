@@ -27,7 +27,7 @@ export function Navbar({ currentPath = "/" }: { currentPath?: string }) {
   const personaSilos = [
     { name: 'Family Suites & Retreats', path: '/blog/best-homestay-in-mukteshwar-for-families/' },
     { name: 'Himalayan Workations', path: '/blog/workation-in-mukteshwar/' },
-    { name: 'Pet-Friendly Homestay', path: '/blog/pet-friendly-homestay/' },
+    { name: 'Pet-Friendly Homestay', path: '/blog/pet-friendly-homestay-in-mukteshwar/' },
     { name: 'Delhi NCR Road Trip Guide', path: '/blog/delhi-to-mukteshwar-road-trip/' },
     { name: 'Kainchi Dham & Pilgrimage', path: '/blog/mukteshwar-ramgarh-travel-guide/' },
   ];
