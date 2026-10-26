@@ -13,9 +13,9 @@ export function HeroSection() {
             className="w-full h-full object-cover opacity-60"
             loading="eager"
             fetchPriority="high"
-            decoding="sync"
-            width="1536"
-            height="1024"
+            decoding="async"
+            width="1100"
+            height="733"
           />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-primary/90"></div>
