@@ -6,7 +6,7 @@ export function PartnersSection() {
     {
       name: "Google Travel",
       url: "https://www.google.com/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE",
-      badge: "4.9 ★ Rating",
+      badge: "4.8 ★ Rating",
       logo: (
         <div className="flex items-center gap-2">
           <svg className="w-6 h-6 flex-shrink-0" viewBox="0 0 24 24">

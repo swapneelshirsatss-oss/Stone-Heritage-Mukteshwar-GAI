@@ -169,6 +169,7 @@ export interface SocialLinks {
   linkedin?: string;
   tripadvisor?: string;
   googleTravel?: string;
+  googleTravelShare?: string;
 }
 
 export interface TransitHighlights {

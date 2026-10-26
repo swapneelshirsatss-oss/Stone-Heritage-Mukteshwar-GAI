@@ -24,6 +24,8 @@
 
 ## 3. SEO & Rich Snippets Standards
 - **Structured Data**: `["BedAndBreakfast", "Resort", "Hotel"]` (omit generic `LodgingBusiness`), `BreadcrumbList`, `FAQPage`, `ContactPage`, and `Review`.
+- **AggregateRating Invariants**: Every `AggregateRating` block must include `"ratingValue"`, `"reviewCount"`, `"bestRating": "5"`, and `"worstRating": "1"`. It must be mounted across Homepage (`/`), Room Listings (`/stay`), Landing Pages (`/mukteshwar-valley-resort`), Testimonials (`/testimonials`), Contact (`/contact`), and all Blog Articles (`/blog/[slug]` publisher entity) to ensure Google SERP golden star rich snippet eligibility.
+- **Google Travel Schema Linking**: Google Travel profiles belong strictly in Schema.org `sameAs` arrays for lodging entities. Always prioritize the canonical entity URL (`https://www.google.com/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE`). Do NOT inject external script widgets or iframes.
 - **Entity Brand Aliasing**: Maintain `alternateName` arrays containing "Stone Heritage Resort", "Stone Heritage", and "Stone Heritage Homestay" across `WebSite` and root business schemas.
 - **Review Veracity**: All displayed guest testimonials must reflect verbatim Google Reviews with authentic reviewer names, dates, and sub-score metrics (Rooms, Service, Location).
 - **Search Directives**:
@@ -115,6 +117,13 @@ Always maintain exact room names and bed configurations across all page listings
 - **Kitchen Type**: 100% Pure Vegetarian (Kumaoni specialties & North Indian comfort food cooked fresh to order).
 - **Schema Amenity**: Always include `{"@type": "LocationFeatureSpecification", "name": "Fresh Food & Breakfast Available", "value": true}` in lodging schemas.
 
+### D. Reputation & Review Ground Truth (Till-Date Baseline)
+- **Google Rating**: `4.8★` (Schema `ratingValue`: `"4.8"`)
+- **Review Count**: `267+` verified Google reviews (Schema `reviewCount`: `"267"`)
+- **Scale Boundaries**: `bestRating`: `"5"`, `worstRating`: `"1"`
+- **Google Travel Entity**: `https://www.google.com/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE`
+- **Sync Touchpoints**: When updating review metrics, simultaneously update `src/data.ts`, `src/layouts/Layout.astro`, `src/pages/blog/[slug].astro`, `src/pages/mukteshwar-valley-resort/index.astro`, `src/pages/testimonials/index.astro`, `src/pages/stay/index.astro`, `src/pages/contact/index.astro`, and AI search documents (`public/llms.txt`, `public/llms-full.txt`).
+
 ---
 
 ## 11. Spiritual & Cultural Attraction Separation Invariant
@@ -137,7 +146,7 @@ Always maintain exact room names and bed configurations across all page listings
 ### A. Global Sticky Conversion Bar (`StickyDirectBookingBar`)
 - Must reside in `src/components/StickyDirectBookingBar.astro` and be rendered globally in `src/layouts/Layout.astro` before `</body>`.
 - Specs: `z-index: 9999`, background `#602E08`, top border `2px solid #b36b39`, text `#FDFBF7`.
-- Left identity/rating: "Stone Heritage Mukteshwar (4.9★)" with subtext "Save 20% Direct • ₹0 Pet Fee".
+- Left identity/rating: "Stone Heritage Mukteshwar (4.8★)" with subtext "Save 20% Direct • ₹0 Pet Fee".
 - Right primary CTA: "💬 WhatsApp Cottages" (`+91-9027844424`).
 - Must dynamically inject `window.location.pathname` into WhatsApp pre-fill text so hosts know the referring page or blog article.
 - Mobile Layout Safety: Always apply `padding-bottom: 70px` to `body` on viewports `< 768px` so sticky conversion UI never obscures footer links.

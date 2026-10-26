@@ -381,7 +381,7 @@ export function OurStoryContent() {
                   ))}
                 </div>
                 <h3 className="text-2xl font-serif font-medium text-white mb-2">
-                  4.9★ Rating Across 250+ Google Reviews
+                  4.8★ Rating Across 267+ Google Reviews
                 </h3>
                 <p className="text-stone-300 text-sm font-light leading-relaxed">
                   Consistently rated as one of the best homestays in Mukteshwar on Google Business Profile by families, couples, and road-trippers from Delhi NCR.

@@ -14,7 +14,7 @@ readTime: '10 min read'
 
 > **Quick Answer: What Is the Best Place to Stay in Mukteshwar?**
 >
-> Stone Heritage Mukteshwar is a 4.9-star boutique homestay at 2,171 metres on Bhowali-Dhanachuli Road, built from hand-chiseled 19th-century stone masonry. It offers unobstructed 180° views of the Nanda Devi, Trishul, and Panchachuli snow peaks, fresh home-cooked Kumaoni vegetarian meals, fireplace-equipped cottages, and fiber-optic Wi-Fi for [workations in Mukteshwar](/blog/workation-in-mukteshwar/). It sits 8.2 km (20 minutes) from Mukteshwar Dham Temple and welcomes pets at no extra charge. Rates run ₹1,500–₹8,000/night depending on room category and meal plan.
+> Stone Heritage Mukteshwar is a 4.8-star boutique homestay at 2,171 metres on Bhowali-Dhanachuli Road, built from hand-chiseled 19th-century stone masonry. It offers unobstructed 180° views of the Nanda Devi, Trishul, and Panchachuli snow peaks, fresh home-cooked Kumaoni vegetarian meals, fireplace-equipped cottages, and fiber-optic Wi-Fi for [workations in Mukteshwar](/blog/workation-in-mukteshwar/). It sits 8.2 km (20 minutes) from Mukteshwar Dham Temple and welcomes pets at no extra charge. Rates run ₹1,500–₹8,000/night depending on room category and meal plan.
 >
 > **Book direct**: [WhatsApp +91-9027844424](https://wa.me/919027844424) · [Booking Engine](https://booking.thestoneheritage.in) — save up to 20% vs OTAs.
 
@@ -45,7 +45,7 @@ Unlike commercial hill stations, Mukteshwar remains an unhurried sanctuary. Morn
 | **Peak views** | Nanda Devi, Trishul, Panchachuli, Nanda Ghunti |
 | **Founders** | Akash, Harsh & Priyanka |
 | **Team** | Naveen, Pawan (caretakers), Chef Akshay |
-| **Rating** | 4.9★ from 250+ verified reviews |
+| **Rating** | 4.8★ from 267+ verified reviews |
 | **Distance to Mukteshwar Dham Temple** | 8.2 km / 20 min |
 | **Distance to Chauli Ki Jali Cliffs** | 8.5 km / 21 min |
 | **Distance to Bhalu Gaad Waterfall** | 10 km / 24 min |
@@ -58,7 +58,7 @@ Unlike commercial hill stations, Mukteshwar remains an unhurried sanctuary. Morn
 
 Stone Heritage is owned and personally operated by Akash, Harsh, and Priyanka, who restored a 19th-century stone structure on Bhowali-Dhanachuli Road into a nine-unit homestay over several years, working with local Kumaoni masons to preserve the original lime-mortar construction rather than replacing it. The day-to-day guest experience is run by resident caretakers Naveen and Pawan and Chef Akshay, who has cooked Kumaoni food professionally for over a decade — learn more about [our hosts and team](/our-story/).
 
-We maintain a 4.9★ average across 250+ verified reviews on Google Business Profile and TripAdvisor, and we link to both rather than only showing curated quotes here, so you can read the unfiltered guest history yourself.
+We maintain a 4.8★ average across 267+ verified reviews on Google Business Profile and TripAdvisor, and we link to both rather than only showing curated quotes here, so you can read the unfiltered guest history yourself.
 
 > *"Waking up to the sunrise over Nanda Devi from our stone cottage balcony was magical. Caretakers Naveen and Pawan served us hot Pahadi tea and fresh paranthas while we took in the views. Stone Heritage truly feels like a home away from home."* — **Verified Google review, 5.0★** (name withheld for privacy; see full review on our GBP listing)
 

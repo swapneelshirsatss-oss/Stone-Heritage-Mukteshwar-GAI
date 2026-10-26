@@ -9,7 +9,7 @@ const contactFaqs = [
   },
   {
     q: "2. Which is the best homestay in Mukteshwar?",
-    a: "Stone Heritage is widely recognized as one of the best homestays in Mukteshwar, rated 4.9/5 across 250+ Google reviews. It offers authentic Kumaoni heritage architecture, panoramic Himalayan views, and personalized hospitality for families, couples, and remote workers."
+    a: "Stone Heritage is widely recognized as one of the best homestays in Mukteshwar, rated 4.8/5 across 267+ Google reviews. It offers authentic Kumaoni heritage architecture, panoramic Himalayan views, and personalized hospitality for families, couples, and remote workers."
   },
   {
     q: "3. What makes Stone Heritage the best homestay in Mukteshwar for families?",

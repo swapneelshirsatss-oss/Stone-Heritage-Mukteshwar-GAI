@@ -131,7 +131,7 @@ Whether you are traveling solo, as a couple, or with an extended multi-generatio
 ## Frequently Asked Questions (FAQs)
 
 ### 1. What makes Stone Heritage the best homestay in Mukteshwar?
-Stone Heritage stands out due to its authentic vintage Kumaoni stone architecture, direct location in Mukteshwar proper, 180° unobstructed Himalayan peak views, pure-vegetarian home-cooked food, pet-friendly lawns, and stellar 4.9-star rating across 250+ verified guest reviews.
+Stone Heritage stands out due to its authentic vintage Kumaoni stone architecture, direct location in Mukteshwar proper, 180° unobstructed Himalayan peak views, pure-vegetarian home-cooked food, pet-friendly lawns, and stellar 4.8-star rating across 267+ verified guest reviews.
 
 ### 2. Is Stone Heritage located in Mukteshwar town or Ramgarh?
 Stone Heritage is located **directly in Mukteshwar** on Bhowali Dhanachuli Road (near Bhatelia). Unlike properties in Ramgarh or Bhowali that require a 30-45 minute drive to reach attractions, our homestay is just 5-10 minutes from Chauli Ki Jali and Mukteshwar Temple.

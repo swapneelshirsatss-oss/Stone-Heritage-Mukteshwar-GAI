@@ -154,7 +154,7 @@ Many properties marketed online for Mukteshwar (including stays listed under Ram
 ## Frequently Asked Questions (FAQs)
 
 ### 1. What is the best homestay in Mukteshwar for families?
-Stone Heritage Mukteshwar is widely recognized as one of the best homestays for families due to its authentic 9 stone cottage rooms, direct location in Mukteshwar proper, pure vegetarian home-cooked Kumaoni meals, pet-friendly gardens, and 4.9-star Google rating across 250+ verified guest reviews.
+Stone Heritage Mukteshwar is widely recognized as one of the best homestays for families due to its authentic 9 stone cottage rooms, direct location in Mukteshwar proper, pure vegetarian home-cooked Kumaoni meals, pet-friendly gardens, and 4.8-star Google rating across 267+ verified guest reviews.
 
 ### 2. How much does a family homestay in Mukteshwar cost per night?
 Room tariffs at Stone Heritage Mukteshwar start from **₹1,500** per night for single workation setups, **₹2,000** for Cedar Room, **₹3,500 – ₹4,200** for family rooms like Copper & Brass, and **₹4,500 – ₹5,000** for the multi-generational Stonewood Family Retreat. Booking direct guarantees the lowest tariffs with zero OTA commissions.
@@ -175,7 +175,7 @@ Our kitchen serves freshly prepared, pure vegetarian home-cooked meals rooted in
 
 ## Real Reviews, Real Trust
 
-Stone Heritage holds a **4.9-star rating across 250+ Google reviews** — with 240+ of those reviews rated a full 5 stars. Families and travelers consistently mention our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food.
+Stone Heritage holds a **4.8-star rating across 267+ Google reviews** — with 250+ of those reviews rated a full 5 stars. Families and travelers consistently mention our unobstructed Himalayan views, child-friendly environment, and authentic Kumaoni home-cooked food.
 
 > One recent guest wrote: *"felt like staying with family, not at a hotel."*
 

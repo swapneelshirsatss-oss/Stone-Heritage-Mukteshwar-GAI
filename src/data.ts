@@ -79,10 +79,10 @@ export const RESORT_CONTACT = {
   paymentAccepted: "Cash, Credit Card, Debit Card, UPI, Net Banking",
   petsAllowed: true,
   rating: {
-    value: "4.9",
-    ratingValue: 4.9,
-    reviewCount: "250+",
-    reviewCountNumeric: 250,
+    value: "4.8",
+    ratingValue: 4.8,
+    reviewCount: "267+",
+    reviewCountNumeric: 267,
     bestRating: "5",
     worstRating: "1",
     source: "Google Reviews",
@@ -111,8 +111,9 @@ export const RESORT_CONTACT = {
     x: "https://x.com/stone_heritage",
     twitter: "https://x.com/stone_heritage",
     pinterest: "https://in.pinterest.com/thestoneheritage/",
-    linkedin: "https://www.linkedin.com/company/stone-heritage-mukteshwar/",
-    tripadvisor: "https://www.tripadvisor.in/Hotel_Review-g1162527-d33498951-Reviews-Stone_Heritage_Mukteshwar-Mukteshwar_Nainital_District_Uttarakhand.html"
+    tripadvisor: "https://www.tripadvisor.in/Hotel_Review-g1162527-d33498951-Reviews-Stone_Heritage_Mukteshwar-Mukteshwar_Nainital_District_Uttarakhand.html",
+    googleTravel: "https://www.google.com/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE",
+    googleTravelShare: "https://www.google.com/travel/search?ts=CAEqBwoFOgNJTlI&qs=CAAgACgB&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
   },
   gtmContainerId: "GTM-WDVGR88X",
   founder: {
@@ -787,7 +788,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     category: "Rooms & Cottages",
     question: "Which is the best homestay in Mukteshwar for families?",
-    answer: "Stone Heritage is widely recognized as one of the best homestays in Mukteshwar, rated 4.9/5 across 250+ Google reviews. It offers authentic Kumaoni heritage architecture, panoramic Himalayan views, and personalized hospitality for families, couples, and remote workers."
+    answer: "Stone Heritage is widely recognized as one of the best homestays in Mukteshwar, rated 4.8/5 across 267+ Google reviews. It offers authentic Kumaoni heritage architecture, panoramic Himalayan views, and personalized hospitality for families, couples, and remote workers."
   },
   {
     category: "Rooms & Cottages",
