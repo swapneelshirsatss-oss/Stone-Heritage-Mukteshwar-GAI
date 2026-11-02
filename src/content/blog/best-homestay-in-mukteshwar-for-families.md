@@ -1,6 +1,6 @@
 ---
 title: 'Best Homestay in Mukteshwar for Families (2026 Guide)'
-metaTitle: 'Best Homestay in Mukteshwar for Families (2026) | Stone Heritage'
+metaTitle: 'Best Family Homestay in Mukteshwar (2026 Guide & Tariffs)'
 metaDescription: 'Looking for the best homestay in Mukteshwar for families? Stone Heritage features 9 stone cottages, family suites, pure veg kitchen & 180° Himalayan views.'
 excerpt: "Looking for the best homestay in Mukteshwar for families? Discover Stone Heritage's 9 heritage stone cottages, real reviews & genuine Mukteshwar location."
 date: 'July 28, 2026'
@@ -54,7 +54,9 @@ Based on what families consistently look for when choosing where to stay in the 
 - **Outdoor spaces** for bonfires, stargazing, and morning views
 - **A rating and review history** you can actually trust
 
-Stone Heritage is built around every one of these, across 9 distinct rooms rather than a single one-size-fits-all layout — explore our [Mukteshwar Valley Resort & Family Cottages](/mukteshwar-valley-resort/) guide for complete gallery and category details.
+Stone Heritage is built around every one of these, across 9 distinct rooms rather than a single one-size-fits-all layout — explore our [Mukteshwar Valley Resort & Family Cottages](/mukteshwar-valley-resort/) guide or our [Homestay Near Mukteshwar, Uttarakhand Host Guide](/blog/homestay-near-mukteshwar-uttarakhand/) for complete gallery and category details.
+
+<div id="direct-vs-ota-table-placeholder"></div>
 
 ---
 
@@ -68,7 +70,7 @@ Stone Heritage is built around every one of these, across 9 distinct rooms rathe
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Stonewood Family Retreat** | 4-6 Guests | 2 King Beds | Panoramic View | **₹4,500 – ₹5,000** | Large Families & Multi-Generational Groups |
 | **Stone and Story Suite** | 2-3 Guests | King Bed | Mountain View | **₹4,000 – ₹4,500** | Couples Wanting Premium Setup |
-| **Copper Room** | 2-4 Guests | King Bed + Single Bed | Garden View | **₹3,800 – ₹4,200** | Small Families with Kids |
+| **Copper Room** | 2-4 Guests | 1 King Size Bed + Sofa cum 1 bed | Garden View | **₹3,800 – ₹4,200** | Small Families with Kids |
 | **Stone Cottage Room** | 2-4 Guests | King Bed + Private Terrace | Sunset & Mountain View | **₹3,800 – ₹4,200** | Scenic Private Escape |
 | **Brass Room** | 2-3 Guests | King Bed | Mountain View | **₹3,500 – ₹4,000** | Couples & Families with 1 Child |
 | **The Vintage Room** | 2-3 Guests | King Bed | Valley View | **₹3,500 – ₹3,800** | Couples & Heritage Lovers |
@@ -86,7 +88,7 @@ Stone Heritage is built around every one of these, across 9 distinct rooms rathe
 Our most spacious option, with 2 King Beds and room for 4-6 guests. Functions almost like a standalone cottage, with a private balcony and panoramic views — ideal for grandparents, parents, and kids staying together under one roof.
 
 #### Copper Room — Best for Small Families
-A King Bed plus a Single Bed makes this a natural fit for families with one child, offering a garden view and full en-suite comfort for up to 4 guests.
+1 King Size Bed plus a Sofa cum 1 bed makes this a natural fit for families with one or two children, offering a garden view and full en-suite comfort for up to 4 guests.
 
 #### Brass Room — Best for Couples with an Older Child
 A King Bed setup with a mountain view and the option of an alternative floor mattress, suited to couples traveling with one older child or teenager.
@@ -98,7 +100,7 @@ Heritage architecture and a valley view make this an intimate, charming choice f
 A King Bed suite with mountain views and a more premium interior finish, for couples who want a little extra.
 
 #### Iron Room & Cedar Room — Best for Solo Travelers or Small Groups
-Both offer a King Bed and their own character — Iron with a garden view, Cedar with forest views and wooden paneling (starting at just ₹2,000/night) — well suited to solo travelers or as an additional room for a larger family group booking multiple rooms together.
+Iron Room offers 1 King Size Bed with a peaceful garden view, while Cedar Room features 1 Queen Size Bed with forest views and aromatic cedar wooden paneling (starting at just ₹2,000/night) — both well suited to solo travelers, couples, or as an additional room for a larger family group booking multiple rooms together.
 
 #### Himalayan Workation — Best for the Parent Who Still Needs to Work
 A dedicated workstation with high-speed Wi-Fi and a Himalayan view starting at just ₹1,500/night, so one parent can get a few hours of work done while the rest of the family explores.

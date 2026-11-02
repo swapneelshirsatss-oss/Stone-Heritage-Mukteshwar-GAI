@@ -7,7 +7,7 @@ const HOST = 'thestoneheritage.in';
 const KEY = '593c87e7da264df4a721010fb72224ed';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
-// Comprehensive list of all 24 production URLs across Stone Heritage Mukteshwar
+// Comprehensive list of all 24 canonical webpage URLs across Stone Heritage Mukteshwar
 const urlsToSubmit = [
   `https://${HOST}/`,
   `https://${HOST}/mukteshwar-valley-resort/`,
@@ -23,9 +23,6 @@ const urlsToSubmit = [
   `https://${HOST}/terms-conditions/`,
   `https://${HOST}/sitemap/`,
   `https://${HOST}/search/`,
-  `https://${HOST}/sitemap.xml`,
-  `https://${HOST}/sitemap-pages.xml`,
-  `https://${HOST}/sitemap-blog.xml`,
   `https://${HOST}/blog/best-homestay-in-mukteshwar-for-families/`,
   `https://${HOST}/blog/best-places-to-stay-in-mukteshwar/`,
   `https://${HOST}/blog/delhi-to-mukteshwar-road-trip/`,
@@ -33,7 +30,7 @@ const urlsToSubmit = [
   `https://${HOST}/blog/homestay-in-mukteshwar/`,
   `https://${HOST}/blog/homestay-near-mukteshwar-uttarakhand/`,
   `https://${HOST}/blog/mukteshwar-ramgarh-travel-guide/`,
-  `https://${HOST}/blog/pet-friendly-homestay/`,
+  `https://${HOST}/blog/pet-friendly-homestay-in-mukteshwar/`,
   `https://${HOST}/blog/top-5-things-to-do-in-mukteshwar/`,
   `https://${HOST}/blog/workation-in-mukteshwar/`
 ];

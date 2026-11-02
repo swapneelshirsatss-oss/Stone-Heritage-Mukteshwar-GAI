@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from "../layouts/Layout.astro";
-import FloatingWhatsAppButton from "../components/FloatingWhatsAppButton.astro";
 
 import { HeroSection } from "../components/home/HeroSection";
 import { IntroSection } from "../components/home/IntroSection";
@@ -30,7 +29,7 @@ const formattedPosts = allPosts.map(post => ({
 formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 ---
 <Layout 
-  title="Best Homestay in Mukteshwar for Families (2026) | Stone Heritage" 
+  title="Stone Heritage Mukteshwar | Luxury Kumaoni Homestay (4.8★)" 
   description="Stone Heritage Mukteshwar (4.8 ★, 267+ reviews): Authentic Kumaoni stone cottage homestay with 180° Himalayan views, pure veg dining & fiber Wi-Fi. Book direct."
   keywords="homestay in mukteshwar, best homestay in mukteshwar, homestay in mukteshwar for families, stone cottage in mukteshwar, pet friendly homestay in mukteshwar, kumaoni heritage stay, homestay near delhi ncr, workation in mukteshwar"
 >
@@ -48,6 +47,4 @@ formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getT
     <FaqAccordion client:visible />
     <LocationSection client:visible />
   </div>
-  <FloatingWhatsAppButton />
 </Layout>
-

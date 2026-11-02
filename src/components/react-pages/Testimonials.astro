@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
   <div class="text-center mb-12">
     <h1 class="text-4xl md:text-5xl font-bold mb-4 text-primary tracking-tight">Guest Reviews & Testimonials — Stone Heritage Mukteshwar</h1>
     <p class="text-lg text-primary/70 max-w-2xl mx-auto leading-relaxed">
-      Read what our wonderful guests have to say about their stay at Stone Heritage Mukteshwar.
+      Read what our wonderful guests have to say about their stay at <a href="/stay/" class="text-accent hover:underline font-medium">our 9 heritage stone cottages &amp; suites</a> or explore our <a href="/mukteshwar-valley-resort/" class="text-accent hover:underline font-medium">Mukteshwar Valley Resort guide</a>.
     </p>
   </div>
 
@@ -58,7 +58,7 @@ import { Image } from 'astro:assets';
           "{testimonial.text}"
         </p>
         <div class="text-center">
-          <h3 class="text-lg font-bold text-primary">{testimonial.name}</h3>
+          <h2 class="text-lg font-bold text-primary">{testimonial.name}</h2>
           {testimonial.role && <p class="text-sm text-primary/60 mt-1">{testimonial.role}</p>}
         </div>
       </div>

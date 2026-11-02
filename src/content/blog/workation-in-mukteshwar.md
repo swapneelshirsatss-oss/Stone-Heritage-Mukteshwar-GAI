@@ -1,6 +1,7 @@
 ---
 title: 'Workation in Mukteshwar: The Complete 2026 Guide to Working From the Himalayas'
 metaTitle: 'Workation in Mukteshwar 2026: Where to Work & Stay'
+metaDescription: 'Planning a workation in Mukteshwar? Get 150 Mbps fiber Wi-Fi speeds, best months, cost breakdown & dedicated stone-cottage workstations at Stone Heritage.'
 excerpt: 'Planning a workation in Mukteshwar? Get fiber Wi-Fi speeds, best months, cost breakdown & the top stone-cottage stay with dedicated workstations.'
 date: 'August 19, 2026'
 author: 'Akash'
@@ -30,7 +31,7 @@ At [Stone Heritage Mukteshwar](/stay/), we offer dedicated workstations, high-sp
 
 ---
 
-![Scenic Himalayan view from stone cottage balcony workspace during a workation in Mukteshwar](/images/blog/workation-in-mukteshwar.webp)
+<!-- Hero banner is rendered automatically above article body -->
 
 ---
 

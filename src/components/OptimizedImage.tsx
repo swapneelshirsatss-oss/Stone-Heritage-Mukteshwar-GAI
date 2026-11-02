@@ -13,6 +13,8 @@ export function OptimizedImage({
   widths,
   sizes,
   className, 
+  width = 800,
+  height = 600,
   loading = 'lazy',
   decoding = 'async',
   ...props 
@@ -35,6 +37,8 @@ export function OptimizedImage({
       srcSet={srcSet}
       sizes={effectiveSizes}
       alt={alt}
+      width={width}
+      height={height}
       loading={loading}
       decoding={decoding}
       className={`${className || ''} ${isError ? 'bg-red-100' : ''}`.trim()}
@@ -46,4 +50,3 @@ export function OptimizedImage({
     />
   );
 }
-

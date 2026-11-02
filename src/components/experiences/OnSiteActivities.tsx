@@ -56,7 +56,7 @@ export function OnSiteActivities() {
               {exp.icon}
             </div>
             <div className="flex-grow text-center md:text-left">
-              <h3 className="text-2xl md:text-4xl font-serif font-medium mb-4 text-primary">{exp.title}</h3>
+              <h2 className="text-2xl md:text-4xl font-serif font-medium mb-4 text-primary">{exp.title}</h2>
               <p className="text-lg text-primary/80 mb-4 font-light leading-relaxed">{exp.description}</p>
               {exp.hostLink && (
                 <div className="mb-6">

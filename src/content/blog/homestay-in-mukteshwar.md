@@ -20,7 +20,7 @@ Here at **Stone Heritage Mukteshwar**, we don't operate a cookie-cutter resort. 
 
 ---
 
-![Authentic Kumaoni Stone Cottage Homestay in Mukteshwar with panoramic Himalayan peak views](/images/property/homestay-in-mukteshwar.webp)
+<div id="direct-vs-ota-table-placeholder"></div>
 
 ---
 
@@ -118,7 +118,7 @@ Whether you are traveling solo, as a couple, or with an extended multi-generatio
 
 - **Stonewood Family Retreat (₹4,500 – ₹5,000):** 2 King beds, 4-6 guest capacity, private balcony & panoramic mountain views.
 - **Stone and Story Suite (₹4,000 – ₹4,500):** Premium couple's suite with panoramic Himalayan peak views.
-- **Copper Room (₹3,800 – ₹4,200):** King Bed + Single Bed, garden view, ideal for small families.
+- **Copper Room (₹3,800 – ₹4,200):** 1 King Size Bed + Sofa cum 1 bed, garden view, ideal for small families (2–4 guests).
 - **Stone Cottage Room (₹3,800 – ₹4,200):** Private terrace balcony with sunset & mountain views.
 - **Brass Room & Vintage Room (₹3,500 – ₹4,000):** Authentic heritage ambience with mountain or valley views.
 - **Iron Room & Cedar Room (₹2,000 – ₹3,500):** Cozy, budget-friendly heritage options.

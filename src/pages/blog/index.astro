@@ -17,6 +17,7 @@ const formattedPosts = allPosts.map(post => ({
   slug: post.slug,
   title: post.data.title,
   excerpt: post.data.excerpt,
+  metaDescription: post.data.metaDescription,
   date: post.data.date,
   author: post.data.author,
   category: post.data.category,
@@ -26,6 +27,7 @@ const formattedPosts = allPosts.map(post => ({
 
 // Sort by date descending
 formattedPosts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -39,69 +41,25 @@ const schemaData = {
       "publisher": {
         "@type": ["BedAndBreakfast", "Resort", "Hotel"],
         "@id": "https://thestoneheritage.in/#localbusiness",
-        "name": "Stone Heritage Mukteshwar"
-      },
-      "blogPost": [
-        {
-          "@type": "BlogPosting",
-          "headline": "Best Places to Stay in Mukteshwar: Where Mountain Silence Meets Handcrafted Heritage — Stone Heritage Mukteshwar (2026 Guide)",
-          "url": "https://thestoneheritage.in/blog/best-places-to-stay-in-mukteshwar/",
-          "datePublished": "2026-08-11",
-          "dateModified": "2026-08-11",
-          "author": { "@type": "Person", "name": "Akash" },
-          "description": "Discover the best places to stay in Mukteshwar, from heritage stone cottages with 180° Himalayan views to tranquil nature retreats. Complete 2026 guide with prices, insider tips, and direct booking perks."
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "Best Homestay in Mukteshwar for Families (2026 Guide)",
-          "url": "https://thestoneheritage.in/blog/best-homestay-in-mukteshwar-for-families/",
-          "datePublished": "2026-07-28",
-          "dateModified": "2026-07-28",
-          "author": { "@type": "Person", "name": "Akash" },
-          "description": "Looking for the best homestay in Mukteshwar for families? Discover Stone Heritage's 9 heritage stone cottages, real reviews & genuine Mukteshwar location."
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "Finding the Perfect Homestay in Mukteshwar: Welcome to Our Mountain Home",
-          "url": "https://thestoneheritage.in/blog/homestay-in-mukteshwar/",
-          "datePublished": "2024-08-15",
-          "author": { "@type": "Person", "name": "Harsh & Priyanka" },
-          "description": "Tired of generic hotels? Come discover why staying in an authentic Kumaoni stone cottage feels less like a vacation, and more like coming home."
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "A Guide to Himalayan Bird Watching at South Gola Range",
-          "url": "https://thestoneheritage.in/blog/himalayan-bird-watching/",
-          "datePublished": "2023-12-05",
-          "author": { "@type": "Organization", "name": "Stone Heritage Team" },
-          "description": "Mukteshwar is a paradise for bird watchers. Explore the diverse avian life you can spot right from your balcony or during a short nature walk around our vintage stone cottage."
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "The Ultimate Delhi to Mukteshwar Road Trip Itinerary",
-          "url": "https://thestoneheritage.in/blog/delhi-to-mukteshwar-road-trip/",
-          "datePublished": "2023-11-18",
-          "author": { "@type": "Person", "name": "Harsh & Priyanka" },
-          "description": "Planning a weekend getaway from Delhi to Mukteshwar? We have mapped out the best driving routes, scenic pit stops, and travel tips to ensure a smooth and memorable 7.5 to 8-hour journey (320–340 km) to the mountains."
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "Pet Friendly Homestay in Mukteshwar with 180° Himalayan Views & Zero Pet Fees — Stone Heritage Mukteshwar (2026 Guide)",
-          "url": "https://thestoneheritage.in/blog/pet-friendly-homestay-in-mukteshwar/",
-          "datePublished": "2026-10-26",
-          "dateModified": "2026-10-26",
-          "author": { "@type": "Person", "name": "Akash" },
-          "description": "Looking for a pet friendly homestay in Mukteshwar? Stone Heritage offers enclosed lawns, 180° snow-peak views & zero pet fees. Book direct & save 20%!"
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "Top 5 Things to Do in Mukteshwar This Winter",
-          "url": "https://thestoneheritage.in/blog/top-5-things-to-do-in-mukteshwar/",
-          "datePublished": "2023-10-15",
-          "author": { "@type": "Person", "name": "Harsh & Priyanka" },
-          "description": "Discover the magic of winter in Mukteshwar. From snow-capped Himalayan views to cozy bonfires and hot Kumaoni delicacies, here is how to make the most of your winter getaway at Stone Heritage."
+        "name": "Stone Heritage Mukteshwar",
+        "alternateName": ["Stone Heritage Resort", "Stone Heritage", "Stone Heritage Homestay"],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "267",
+          "bestRating": "5",
+          "worstRating": "1"
         }
-      ]
+      },
+      "blogPost": formattedPosts.map(post => ({
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "url": `https://thestoneheritage.in/blog/${post.slug}/`,
+        "datePublished": new Date(post.date).toISOString().split('T')[0],
+        "dateModified": new Date(post.date).toISOString().split('T')[0],
+        "author": { "@type": "Person", "name": post.author },
+        "description": post.metaDescription || post.excerpt
+      }))
     }
   ]
 };

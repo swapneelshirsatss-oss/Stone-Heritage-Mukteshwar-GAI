@@ -1,6 +1,6 @@
 ---
 title: 'Best Places to Stay in Mukteshwar: Where Mountain Silence Meets Handcrafted Heritage — Stone Heritage Mukteshwar (2026 Guide)'
-metaTitle: 'Best Places to Stay in Mukteshwar (2026 Guide) | Stone Heritage'
+metaTitle: 'Best Places to Stay in Mukteshwar (2026) | Stone Heritage'
 metaDescription: 'Discover the best places to stay in Mukteshwar. Handcrafted stone cottages, 180° Himalayan snow peak views, home-cooked Kumaoni dining & direct booking deals.'
 excerpt: 'Discover why Stone Heritage Mukteshwar is rated among the best places to stay in Mukteshwar. Heritage stone cottages, 180° Himalayan views, home-cooked Kumaoni meals, and direct booking savings.'
 date: 'August 11, 2026'
@@ -102,6 +102,8 @@ Set among apple, plum, and peach orchards, away from Mukteshwar's commercial str
 | **Host relationship** | Front-desk transaction | Founders and resident team |
 | **Direct booking savings** | High OTA markup | Up to 20% off via WhatsApp |
 
+<div id="direct-vs-ota-table-placeholder"></div>
+
 ---
 
 ## Rooms & Rates at Stone Heritage Mukteshwar
@@ -111,13 +113,14 @@ Nine boutique units across suites, cottages, and deluxe rooms, sleeping up to 70
 | Room | EP | CP | MAP | Max Guests | Highlight |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Stonewood Family Retreat (Suite)** | ₹5,000 | ₹6,000 | ₹8,000 | 5–6 | 2 king beds, private lounge |
-| **Copper Room (Suite)** | ₹5,000 | ₹6,000 | ₹8,000 | 3–4 | King + single, peak view |
+| **Copper Room (Suite)** | ₹5,000 | ₹6,000 | ₹8,000 | 2–4 | 1 King Size Bed + Sofa cum 1 bed, garden & peak view |
 | **Brass Room (Suite)** | ₹3,000 | ₹4,000 | ₹5,000 | 3 | King + quad floor mattress |
 | **Vintage Stone Room (Cottage)** | ₹4,000 | ₹5,000 | ₹6,000 | 3 | Exposed stone masonry |
 | **Stone and Story Room (Cottage)** | ₹4,000 | ₹5,000 | ₹6,000 | 3 | Cedar wood & fireplace |
 | **Sunset Heritage Cottage** | ₹4,000 | ₹5,000 | ₹6,000 | 4 | Private sunset terrace |
 | **Iron Room (Deluxe)** | ₹1,500 | ₹1,800 | ₹2,200 | 2–3 | Valley-view windows |
-| **Cedar Room (Deluxe)** | ₹1,500 | ₹1,800 | ₹2,200 | 2 | Budget mountain retreat |
+| **Cedar Room (Deluxe)** | ₹1,500 | ₹1,800 | ₹2,200 | 2 | 1 Queen Size Bed, cedar wood paneling |
+| **Himalayan Workation Room** | ₹1,500 | ₹1,800 | ₹2,200 | 1–2 | Dedicated workstation setup + 150 Mbps fiber Wi-Fi |
 
 *EP = room only, CP = with breakfast, MAP = breakfast + one meal.*
 

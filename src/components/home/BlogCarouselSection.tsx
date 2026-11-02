@@ -71,7 +71,9 @@ export function BlogCarouselSection({ posts }: BlogCarouselSectionProps) {
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/card:scale-105"
-                    loading={index < 3 ? "eager" : "lazy"}
+                    loading="lazy"
+                    width={640}
+                    height={400}
                   />
                   <div className="absolute top-3 left-3 bg-stone-900/60 backdrop-blur-md text-stone-100 text-[11px] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-white/10 z-10">
                     {post.category}

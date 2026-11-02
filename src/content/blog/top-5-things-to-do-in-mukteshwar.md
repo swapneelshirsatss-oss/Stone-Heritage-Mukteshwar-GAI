@@ -30,6 +30,8 @@ If you are planning a journey to this quiet mountain haven and searching for the
 | **4. Kumaoni Bonfire Dinner** | 7:00 PM – 9:30 PM | On-site at Stay | Evening | Cozy & Cultural |
 | **5. Slow Mountain Living** | Early Morning / All Day | On-site | Half-day | Relaxing & Rejuvenating |
 
+<div id="direct-vs-ota-table-placeholder"></div>
+
 ---
 
 ## 1. Sunset Meditation at Chauli Ki Jali & Mukteshwar Dham

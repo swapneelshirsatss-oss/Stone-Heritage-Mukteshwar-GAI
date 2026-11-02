@@ -1,5 +1,6 @@
 export async function GET({ site }: { site?: URL }) {
   const baseUrl = site ? site.toString().replace(/\/$/, '') : 'https://thestoneheritage.in';
+  const lastmod = new Date().toISOString();
 
   const pages = [
     { url: '/', priority: '1.00', changefreq: 'daily' },
@@ -22,6 +23,7 @@ export async function GET({ site }: { site?: URL }) {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${pages.map(page => `  <url>
     <loc>${baseUrl}${page.url}</loc>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`).join('\n')}

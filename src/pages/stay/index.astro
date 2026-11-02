@@ -13,22 +13,54 @@ const schemaData = {
       "@type": "WebPage",
       "@id": "https://thestoneheritage.in/stay/#webpage",
       "url": canonicalUrl,
-      "name": "Stone Cottage Homestay in Mukteshwar — Rooms & Suites (2026)",
+      "name": "9 Heritage Cottages & Suites | Stone Heritage Mukteshwar",
       "isPartOf": {
         "@id": "https://thestoneheritage.in/#website"
       },
       "about": {
         "@id": "https://thestoneheritage.in/#localbusiness"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".aeo-answer-block", "main p:first-of-type"]
       }
     },
     {
       "@type": ["BedAndBreakfast", "Resort", "Hotel"],
       "@id": "https://thestoneheritage.in/#localbusiness",
       "name": "Stone Heritage Mukteshwar",
+      "alternateName": [
+        "Stone Heritage Resort",
+        "Stone Heritage",
+        "Stone Heritage Homestay"
+      ],
       "url": "https://thestoneheritage.in/",
       "image": "https://thestoneheritage.in/images/property/luxury-heritage-homestay-in-mukteshwar.webp",
       "telephone": "+919027844424",
       "priceRange": "₹1,500 - ₹15,000",
+      "petsAllowed": true,
+      "checkinTime": "13:00",
+      "checkoutTime": "11:00",
+      "sameAs": [
+        "https://www.facebook.com/thestoneheritage/",
+        "https://www.instagram.com/thestoneheritage/",
+        "https://www.youtube.com/@StoneHeritageMukteshwar",
+        "https://maps.google.com/maps?cid=5074157692820223333",
+        "https://www.tripadvisor.in/Hotel_Review-g1162527-d33498951-Reviews-Stone_Heritage_Mukteshwar-Mukteshwar_Nainital_District_Uttarakhand.html",
+        "https://www.google.com/travel/hotels/entity/ChkI5er19pnxwbVGGg0vZy8xMXhjeWtwNzJwEAE"
+      ],
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Fresh Food & Breakfast Available",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Pure Vegetarian Home-Cooked Kumaoni Meals",
+          "value": true
+        }
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
@@ -63,8 +95,8 @@ const schemaData = {
 ---
 
 <Layout 
-  title="Best Homestay in Mukteshwar | 9 Heritage Stone Cottages & Suites (2026)" 
-  description="Stay at the best homestay in Mukteshwar (4.8★). 9 luxury stone cottages, family suites, 180° Himalayan snow peak views & pure veg dining. Book direct to save 20%!"
+  title="9 Heritage Cottages & Suites | Stone Heritage Mukteshwar" 
+  description="Stay at Stone Heritage Mukteshwar (4.8★): 9 luxury stone cottages, family suites, 180° Himalayan snow-peak views & pure veg dining. Book direct to save 20%!"
   keywords="best homestay in mukteshwar, homestay in mukteshwar for family, stone cottage homestay in mukteshwar, stone cottage in mukteshwar, luxury stone cottage mukteshwar, vintage family rooms mukteshwar, homestay rooms in mukteshwar"
   canonicalUrl={canonicalUrl}
   schema={schemaData}

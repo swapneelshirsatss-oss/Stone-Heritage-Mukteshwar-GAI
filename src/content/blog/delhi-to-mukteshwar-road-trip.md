@@ -20,7 +20,7 @@ Whether you are an experienced mountain driver or planning your very first Himal
 
 ---
 
-![Delhi to Mukteshwar Road Trip driving route through Kumaon pine forests and mountain passes](/images/blog/Why-stay-near-mukteshwar.webp)
+<!-- Hero banner is rendered automatically above article body -->
 
 ---
 
@@ -111,6 +111,22 @@ If traveling with your dog, mountain curves can cause motion sickness. Roll down
 - **Monsoon (July – September):** Lush green scenery with fog over mountain passes. Check weather reports before departure and drive cautiously.
 - **Autumn (October – November):** Crisp mountain air, zero fog, and crystal-clear Himalayan views along the entire drive.
 - **Winter (December – February):** Cool sunny day drives. Nighttime temperatures drop fast — aim to reach Mukteshwar before 5:30 PM sunset.
+
+---
+
+## Pre-Drive Vehicle Preparation, FASTag Toll Cost & Fuel Checklist
+
+Before pulling out of Delhi, Noida, or Gurugram at dawn, spending 15 minutes checking your car ensures a stress-free climb from the Kathgodam plains (1,700 ft) up to the Mukteshwar ridge (7,500 ft):
+
+### 1. Tyre Pressure, Coolant & Brake Inspection
+- **Tyre Pressure:** Inflate all four tyres (plus the spare wheel) to the manufacturer's recommended highway load PSI while tyres are cold. Over-inflated tyres lose grip on damp pine-needle mountain hairpins.
+- **Coolant & Wiper Fluid:** Steep uphill climbs in 2nd and 3rd gear between Bhimtal, Bhowali, and Dhanachuli put sustained thermal load on your engine. Verify coolant levels and top up windshield washer fluid to clear highway dust and mountain mist.
+- **Headlights & Fog Lamps:** Yellow or warm-white fog lamps cut through afternoon cloud cover along the South Gola Range far better than high-beam white LEDs.
+
+### 2. Estimated One-Way FASTag Toll & Fuel Breakdown (2026)
+- **FASTag Balance:** Keep at least **₹1,200 – ₹1,500** loaded on your FASTag for a round trip covering the Delhi-Meerut Expressway (NE-3), Garhmukteshwar/Brijghat, Joya, Moradabad Bypass, and Rampur-Rudrapur toll plazas.
+- **Fuel & EV Charging Strategy:** Top up a full tank of petrol or diesel at **Haldwani or Kathgodam** before starting the hill ascent. While Bhowali and Bhatelia have fuel stations, tanking up in the plains avoids weekend queues. Electric vehicle (EV) drivers can charge to 90%+ at fast DC chargers in Gajraula, Moradabad Bypass, or Haldwani—regenerative braking on the return descent from Mukteshwar back to Kathgodam typically adds 12–18% battery range!
+- **Offline Maps & Local Host Support:** Mobile data can briefly dip in deep pine valleys between Bhowali and Dhanachuli. Download offline Google Maps for Nainital district and save our [homestay near Mukteshwar, Uttarakhand local host guide](/blog/homestay-near-mukteshwar-uttarakhand/) for exact landmark navigation.
 
 ---
 

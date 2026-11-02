@@ -11,6 +11,7 @@ const sections = [
     links: [
       { name: "Home Page", path: "/", desc: "Welcome to Stone Heritage Mukteshwar" },
       { name: "Stay & Rooms Overview", path: "/stay/", desc: "Brass Room, Copper Room, Vintage Room, Stonewood Retreat, Cedar Room" },
+      { name: "Mukteshwar Valley Resort Guide", path: "/mukteshwar-valley-resort/", desc: "19th-century Kumaoni stone cottages, 180° Himalayan views & direct booking perks" },
       { name: "Direct Booking Engine", path: "https://booking.thestoneheritage.in/", desc: "Guaranteed best rates & direct priority allocation", external: true }
     ]
   },
@@ -49,7 +50,7 @@ const sections = [
       ...blogPosts.map(post => ({
         name: post.data.title,
         path: `/blog/${post.slug}/`,
-        desc: post.data.description || "Read travel guide article"
+        desc: post.data.metaDescription || post.data.excerpt || "Read travel guide article"
       }))
     ]
   },

@@ -36,6 +36,8 @@ The phrase “near Mukteshwar” can cover a relatively broad area. Some propert
 
 If you are visiting Mukteshwar for the first time, it is useful to understand the wider area before selecting your accommodation.
 
+<div id="direct-vs-ota-table-placeholder"></div>
+
 ---
 
 ## Homestay Near Mukteshwar vs Homestay in Mukteshwar
@@ -107,7 +109,7 @@ After hosting travellers with different needs across seasons, one thing becomes 
 
 A couple, a family with children, and a group of friends can stay at the same property but have completely different priorities. That is why accommodation should be selected according to the specific experience you want from your trip.
 
-![Tranquil mountain setting, spacious verandas, and peaceful valley surroundings at Stone Heritage Mukteshwar](/images/blog/Homestay-near-mukteshwar-uttarakhand/Mukteshwar-uttarkahnd-travel-guide (6).jpg)
+![Tranquil mountain setting, spacious verandas, and peaceful valley surroundings at Stone Heritage Mukteshwar](/images/blog/Homestay-near-mukteshwar-uttarakhand/Mukteshwar-uttarkahnd-travel-guide (6).webp)
 
 ### If You Are Travelling as a Couple
 Couples often look for privacy, tranquil Himalayan views, cozy room atmosphere, private balcony spaces, and flexible dining options. Heritage stone rooms with private verandas provide the ideal quiet mountain retreat.
@@ -181,7 +183,7 @@ Food is sometimes overlooked when travellers compare accommodation. For families
 
 Stone Heritage provides freshly prepared home-cooked breakfast and meals from its vegetarian kitchen.
 
-![8 Questions to Ask Before Booking a Homestay Near Mukteshwar Uttarakhand](/images/blog/Homestay-near-mukteshwar-uttarakhand/Mukteshwar-uttarkahnd-travel-guide (5).jpg)
+![8 Questions to Ask Before Booking a Homestay Near Mukteshwar Uttarakhand](/images/blog/Homestay-near-mukteshwar-uttarakhand/Mukteshwar-uttarkahnd-travel-guide (5).webp)
 
 Before booking any homestay, always ask:
 1. Is breakfast available?

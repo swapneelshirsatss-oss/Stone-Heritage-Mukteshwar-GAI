@@ -20,7 +20,7 @@ export function Stay() {
               <span>Aesthetic Place to Stay • Recommended for Instagrammers & Content Creators</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary leading-tight">Stone Cottage Homestay in Mukteshwar — Rooms & Suites</h1>
-            <p className="text-lg text-primary/70 max-w-3xl mx-auto mb-6 font-light leading-relaxed">
+            <p className="aeo-answer-block text-lg text-primary/70 max-w-3xl mx-auto mb-6 font-light leading-relaxed">
               Discover the charm of staying at an authentic stone cottage in Mukteshwar. Our boutique homestay pairs handcrafted 19th-century Kumaoni stone architecture with contemporary comforts — private en-suite bathrooms, high-speed fiber Wi-Fi, and panoramic Himalayan views.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 mb-10 text-xs sm:text-sm font-medium">
@@ -75,7 +75,9 @@ export function Stay() {
                   src={room.image} 
                   alt={room.alt} 
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                  loading="lazy"
+                  loading={i < 3 ? "eager" : "lazy"}
+                  width={600}
+                  height={400}
                 />
                 <span className="absolute top-3 left-3 bg-stone-900/60 backdrop-blur-md text-stone-100 text-[11px] font-medium tracking-wider uppercase px-3 py-1 rounded-full border border-white/10 z-10">
                   {room.view}

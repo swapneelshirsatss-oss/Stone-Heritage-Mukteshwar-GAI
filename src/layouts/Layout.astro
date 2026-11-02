@@ -460,14 +460,14 @@ const speakableSchema = {
 if (breadcrumbElements.length > 1) {
   (structuredData["@graph"] as any[]).push(breadcrumbSchema);
 }
-(structuredData["@graph"] as any[]).push(speakableSchema);
+// Speakable already included inside WebSite and WebPage nodes above
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com https://www.google-analytics.com https://ssl.google-analytics.com https://news.google.com https://*.google.com https://*.google.co.in https://*.gstatic.com https://*.googleadservices.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://*.googleadservices.com https://*.google.com https://*.google.co.in https://*.gstatic.com https://maps.gstatic.com https://maps.googleapis.com https://*.tripadvisor.com; connect-src 'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://*.googleadservices.com https://news.google.com https://*.google.com https://*.google.co.in; frame-src 'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.doubleclick.net https://*.googleadservices.com https://www.google.com https://maps.google.com https://*.google.com https://*.google.co.in; frame-ancestors 'self' https://tagassistant.google.com; upgrade-insecure-requests;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob: 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://ssl.google-analytics.com https://news.google.com https://*.google.com https://*.google.co.in https://*.gstatic.com https://*.googleadservices.com https://*.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://*.googleadservices.com https://*.google.com https://*.google.co.in https://*.gstatic.com https://maps.gstatic.com https://maps.googleapis.com https://*.tripadvisor.com; connect-src 'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://*.googleadservices.com https://news.google.com https://*.google.com https://*.google.co.in; frame-src 'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.doubleclick.net https://*.googleadservices.com https://www.google.com https://maps.google.com https://*.google.com https://*.google.co.in; upgrade-insecure-requests;" />
     <!-- Hostinger Staging Hostname Guard (Ensures staging URLs redirect immediately before running tags) -->
     <script is:inline>
       if (window.location.hostname.indexOf('hostingersite.com') !== -1) {
@@ -495,8 +495,8 @@ if (breadcrumbElements.length > 1) {
     <!-- Geo & Regional Meta Tags -->
     <meta name="geo.region" content="IN-UT" />
     <meta name="geo.placename" content="Mukteshwar" />
-    <meta name="geo.position" content="29.4346873;79.6447246" />
-    <meta name="ICBM" content="29.4346873, 79.6447246" />
+    <meta name="geo.position" content="29.4346202;79.6446521" />
+    <meta name="ICBM" content="29.4346202, 79.6446521" />
     
     <!-- Performance Optimizations: Strictly <= 3 Critical Origins (fixes Lighthouse preconnect warning) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -9,7 +9,7 @@ export function IntroSection() {
           Welcome to Stone Heritage — Your Family Mountain Retreat
         </h2>
         <div className="w-16 h-[1px] bg-accent/50 mx-auto mb-8"></div>
-        <p className="text-lg text-primary/80 max-w-3xl mx-auto leading-relaxed mb-20 font-light">
+        <p className="aeo-answer-block text-lg text-primary/80 max-w-3xl mx-auto leading-relaxed mb-20 font-light">
           Situated amidst the lush green forests and majestic peaks, Stone Heritage Mukteshwar is widely recognized as the best homestay in Uttarakhand. Whether you are seeking a romantic getaway, a peaceful workcation, or a family retreat in the mountains, our meticulously designed property provides the perfect backdrop for unforgettable memories.
         </p>
         
