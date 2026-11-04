@@ -30,7 +30,9 @@
 - **Review Veracity**: All displayed guest testimonials must reflect verbatim Google Reviews with authentic reviewer names, dates, and sub-score metrics (Rooms, Service, Location).
 - **Search Directives**:
   - Trailing slash consistency as configured in `astro.config.mjs`.
-  - Maintain verified IndexNow key in `public/` for real-time search engine crawling.
+  - Maintain verified IndexNow key (`593c87e7da264df4a721010fb72224ed.txt`) in `public/` and ensure `scripts/indexnow.mjs` submits only canonical HTML webpage URLs (never 301-redirected slugs or `.xml` sitemaps).
+  - **Single-Source Dynamic Sitemaps**: Generate `sitemap.xml`, `sitemap-pages.xml`, and `sitemap-blog.xml` strictly via `src/pages/sitemap*.xml.ts` endpoints (never duplicate static `public/sitemap*.xml` files, which get overwritten during `astro build`).
+  - **Homepage vs. Pillar Blog Title Separation**: Never assign an identical `<title>` to Homepage (`/`) and a blog article (e.g., `/blog/best-homestay-in-mukteshwar-for-families/`). Keep all `<title>` tags ≤ 60 chars and meta descriptions 120–160 chars.
 - **Target Keywords**:
   - `stone heritage mukteshwar`
   - `luxury heritage homestay mukteshwar`
@@ -67,7 +69,7 @@
   - Both HTTP response headers (`public/.htaccess`, `vercel.json`) and the HTML `<head>` (`src/layouts/Layout.astro`) must explicitly allowlist:
     - `script-src`: `'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://ssl.google-analytics.com https://news.google.com https://*.google.com https://*.google.co.in https://*.gstatic.com`
     - `connect-src`: `'self' https://www.googletagmanager.com https://tagmanager.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.doubleclick.net https://news.google.com https://*.google.com https://*.google.co.in`
-    - `frame-ancestors`: `'self' https://tagassistant.google.com` (essential for Google Tag Assistant troubleshooting mode to avoid iframe CSP blocks).
+  - **HTTP-Header-Only `frame-ancestors`**: Include `frame-ancestors 'self' https://tagassistant.google.com;` ONLY in HTTP response headers (`public/.htaccess`, `vercel.json`). Never place `frame-ancestors` inside `<meta http-equiv="Content-Security-Policy">` in `src/layouts/Layout.astro`, as W3C CSP specs forbid `frame-ancestors` in `<meta>` elements and browsers log a console error.
   - The GTM container snippet must include official nonce-propagation query logic (`var n=d.querySelector('[nonce]'); n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));`).
 
 ---
@@ -137,7 +139,8 @@ Always maintain exact room names and bed configurations across all page listings
 
 ## 12. Blog Publishing & Asset Invariants
 - **No Hero Duplicate in Markdown**: `src/pages/blog/[slug].astro` automatically mounts `post.data.image` as the top hero banner above `<Content />`. Never embed the featured cover image again at the beginning of `src/content/blog/*.md`.
-- **Full Infographic Coverage**: When an article has dedicated infographics or charts in `public/images/blog/<folder>/`, audit 100% of the image files and embed all provided graphics across their matching narrative sections with descriptive alt text and context.
+- **Full Infographic Coverage**: When an article has dedicated infographics or charts in `public/images/blog/<folder>/`, audit 100% of the image files (strictly `.webp`/`.avif`, zero `.jpg` or unreferenced orphans) and embed all provided graphics across their matching narrative sections with descriptive alt text and context.
+- **Minimum Depth & Dynamic Blog Schema**: Every blog post must exceed 1,500 words, include `<div id="direct-vs-ota-table-placeholder"></div>`, and be dynamically included in `src/pages/blog/index.astro` JSON-LD (`formattedPosts.map(...)`).
 
 ---
 
@@ -150,6 +153,7 @@ Always maintain exact room names and bed configurations across all page listings
 - Right primary CTA: "💬 WhatsApp Cottages" (`+91-9027844424`).
 - Must dynamically inject `window.location.pathname` into WhatsApp pre-fill text so hosts know the referring page or blog article.
 - Mobile Layout Safety: Always apply `padding-bottom: 70px` to `body` on viewports `< 768px` so sticky conversion UI never obscures footer links.
+- **No Redundant Floating WhatsApp Button**: Do not mount `<FloatingWhatsAppButton />` on pages where `<StickyDirectBookingBar />` is active, preventing bottom-right CTA overlap.
 
 ### B. Canonical GA4 & DataLayer Conversion Events
 All interactive conversion elements must push to `window.dataLayer` and fire `window.gtag('event', ...)` using these exact 3 event names via a global event delegation listener on `document`:

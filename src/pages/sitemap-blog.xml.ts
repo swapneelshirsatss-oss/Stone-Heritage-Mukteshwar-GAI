@@ -7,6 +7,7 @@ export async function GET({ site }: { site?: URL }) {
   const baseUrl = site ? site.toString().replace(/\/$/, '') : 'https://thestoneheritage.in';
 
   const highPrioritySlugs: Record<string, { priority: string; changefreq: string }> = {
+    'diwali-vacation-in-mukteshwar': { priority: '0.90', changefreq: 'weekly' },
     'homestay-near-mukteshwar-uttarakhand': { priority: '0.90', changefreq: 'weekly' },
     'pet-friendly-homestay-in-mukteshwar': { priority: '0.85', changefreq: 'weekly' },
     'mukteshwar-ramgarh-travel-guide': { priority: '0.85', changefreq: 'weekly' },

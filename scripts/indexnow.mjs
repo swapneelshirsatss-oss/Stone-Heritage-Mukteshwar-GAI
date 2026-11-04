@@ -7,7 +7,7 @@ const HOST = 'thestoneheritage.in';
 const KEY = '593c87e7da264df4a721010fb72224ed';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 
-// Comprehensive list of all 24 canonical webpage URLs across Stone Heritage Mukteshwar
+// Comprehensive list of all 25 canonical webpage URLs across Stone Heritage Mukteshwar
 const urlsToSubmit = [
   `https://${HOST}/`,
   `https://${HOST}/mukteshwar-valley-resort/`,
@@ -32,7 +32,8 @@ const urlsToSubmit = [
   `https://${HOST}/blog/mukteshwar-ramgarh-travel-guide/`,
   `https://${HOST}/blog/pet-friendly-homestay-in-mukteshwar/`,
   `https://${HOST}/blog/top-5-things-to-do-in-mukteshwar/`,
-  `https://${HOST}/blog/workation-in-mukteshwar/`
+  `https://${HOST}/blog/workation-in-mukteshwar/`,
+  `https://${HOST}/blog/diwali-vacation-in-mukteshwar/`
 ];
 
 const ENDPOINTS = [
